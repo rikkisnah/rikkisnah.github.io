@@ -2,4 +2,3 @@ theme = 'ananke'
 baseURL = 'https://rikkisnah.github.io/' # MUST be your user site URL
 languageCode = 'en-us'
 title = 'Rik Kisnah - Blog'
-theme = 'ananke'
