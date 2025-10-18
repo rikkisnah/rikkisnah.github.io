@@ -16,23 +16,22 @@ echo ""
 
 # Check for uncommitted changes
 echo -e "${BLUE}Checking for changes...${NC}"
-if ! git diff --quiet || ! git diff --cached --quiet; then
-    echo "Changes detected"
+if git diff --quiet && git diff --cached --quiet; then
+    echo "No changes to commit"
 else
-    echo "No changes detected. Exiting."
-    exit 0
+    echo "Changes detected"
+
+    # Stage all changes
+    echo -e "${BLUE}Staging changes...${NC}"
+    git add -A
+
+    # Create commit message with timestamp
+    COMMIT_MSG="Blog update: $(date '+%Y-%m-%d %H:%M:%S') from $(hostname)"
+
+    # Commit
+    echo -e "${BLUE}Committing changes...${NC}"
+    git commit -m "$COMMIT_MSG"
 fi
-
-# Stage all changes
-echo -e "${BLUE}Staging changes...${NC}"
-git add -A
-
-# Create commit message with timestamp
-COMMIT_MSG="Blog update: $(date '+%Y-%m-%d %H:%M:%S') from $(hostname)"
-
-# Commit
-echo -e "${BLUE}Committing changes...${NC}"
-git commit -m "$COMMIT_MSG"
 
 # Pull latest from remote (rebase to avoid merge commits)
 echo -e "${BLUE}Pulling latest from remote...${NC}"
