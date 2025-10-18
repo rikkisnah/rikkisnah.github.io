@@ -1,0 +1,192 @@
+/* Custom styles for Rik Kisnah's blog */
+
+/* Enhanced typography */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.7;
+}
+
+/* Improved heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #1a202c;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #2d3748;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+/* Enhanced link styles */
+a {
+  color: #3182ce;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #2c5282;
+  text-decoration: underline;
+}
+
+/* Improved code blocks */
+pre {
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+code {
+  background-color: #f7fafc;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+/* Enhanced blockquotes */
+blockquote {
+  border-left: 4px solid #3182ce;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #4a5568;
+  background-color: #f7fafc;
+  padding: 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* Improved list styles */
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Enhanced table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background-color: #f7fafc;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+/* Custom avatar styling */
+.avatar-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.avatar-container img {
+  border-radius: 50%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.avatar-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Enhanced post metadata */
+.post-meta {
+  color: #718096;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+/* Improved navigation */
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.nav-links a {
+  padding: 0.5rem 1rem;
+  background-color: #f7fafc;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s ease;
+}
+
+.nav-links a:hover {
+  background-color: #edf2f7;
+  text-decoration: none;
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Force light theme as default */
+html {
+  color-scheme: light;
+}
+
+/* Override dark mode styles to maintain light theme */
+html.dark {
+  color-scheme: light !important;
+}
+
+html.dark body {
+  background-color: #fff !important;
+  color: #1a202c !important;
+}
+
+html.dark h1, html.dark h2, html.dark h3, html.dark h4, html.dark h5, html.dark h6 {
+  color: #1a202c !important;
+}
+
+html.dark pre, html.dark code {
+  background-color: #f7fafc !important;
+  color: #1a202c !important;
+}
+
+html.dark blockquote {
+  background-color: #f7fafc !important;
+  color: #4a5568 !important;
+}
+
+html.dark th {
+  background-color: #f7fafc !important;
+  color: #2d3748 !important;
+}
+
+/* Hide dark mode toggle button */
+.btn-dark {
+  display: none !important;
+}
