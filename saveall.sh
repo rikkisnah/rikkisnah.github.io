@@ -25,8 +25,14 @@ else
     echo -e "${BLUE}Staging changes...${NC}"
     git add -A
 
-    # Create commit message with timestamp
-    COMMIT_MSG="Blog update: $(date '+%Y-%m-%d %H:%M:%S') from $(hostname)"
+    # Get diff summary for commit message
+    DIFF_SUMMARY=$(git diff --cached --stat)
+
+    # Create commit message with timestamp and change summary
+    COMMIT_MSG="Blog update: $(date '+%Y-%m-%d %H:%M:%S') from $(hostname)
+
+Summary of changes:
+$DIFF_SUMMARY"
 
     # Commit
     echo -e "${BLUE}Committing changes...${NC}"
