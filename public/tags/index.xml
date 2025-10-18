@@ -2,10 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://rikkisnah.github.io/tags/</link>
     <description>Recent content in Tags on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Sep 2018 00:00:00 -0700</lastBuildDate>
+    <atom:link href="https://rikkisnah.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Brother</title>
+      <link>https://rikkisnah.github.io/tags/brother/</link>
+      <pubDate>Sat, 29 Sep 2018 00:00:00 -0700</pubDate>
+      <guid>https://rikkisnah.github.io/tags/brother/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Family</title>
+      <link>https://rikkisnah.github.io/tags/family/</link>
+      <pubDate>Sat, 29 Sep 2018 00:00:00 -0700</pubDate>
+      <guid>https://rikkisnah.github.io/tags/family/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memories</title>
+      <link>https://rikkisnah.github.io/tags/memories/</link>
+      <pubDate>Sat, 29 Sep 2018 00:00:00 -0700</pubDate>
+      <guid>https://rikkisnah.github.io/tags/memories/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Poetry</title>
+      <link>https://rikkisnah.github.io/tags/poetry/</link>
+      <pubDate>Sat, 29 Sep 2018 00:00:00 -0700</pubDate>
+      <guid>https://rikkisnah.github.io/tags/poetry/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

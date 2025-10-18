@@ -73,32 +73,46 @@ draft: false
 ```
 
 ### Theme Customization
-The Ananke theme is managed as a Git submodule. To customize:
+The hugo-paper theme is managed as a Git submodule. To customize:
 - Create corresponding files in local `layouts/` directory to override theme layouts
 - Create `static/` directory for custom static assets
-- Never modify files directly in `themes/ananke/`
+- Never modify files directly in `themes/hugo-paper/`
 
-## Deployment
+## Deployment & Workflow
 
 This site is deployed to GitHub Pages using GitHub Actions (`.github/workflows/hugo.yaml`).
 
-**Workflow:**
-1. Make content changes locally
-2. Test locally with `hugo server -D`
-3. Commit and push to `main` branch
-4. GitHub Actions automatically builds and deploys the site
-5. Site is live at https://rikkisnah.github.io/
+### Manual Deployment
+Two helper scripts simplify the workflow:
 
-**GitHub Actions builds with Hugo 0.128.0**, so the site will deploy successfully even if your local Hugo version is older.
+- **`saveall.sh`** - Commit and deploy changes
+  - Stages all changes, creates commit with summary
+  - Pulls latest from remote and pushes to GitHub
+  - Triggers GitHub Actions build and deployment
+  - Usage: `./saveall.sh`
+
+- **`getall.sh`** - Pull latest updates
+  - Stashes local changes safely
+  - Pulls updates with fast-forward only (safe merge)
+  - Usage: `./getall.sh`
+
+### Standard Deployment Workflow
+1. Make content changes locally
+2. Test locally with `hugo server -D` (view at http://localhost:1313)
+3. Run `./saveall.sh` to commit and deploy
+4. GitHub Actions automatically builds and deploys the site
+5. Site is live at https://rikkisnah.github.io/ (usually within 2-3 minutes)
 
 ### Hugo Version Compatibility
 
 **Local Development:**
 - Hugo-paper theme requires **Hugo 0.57.1+**
-- Your local Hugo 0.123.7 is fully compatible
-- You can build locally with `hugo` or `hugo server -D`
-- Test locally: `hugo server` then visit http://localhost:1313
+- Any Hugo version 0.57.1 or later works for local development
+- Build locally: `hugo` (output to `public/`)
+- Preview locally: `hugo server -D` then visit http://localhost:1313
 
-**GitHub Actions:**
-- The workflow uses Hugo 0.128.0 Extended
-- Builds will succeed on GitHub and push to https://rikkisnah.github.io/
+**GitHub Actions (CI/CD):**
+- The workflow uses Hugo 0.128.0 Extended with Dart Sass
+- Builds are minified and garbage-collected for optimal site performance
+- Timezone: America/Los_Angeles (affects date rendering)
+- All builds push to https://rikkisnah.github.io/

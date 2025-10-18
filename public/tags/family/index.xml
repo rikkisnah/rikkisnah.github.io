@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Rik Kisnah - Blog</title>
-    <link>https://rikkisnah.github.io/posts/</link>
-    <description>Recent content in Posts on Rik Kisnah - Blog</description>
+    <title>Family on Rik Kisnah - Blog</title>
+    <link>https://rikkisnah.github.io/tags/family/</link>
+    <description>Recent content in Family on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 18 Oct 2024 00:00:00 -0700</lastBuildDate>
-    <atom:link href="https://rikkisnah.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My First Post</title>
-      <link>https://rikkisnah.github.io/posts/my-first-post/</link>
-      <pubDate>Fri, 18 Oct 2024 00:00:00 -0700</pubDate>
-      <guid>https://rikkisnah.github.io/posts/my-first-post/</guid>
-      <description>Hello World from Hugo! This is the content of my very first blog post. I&amp;rsquo;m excited to use GitHub Pages for free static hosting!</description>
-    </item>
+    <lastBuildDate>Sat, 29 Sep 2018 00:00:00 -0700</lastBuildDate>
+    <atom:link href="https://rikkisnah.github.io/tags/family/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Too Young to Die</title>
       <link>https://rikkisnah.github.io/posts/too-young-to-die/</link>

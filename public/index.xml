@@ -2,24 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome to Rik Kisnah&#39;s Blog on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://rikkisnah.github.io/</link>
     <description>Recent content in Welcome to Rik Kisnah&#39;s Blog on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 18 Oct 2024 00:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rikkisnah.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>https://rikkisnah.github.io/posts/my-first-post/</link>
       <pubDate>Fri, 18 Oct 2024 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>https://rikkisnah.github.io/posts/my-first-post/</guid>
       <description>Hello World from Hugo! This is the content of my very first blog post. I&amp;rsquo;m excited to use GitHub Pages for free static hosting!</description>
     </item>
     <item>
+      <title>Too Young to Die</title>
+      <link>https://rikkisnah.github.io/posts/too-young-to-die/</link>
+      <pubDate>Sat, 29 Sep 2018 00:00:00 -0700</pubDate>
+      <guid>https://rikkisnah.github.io/posts/too-young-to-die/</guid>
+      <description>A poem for my brother. Reflecting on life, family, and the passage of time.&#xA;Too Young to Die Once I was four years old, i told my mama &amp;ldquo;Pretty woman walking down the streah haha&amp;rdquo; Then she shouted at me and i said mama &amp;ldquo;You ugly woman, yacking down the stream yah&amp;rdquo;&#xA;That was then and the world was smaller And everything was so simpler and life was gentler My brother and I were running down the roads in Sodnac Drinking our dad&amp;rsquo;s secret stash of cognac</description>
+    </item>
+    <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://rikkisnah.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://rikkisnah.github.io/about/</guid>
       <description>About Me Welcome to my corner of the internet. I&amp;rsquo;m a technology enthusiast and professional based in the tech industry, passionate about exploring innovative solutions and sharing knowledge.&#xA;Professional Background I focus on technology, infrastructure, and creative problem-solving. My experience spans multiple domains, and I&amp;rsquo;m continuously learning and adapting to new technologies and methodologies.&#xA;What This Blog Is About On this blog, I share insights about technology, best practices, and interesting topics I encounter in my professional journey.</description>
     </item>
   </channel>
