@@ -36,6 +36,11 @@ theme = 'hugo-paper'
     url = "/about/"
     weight = 20
   [[menu.main]]
+    identifier = "publications"
+    name = "Publications"
+    url = "/publications/"
+    weight = 25
+  [[menu.main]]
     identifier = "resume"
     name = "Resume"
     url = "/resume/"
