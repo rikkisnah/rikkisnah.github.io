@@ -17,8 +17,9 @@ PARENT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 echo "Working in parent directory: $PARENT_DIR"
 echo ""
 
-# List of sibling project directories
+# List of all project directories (including current repo)
 dirs=(
+  rikkisnah.github.io
   oci-designs
   oci-it
   oci-interviews
