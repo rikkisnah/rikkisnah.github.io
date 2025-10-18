@@ -12,7 +12,8 @@ theme = 'hugo-paper'
   pagerSize = 10
 
 [params]
-  color = 'linen'
+  color = 'light'
+  theme = 'light'
   name = 'Rik Kisnah'
   bio = 'Exploring technology and ideas'
   linkedin = 'rikkisnah'
