@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Hugo-based static site blog hosted on GitHub Pages at https://rikkisnah.github.io/. The site uses the Ananke theme as a Git submodule.
+This is a Hugo-based static site blog hosted on GitHub Pages at https://rikkisnah.github.io/. The site uses the hugo-paper theme as a Git submodule. Hugo-paper is a simple, clean, minimal theme perfect for blogging.
 
 ## Core Commands
 
@@ -34,12 +34,12 @@ hugo new content/section-name/page-name.md
 
 ### Theme Management
 ```bash
-# Initialize/update the Ananke theme submodule
+# Initialize/update the hugo-paper theme submodule
 git submodule update --init --recursive
 
-# The theme is currently at v2.12.1 which requires Hugo 0.128.0+
-# If you have Hugo 0.128.0+ installed locally, you can update the theme:
-cd themes/ananke && git fetch --tags && git checkout <tag-version>
+# The theme is hugo-paper which requires Hugo 0.57.1+
+# Update theme to latest version:
+cd themes/hugo-paper && git fetch --tags && git checkout main && git pull
 ```
 
 ## Architecture
@@ -47,17 +47,20 @@ cd themes/ananke && git fetch --tags && git checkout <tag-version>
 ### Site Structure
 - `content/` - All site content in Markdown format
   - `content/posts/` - Blog posts
-  - `content/_index.md` - Homepage content placeholder (not rendered)
-- `themes/ananke/` - Ananke theme (Git submodule, do not modify directly)
+  - `content/_index.md` - Homepage content
+- `themes/hugo-paper/` - Hugo-paper theme (Git submodule, do not modify directly)
 - `hugo.toml` - Main site configuration
 - `public/` - Generated static site (git-ignored, created by `hugo` build command)
+- `saveall.sh` - Script for committing and deploying changes
 
 ### Configuration
 The site configuration in `hugo.toml` includes:
-- Theme: 'ananke'
+- Theme: 'hugo-paper' (simple, clean, minimal blogging theme)
 - Base URL: https://rikkisnah.github.io/
-- Language: en-us
+- Language: en
 - Title: 'Rik Kisnah - Blog'
+- Menu: Posts and About pages
+- Params: Author name, bio, color scheme
 
 ### Content Front Matter
 Blog posts should include front matter with at least:
@@ -88,15 +91,14 @@ This site is deployed to GitHub Pages using GitHub Actions (`.github/workflows/h
 
 **GitHub Actions builds with Hugo 0.128.0**, so the site will deploy successfully even if your local Hugo version is older.
 
-### Important Note on Hugo Version
+### Hugo Version Compatibility
 
 **Local Development:**
-- The Ananke theme is at **v2.12.1** which requires **Hugo 0.128.0+**
-- If your local Hugo version is older (e.g., 0.123.7), you won't be able to build locally
-- You have two options:
-  1. Upgrade Hugo locally: Download from https://github.com/gohugoio/hugo/releases
-  2. Skip local builds and rely on GitHub Actions (which uses Hugo 0.128.0)
+- Hugo-paper theme requires **Hugo 0.57.1+**
+- Your local Hugo 0.123.7 is fully compatible
+- You can build locally with `hugo` or `hugo server -D`
+- Test locally: `hugo server` then visit http://localhost:1313
 
 **GitHub Actions:**
-- The workflow uses Hugo 0.128.0, so builds will succeed on GitHub regardless of your local version
-- Simply push your changes and GitHub Actions will build and deploy automatically
+- The workflow uses Hugo 0.128.0 Extended
+- Builds will succeed on GitHub and push to https://rikkisnah.github.io/

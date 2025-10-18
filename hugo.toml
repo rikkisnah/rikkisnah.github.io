@@ -1,4 +1,38 @@
-theme = 'ananke'
-baseURL = 'https://rikkisnah.github.io/' # MUST be your user site URL
-languageCode = 'en-us'
+baseURL = 'https://rikkisnah.github.io/'
 title = 'Rik Kisnah - Blog'
+author = 'Rik Kisnah'
+languageCode = 'en'
+DefaultContentLanguage = 'en'
+enableInlineShortcodes = true
+ignoreErrors = ["error-remote-getjson"]
+
+theme = 'hugo-paper'
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  color = 'linen'
+  name = 'Rik Kisnah'
+  bio = 'Exploring technology and ideas'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+[taxonomies]
+category = "categories"
+tag = "tags"
