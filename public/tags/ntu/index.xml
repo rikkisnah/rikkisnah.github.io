@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ntu on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/ntu/</link>
+    <link>https://rikkisnah.github.io/tags/ntu/</link>
     <description>Recent content in Ntu on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 17 Sep 2001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ntu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rikkisnah.github.io/tags/ntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Early Linux at NTU: Open Source Becomes Real</title>
-      <link>http://localhost:1313/posts/early-linux-at-ntu/</link>
+      <link>https://rikkisnah.github.io/posts/early-linux-at-ntu/</link>
       <pubDate>Mon, 17 Sep 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/early-linux-at-ntu/</guid>
+      <guid>https://rikkisnah.github.io/posts/early-linux-at-ntu/</guid>
       <description>The Linux Revolution Reaches NTU By September 2001, Linux was transitioning from hobbyist project to legitimate alternative to proprietary Unix systems. NTU, as a forward-thinking institution, started deploying Linux in labs. After years of expensive proprietary systems, here was an free, open operating system that actually worked.&#xA;For students raised on Windows, encountering Linux was revelatory. The source code was available. You could modify it. You could understand how everything worked down to the kernel level.</description>
     </item>
     <item>
       <title>Y2K Plus One: The Aftermath and What We Learned</title>
-      <link>http://localhost:1313/posts/y2k-debugging-may-2001/</link>
+      <link>https://rikkisnah.github.io/posts/y2k-debugging-may-2001/</link>
       <pubDate>Sun, 20 May 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/y2k-debugging-may-2001/</guid>
+      <guid>https://rikkisnah.github.io/posts/y2k-debugging-may-2001/</guid>
       <description>May 2001: The Dust Settles Five months after the millennium, the dust was settling. The Y2K crisis hadn&amp;rsquo;t happened. Systems worked. Planes didn&amp;rsquo;t fall from the sky. The banking system didn&amp;rsquo;t collapse. We had succeeded—or had we? Was the success because of our fixes, or was the threat vastly overstated?&#xA;By May 2001, I was analyzing what we&amp;rsquo;d learned from the entire Y2K experience. What worked? What was unnecessary? What principles would guide my future work?</description>
     </item>
     <item>
       <title>Java Security: The Sandbox That Tried Too Hard</title>
-      <link>http://localhost:1313/posts/java-applets-in-dorms-nov-2000/</link>
+      <link>https://rikkisnah.github.io/posts/java-applets-in-dorms-nov-2000/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/java-applets-in-dorms-nov-2000/</guid>
+      <guid>https://rikkisnah.github.io/posts/java-applets-in-dorms-nov-2000/</guid>
       <description>The Security Dream By November 2000, Java&amp;rsquo;s security sandbox had become the most important—and most frustrating—aspect of applet development. Sun Microsystems had made bold promises: Java applets would be safe to run from any source. The sandboxing mechanism would prevent malicious code from accessing your files, your network, or your system.&#xA;The idea was revolutionary. For the first time, you could download and run code from unknown sources with reasonable confidence that it wouldn&amp;rsquo;t destroy your computer.</description>
     </item>
     <item>
       <title>Java Applet Optimization: When Performance Matters</title>
-      <link>http://localhost:1313/posts/java-applets-in-dorms-aug-2000/</link>
+      <link>https://rikkisnah.github.io/posts/java-applets-in-dorms-aug-2000/</link>
       <pubDate>Wed, 23 Aug 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/java-applets-in-dorms-aug-2000/</guid>
+      <guid>https://rikkisnah.github.io/posts/java-applets-in-dorms-aug-2000/</guid>
       <description>The Performance Problem By August 2000, the initial enthusiasm for Java applets had collided with reality. Users were experiencing slow startup times. Applets would download, then take forever to initialize. The promise of &amp;ldquo;instant interactive applications&amp;rdquo; was turning into &amp;ldquo;stare at your screen and wait.&amp;rdquo;&#xA;As a student juggling multiple projects in dorm rooms with limited resources, performance became critical. Our dormitory network had limited bandwidth. Our machines had limited RAM.</description>
     </item>
     <item>
       <title>Wi-Fi Scaling: From Lab Experiments to Campus Networks</title>
-      <link>http://localhost:1313/posts/wifi-experiments-singapore-2000/</link>
+      <link>https://rikkisnah.github.io/posts/wifi-experiments-singapore-2000/</link>
       <pubDate>Thu, 25 May 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/wifi-experiments-singapore-2000/</guid>
+      <guid>https://rikkisnah.github.io/posts/wifi-experiments-singapore-2000/</guid>
       <description>From Lab Success to Production By May 2000, our Wi-Fi experiments from 1999 had proven successful enough that NTU was considering a campus-wide deployment. This wasn&amp;rsquo;t just about adding more access points; it was about understanding how wireless networks could scale from experimental hobby to critical infrastructure.&#xA;The challenge shifted from &amp;ldquo;can we do this?&amp;rdquo; to &amp;ldquo;how do we do this reliably for hundreds of users simultaneously?&amp;rdquo;&#xA;Scaling Wireless Networks I spent weeks scaling solutions, grappling with the complexities of managing a distributed network of access points.</description>
     </item>
     <item>
       <title>Java Applets In Dorms: The Browser Wars Begin</title>
-      <link>http://localhost:1313/posts/java-applets-in-dorms-feb-2000/</link>
+      <link>https://rikkisnah.github.io/posts/java-applets-in-dorms-feb-2000/</link>
       <pubDate>Fri, 25 Feb 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/java-applets-in-dorms-feb-2000/</guid>
+      <guid>https://rikkisnah.github.io/posts/java-applets-in-dorms-feb-2000/</guid>
       <description>Java: The Future of Computing? In February 2000, just two months after the Y2K celebration, the tech world buzzed with a different promise: write once, run anywhere. Java was going to revolutionize computing. Sun Microsystems was betting big on applets—small Java programs that would run in web browsers, turning the browser into a universal application platform.&#xA;As an NTU student in the dorms, I had front-row access to this revolution. Every lab machine had Java installed.</description>
     </item>
     <item>
       <title>Y2K Final Sprint: September 1999</title>
-      <link>http://localhost:1313/posts/y2k-debugging-september-1999/</link>
+      <link>https://rikkisnah.github.io/posts/y2k-debugging-september-1999/</link>
       <pubDate>Tue, 28 Sep 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/y2k-debugging-september-1999/</guid>
+      <guid>https://rikkisnah.github.io/posts/y2k-debugging-september-1999/</guid>
       <description>94 Days to Midnight September 28, 1999. Just 94 days until January 1, 2000. The reality of Y2K was no longer abstract—it was imminent. In the NTU labs, we had shifted from &amp;ldquo;let&amp;rsquo;s fix this&amp;rdquo; to &amp;ldquo;we must fix this NOW.&amp;rdquo; The atmosphere was urgent but focused.&#xA;The Final Push By September, we were debugging solutions at a frantic pace. Every day brought discoveries of systems we hadn&amp;rsquo;t yet examined. Banks were reaching out.</description>
     </item>
     <item>
       <title>Wi-Fi Experiments Singapore: Reflections from 1999</title>
-      <link>http://localhost:1313/posts/wifi-experiments-singapore-1999/</link>
+      <link>https://rikkisnah.github.io/posts/wifi-experiments-singapore-1999/</link>
       <pubDate>Fri, 30 Jul 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/wifi-experiments-singapore-1999/</guid>
+      <guid>https://rikkisnah.github.io/posts/wifi-experiments-singapore-1999/</guid>
       <description>Wireless Revolution Begins By July 1999, Wi-Fi technology was emerging from IEEE 802.11 specifications into practical reality. Singapore, as a forward-thinking tech hub, was one of the first places to experiment with widespread wireless networking. As an NTU student, I had access to some of these early deployments, and the possibilities seemed limitless.&#xA;The Technical Frontier I spent weeks debugging solutions for wireless connectivity. The early Wi-Fi standards had significant challenges.</description>
     </item>
     <item>
       <title>Matrix Neural Net Dreams: Reflections from 1999</title>
-      <link>http://localhost:1313/posts/matrix-neural-net-dreams/</link>
+      <link>https://rikkisnah.github.io/posts/matrix-neural-net-dreams/</link>
       <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/matrix-neural-net-dreams/</guid>
+      <guid>https://rikkisnah.github.io/posts/matrix-neural-net-dreams/</guid>
       <description>The Dream of Artificial Intelligence In May 1999, while the world was preoccupied with the approaching Y2K crisis, I found myself exploring something entirely different in the NTU labs: neural networks. The term &amp;ldquo;neural net dreams&amp;rdquo; might sound whimsical now, but in 1999, this was genuinely visionary work. We were exploring how computers could learn from data, much like the human brain.&#xA;The Technical Challenge Matrix operations are the backbone of neural networks.</description>
     </item>
     <item>
       <title>Y2K Optimization: Scaling Solutions in 1999</title>
-      <link>http://localhost:1313/posts/y2k-debugging-march-1999/</link>
+      <link>https://rikkisnah.github.io/posts/y2k-debugging-march-1999/</link>
       <pubDate>Tue, 02 Mar 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/y2k-debugging-march-1999/</guid>
+      <guid>https://rikkisnah.github.io/posts/y2k-debugging-march-1999/</guid>
       <description>Nine Months to Midnight By March 1999, the reality of Y2K had settled in. We weren&amp;rsquo;t just fixing individual bugs anymore—we were optimizing entire systems to handle the load. The early fixes had been successful, but now came the challenge of scaling: how do you ensure that millions of transactions process correctly when systems are running parallel validation checks?&#xA;The Optimization Journey As an NTU student, I spent weeks optimizing solutions, shifting from &amp;ldquo;getting it to work&amp;rdquo; to &amp;ldquo;getting it to work efficiently.</description>
     </item>
     <item>
       <title>Y2K Debugging: Reflections from 1999</title>
-      <link>http://localhost:1313/posts/y2k-debugging-1999/</link>
+      <link>https://rikkisnah.github.io/posts/y2k-debugging-1999/</link>
       <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/y2k-debugging-1999/</guid>
+      <guid>https://rikkisnah.github.io/posts/y2k-debugging-1999/</guid>
       <description>The Millennium Bug Looms As an NTU student in Singapore during the waning days of 1998 and early 1999, I found myself swept up in what would become the defining technical challenge of the era: Y2K debugging. The humid labs of Nanyang Technological University buzzed with anxiety and excitement as midnight on December 31st approached—would systems across the world crash when the calendar rolled from 1999 to 2000?&#xA;The Challenge In 1999, Y2K debugging was all the rage—or at least in my corner of the tech world.</description>
     </item>
   </channel>

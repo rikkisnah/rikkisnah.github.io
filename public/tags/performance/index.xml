@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Performance on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/performance/</link>
+    <link>https://rikkisnah.github.io/tags/performance/</link>
     <description>Recent content in Performance on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 23 Aug 2000 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rikkisnah.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java Applet Optimization: When Performance Matters</title>
-      <link>http://localhost:1313/posts/java-applets-in-dorms-aug-2000/</link>
+      <link>https://rikkisnah.github.io/posts/java-applets-in-dorms-aug-2000/</link>
       <pubDate>Wed, 23 Aug 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/java-applets-in-dorms-aug-2000/</guid>
+      <guid>https://rikkisnah.github.io/posts/java-applets-in-dorms-aug-2000/</guid>
       <description>The Performance Problem By August 2000, the initial enthusiasm for Java applets had collided with reality. Users were experiencing slow startup times. Applets would download, then take forever to initialize. The promise of &amp;ldquo;instant interactive applications&amp;rdquo; was turning into &amp;ldquo;stare at your screen and wait.&amp;rdquo;&#xA;As a student juggling multiple projects in dorm rooms with limited resources, performance became critical. Our dormitory network had limited bandwidth. Our machines had limited RAM.</description>
     </item>
   </channel>

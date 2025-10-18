@@ -2,395 +2,395 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://rikkisnah.github.io/tags/</link>
     <description>Recent content in Tags on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 29 May 2016 00:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rikkisnah.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Brother</title>
-      <link>http://localhost:1313/tags/brother/</link>
+      <link>https://rikkisnah.github.io/tags/brother/</link>
       <pubDate>Sun, 29 May 2016 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/brother/</guid>
+      <guid>https://rikkisnah.github.io/tags/brother/</guid>
       <description></description>
     </item>
     <item>
       <title>Family</title>
-      <link>http://localhost:1313/tags/family/</link>
+      <link>https://rikkisnah.github.io/tags/family/</link>
       <pubDate>Sun, 29 May 2016 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/family/</guid>
+      <guid>https://rikkisnah.github.io/tags/family/</guid>
       <description></description>
     </item>
     <item>
       <title>Memories</title>
-      <link>http://localhost:1313/tags/memories/</link>
+      <link>https://rikkisnah.github.io/tags/memories/</link>
       <pubDate>Sun, 29 May 2016 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/memories/</guid>
+      <guid>https://rikkisnah.github.io/tags/memories/</guid>
       <description></description>
     </item>
     <item>
       <title>Poetry</title>
-      <link>http://localhost:1313/tags/poetry/</link>
+      <link>https://rikkisnah.github.io/tags/poetry/</link>
       <pubDate>Sun, 29 May 2016 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/poetry/</guid>
+      <guid>https://rikkisnah.github.io/tags/poetry/</guid>
       <description></description>
     </item>
     <item>
       <title>2003</title>
-      <link>http://localhost:1313/tags/2003/</link>
+      <link>https://rikkisnah.github.io/tags/2003/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/2003/</guid>
+      <guid>https://rikkisnah.github.io/tags/2003/</guid>
       <description></description>
     </item>
     <item>
       <title>Distribution</title>
-      <link>http://localhost:1313/tags/distribution/</link>
+      <link>https://rikkisnah.github.io/tags/distribution/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/distribution/</guid>
+      <guid>https://rikkisnah.github.io/tags/distribution/</guid>
       <description></description>
     </item>
     <item>
       <title>Ipod</title>
-      <link>http://localhost:1313/tags/ipod/</link>
+      <link>https://rikkisnah.github.io/tags/ipod/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ipod/</guid>
+      <guid>https://rikkisnah.github.io/tags/ipod/</guid>
       <description></description>
     </item>
     <item>
       <title>Motorola</title>
-      <link>http://localhost:1313/tags/motorola/</link>
+      <link>https://rikkisnah.github.io/tags/motorola/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/motorola/</guid>
+      <guid>https://rikkisnah.github.io/tags/motorola/</guid>
       <description></description>
     </item>
     <item>
       <title>Music</title>
-      <link>http://localhost:1313/tags/music/</link>
+      <link>https://rikkisnah.github.io/tags/music/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/music/</guid>
+      <guid>https://rikkisnah.github.io/tags/music/</guid>
       <description></description>
     </item>
     <item>
       <title>Scaling</title>
-      <link>http://localhost:1313/tags/scaling/</link>
+      <link>https://rikkisnah.github.io/tags/scaling/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/scaling/</guid>
+      <guid>https://rikkisnah.github.io/tags/scaling/</guid>
       <description></description>
     </item>
     <item>
       <title>Wireless</title>
-      <link>http://localhost:1313/tags/wireless/</link>
+      <link>https://rikkisnah.github.io/tags/wireless/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/wireless/</guid>
+      <guid>https://rikkisnah.github.io/tags/wireless/</guid>
       <description></description>
     </item>
     <item>
       <title>Architecture</title>
-      <link>http://localhost:1313/tags/architecture/</link>
+      <link>https://rikkisnah.github.io/tags/architecture/</link>
       <pubDate>Sat, 10 May 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/architecture/</guid>
+      <guid>https://rikkisnah.github.io/tags/architecture/</guid>
       <description></description>
     </item>
     <item>
       <title>Modularity</title>
-      <link>http://localhost:1313/tags/modularity/</link>
+      <link>https://rikkisnah.github.io/tags/modularity/</link>
       <pubDate>Sat, 10 May 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/modularity/</guid>
+      <guid>https://rikkisnah.github.io/tags/modularity/</guid>
       <description></description>
     </item>
     <item>
       <title>Bluetooth</title>
-      <link>http://localhost:1313/tags/bluetooth/</link>
+      <link>https://rikkisnah.github.io/tags/bluetooth/</link>
       <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/bluetooth/</guid>
+      <guid>https://rikkisnah.github.io/tags/bluetooth/</guid>
       <description></description>
     </item>
     <item>
       <title>Production</title>
-      <link>http://localhost:1313/tags/production/</link>
+      <link>https://rikkisnah.github.io/tags/production/</link>
       <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/production/</guid>
+      <guid>https://rikkisnah.github.io/tags/production/</guid>
       <description></description>
     </item>
     <item>
       <title>Standardization</title>
-      <link>http://localhost:1313/tags/standardization/</link>
+      <link>https://rikkisnah.github.io/tags/standardization/</link>
       <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/standardization/</guid>
+      <guid>https://rikkisnah.github.io/tags/standardization/</guid>
       <description></description>
     </item>
     <item>
       <title>Mobile-Os</title>
-      <link>http://localhost:1313/tags/mobile-os/</link>
+      <link>https://rikkisnah.github.io/tags/mobile-os/</link>
       <pubDate>Fri, 10 Jan 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mobile-os/</guid>
+      <guid>https://rikkisnah.github.io/tags/mobile-os/</guid>
       <description></description>
     </item>
     <item>
       <title>Operating-Systems</title>
-      <link>http://localhost:1313/tags/operating-systems/</link>
+      <link>https://rikkisnah.github.io/tags/operating-systems/</link>
       <pubDate>Fri, 10 Jan 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/operating-systems/</guid>
+      <guid>https://rikkisnah.github.io/tags/operating-systems/</guid>
       <description></description>
     </item>
     <item>
       <title>Smartphones</title>
-      <link>http://localhost:1313/tags/smartphones/</link>
+      <link>https://rikkisnah.github.io/tags/smartphones/</link>
       <pubDate>Fri, 10 Jan 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/smartphones/</guid>
+      <guid>https://rikkisnah.github.io/tags/smartphones/</guid>
       <description></description>
     </item>
     <item>
       <title>Symbian</title>
-      <link>http://localhost:1313/tags/symbian/</link>
+      <link>https://rikkisnah.github.io/tags/symbian/</link>
       <pubDate>Fri, 10 Jan 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/symbian/</guid>
+      <guid>https://rikkisnah.github.io/tags/symbian/</guid>
       <description></description>
     </item>
     <item>
       <title>2002</title>
-      <link>http://localhost:1313/tags/2002/</link>
+      <link>https://rikkisnah.github.io/tags/2002/</link>
       <pubDate>Sat, 12 Oct 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/2002/</guid>
+      <guid>https://rikkisnah.github.io/tags/2002/</guid>
       <description></description>
     </item>
     <item>
       <title>Integration</title>
-      <link>http://localhost:1313/tags/integration/</link>
+      <link>https://rikkisnah.github.io/tags/integration/</link>
       <pubDate>Sat, 12 Oct 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/integration/</guid>
+      <guid>https://rikkisnah.github.io/tags/integration/</guid>
       <description></description>
     </item>
     <item>
       <title>Iteration</title>
-      <link>http://localhost:1313/tags/iteration/</link>
+      <link>https://rikkisnah.github.io/tags/iteration/</link>
       <pubDate>Sat, 12 Oct 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/iteration/</guid>
+      <guid>https://rikkisnah.github.io/tags/iteration/</guid>
       <description></description>
     </item>
     <item>
       <title>Connectivity</title>
-      <link>http://localhost:1313/tags/connectivity/</link>
+      <link>https://rikkisnah.github.io/tags/connectivity/</link>
       <pubDate>Tue, 13 Aug 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/connectivity/</guid>
+      <guid>https://rikkisnah.github.io/tags/connectivity/</guid>
       <description></description>
     </item>
     <item>
       <title>Protocols</title>
-      <link>http://localhost:1313/tags/protocols/</link>
+      <link>https://rikkisnah.github.io/tags/protocols/</link>
       <pubDate>Tue, 13 Aug 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/protocols/</guid>
+      <guid>https://rikkisnah.github.io/tags/protocols/</guid>
       <description></description>
     </item>
     <item>
       <title>Mobile</title>
-      <link>http://localhost:1313/tags/mobile/</link>
+      <link>https://rikkisnah.github.io/tags/mobile/</link>
       <pubDate>Wed, 15 May 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mobile/</guid>
+      <guid>https://rikkisnah.github.io/tags/mobile/</guid>
       <description></description>
     </item>
     <item>
       <title>3g</title>
-      <link>http://localhost:1313/tags/3g/</link>
+      <link>https://rikkisnah.github.io/tags/3g/</link>
       <pubDate>Thu, 14 Feb 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/3g/</guid>
+      <guid>https://rikkisnah.github.io/tags/3g/</guid>
       <description></description>
     </item>
     <item>
       <title>Telecommunications</title>
-      <link>http://localhost:1313/tags/telecommunications/</link>
+      <link>https://rikkisnah.github.io/tags/telecommunications/</link>
       <pubDate>Thu, 14 Feb 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/telecommunications/</guid>
+      <guid>https://rikkisnah.github.io/tags/telecommunications/</guid>
       <description></description>
     </item>
     <item>
       <title>2001</title>
-      <link>http://localhost:1313/tags/2001/</link>
+      <link>https://rikkisnah.github.io/tags/2001/</link>
       <pubDate>Mon, 17 Sep 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/2001/</guid>
+      <guid>https://rikkisnah.github.io/tags/2001/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>https://rikkisnah.github.io/tags/linux/</link>
       <pubDate>Mon, 17 Sep 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>https://rikkisnah.github.io/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Ntu</title>
-      <link>http://localhost:1313/tags/ntu/</link>
+      <link>https://rikkisnah.github.io/tags/ntu/</link>
       <pubDate>Mon, 17 Sep 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ntu/</guid>
+      <guid>https://rikkisnah.github.io/tags/ntu/</guid>
       <description></description>
     </item>
     <item>
       <title>Open-Source</title>
-      <link>http://localhost:1313/tags/open-source/</link>
+      <link>https://rikkisnah.github.io/tags/open-source/</link>
       <pubDate>Mon, 17 Sep 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/open-source/</guid>
+      <guid>https://rikkisnah.github.io/tags/open-source/</guid>
       <description></description>
     </item>
     <item>
       <title>Systems</title>
-      <link>http://localhost:1313/tags/systems/</link>
+      <link>https://rikkisnah.github.io/tags/systems/</link>
       <pubDate>Mon, 17 Sep 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/systems/</guid>
+      <guid>https://rikkisnah.github.io/tags/systems/</guid>
       <description></description>
     </item>
     <item>
       <title>Lessons</title>
-      <link>http://localhost:1313/tags/lessons/</link>
+      <link>https://rikkisnah.github.io/tags/lessons/</link>
       <pubDate>Sun, 20 May 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/lessons/</guid>
+      <guid>https://rikkisnah.github.io/tags/lessons/</guid>
       <description></description>
     </item>
     <item>
       <title>Post-Mortem</title>
-      <link>http://localhost:1313/tags/post-mortem/</link>
+      <link>https://rikkisnah.github.io/tags/post-mortem/</link>
       <pubDate>Sun, 20 May 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/post-mortem/</guid>
+      <guid>https://rikkisnah.github.io/tags/post-mortem/</guid>
       <description></description>
     </item>
     <item>
       <title>Y2k</title>
-      <link>http://localhost:1313/tags/y2k/</link>
+      <link>https://rikkisnah.github.io/tags/y2k/</link>
       <pubDate>Sun, 20 May 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/y2k/</guid>
+      <guid>https://rikkisnah.github.io/tags/y2k/</guid>
       <description></description>
     </item>
     <item>
       <title>2000</title>
-      <link>http://localhost:1313/tags/2000/</link>
+      <link>https://rikkisnah.github.io/tags/2000/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/2000/</guid>
+      <guid>https://rikkisnah.github.io/tags/2000/</guid>
       <description></description>
     </item>
     <item>
       <title>Applets</title>
-      <link>http://localhost:1313/tags/applets/</link>
+      <link>https://rikkisnah.github.io/tags/applets/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/applets/</guid>
+      <guid>https://rikkisnah.github.io/tags/applets/</guid>
       <description></description>
     </item>
     <item>
       <title>Java</title>
-      <link>http://localhost:1313/tags/java/</link>
+      <link>https://rikkisnah.github.io/tags/java/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/java/</guid>
+      <guid>https://rikkisnah.github.io/tags/java/</guid>
       <description></description>
     </item>
     <item>
       <title>Sandbox</title>
-      <link>http://localhost:1313/tags/sandbox/</link>
+      <link>https://rikkisnah.github.io/tags/sandbox/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sandbox/</guid>
+      <guid>https://rikkisnah.github.io/tags/sandbox/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>http://localhost:1313/tags/security/</link>
+      <link>https://rikkisnah.github.io/tags/security/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/security/</guid>
+      <guid>https://rikkisnah.github.io/tags/security/</guid>
       <description></description>
     </item>
     <item>
       <title>Optimization</title>
-      <link>http://localhost:1313/tags/optimization/</link>
+      <link>https://rikkisnah.github.io/tags/optimization/</link>
       <pubDate>Wed, 23 Aug 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/optimization/</guid>
+      <guid>https://rikkisnah.github.io/tags/optimization/</guid>
       <description></description>
     </item>
     <item>
       <title>Performance</title>
-      <link>http://localhost:1313/tags/performance/</link>
+      <link>https://rikkisnah.github.io/tags/performance/</link>
       <pubDate>Wed, 23 Aug 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/performance/</guid>
+      <guid>https://rikkisnah.github.io/tags/performance/</guid>
       <description></description>
     </item>
     <item>
       <title>Networking</title>
-      <link>http://localhost:1313/tags/networking/</link>
+      <link>https://rikkisnah.github.io/tags/networking/</link>
       <pubDate>Thu, 25 May 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/networking/</guid>
+      <guid>https://rikkisnah.github.io/tags/networking/</guid>
       <description></description>
     </item>
     <item>
       <title>Wifi</title>
-      <link>http://localhost:1313/tags/wifi/</link>
+      <link>https://rikkisnah.github.io/tags/wifi/</link>
       <pubDate>Thu, 25 May 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/wifi/</guid>
+      <guid>https://rikkisnah.github.io/tags/wifi/</guid>
       <description></description>
     </item>
     <item>
       <title>Browser</title>
-      <link>http://localhost:1313/tags/browser/</link>
+      <link>https://rikkisnah.github.io/tags/browser/</link>
       <pubDate>Fri, 25 Feb 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/browser/</guid>
+      <guid>https://rikkisnah.github.io/tags/browser/</guid>
       <description></description>
     </item>
     <item>
       <title>Dorms</title>
-      <link>http://localhost:1313/tags/dorms/</link>
+      <link>https://rikkisnah.github.io/tags/dorms/</link>
       <pubDate>Fri, 25 Feb 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/dorms/</guid>
+      <guid>https://rikkisnah.github.io/tags/dorms/</guid>
       <description></description>
     </item>
     <item>
       <title>Debugging</title>
-      <link>http://localhost:1313/tags/debugging/</link>
+      <link>https://rikkisnah.github.io/tags/debugging/</link>
       <pubDate>Tue, 28 Sep 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/debugging/</guid>
+      <guid>https://rikkisnah.github.io/tags/debugging/</guid>
       <description></description>
     </item>
     <item>
       <title>Millennium</title>
-      <link>http://localhost:1313/tags/millennium/</link>
+      <link>https://rikkisnah.github.io/tags/millennium/</link>
       <pubDate>Tue, 28 Sep 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/millennium/</guid>
+      <guid>https://rikkisnah.github.io/tags/millennium/</guid>
       <description></description>
     </item>
     <item>
       <title>September-1999</title>
-      <link>http://localhost:1313/tags/september-1999/</link>
+      <link>https://rikkisnah.github.io/tags/september-1999/</link>
       <pubDate>Tue, 28 Sep 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/september-1999/</guid>
+      <guid>https://rikkisnah.github.io/tags/september-1999/</guid>
       <description></description>
     </item>
     <item>
       <title>1999</title>
-      <link>http://localhost:1313/tags/1999/</link>
+      <link>https://rikkisnah.github.io/tags/1999/</link>
       <pubDate>Fri, 30 Jul 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/1999/</guid>
+      <guid>https://rikkisnah.github.io/tags/1999/</guid>
       <description></description>
     </item>
     <item>
       <title>Singapore</title>
-      <link>http://localhost:1313/tags/singapore/</link>
+      <link>https://rikkisnah.github.io/tags/singapore/</link>
       <pubDate>Fri, 30 Jul 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/singapore/</guid>
+      <guid>https://rikkisnah.github.io/tags/singapore/</guid>
       <description></description>
     </item>
     <item>
       <title>Ai</title>
-      <link>http://localhost:1313/tags/ai/</link>
+      <link>https://rikkisnah.github.io/tags/ai/</link>
       <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <guid>https://rikkisnah.github.io/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Matrices</title>
-      <link>http://localhost:1313/tags/matrices/</link>
+      <link>https://rikkisnah.github.io/tags/matrices/</link>
       <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/matrices/</guid>
+      <guid>https://rikkisnah.github.io/tags/matrices/</guid>
       <description></description>
     </item>
     <item>
       <title>Neural-Networks</title>
-      <link>http://localhost:1313/tags/neural-networks/</link>
+      <link>https://rikkisnah.github.io/tags/neural-networks/</link>
       <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/neural-networks/</guid>
+      <guid>https://rikkisnah.github.io/tags/neural-networks/</guid>
       <description></description>
     </item>
   </channel>

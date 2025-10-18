@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mobile-Os on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/mobile-os/</link>
+    <link>https://rikkisnah.github.io/tags/mobile-os/</link>
     <description>Recent content in Mobile-Os on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 10 Jan 2003 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/mobile-os/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rikkisnah.github.io/tags/mobile-os/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Symbian OS: The Mobile Operating System Wars</title>
-      <link>http://localhost:1313/posts/symbian-os-hacks-motorola/</link>
+      <link>https://rikkisnah.github.io/posts/symbian-os-hacks-motorola/</link>
       <pubDate>Fri, 10 Jan 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/symbian-os-hacks-motorola/</guid>
+      <guid>https://rikkisnah.github.io/posts/symbian-os-hacks-motorola/</guid>
       <description>The OS Wars Intensify By January 2003, it was clear that mobile phones were becoming mini-computers. The question was: what operating system would power them? Windows Mobile existed but was bloated. Linux was open source but immature on mobile. And there was Symbian—an elegant operating system designed specifically for mobile devices from the ground up.&#xA;Motorola was exploring Symbian. At the factory floor, I spent weeks scaling Symbian solutions—trying to understand how to build robust, feature-rich applications on this novel platform.</description>
     </item>
   </channel>

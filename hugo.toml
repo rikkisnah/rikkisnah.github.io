@@ -15,7 +15,7 @@ theme = 'hugo-paper'
   color = 'light'
   theme = 'light'
   name = 'Rik Kisnah'
-  bio = 'Exploring technology and ideas'
+  bio = 'Engineer, husband, father. Building AI/GPU cloud infrastructure by day, sharing lessons learned by night. Faith and family first.'
   linkedin = 'rikkisnah'
   github = 'rikkisnah'
 
@@ -35,6 +35,11 @@ theme = 'hugo-paper'
     name = "About"
     url = "/about/"
     weight = 20
+  [[menu.main]]
+    identifier = "resume"
+    name = "Resume"
+    url = "/resume/"
+    weight = 30
 
 [taxonomies]
 category = "categories"
