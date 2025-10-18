@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matrices on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/matrices/</link>
+    <link>https://rikkisnah.github.io/tags/matrices/</link>
     <description>Recent content in Matrices on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 May 1999 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/matrices/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rikkisnah.github.io/tags/matrices/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Matrix Neural Net Dreams: Reflections from 1999</title>
-      <link>http://localhost:1313/posts/matrix-neural-net-dreams/</link>
+      <link>https://rikkisnah.github.io/posts/matrix-neural-net-dreams/</link>
       <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/matrix-neural-net-dreams/</guid>
+      <guid>https://rikkisnah.github.io/posts/matrix-neural-net-dreams/</guid>
       <description>The Dream of Artificial Intelligence In May 1999, while the world was preoccupied with the approaching Y2K crisis, I found myself exploring something entirely different in the NTU labs: neural networks. The term &amp;ldquo;neural net dreams&amp;rdquo; might sound whimsical now, but in 1999, this was genuinely visionary work. We were exploring how computers could learn from data, much like the human brain.&#xA;The Technical Challenge Matrix operations are the backbone of neural networks.</description>
     </item>
   </channel>

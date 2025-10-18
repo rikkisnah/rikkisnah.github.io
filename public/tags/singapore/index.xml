@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Singapore on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/singapore/</link>
+    <link>https://rikkisnah.github.io/tags/singapore/</link>
     <description>Recent content in Singapore on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 30 Jul 1999 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/singapore/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rikkisnah.github.io/tags/singapore/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wi-Fi Experiments Singapore: Reflections from 1999</title>
-      <link>http://localhost:1313/posts/wifi-experiments-singapore-1999/</link>
+      <link>https://rikkisnah.github.io/posts/wifi-experiments-singapore-1999/</link>
       <pubDate>Fri, 30 Jul 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/wifi-experiments-singapore-1999/</guid>
+      <guid>https://rikkisnah.github.io/posts/wifi-experiments-singapore-1999/</guid>
       <description>Wireless Revolution Begins By July 1999, Wi-Fi technology was emerging from IEEE 802.11 specifications into practical reality. Singapore, as a forward-thinking tech hub, was one of the first places to experiment with widespread wireless networking. As an NTU student, I had access to some of these early deployments, and the possibilities seemed limitless.&#xA;The Technical Frontier I spent weeks debugging solutions for wireless connectivity. The early Wi-Fi standards had significant challenges.</description>
     </item>
   </channel>
