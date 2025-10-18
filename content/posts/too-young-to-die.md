@@ -6,6 +6,11 @@ tags: ["family", "poetry", "brother", "memories"]
 ---
 
 A poem for my brother. Reflecting on life, family, and the passage of time.
+---
+### In Remembrance
+
+[Memorial and Remembrance for Ranjiv](https://youtu.be/nc3k6MO_ZDI)
+
 
 ## Too Young to Die
 
@@ -83,6 +88,3 @@ A poem for my brother. Reflecting on life, family, and the passage of time.
 
 ---
 
-### In Remembrance
-
-[Memorial and Remembrance for Ranjiv](https://youtu.be/nc3k6MO_ZDI)
