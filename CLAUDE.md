@@ -37,9 +37,9 @@ hugo new content/section-name/page-name.md
 # Initialize/update the Ananke theme submodule
 git submodule update --init --recursive
 
-# The theme is currently pinned to v2.9.2 for local compatibility with Hugo 0.123.7
-# To update theme (requires Hugo 0.128.0+):
-# cd themes/ananke && git checkout main && git pull
+# The theme is currently at v2.12.1 which requires Hugo 0.128.0+
+# If you have Hugo 0.128.0+ installed locally, you can update the theme:
+cd themes/ananke && git fetch --tags && git checkout <tag-version>
 ```
 
 ## Architecture
@@ -88,5 +88,15 @@ This site is deployed to GitHub Pages using GitHub Actions (`.github/workflows/h
 
 **GitHub Actions builds with Hugo 0.128.0**, so the site will deploy successfully even if your local Hugo version is older.
 
-### Important Note on Theme Version
-The Ananke theme is currently checked out at **v2.9.2** (requires Hugo 0.84.0+) for local development compatibility. The GitHub Actions workflow uses Hugo 0.128.0 which supports newer theme versions. If you update the theme to a newer version locally, you may need Hugo 0.128.0+ installed.
+### Important Note on Hugo Version
+
+**Local Development:**
+- The Ananke theme is at **v2.12.1** which requires **Hugo 0.128.0+**
+- If your local Hugo version is older (e.g., 0.123.7), you won't be able to build locally
+- You have two options:
+  1. Upgrade Hugo locally: Download from https://github.com/gohugoio/hugo/releases
+  2. Skip local builds and rely on GitHub Actions (which uses Hugo 0.128.0)
+
+**GitHub Actions:**
+- The workflow uses Hugo 0.128.0, so builds will succeed on GitHub regardless of your local version
+- Simply push your changes and GitHub Actions will build and deploy automatically
