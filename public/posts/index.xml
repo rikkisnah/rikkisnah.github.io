@@ -2,25 +2,158 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Rik Kisnah - Blog</title>
-    <link>https://rikkisnah.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 18 Oct 2024 00:00:00 -0700</lastBuildDate>
-    <atom:link href="https://rikkisnah.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>https://rikkisnah.github.io/posts/my-first-post/</link>
+      <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Fri, 18 Oct 2024 00:00:00 -0700</pubDate>
-      <guid>https://rikkisnah.github.io/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
       <description>Hello World from Hugo! This is the content of my very first blog post. I&amp;rsquo;m excited to use GitHub Pages for free static hosting!</description>
     </item>
     <item>
       <title>Too Young to Die</title>
-      <link>https://rikkisnah.github.io/posts/too-young-to-die/</link>
+      <link>http://localhost:1313/posts/too-young-to-die/</link>
       <pubDate>Sun, 29 May 2016 00:00:00 -0700</pubDate>
-      <guid>https://rikkisnah.github.io/posts/too-young-to-die/</guid>
-      <description>A poem for my brother. Reflecting on life, family, and the passage of time.&#xA;Too Young to Die Once I was four years old, i told my mama &amp;ldquo;Pretty woman walking down the streah haha&amp;rdquo; Then she shouted at me and i said mama &amp;ldquo;You ugly woman, yacking down the stream yah&amp;rdquo;&#xA;That was then and the world was smaller And everything was so simpler and life was gentler My brother and I were running down the roads in Sodnac Drinking our dad&amp;rsquo;s secret stash of cognac</description>
+      <guid>http://localhost:1313/posts/too-young-to-die/</guid>
+      <description>A poem for my brother. Reflecting on life, family, and the passage of time. In Remembrance Memorial and Remembrance for Ranjiv&#xA;Too Young to Die Once I was four years old, i told my mama &amp;ldquo;Pretty woman walking down the streah haha&amp;rdquo; Then she shouted at me and i said mama &amp;ldquo;You ugly woman, yacking down the stream yah&amp;rdquo;&#xA;That was then and the world was smaller And everything was so simpler and life was gentler My brother and I were running down the roads in Sodnac Drinking our dad&amp;rsquo;s secret stash of cognac</description>
+    </item>
+    <item>
+      <title>iPod Integration Finale: Scaling Wireless Music Distribution</title>
+      <link>http://localhost:1313/posts/ipod-integration-ideas-july-2003/</link>
+      <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ipod-integration-ideas-july-2003/</guid>
+      <description>The Final Iteration By July 2003, iPod integration had occupied our thoughts for over a year. We&amp;rsquo;d tried multiple approaches, learned painful lessons, and were now implementing what felt like the most promising solution.&#xA;Scaling Wireless Solutions I spent weeks scaling solutions—moving from prototype to something that could work for millions of users. The question shifted: how do you synchronize music to phones wirelessly, reliably, without overwhelming networks?&#xA;We were inspired by emerging &amp;ldquo;wearable hacks&amp;rdquo;—early research into wearable computing devices that might eventually sync with phones.</description>
+    </item>
+    <item>
+      <title>iPod Integration: The Modular Approach</title>
+      <link>http://localhost:1313/posts/ipod-integration-ideas-may-2003/</link>
+      <pubDate>Sat, 10 May 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ipod-integration-ideas-may-2003/</guid>
+      <description>The Modular Breakthrough By May 2003, we&amp;rsquo;d learned key lessons from years of iPod integration attempts. The breakthrough was realizing that we didn&amp;rsquo;t need one mega-system. We needed modular components that could work together or independently.&#xA;Theorizing Solutions I spent weeks theorizing solutions—not just coding, but thinking deeply about architecture. The key insight: separate concerns cleanly.&#xA;Music storage: Handle compression, storage, indexing separately Playback: Decode and output audio independently Synchronization: Handle data sync as a distinct service UI: Present a clean interface without coupling to storage or playback The Data Floods The data floods we faced weren&amp;rsquo;t just network bandwidth.</description>
+    </item>
+    <item>
+      <title>Bluetooth Evolution: From Promise to Production</title>
+      <link>http://localhost:1313/posts/bluetooth-prototypes-march-2003/</link>
+      <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/bluetooth-prototypes-march-2003/</guid>
+      <description>Bluetooth Matures By March 2003, Bluetooth had matured significantly. What was experimental in 2002 was becoming production-ready. We weren&amp;rsquo;t just prototyping anymore; we were building devices that would ship to millions of users.&#xA;Optimizing for Production I spent weeks optimizing Bluetooth solutions for real-world deployment. We were now thinking about data floods—not just from users, but from the Bluetooth ecosystem itself. Multiple devices connecting, interfering with each other, creating cascade effects.</description>
+    </item>
+    <item>
+      <title>Symbian OS: The Mobile Operating System Wars</title>
+      <link>http://localhost:1313/posts/symbian-os-hacks-motorola/</link>
+      <pubDate>Fri, 10 Jan 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/symbian-os-hacks-motorola/</guid>
+      <description>The OS Wars Intensify By January 2003, it was clear that mobile phones were becoming mini-computers. The question was: what operating system would power them? Windows Mobile existed but was bloated. Linux was open source but immature on mobile. And there was Symbian—an elegant operating system designed specifically for mobile devices from the ground up.&#xA;Motorola was exploring Symbian. At the factory floor, I spent weeks scaling Symbian solutions—trying to understand how to build robust, feature-rich applications on this novel platform.</description>
+    </item>
+    <item>
+      <title>iPod in Mobile Devices: The Iterative Cycle</title>
+      <link>http://localhost:1313/posts/ipod-integration-ideas-oct-2002/</link>
+      <pubDate>Sat, 12 Oct 2002 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ipod-integration-ideas-oct-2002/</guid>
+      <description>The Iteration Deepens By October 2002, we were six months into the iPod integration project. The initial prototypes had revealed both possibilities and limitations. Rather than giving up, we entered an intense iterative cycle—build, test, learn, rebuild.&#xA;The Optimization and Re-iteration Loop I spent weeks optimizing solutions, running into unexpected bottlenecks and finding creative workarounds. Storage was still the critical constraint—phones had kilobytes of storage; music required megabytes.&#xA;But cloud computing was entering theoretical discussions.</description>
+    </item>
+    <item>
+      <title>Bluetooth Prototypes: Wireless Devices Finally Talk</title>
+      <link>http://localhost:1313/posts/bluetooth-prototypes-aug-2002/</link>
+      <pubDate>Tue, 13 Aug 2002 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/bluetooth-prototypes-aug-2002/</guid>
+      <description>The Bluetooth Promise By August 2002, Bluetooth had been standardized for a few years, but actual working implementations were still rare. The promise was revolutionary: wirelessly connect your phone to headsets, computers, other devices—all without wires, all at close range.&#xA;At Motorola, we saw Bluetooth as the future. Instead of wired connections or limited infrared, devices could communicate wirelessly over a distance of 10 meters. You could leave your headset at your desk and walk around the office with your phone.</description>
+    </item>
+    <item>
+      <title>iPod Integration: Dreaming of Connected Devices</title>
+      <link>http://localhost:1313/posts/ipod-integration-ideas-may-2002/</link>
+      <pubDate>Wed, 15 May 2002 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ipod-integration-ideas-may-2002/</guid>
+      <description>The iPod Phenomenon In May 2002, Apple&amp;rsquo;s iPod was just a year old but already reshaping how people thought about digital music. At Motorola, we couldn&amp;rsquo;t ignore this. The question wasn&amp;rsquo;t &amp;ldquo;is the iPod important?&amp;rdquo; but &amp;ldquo;how do we integrate iPod functionality into mobile devices?&amp;rdquo;&#xA;The Integration Dream The vision was seductive: your phone would be your music player. Not two devices—one elegant handset that played music, made calls, managed contacts, and did everything in between.</description>
+    </item>
+    <item>
+      <title>3G Rollout: The Future of Mobile Communication</title>
+      <link>http://localhost:1313/posts/3g-rollout-thrills/</link>
+      <pubDate>Thu, 14 Feb 2002 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/3g-rollout-thrills/</guid>
+      <description>Moving to Motorola In 2002, I left academia and joined Motorola Mobile Devices. The timing was perfect. Motorola was at the center of the 3G revolution—the transition from 2G networks (which enabled SMS and basic data) to 3G networks (which promised high-speed data and multimedia).&#xA;The 3G Vision The promise was intoxicating. Imagine a mobile phone that could stream video, enable real-time applications, support navigation and location services. 3G would deliver megabits per second instead of kilobits.</description>
+    </item>
+    <item>
+      <title>Early Linux at NTU: Open Source Becomes Real</title>
+      <link>http://localhost:1313/posts/early-linux-at-ntu/</link>
+      <pubDate>Mon, 17 Sep 2001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/early-linux-at-ntu/</guid>
+      <description>The Linux Revolution Reaches NTU By September 2001, Linux was transitioning from hobbyist project to legitimate alternative to proprietary Unix systems. NTU, as a forward-thinking institution, started deploying Linux in labs. After years of expensive proprietary systems, here was an free, open operating system that actually worked.&#xA;For students raised on Windows, encountering Linux was revelatory. The source code was available. You could modify it. You could understand how everything worked down to the kernel level.</description>
+    </item>
+    <item>
+      <title>Y2K Plus One: The Aftermath and What We Learned</title>
+      <link>http://localhost:1313/posts/y2k-debugging-may-2001/</link>
+      <pubDate>Sun, 20 May 2001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/y2k-debugging-may-2001/</guid>
+      <description>May 2001: The Dust Settles Five months after the millennium, the dust was settling. The Y2K crisis hadn&amp;rsquo;t happened. Systems worked. Planes didn&amp;rsquo;t fall from the sky. The banking system didn&amp;rsquo;t collapse. We had succeeded—or had we? Was the success because of our fixes, or was the threat vastly overstated?&#xA;By May 2001, I was analyzing what we&amp;rsquo;d learned from the entire Y2K experience. What worked? What was unnecessary? What principles would guide my future work?</description>
+    </item>
+    <item>
+      <title>Java Security: The Sandbox That Tried Too Hard</title>
+      <link>http://localhost:1313/posts/java-applets-in-dorms-nov-2000/</link>
+      <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/java-applets-in-dorms-nov-2000/</guid>
+      <description>The Security Dream By November 2000, Java&amp;rsquo;s security sandbox had become the most important—and most frustrating—aspect of applet development. Sun Microsystems had made bold promises: Java applets would be safe to run from any source. The sandboxing mechanism would prevent malicious code from accessing your files, your network, or your system.&#xA;The idea was revolutionary. For the first time, you could download and run code from unknown sources with reasonable confidence that it wouldn&amp;rsquo;t destroy your computer.</description>
+    </item>
+    <item>
+      <title>Java Applet Optimization: When Performance Matters</title>
+      <link>http://localhost:1313/posts/java-applets-in-dorms-aug-2000/</link>
+      <pubDate>Wed, 23 Aug 2000 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/java-applets-in-dorms-aug-2000/</guid>
+      <description>The Performance Problem By August 2000, the initial enthusiasm for Java applets had collided with reality. Users were experiencing slow startup times. Applets would download, then take forever to initialize. The promise of &amp;ldquo;instant interactive applications&amp;rdquo; was turning into &amp;ldquo;stare at your screen and wait.&amp;rdquo;&#xA;As a student juggling multiple projects in dorm rooms with limited resources, performance became critical. Our dormitory network had limited bandwidth. Our machines had limited RAM.</description>
+    </item>
+    <item>
+      <title>Wi-Fi Scaling: From Lab Experiments to Campus Networks</title>
+      <link>http://localhost:1313/posts/wifi-experiments-singapore-2000/</link>
+      <pubDate>Thu, 25 May 2000 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/wifi-experiments-singapore-2000/</guid>
+      <description>From Lab Success to Production By May 2000, our Wi-Fi experiments from 1999 had proven successful enough that NTU was considering a campus-wide deployment. This wasn&amp;rsquo;t just about adding more access points; it was about understanding how wireless networks could scale from experimental hobby to critical infrastructure.&#xA;The challenge shifted from &amp;ldquo;can we do this?&amp;rdquo; to &amp;ldquo;how do we do this reliably for hundreds of users simultaneously?&amp;rdquo;&#xA;Scaling Wireless Networks I spent weeks scaling solutions, grappling with the complexities of managing a distributed network of access points.</description>
+    </item>
+    <item>
+      <title>Java Applets In Dorms: The Browser Wars Begin</title>
+      <link>http://localhost:1313/posts/java-applets-in-dorms-feb-2000/</link>
+      <pubDate>Fri, 25 Feb 2000 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/java-applets-in-dorms-feb-2000/</guid>
+      <description>Java: The Future of Computing? In February 2000, just two months after the Y2K celebration, the tech world buzzed with a different promise: write once, run anywhere. Java was going to revolutionize computing. Sun Microsystems was betting big on applets—small Java programs that would run in web browsers, turning the browser into a universal application platform.&#xA;As an NTU student in the dorms, I had front-row access to this revolution. Every lab machine had Java installed.</description>
+    </item>
+    <item>
+      <title>Y2K Final Sprint: September 1999</title>
+      <link>http://localhost:1313/posts/y2k-debugging-september-1999/</link>
+      <pubDate>Tue, 28 Sep 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/y2k-debugging-september-1999/</guid>
+      <description>94 Days to Midnight September 28, 1999. Just 94 days until January 1, 2000. The reality of Y2K was no longer abstract—it was imminent. In the NTU labs, we had shifted from &amp;ldquo;let&amp;rsquo;s fix this&amp;rdquo; to &amp;ldquo;we must fix this NOW.&amp;rdquo; The atmosphere was urgent but focused.&#xA;The Final Push By September, we were debugging solutions at a frantic pace. Every day brought discoveries of systems we hadn&amp;rsquo;t yet examined. Banks were reaching out.</description>
+    </item>
+    <item>
+      <title>Wi-Fi Experiments Singapore: Reflections from 1999</title>
+      <link>http://localhost:1313/posts/wifi-experiments-singapore-1999/</link>
+      <pubDate>Fri, 30 Jul 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/wifi-experiments-singapore-1999/</guid>
+      <description>Wireless Revolution Begins By July 1999, Wi-Fi technology was emerging from IEEE 802.11 specifications into practical reality. Singapore, as a forward-thinking tech hub, was one of the first places to experiment with widespread wireless networking. As an NTU student, I had access to some of these early deployments, and the possibilities seemed limitless.&#xA;The Technical Frontier I spent weeks debugging solutions for wireless connectivity. The early Wi-Fi standards had significant challenges.</description>
+    </item>
+    <item>
+      <title>Matrix Neural Net Dreams: Reflections from 1999</title>
+      <link>http://localhost:1313/posts/matrix-neural-net-dreams/</link>
+      <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/matrix-neural-net-dreams/</guid>
+      <description>The Dream of Artificial Intelligence In May 1999, while the world was preoccupied with the approaching Y2K crisis, I found myself exploring something entirely different in the NTU labs: neural networks. The term &amp;ldquo;neural net dreams&amp;rdquo; might sound whimsical now, but in 1999, this was genuinely visionary work. We were exploring how computers could learn from data, much like the human brain.&#xA;The Technical Challenge Matrix operations are the backbone of neural networks.</description>
+    </item>
+    <item>
+      <title>Y2K Optimization: Scaling Solutions in 1999</title>
+      <link>http://localhost:1313/posts/y2k-debugging-march-1999/</link>
+      <pubDate>Tue, 02 Mar 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/y2k-debugging-march-1999/</guid>
+      <description>Nine Months to Midnight By March 1999, the reality of Y2K had settled in. We weren&amp;rsquo;t just fixing individual bugs anymore—we were optimizing entire systems to handle the load. The early fixes had been successful, but now came the challenge of scaling: how do you ensure that millions of transactions process correctly when systems are running parallel validation checks?&#xA;The Optimization Journey As an NTU student, I spent weeks optimizing solutions, shifting from &amp;ldquo;getting it to work&amp;rdquo; to &amp;ldquo;getting it to work efficiently.</description>
+    </item>
+    <item>
+      <title>Y2K Debugging: Reflections from 1999</title>
+      <link>http://localhost:1313/posts/y2k-debugging-1999/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/y2k-debugging-1999/</guid>
+      <description>The Millennium Bug Looms As an NTU student in Singapore during the waning days of 1998 and early 1999, I found myself swept up in what would become the defining technical challenge of the era: Y2K debugging. The humid labs of Nanyang Technological University buzzed with anxiety and excitement as midnight on December 31st approached—would systems across the world crash when the calendar rolled from 1999 to 2000?&#xA;The Challenge In 1999, Y2K debugging was all the rage—or at least in my corner of the tech world.</description>
     </item>
   </channel>
 </rss>

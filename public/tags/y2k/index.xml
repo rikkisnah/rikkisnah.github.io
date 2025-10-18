@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Y2k on Rik Kisnah - Blog</title>
+    <link>http://localhost:1313/tags/y2k/</link>
+    <description>Recent content in Y2k on Rik Kisnah - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 May 2001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/y2k/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Y2K Plus One: The Aftermath and What We Learned</title>
+      <link>http://localhost:1313/posts/y2k-debugging-may-2001/</link>
+      <pubDate>Sun, 20 May 2001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/y2k-debugging-may-2001/</guid>
+      <description>May 2001: The Dust Settles Five months after the millennium, the dust was settling. The Y2K crisis hadn&amp;rsquo;t happened. Systems worked. Planes didn&amp;rsquo;t fall from the sky. The banking system didn&amp;rsquo;t collapse. We had succeeded—or had we? Was the success because of our fixes, or was the threat vastly overstated?&#xA;By May 2001, I was analyzing what we&amp;rsquo;d learned from the entire Y2K experience. What worked? What was unnecessary? What principles would guide my future work?</description>
+    </item>
+    <item>
+      <title>Y2K Final Sprint: September 1999</title>
+      <link>http://localhost:1313/posts/y2k-debugging-september-1999/</link>
+      <pubDate>Tue, 28 Sep 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/y2k-debugging-september-1999/</guid>
+      <description>94 Days to Midnight September 28, 1999. Just 94 days until January 1, 2000. The reality of Y2K was no longer abstract—it was imminent. In the NTU labs, we had shifted from &amp;ldquo;let&amp;rsquo;s fix this&amp;rdquo; to &amp;ldquo;we must fix this NOW.&amp;rdquo; The atmosphere was urgent but focused.&#xA;The Final Push By September, we were debugging solutions at a frantic pace. Every day brought discoveries of systems we hadn&amp;rsquo;t yet examined. Banks were reaching out.</description>
+    </item>
+    <item>
+      <title>Y2K Optimization: Scaling Solutions in 1999</title>
+      <link>http://localhost:1313/posts/y2k-debugging-march-1999/</link>
+      <pubDate>Tue, 02 Mar 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/y2k-debugging-march-1999/</guid>
+      <description>Nine Months to Midnight By March 1999, the reality of Y2K had settled in. We weren&amp;rsquo;t just fixing individual bugs anymore—we were optimizing entire systems to handle the load. The early fixes had been successful, but now came the challenge of scaling: how do you ensure that millions of transactions process correctly when systems are running parallel validation checks?&#xA;The Optimization Journey As an NTU student, I spent weeks optimizing solutions, shifting from &amp;ldquo;getting it to work&amp;rdquo; to &amp;ldquo;getting it to work efficiently.</description>
+    </item>
+    <item>
+      <title>Y2K Debugging: Reflections from 1999</title>
+      <link>http://localhost:1313/posts/y2k-debugging-1999/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/y2k-debugging-1999/</guid>
+      <description>The Millennium Bug Looms As an NTU student in Singapore during the waning days of 1998 and early 1999, I found myself swept up in what would become the defining technical challenge of the era: Y2K debugging. The humid labs of Nanyang Technological University buzzed with anxiety and excitement as midnight on December 31st approached—would systems across the world crash when the calendar rolled from 1999 to 2000?&#xA;The Challenge In 1999, Y2K debugging was all the rage—or at least in my corner of the tech world.</description>
+    </item>
+  </channel>
+</rss>

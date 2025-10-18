@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debugging on Rik Kisnah - Blog</title>
+    <link>http://localhost:1313/tags/debugging/</link>
+    <description>Recent content in Debugging on Rik Kisnah - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 28 Sep 1999 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Y2K Final Sprint: September 1999</title>
+      <link>http://localhost:1313/posts/y2k-debugging-september-1999/</link>
+      <pubDate>Tue, 28 Sep 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/y2k-debugging-september-1999/</guid>
+      <description>94 Days to Midnight September 28, 1999. Just 94 days until January 1, 2000. The reality of Y2K was no longer abstract—it was imminent. In the NTU labs, we had shifted from &amp;ldquo;let&amp;rsquo;s fix this&amp;rdquo; to &amp;ldquo;we must fix this NOW.&amp;rdquo; The atmosphere was urgent but focused.&#xA;The Final Push By September, we were debugging solutions at a frantic pace. Every day brought discoveries of systems we hadn&amp;rsquo;t yet examined. Banks were reaching out.</description>
+    </item>
+    <item>
+      <title>Y2K Debugging: Reflections from 1999</title>
+      <link>http://localhost:1313/posts/y2k-debugging-1999/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/y2k-debugging-1999/</guid>
+      <description>The Millennium Bug Looms As an NTU student in Singapore during the waning days of 1998 and early 1999, I found myself swept up in what would become the defining technical challenge of the era: Y2K debugging. The humid labs of Nanyang Technological University buzzed with anxiety and excitement as midnight on December 31st approached—would systems across the world crash when the calendar rolled from 1999 to 2000?&#xA;The Challenge In 1999, Y2K debugging was all the rage—or at least in my corner of the tech world.</description>
+    </item>
+  </channel>
+</rss>

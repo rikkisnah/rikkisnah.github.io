@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2003 on Rik Kisnah - Blog</title>
+    <link>http://localhost:1313/tags/2003/</link>
+    <description>Recent content in 2003 on Rik Kisnah - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 09 Jul 2003 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/2003/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iPod Integration Finale: Scaling Wireless Music Distribution</title>
+      <link>http://localhost:1313/posts/ipod-integration-ideas-july-2003/</link>
+      <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ipod-integration-ideas-july-2003/</guid>
+      <description>The Final Iteration By July 2003, iPod integration had occupied our thoughts for over a year. We&amp;rsquo;d tried multiple approaches, learned painful lessons, and were now implementing what felt like the most promising solution.&#xA;Scaling Wireless Solutions I spent weeks scaling solutions—moving from prototype to something that could work for millions of users. The question shifted: how do you synchronize music to phones wirelessly, reliably, without overwhelming networks?&#xA;We were inspired by emerging &amp;ldquo;wearable hacks&amp;rdquo;—early research into wearable computing devices that might eventually sync with phones.</description>
+    </item>
+    <item>
+      <title>iPod Integration: The Modular Approach</title>
+      <link>http://localhost:1313/posts/ipod-integration-ideas-may-2003/</link>
+      <pubDate>Sat, 10 May 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ipod-integration-ideas-may-2003/</guid>
+      <description>The Modular Breakthrough By May 2003, we&amp;rsquo;d learned key lessons from years of iPod integration attempts. The breakthrough was realizing that we didn&amp;rsquo;t need one mega-system. We needed modular components that could work together or independently.&#xA;Theorizing Solutions I spent weeks theorizing solutions—not just coding, but thinking deeply about architecture. The key insight: separate concerns cleanly.&#xA;Music storage: Handle compression, storage, indexing separately Playback: Decode and output audio independently Synchronization: Handle data sync as a distinct service UI: Present a clean interface without coupling to storage or playback The Data Floods The data floods we faced weren&amp;rsquo;t just network bandwidth.</description>
+    </item>
+    <item>
+      <title>Bluetooth Evolution: From Promise to Production</title>
+      <link>http://localhost:1313/posts/bluetooth-prototypes-march-2003/</link>
+      <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/bluetooth-prototypes-march-2003/</guid>
+      <description>Bluetooth Matures By March 2003, Bluetooth had matured significantly. What was experimental in 2002 was becoming production-ready. We weren&amp;rsquo;t just prototyping anymore; we were building devices that would ship to millions of users.&#xA;Optimizing for Production I spent weeks optimizing Bluetooth solutions for real-world deployment. We were now thinking about data floods—not just from users, but from the Bluetooth ecosystem itself. Multiple devices connecting, interfering with each other, creating cascade effects.</description>
+    </item>
+    <item>
+      <title>Symbian OS: The Mobile Operating System Wars</title>
+      <link>http://localhost:1313/posts/symbian-os-hacks-motorola/</link>
+      <pubDate>Fri, 10 Jan 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/symbian-os-hacks-motorola/</guid>
+      <description>The OS Wars Intensify By January 2003, it was clear that mobile phones were becoming mini-computers. The question was: what operating system would power them? Windows Mobile existed but was bloated. Linux was open source but immature on mobile. And there was Symbian—an elegant operating system designed specifically for mobile devices from the ground up.&#xA;Motorola was exploring Symbian. At the factory floor, I spent weeks scaling Symbian solutions—trying to understand how to build robust, feature-rich applications on this novel platform.</description>
+    </item>
+  </channel>
+</rss>

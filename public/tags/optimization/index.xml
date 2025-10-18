@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Optimization on Rik Kisnah - Blog</title>
+    <link>http://localhost:1313/tags/optimization/</link>
+    <description>Recent content in Optimization on Rik Kisnah - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 23 Aug 2000 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java Applet Optimization: When Performance Matters</title>
+      <link>http://localhost:1313/posts/java-applets-in-dorms-aug-2000/</link>
+      <pubDate>Wed, 23 Aug 2000 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/java-applets-in-dorms-aug-2000/</guid>
+      <description>The Performance Problem By August 2000, the initial enthusiasm for Java applets had collided with reality. Users were experiencing slow startup times. Applets would download, then take forever to initialize. The promise of &amp;ldquo;instant interactive applications&amp;rdquo; was turning into &amp;ldquo;stare at your screen and wait.&amp;rdquo;&#xA;As a student juggling multiple projects in dorm rooms with limited resources, performance became critical. Our dormitory network had limited bandwidth. Our machines had limited RAM.</description>
+    </item>
+    <item>
+      <title>Y2K Optimization: Scaling Solutions in 1999</title>
+      <link>http://localhost:1313/posts/y2k-debugging-march-1999/</link>
+      <pubDate>Tue, 02 Mar 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/y2k-debugging-march-1999/</guid>
+      <description>Nine Months to Midnight By March 1999, the reality of Y2K had settled in. We weren&amp;rsquo;t just fixing individual bugs anymore—we were optimizing entire systems to handle the load. The early fixes had been successful, but now came the challenge of scaling: how do you ensure that millions of transactions process correctly when systems are running parallel validation checks?&#xA;The Optimization Journey As an NTU student, I spent weeks optimizing solutions, shifting from &amp;ldquo;getting it to work&amp;rdquo; to &amp;ldquo;getting it to work efficiently.</description>
+    </item>
+  </channel>
+</rss>

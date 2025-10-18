@@ -1,0 +1,282 @@
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#fff"
+  lang="en"
+  dir="ltr"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Java Applets In Dorms: The Browser Wars Begin - Rik Kisnah - Blog</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="Java: The Future of Computing? In February 2000, just two months after the Y2K celebration, the tech world buzzed with a different promise: write once, run anywhere. Java was going to revolutionize computing. Sun Microsystems was betting big on applets—small Java programs that would run in web browsers, turning the browser into a universal application platform.
+As an NTU student in the dorms, I had front-row access to this revolution. Every lab machine had Java installed." />
+  <meta name="author" content="Rik Kisnah" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+
+  
+
+  <link rel="preload" as="image" href="http://localhost:1313/github.svg" /><link rel="preload" as="image" href="http://localhost:1313/linkedin.svg" />
+
+  <script
+    defer
+    src="http://localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="http://localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:1313/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.123.7">
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="http://localhost:1313/"
+      >Rik Kisnah - Blog</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#fff'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkVal = localStorage.getItem('dark');
+    setDark(darkVal === 'true');
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/posts/"
+        >Posts</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/rikkisnah"
+        target="_blank"
+        rel="me"
+      >github</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/rikkisnah"
+        target="_blank"
+        rel="me"
+      >linkedin</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">Java Applets In Dorms: The Browser Wars Begin</h1><div class="text-xs antialiased opacity-60"><time>Feb 25, 2000</time></div></header>
+
+  <section><h2 id="java-the-future-of-computing">Java: The Future of Computing?</h2>
+<p>In February 2000, just two months after the Y2K celebration, the tech world buzzed with a different promise: write once, run anywhere. Java was going to revolutionize computing. Sun Microsystems was betting big on applets—small Java programs that would run in web browsers, turning the browser into a universal application platform.</p>
+<p>As an NTU student in the dorms, I had front-row access to this revolution. Every lab machine had Java installed. Every CS assignment seemed to involve writing applets. The promise was intoxicating: real programming in the browser.</p>
+<h2 id="the-reality-check">The Reality Check</h2>
+<p>Of course, reality was messier. I spent weeks debugging applet issues—compatibility problems between browsers, security restrictions that made applets nearly useless, download times that felt glacial. The &ldquo;data floods&rdquo; I faced weren&rsquo;t just network bandwidth; they were floods of ClassNotFoundExceptions, security permission denials, and frustrated users.</p>
+<h2 id="challenges-that-shaped-thinking">Challenges That Shaped Thinking</h2>
+<ul>
+<li><strong>Test ruthlessly</strong>: Applets behaved differently in different browsers on different machines. We couldn&rsquo;t test in a lab once and assume it would work everywhere. Every combination was a potential failure point.</li>
+<li><strong>Prioritize security</strong>: Java&rsquo;s sandboxing was ahead of its time—but also frustrating. The restrictions that made Java &ldquo;safe&rdquo; also made it nearly impossible to build practical applications.</li>
+<li><strong>Embrace modularity</strong>: The component-based nature of applets—the idea that you could drop a piece of functionality into a page—was genuinely innovative, even if the execution fell short.</li>
+</ul>
+<h2 id="early-mobile-and-the-bridge">Early Mobile and the Bridge</h2>
+<p>Around this time, early mobile phones were getting internet access. We imagined: what if mobile devices ran Java? What if the same code that ran in browsers could run on phones? The dream was compelling, even if the current reality fell short.</p>
+<h2 id="the-dorm-life">The Dorm Life</h2>
+<p>Living in the dorms gave us an interesting advantage. We could test applets on machines with varying configurations, network speeds, and installed software. One dormmate would have the latest JVM, another would have an old version. This real-world testing ground revealed problems that pristine lab conditions never would.</p>
+<p>The late-night debugging sessions, the teh tarik runs, the collective frustration and occasional breakthroughs—they all happened here, in the dorms, away from official channels.</p>
+<p>Looking ahead, Java would find success, but not in browsers. It would become the language of servers, enterprise systems, and eventually the Android ecosystem. The applets we were building would mostly disappear, but the principles we learned—modularity, testing, security—would endure.</p>
+</section>
+
+  <footer class="mt-12 flex flex-wrap"><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/java"
+      >java</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/applets"
+      >applets</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/2000"
+      >2000</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/ntu"
+      >ntu</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/browser"
+      >browser</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/dorms"
+      >dorms</a
+    ></footer><nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/posts/wifi-experiments-singapore-2000/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Wi-Fi Scaling: From Lab Experiments to Campus Networks</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="http://localhost:1313/posts/y2k-debugging-september-1999/"
+      ><span>Y2K Final Sprint: September 1999</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025
+    <a class="link" href="http://localhost:1313/">Rik Kisnah - Blog</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+<script>// Force light theme as default
+(function() {
+  'use strict';
+  
+  // Override the theme detection and force light mode
+  const forceLightTheme = () => {
+    const html = document.documentElement;
+    const body = document.body;
+    
+    // Remove dark class if present
+    html.classList.remove('dark');
+    
+    // Force light theme styles
+    html.style.setProperty('color-scheme', 'light');
+    body.style.setProperty('background-color', '#ffffff');
+    body.style.setProperty('color', '#1a202c');
+    
+    // Override localStorage to always use light theme
+    localStorage.setItem('dark', 'false');
+  };
+  
+  // Run immediately
+  forceLightTheme();
+  
+  // Run after DOM is loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', forceLightTheme);
+  }
+  
+  // Run after window is loaded
+  window.addEventListener('load', forceLightTheme);
+  
+  // Override any theme toggle buttons
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('btn-dark') || 
+        e.target.closest('.btn-dark')) {
+      e.preventDefault();
+      e.stopPropagation();
+      forceLightTheme();
+      return false;
+    }
+  });
+  
+  // Monitor for any dark class additions and remove them
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.type === 'attributes' && 
+          mutation.attributeName === 'class' && 
+          mutation.target.classList.contains('dark')) {
+        mutation.target.classList.remove('dark');
+        forceLightTheme();
+      }
+    });
+  });
+  
+  // Start observing
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class']
+  });
+  
+})();
+</script></body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Music on Rik Kisnah - Blog</title>
+    <link>http://localhost:1313/tags/music/</link>
+    <description>Recent content in Music on Rik Kisnah - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 09 Jul 2003 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iPod Integration Finale: Scaling Wireless Music Distribution</title>
+      <link>http://localhost:1313/posts/ipod-integration-ideas-july-2003/</link>
+      <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ipod-integration-ideas-july-2003/</guid>
+      <description>The Final Iteration By July 2003, iPod integration had occupied our thoughts for over a year. We&amp;rsquo;d tried multiple approaches, learned painful lessons, and were now implementing what felt like the most promising solution.&#xA;Scaling Wireless Solutions I spent weeks scaling solutions—moving from prototype to something that could work for millions of users. The question shifted: how do you synchronize music to phones wirelessly, reliably, without overwhelming networks?&#xA;We were inspired by emerging &amp;ldquo;wearable hacks&amp;rdquo;—early research into wearable computing devices that might eventually sync with phones.</description>
+    </item>
+    <item>
+      <title>iPod Integration: The Modular Approach</title>
+      <link>http://localhost:1313/posts/ipod-integration-ideas-may-2003/</link>
+      <pubDate>Sat, 10 May 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ipod-integration-ideas-may-2003/</guid>
+      <description>The Modular Breakthrough By May 2003, we&amp;rsquo;d learned key lessons from years of iPod integration attempts. The breakthrough was realizing that we didn&amp;rsquo;t need one mega-system. We needed modular components that could work together or independently.&#xA;Theorizing Solutions I spent weeks theorizing solutions—not just coding, but thinking deeply about architecture. The key insight: separate concerns cleanly.&#xA;Music storage: Handle compression, storage, indexing separately Playback: Decode and output audio independently Synchronization: Handle data sync as a distinct service UI: Present a clean interface without coupling to storage or playback The Data Floods The data floods we faced weren&amp;rsquo;t just network bandwidth.</description>
+    </item>
+    <item>
+      <title>iPod in Mobile Devices: The Iterative Cycle</title>
+      <link>http://localhost:1313/posts/ipod-integration-ideas-oct-2002/</link>
+      <pubDate>Sat, 12 Oct 2002 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ipod-integration-ideas-oct-2002/</guid>
+      <description>The Iteration Deepens By October 2002, we were six months into the iPod integration project. The initial prototypes had revealed both possibilities and limitations. Rather than giving up, we entered an intense iterative cycle—build, test, learn, rebuild.&#xA;The Optimization and Re-iteration Loop I spent weeks optimizing solutions, running into unexpected bottlenecks and finding creative workarounds. Storage was still the critical constraint—phones had kilobytes of storage; music required megabytes.&#xA;But cloud computing was entering theoretical discussions.</description>
+    </item>
+    <item>
+      <title>iPod Integration: Dreaming of Connected Devices</title>
+      <link>http://localhost:1313/posts/ipod-integration-ideas-may-2002/</link>
+      <pubDate>Wed, 15 May 2002 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ipod-integration-ideas-may-2002/</guid>
+      <description>The iPod Phenomenon In May 2002, Apple&amp;rsquo;s iPod was just a year old but already reshaping how people thought about digital music. At Motorola, we couldn&amp;rsquo;t ignore this. The question wasn&amp;rsquo;t &amp;ldquo;is the iPod important?&amp;rdquo; but &amp;ldquo;how do we integrate iPod functionality into mobile devices?&amp;rdquo;&#xA;The Integration Dream The vision was seductive: your phone would be your music player. Not two devices—one elegant handset that played music, made calls, managed contacts, and did everything in between.</description>
+    </item>
+  </channel>
+</rss>

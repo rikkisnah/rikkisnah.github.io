@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Rik Kisnah - Blog</title>
+    <link>http://localhost:1313/tags/security/</link>
+    <description>Recent content in Security on Rik Kisnah - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 Nov 2000 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java Security: The Sandbox That Tried Too Hard</title>
+      <link>http://localhost:1313/posts/java-applets-in-dorms-nov-2000/</link>
+      <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/java-applets-in-dorms-nov-2000/</guid>
+      <description>The Security Dream By November 2000, Java&amp;rsquo;s security sandbox had become the most important—and most frustrating—aspect of applet development. Sun Microsystems had made bold promises: Java applets would be safe to run from any source. The sandboxing mechanism would prevent malicious code from accessing your files, your network, or your system.&#xA;The idea was revolutionary. For the first time, you could download and run code from unknown sources with reasonable confidence that it wouldn&amp;rsquo;t destroy your computer.</description>
+    </item>
+  </channel>
+</rss>

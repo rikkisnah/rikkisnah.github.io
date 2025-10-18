@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Standardization on Rik Kisnah - Blog</title>
+    <link>http://localhost:1313/tags/standardization/</link>
+    <description>Recent content in Standardization on Rik Kisnah - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 11 Mar 2003 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/standardization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bluetooth Evolution: From Promise to Production</title>
+      <link>http://localhost:1313/posts/bluetooth-prototypes-march-2003/</link>
+      <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/bluetooth-prototypes-march-2003/</guid>
+      <description>Bluetooth Matures By March 2003, Bluetooth had matured significantly. What was experimental in 2002 was becoming production-ready. We weren&amp;rsquo;t just prototyping anymore; we were building devices that would ship to millions of users.&#xA;Optimizing for Production I spent weeks optimizing Bluetooth solutions for real-world deployment. We were now thinking about data floods—not just from users, but from the Bluetooth ecosystem itself. Multiple devices connecting, interfering with each other, creating cascade effects.</description>
+    </item>
+  </channel>
+</rss>

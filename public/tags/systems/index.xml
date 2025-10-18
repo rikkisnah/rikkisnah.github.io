@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Systems on Rik Kisnah - Blog</title>
+    <link>http://localhost:1313/tags/systems/</link>
+    <description>Recent content in Systems on Rik Kisnah - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 17 Sep 2001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Early Linux at NTU: Open Source Becomes Real</title>
+      <link>http://localhost:1313/posts/early-linux-at-ntu/</link>
+      <pubDate>Mon, 17 Sep 2001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/early-linux-at-ntu/</guid>
+      <description>The Linux Revolution Reaches NTU By September 2001, Linux was transitioning from hobbyist project to legitimate alternative to proprietary Unix systems. NTU, as a forward-thinking institution, started deploying Linux in labs. After years of expensive proprietary systems, here was an free, open operating system that actually worked.&#xA;For students raised on Windows, encountering Linux was revelatory. The source code was available. You could modify it. You could understand how everything worked down to the kernel level.</description>
+    </item>
+    <item>
+      <title>Y2K Plus One: The Aftermath and What We Learned</title>
+      <link>http://localhost:1313/posts/y2k-debugging-may-2001/</link>
+      <pubDate>Sun, 20 May 2001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/y2k-debugging-may-2001/</guid>
+      <description>May 2001: The Dust Settles Five months after the millennium, the dust was settling. The Y2K crisis hadn&amp;rsquo;t happened. Systems worked. Planes didn&amp;rsquo;t fall from the sky. The banking system didn&amp;rsquo;t collapse. We had succeeded—or had we? Was the success because of our fixes, or was the threat vastly overstated?&#xA;By May 2001, I was analyzing what we&amp;rsquo;d learned from the entire Y2K experience. What worked? What was unnecessary? What principles would guide my future work?</description>
+    </item>
+  </channel>
+</rss>
