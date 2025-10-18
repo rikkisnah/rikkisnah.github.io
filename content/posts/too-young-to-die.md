@@ -80,3 +80,9 @@ A poem for my brother. Reflecting on life, family, and the passage of time.
 ![Family portrait - Rik, Pa, and Ma](ran-rik-pa-ma.jpg)
 
 ![Rik and Ran at home](rik-ran.JPG)
+
+---
+
+### In Remembrance
+
+[Memorial and Remembrance for Ranjiv](https://youtu.be/nc3k6MO_ZDI)
