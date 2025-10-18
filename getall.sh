@@ -38,9 +38,17 @@ for d in "${dirs[@]}"; do
     (
       cd "$REPO_PATH"
       # Stash any local changes
-      git stash push -u -m "auto-stash $(date +%F_%T)" >/dev/null 2>&1 || true
-      # Try fast-forward pull first, then force if needed
-      git pull --ff-only >/dev/null 2>&1 || git pull -f >/dev/null 2>&1 || true
+      if git stash push -u -m "auto-stash $(date +%F_%T)" 2>&1 | grep -q "No local changes"; then
+        echo "  No local changes to stash"
+      else
+        echo "  Stashed local changes"
+      fi
+      # Pull with fast-forward only
+      if git pull --ff-only; then
+        echo "  Successfully pulled latest changes"
+      else
+        echo "  Note: Could not fast-forward (local changes exist)"
+      fi
     )
     echo -e "${GREEN}✓ Updated $d${NC}"
     ((updated++))
