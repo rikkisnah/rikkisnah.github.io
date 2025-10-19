@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/posts/ipod-integration-journey-2002-2003/</guid>
       <description>The iPod Phenomenon and the Integration Dream In May 2002, Apple&amp;rsquo;s iPod was just a year old but already reshaping how people thought about digital music. At Motorola, we faced a critical question: how do we integrate iPod functionality into mobile devices?&#xA;The vision was seductive: your phone would be your music player. Not two devices—one elegant handset that played music, made calls, managed contacts, and did everything in between. What followed was over a year of iterative development that fundamentally shaped my understanding of modular systems and scalable architecture.</description>
     </item>
+    <item>
+      <title>Bluetooth Prototypes: From Experimental to Production (2002-2003)</title>
+      <link>http://localhost:1313/posts/bluetooth-prototypes-journey-2002-2003/</link>
+      <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/bluetooth-prototypes-journey-2002-2003/</guid>
+      <description>The Bluetooth Promise (August 2002) By August 2002, Bluetooth had been standardized for a few years, but actual working implementations were still rare. The promise was revolutionary: wirelessly connect your phone to headsets, computers, other devices—all without wires, all at close range.&#xA;At Motorola, we saw Bluetooth as the future. Instead of wired connections or limited infrared, devices could communicate wirelessly over a distance of 10 meters. You could leave your headset at your desk and walk around the office with your phone.</description>
+    </item>
   </channel>
 </rss>

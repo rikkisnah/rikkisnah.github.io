@@ -6,35 +6,14 @@
     <description>Recent content in 1999 on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 30 Jul 1999 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 May 1999 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/1999/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Wi-Fi Experiments Singapore: Reflections from 1999</title>
-      <link>http://localhost:1313/posts/wifi-experiments-singapore-1999/</link>
-      <pubDate>Fri, 30 Jul 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/wifi-experiments-singapore-1999/</guid>
-      <description>Wireless Revolution Begins By July 1999, Wi-Fi technology was emerging from IEEE 802.11 specifications into practical reality. Singapore, as a forward-thinking tech hub, was one of the first places to experiment with widespread wireless networking. As an NTU student, I had access to some of these early deployments, and the possibilities seemed limitless.&#xA;The Technical Frontier I spent weeks debugging solutions for wireless connectivity. The early Wi-Fi standards had significant challenges.</description>
-    </item>
     <item>
       <title>Matrix Neural Net Dreams: Reflections from 1999</title>
       <link>http://localhost:1313/posts/matrix-neural-net-dreams/</link>
       <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/matrix-neural-net-dreams/</guid>
       <description>The Dream of Artificial Intelligence In May 1999, while the world was preoccupied with the approaching Y2K crisis, I found myself exploring something entirely different in the NTU labs: neural networks. The term &amp;ldquo;neural net dreams&amp;rdquo; might sound whimsical now, but in 1999, this was genuinely visionary work. We were exploring how computers could learn from data, much like the human brain.&#xA;The Technical Challenge Matrix operations are the backbone of neural networks.</description>
-    </item>
-    <item>
-      <title>Y2K Optimization: Scaling Solutions in 1999</title>
-      <link>http://localhost:1313/posts/y2k-debugging-march-1999/</link>
-      <pubDate>Tue, 02 Mar 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/y2k-debugging-march-1999/</guid>
-      <description>Nine Months to Midnight By March 1999, the reality of Y2K had settled in. We weren&amp;rsquo;t just fixing individual bugs anymore—we were optimizing entire systems to handle the load. The early fixes had been successful, but now came the challenge of scaling: how do you ensure that millions of transactions process correctly when systems are running parallel validation checks?&#xA;The Optimization Journey As an NTU student, I spent weeks optimizing solutions, shifting from &amp;ldquo;getting it to work&amp;rdquo; to &amp;ldquo;getting it to work efficiently.</description>
-    </item>
-    <item>
-      <title>Y2K Debugging: Reflections from 1999</title>
-      <link>http://localhost:1313/posts/y2k-debugging-1999/</link>
-      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/y2k-debugging-1999/</guid>
-      <description>The Millennium Bug Looms As an NTU student in Singapore during the waning days of 1998 and early 1999, I found myself swept up in what would become the defining technical challenge of the era: Y2K debugging. The humid labs of Nanyang Technological University buzzed with anxiety and excitement as midnight on December 31st approached—would systems across the world crash when the calendar rolled from 1999 to 2000?&#xA;The Challenge In 1999, Y2K debugging was all the rage—or at least in my corner of the tech world.</description>
     </item>
   </channel>
 </rss>

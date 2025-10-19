@@ -98,20 +98,23 @@
     <loc>http://localhost:1313/tags/wireless/</loc>
     <lastmod>2003-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/2003/</loc>
-    <lastmod>2003-03-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/bluetooth/</loc>
     <lastmod>2003-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/bluetooth-prototypes-march-2003/</loc>
+    <loc>http://localhost:1313/posts/bluetooth-prototypes-journey-2002-2003/</loc>
     <lastmod>2003-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/production/</loc>
+    <loc>http://localhost:1313/tags/connectivity/</loc>
+    <lastmod>2003-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/protocols/</loc>
     <lastmod>2003-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/standardization/</loc>
     <lastmod>2003-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/2003/</loc>
+    <lastmod>2003-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/mobile-os/</loc>
     <lastmod>2003-01-10T00:00:00+00:00</lastmod>
@@ -129,16 +132,7 @@
     <lastmod>2003-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/2002/</loc>
-    <lastmod>2002-08-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/bluetooth-prototypes-aug-2002/</loc>
-    <lastmod>2002-08-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/connectivity/</loc>
-    <lastmod>2002-08-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/protocols/</loc>
-    <lastmod>2002-08-13T00:00:00+00:00</lastmod>
+    <lastmod>2002-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/3g/</loc>
     <lastmod>2002-02-14T00:00:00+00:00</lastmod>
@@ -152,6 +146,30 @@
     <loc>http://localhost:1313/tags/telecommunications/</loc>
     <lastmod>2002-02-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/1999-2001/</loc>
+    <lastmod>2001-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/crisis-management/</loc>
+    <lastmod>2001-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/debugging/</loc>
+    <lastmod>2001-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/millennium/</loc>
+    <lastmod>2001-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ntu/</loc>
+    <lastmod>2001-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/systems/</loc>
+    <lastmod>2001-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/y2k/</loc>
+    <lastmod>2001-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/y2k-debugging-journey-1999-2001/</loc>
+    <lastmod>2001-12-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/2001/</loc>
     <lastmod>2001-09-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -161,26 +179,8 @@
     <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2001-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ntu/</loc>
-    <lastmod>2001-09-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/open-source/</loc>
     <lastmod>2001-09-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/systems/</loc>
-    <lastmod>2001-09-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/lessons/</loc>
-    <lastmod>2001-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/post-mortem/</loc>
-    <lastmod>2001-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/y2k/</loc>
-    <lastmod>2001-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/y2k-debugging-may-2001/</loc>
-    <lastmod>2001-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/2000/</loc>
     <lastmod>2000-11-21T00:00:00+00:00</lastmod>
@@ -188,68 +188,41 @@
     <loc>http://localhost:1313/tags/applets/</loc>
     <lastmod>2000-11-21T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/browser/</loc>
+    <lastmod>2000-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/dorms/</loc>
+    <lastmod>2000-11-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/java/</loc>
     <lastmod>2000-11-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/java-applets-in-dorms-nov-2000/</loc>
+    <loc>http://localhost:1313/posts/java-applets-journey-2000/</loc>
     <lastmod>2000-11-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sandbox/</loc>
+    <loc>http://localhost:1313/tags/optimization/</loc>
     <lastmod>2000-11-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/security/</loc>
     <lastmod>2000-11-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/java-applets-in-dorms-aug-2000/</loc>
-    <lastmod>2000-08-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/optimization/</loc>
-    <lastmod>2000-08-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/performance/</loc>
-    <lastmod>2000-08-23T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/1999-2000/</loc>
+    <lastmod>2000-05-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/networking/</loc>
     <lastmod>2000-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/scaling/</loc>
+    <loc>http://localhost:1313/tags/singapore/</loc>
     <lastmod>2000-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/wifi-experiments-singapore-2000/</loc>
+    <loc>http://localhost:1313/posts/wifi-experiments-journey-1999-2000/</loc>
     <lastmod>2000-05-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/wifi/</loc>
     <lastmod>2000-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/browser/</loc>
-    <lastmod>2000-02-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/dorms/</loc>
-    <lastmod>2000-02-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/java-applets-in-dorms-feb-2000/</loc>
-    <lastmod>2000-02-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/debugging/</loc>
-    <lastmod>1999-09-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/millennium/</loc>
-    <lastmod>1999-09-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/september-1999/</loc>
-    <lastmod>1999-09-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/y2k-debugging-september-1999/</loc>
-    <lastmod>1999-09-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/1999/</loc>
-    <lastmod>1999-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/singapore/</loc>
-    <lastmod>1999-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/wifi-experiments-singapore-1999/</loc>
-    <lastmod>1999-07-30T00:00:00+00:00</lastmod>
+    <lastmod>1999-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/matrices/</loc>
     <lastmod>1999-05-01T00:00:00+00:00</lastmod>
@@ -259,12 +232,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/neural-networks/</loc>
     <lastmod>1999-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/y2k-debugging-march-1999/</loc>
-    <lastmod>1999-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/y2k-debugging-1999/</loc>
-    <lastmod>1999-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>

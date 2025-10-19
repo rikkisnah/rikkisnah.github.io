@@ -9,11 +9,11 @@
     <lastBuildDate>Tue, 11 Mar 2003 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/standardization/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bluetooth Evolution: From Promise to Production</title>
-      <link>http://localhost:1313/posts/bluetooth-prototypes-march-2003/</link>
+      <title>Bluetooth Prototypes: From Experimental to Production (2002-2003)</title>
+      <link>http://localhost:1313/posts/bluetooth-prototypes-journey-2002-2003/</link>
       <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/bluetooth-prototypes-march-2003/</guid>
-      <description>Bluetooth Matures By March 2003, Bluetooth had matured significantly. What was experimental in 2002 was becoming production-ready. We weren&amp;rsquo;t just prototyping anymore; we were building devices that would ship to millions of users.&#xA;Optimizing for Production I spent weeks optimizing Bluetooth solutions for real-world deployment. We were now thinking about data floods—not just from users, but from the Bluetooth ecosystem itself. Multiple devices connecting, interfering with each other, creating cascade effects.</description>
+      <guid>http://localhost:1313/posts/bluetooth-prototypes-journey-2002-2003/</guid>
+      <description>The Bluetooth Promise (August 2002) By August 2002, Bluetooth had been standardized for a few years, but actual working implementations were still rare. The promise was revolutionary: wirelessly connect your phone to headsets, computers, other devices—all without wires, all at close range.&#xA;At Motorola, we saw Bluetooth as the future. Instead of wired connections or limited infrared, devices could communicate wirelessly over a distance of 10 meters. You could leave your headset at your desk and walk around the office with your phone.</description>
     </item>
   </channel>
 </rss>

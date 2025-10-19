@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/posts/gb200-batam-data-plane-rollout/</guid>
       <description>Three weeks in Batam, Indonesia in March 2025. Not a vacation - something far more meaningful. I was there to help bring the NVIDIA GB200 data plane to life, working alongside some of the brightest minds at OCI and NVIDIA. This was the moment where cutting-edge technology meets real-world infrastructure, and I got to be part of making it happen.&#xA;Related readings:&#xA;Behind the Scenes: NVIDIA GB200 NVL72 on OCI APIs - Technical deep dive on the NVIDIA GB200 and OCI integration Supercluster: NVIDIA Blackwell Dedicated Alloy - OCI&amp;rsquo;s Supercluster offering with Blackwell GPUs Nvidia GB200 NVL72 Now Available via Oracle Cloud - Data Center Dynamics coverage of the launch The Mission: Time to Market When I arrived in Batam, the pressure was real.</description>
     </item>
+    <item>
+      <title>Wi-Fi Experiments: From Lab to Campus Networks (1999-2000)</title>
+      <link>http://localhost:1313/posts/wifi-experiments-journey-1999-2000/</link>
+      <pubDate>Thu, 25 May 2000 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/wifi-experiments-journey-1999-2000/</guid>
+      <description>Wireless Revolution Begins (July 1999) By July 1999, Wi-Fi technology was emerging from IEEE 802.11 specifications into practical reality. Singapore, as a forward-thinking tech hub, was one of the first places to experiment with widespread wireless networking. As an NTU student, I had access to some of these early deployments, and the possibilities seemed limitless.&#xA;I spent weeks debugging solutions for wireless connectivity. The early Wi-Fi standards had significant challenges. Signal attenuation was unpredictable.</description>
+    </item>
   </channel>
 </rss>
