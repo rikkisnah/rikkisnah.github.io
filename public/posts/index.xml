@@ -51,13 +51,6 @@
       <description>The Bluetooth Promise (August 2002) By August 2002, Bluetooth had been standardized for a few years, but actual working implementations were still rare. The promise was revolutionary: wirelessly connect your phone to headsets, computers, other devices—all without wires, all at close range.&#xA;At Motorola, we saw Bluetooth as the future. Instead of wired connections or limited infrared, devices could communicate wirelessly over a distance of 10 meters. You could leave your headset at your desk and walk around the office with your phone.</description>
     </item>
     <item>
-      <title>Symbian OS: The Mobile Operating System Wars</title>
-      <link>http://localhost:1313/posts/symbian-os-hacks-motorola/</link>
-      <pubDate>Fri, 10 Jan 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/symbian-os-hacks-motorola/</guid>
-      <description>The OS Wars Intensify By January 2003, it was clear that mobile phones were becoming mini-computers. The question was: what operating system would power them? Windows Mobile existed but was bloated. Linux was open source but immature on mobile. And there was Symbian—an elegant operating system designed specifically for mobile devices from the ground up.&#xA;Motorola was exploring Symbian. At the factory floor, I spent weeks scaling Symbian solutions—trying to understand how to build robust, feature-rich applications on this novel platform.</description>
-    </item>
-    <item>
       <title>3G Rollout: The Future of Mobile Communication</title>
       <link>http://localhost:1313/posts/3g-rollout-thrills/</link>
       <pubDate>Thu, 14 Feb 2002 00:00:00 +0000</pubDate>
