@@ -41,6 +41,4 @@ We didn't know it yet, but within 5 years, a fourth option—Android, built on L
 
 ## Looking Back
 
-The Symbian work was fascinating and frustrating in equal measure. We were building sophisticated systems on incredibly constrained hardware. The "hacks" weren't shortcuts; they were elegant solutions to hard problems.
-
-Tying back to my roots—from NTU code jams to OCI racks—this era shaped how I see tech: not as gadgets, but as bridges to possibility. Mobile operating systems would carry billions of people forward into the connected future.
+The Symbian work was fascinating and frustrating in equal measure. We were building sophisticated systems on incredibly constrained hardware. The "hacks" weren't shortcuts; they were elegant solutions to hard problems. Mobile operating systems would carry billions of people forward into the connected future.

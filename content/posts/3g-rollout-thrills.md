@@ -39,6 +39,4 @@ The 3G phones we prototyped in 2002 weren't the final products, but they pointed
 
 Looking back, those "thrills" of the 3G rollout were seeing into the future—imagining how mobile communication would reshape society, and working to make that future real.
 
-Tying back to my roots—from NTU code jams to OCI racks—this era shaped how I see tech: not as gadgets, but as bridges to possibility. Mobile communication connected people in ways that felt almost revolutionary.
-
 The 3G revolution, launched in 2002, would reshape the entire landscape of technology and human connection.

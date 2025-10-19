@@ -63,6 +63,4 @@ The work shifted from solving technical problems to understanding how an entire 
 
 The work on Bluetooth in 2002-2003 represented a transition point: from experimental technology to foundational infrastructure. The principles we learned—modularity, testing, security, documentation—would guide how we built all future technologies.
 
-Tying back to my roots—from NTU code jams to OCI racks—this era shaped how I see tech: not as gadgets, but as bridges to possibility. Bluetooth made wireless ubiquitous, opening possibilities that seemed impossible just years earlier.
-
 By 2002, Bluetooth was still exotic. By 2005, it would be standard. By 2010, it would be ubiquitous. The wireless revolution we were building toward would reshape how devices communicate forever.

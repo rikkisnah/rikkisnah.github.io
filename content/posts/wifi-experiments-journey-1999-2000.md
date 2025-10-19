@@ -54,6 +54,4 @@ This wasn't just convenience. It was a fundamental shift in how computing worked
 
 ## Looking Forward
 
-Tying back to my roots—from NTU code jams to OCI racks—this era shaped how I see tech: not as gadgets, but as bridges to possibility. Wi-Fi didn't just connect computers; it connected people.
-
 The "spotty networks" of 2000 would eventually become the ubiquitous connectivity we take for granted today. Wireless technology would become the foundation of modern connectivity. We didn't know it then, but we were building the infrastructure of the 21st century.

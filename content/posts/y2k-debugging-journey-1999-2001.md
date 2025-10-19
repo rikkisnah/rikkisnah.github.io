@@ -76,9 +76,7 @@ Across the entire Y2K journey from 1999 to 2001, several principles became clear
 
 ## The Bigger Picture
 
-Looking back from May 2001, Y2K seemed simultaneously overstated and essential. Maybe the threat was exaggerated. But it had forced the world to audit systems, upgrade infrastructure, adopt better practices. The panic had been productive.
-
-Tying back to my roots—from NTU code jams to OCI racks—this era shaped how I see tech: not as gadgets, but as bridges to possibility. Y2K taught me that technology doesn't fail in isolation. Systems are interconnected, dependencies run deep, and one failure can cascade catastrophically.
+Looking back from May 2001, Y2K seemed simultaneously overstated and essential. Maybe the threat was exaggerated. But it had forced the world to audit systems, upgrade infrastructure, adopt better practices. The panic had been productive. Y2K taught me that technology doesn't fail in isolation. Systems are interconnected, dependencies run deep, and one failure can cascade catastrophically.
 
 ## Looking Forward
 

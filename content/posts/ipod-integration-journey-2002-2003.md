@@ -88,6 +88,4 @@ But the principles we learned—modularity, security, testing, scalability—end
 
 These years at Motorola were formative. We were building the foundation of the connected, mobile future. We didn't always succeed in the ways we hoped. But the thinking, the discipline, the determination to solve hard problems—that was real.
 
-Tying back to my roots—from NTU code jams to OCI racks—this era shaped how I see tech: not as gadgets, but as bridges to possibility. Mobile music was just one note in a much larger symphony we were composing.
-
-The future was wireless, distributed, and personal. And we were building it, one feature at a time.
+Mobile music was just one note in a much larger symphony we were composing. The future was wireless, distributed, and personal. And we were building it, one feature at a time.
