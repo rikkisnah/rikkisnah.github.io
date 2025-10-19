@@ -1,6 +1,6 @@
 ---
 title: "Oracle AI World 2025: Enterprise AI from Promise to Production"
-date: 2025-01-18T09:00:00-07:00
+date: 2025-10-18T09:00:00-07:00
 draft: false
 tags: ["Oracle", "AI", "enterprise", "cloud", "infrastructure"]
 ---

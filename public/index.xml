@@ -6,8 +6,15 @@
     <description>Recent content in Welcome to Rik Kisnah&#39;s Blog on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 15 Aug 2025 10:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 18 Oct 2025 09:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oracle AI World 2025: Enterprise AI from Promise to Production</title>
+      <link>http://localhost:1313/posts/oracle-ai-world-2025/</link>
+      <pubDate>Sat, 18 Oct 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/oracle-ai-world-2025/</guid>
+      <description>The AI Inflection Point At Oracle AI World 2025, a clear message emerged: AI isn&amp;rsquo;t just another technology trend—it&amp;rsquo;s the bridge between decades of enterprise data and the future of business innovation.&#xA;Unlocking Enterprise Data&amp;rsquo;s True Potential Oracle founder Larry Ellison framed the opportunity succinctly: &amp;ldquo;AI offers the highest-value technology we have ever seen so far.&amp;rdquo; The critical insight? Most AI models train on internet data, missing the real competitive advantage: enterprise databases containing mission-critical business information.</description>
+    </item>
     <item>
       <title>Mauritius Summer Holidays 2025 - Three Weeks of Family, Legacy, and New Beginnings</title>
       <link>http://localhost:1313/posts/mauritius-summer-holidays-2025/</link>
@@ -21,13 +28,6 @@
       <pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate>
       <guid>http://localhost:1313/posts/gb200-batam-data-plane-rollout/</guid>
       <description>Three weeks in Batam, Indonesia in March 2025. Not a vacation - something far more meaningful. I was there to help bring the NVIDIA GB200 data plane to life, working alongside some of the brightest minds at OCI and NVIDIA. This was the moment where cutting-edge technology meets real-world infrastructure, and I got to be part of making it happen.&#xA;Related readings:&#xA;Behind the Scenes: NVIDIA GB200 NVL72 on OCI APIs - Technical deep dive on the NVIDIA GB200 and OCI integration Supercluster: NVIDIA Blackwell Dedicated Alloy - OCI&amp;rsquo;s Supercluster offering with Blackwell GPUs Nvidia GB200 NVL72 Now Available via Oracle Cloud - Data Center Dynamics coverage of the launch The Mission: Time to Market When I arrived in Batam, the pressure was real.</description>
-    </item>
-    <item>
-      <title>Oracle AI World 2025: Enterprise AI from Promise to Production</title>
-      <link>http://localhost:1313/posts/oracle-ai-world-2025/</link>
-      <pubDate>Sat, 18 Jan 2025 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/oracle-ai-world-2025/</guid>
-      <description>The AI Inflection Point At Oracle AI World 2025, a clear message emerged: AI isn&amp;rsquo;t just another technology trend—it&amp;rsquo;s the bridge between decades of enterprise data and the future of business innovation.&#xA;Unlocking Enterprise Data&amp;rsquo;s True Potential Oracle founder Larry Ellison framed the opportunity succinctly: &amp;ldquo;AI offers the highest-value technology we have ever seen so far.&amp;rdquo; The critical insight? Most AI models train on internet data, missing the real competitive advantage: enterprise databases containing mission-critical business information.</description>
     </item>
     <item>
       <title>Too Young to Die</title>

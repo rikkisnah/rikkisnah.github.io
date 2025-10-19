@@ -16,7 +16,7 @@
       <description></description>
     </item>
     <item>
-      <title>Ai</title>
+      <title>AI</title>
       <link>http://localhost:1313/tags/ai/</link>
       <pubDate>Fri, 15 Aug 2025 10:00:00 -0700</pubDate>
       <guid>http://localhost:1313/tags/ai/</guid>
@@ -111,6 +111,20 @@
       <link>http://localhost:1313/tags/oci/</link>
       <pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate>
       <guid>http://localhost:1313/tags/oci/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>http://localhost:1313/tags/cloud/</link>
+      <pubDate>Sat, 18 Jan 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Enterprise</title>
+      <link>http://localhost:1313/tags/enterprise/</link>
+      <pubDate>Sat, 18 Jan 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/enterprise/</guid>
       <description></description>
     </item>
     <item>
