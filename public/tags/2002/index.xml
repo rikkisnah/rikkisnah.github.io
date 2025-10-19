@@ -6,28 +6,14 @@
     <description>Recent content in 2002 on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Oct 2002 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Aug 2002 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/2002/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>iPod in Mobile Devices: The Iterative Cycle</title>
-      <link>http://localhost:1313/posts/ipod-integration-ideas-oct-2002/</link>
-      <pubDate>Sat, 12 Oct 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ipod-integration-ideas-oct-2002/</guid>
-      <description>The Iteration Deepens By October 2002, we were six months into the iPod integration project. The initial prototypes had revealed both possibilities and limitations. Rather than giving up, we entered an intense iterative cycle—build, test, learn, rebuild.&#xA;The Optimization and Re-iteration Loop I spent weeks optimizing solutions, running into unexpected bottlenecks and finding creative workarounds. Storage was still the critical constraint—phones had kilobytes of storage; music required megabytes.&#xA;But cloud computing was entering theoretical discussions.</description>
-    </item>
     <item>
       <title>Bluetooth Prototypes: Wireless Devices Finally Talk</title>
       <link>http://localhost:1313/posts/bluetooth-prototypes-aug-2002/</link>
       <pubDate>Tue, 13 Aug 2002 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/bluetooth-prototypes-aug-2002/</guid>
       <description>The Bluetooth Promise By August 2002, Bluetooth had been standardized for a few years, but actual working implementations were still rare. The promise was revolutionary: wirelessly connect your phone to headsets, computers, other devices—all without wires, all at close range.&#xA;At Motorola, we saw Bluetooth as the future. Instead of wired connections or limited infrared, devices could communicate wirelessly over a distance of 10 meters. You could leave your headset at your desk and walk around the office with your phone.</description>
-    </item>
-    <item>
-      <title>iPod Integration: Dreaming of Connected Devices</title>
-      <link>http://localhost:1313/posts/ipod-integration-ideas-may-2002/</link>
-      <pubDate>Wed, 15 May 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ipod-integration-ideas-may-2002/</guid>
-      <description>The iPod Phenomenon In May 2002, Apple&amp;rsquo;s iPod was just a year old but already reshaping how people thought about digital music. At Motorola, we couldn&amp;rsquo;t ignore this. The question wasn&amp;rsquo;t &amp;ldquo;is the iPod important?&amp;rdquo; but &amp;ldquo;how do we integrate iPod functionality into mobile devices?&amp;rdquo;&#xA;The Integration Dream The vision was seductive: your phone would be your music player. Not two devices—one elegant handset that played music, made calls, managed contacts, and did everything in between.</description>
     </item>
     <item>
       <title>3G Rollout: The Future of Mobile Communication</title>

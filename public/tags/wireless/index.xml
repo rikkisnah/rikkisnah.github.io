@@ -9,11 +9,11 @@
     <lastBuildDate>Wed, 09 Jul 2003 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/wireless/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>iPod Integration Finale: Scaling Wireless Music Distribution</title>
-      <link>http://localhost:1313/posts/ipod-integration-ideas-july-2003/</link>
+      <title>iPod Integration Journey: From Dream to Modular Architecture (2002-2003)</title>
+      <link>http://localhost:1313/posts/ipod-integration-journey-2002-2003/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ipod-integration-ideas-july-2003/</guid>
-      <description>The Final Iteration By July 2003, iPod integration had occupied our thoughts for over a year. We&amp;rsquo;d tried multiple approaches, learned painful lessons, and were now implementing what felt like the most promising solution.&#xA;Scaling Wireless Solutions I spent weeks scaling solutions—moving from prototype to something that could work for millions of users. The question shifted: how do you synchronize music to phones wirelessly, reliably, without overwhelming networks?&#xA;We were inspired by emerging &amp;ldquo;wearable hacks&amp;rdquo;—early research into wearable computing devices that might eventually sync with phones.</description>
+      <guid>http://localhost:1313/posts/ipod-integration-journey-2002-2003/</guid>
+      <description>The iPod Phenomenon and the Integration Dream In May 2002, Apple&amp;rsquo;s iPod was just a year old but already reshaping how people thought about digital music. At Motorola, we faced a critical question: how do we integrate iPod functionality into mobile devices?&#xA;The vision was seductive: your phone would be your music player. Not two devices—one elegant handset that played music, made calls, managed contacts, and did everything in between. What followed was over a year of iterative development that fundamentally shaped my understanding of modular systems and scalable architecture.</description>
     </item>
     <item>
       <title>Bluetooth Evolution: From Promise to Production</title>

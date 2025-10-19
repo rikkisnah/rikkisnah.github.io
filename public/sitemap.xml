@@ -71,16 +71,22 @@
     <loc>http://localhost:1313/posts/too-young-to-die/</loc>
     <lastmod>2016-05-29T00:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/2003/</loc>
+    <loc>http://localhost:1313/tags/2002-2003/</loc>
     <lastmod>2003-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/distribution/</loc>
+    <loc>http://localhost:1313/tags/architecture/</loc>
+    <lastmod>2003-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/integration/</loc>
     <lastmod>2003-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ipod/</loc>
     <lastmod>2003-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/ipod-integration-ideas-july-2003/</loc>
+    <loc>http://localhost:1313/posts/ipod-integration-journey-2002-2003/</loc>
+    <lastmod>2003-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/modularity/</loc>
     <lastmod>2003-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/motorola/</loc>
@@ -89,20 +95,11 @@
     <loc>http://localhost:1313/tags/music/</loc>
     <lastmod>2003-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/scaling/</loc>
-    <lastmod>2003-07-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/wireless/</loc>
     <lastmod>2003-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/architecture/</loc>
-    <lastmod>2003-05-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/ipod-integration-ideas-may-2003/</loc>
-    <lastmod>2003-05-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/modularity/</loc>
-    <lastmod>2003-05-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/2003/</loc>
+    <lastmod>2003-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/bluetooth/</loc>
     <lastmod>2003-03-11T00:00:00+00:00</lastmod>
@@ -132,16 +129,7 @@
     <lastmod>2003-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/2002/</loc>
-    <lastmod>2002-10-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/integration/</loc>
-    <lastmod>2002-10-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/ipod-integration-ideas-oct-2002/</loc>
-    <lastmod>2002-10-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/iteration/</loc>
-    <lastmod>2002-10-12T00:00:00+00:00</lastmod>
+    <lastmod>2002-08-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/bluetooth-prototypes-aug-2002/</loc>
     <lastmod>2002-08-13T00:00:00+00:00</lastmod>
@@ -152,16 +140,13 @@
     <loc>http://localhost:1313/tags/protocols/</loc>
     <lastmod>2002-08-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/ipod-integration-ideas-may-2002/</loc>
-    <lastmod>2002-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/mobile/</loc>
-    <lastmod>2002-05-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/3g/</loc>
     <lastmod>2002-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/3g-rollout-thrills/</loc>
+    <lastmod>2002-02-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mobile/</loc>
     <lastmod>2002-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/telecommunications/</loc>
@@ -225,6 +210,9 @@
     <lastmod>2000-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/networking/</loc>
+    <lastmod>2000-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/scaling/</loc>
     <lastmod>2000-05-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/wifi-experiments-singapore-2000/</loc>

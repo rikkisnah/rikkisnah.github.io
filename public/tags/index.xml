@@ -128,17 +128,24 @@
       <description></description>
     </item>
     <item>
-      <title>2003</title>
-      <link>http://localhost:1313/tags/2003/</link>
+      <title>2002-2003</title>
+      <link>http://localhost:1313/tags/2002-2003/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/2003/</guid>
+      <guid>http://localhost:1313/tags/2002-2003/</guid>
       <description></description>
     </item>
     <item>
-      <title>Distribution</title>
-      <link>http://localhost:1313/tags/distribution/</link>
+      <title>Architecture</title>
+      <link>http://localhost:1313/tags/architecture/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/distribution/</guid>
+      <guid>http://localhost:1313/tags/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Integration</title>
+      <link>http://localhost:1313/tags/integration/</link>
+      <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/integration/</guid>
       <description></description>
     </item>
     <item>
@@ -146,6 +153,13 @@
       <link>http://localhost:1313/tags/ipod/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/ipod/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modularity</title>
+      <link>http://localhost:1313/tags/modularity/</link>
+      <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/modularity/</guid>
       <description></description>
     </item>
     <item>
@@ -163,13 +177,6 @@
       <description></description>
     </item>
     <item>
-      <title>Scaling</title>
-      <link>http://localhost:1313/tags/scaling/</link>
-      <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/scaling/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Wireless</title>
       <link>http://localhost:1313/tags/wireless/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
@@ -177,17 +184,10 @@
       <description></description>
     </item>
     <item>
-      <title>Architecture</title>
-      <link>http://localhost:1313/tags/architecture/</link>
-      <pubDate>Sat, 10 May 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/architecture/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Modularity</title>
-      <link>http://localhost:1313/tags/modularity/</link>
-      <pubDate>Sat, 10 May 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/modularity/</guid>
+      <title>2003</title>
+      <link>http://localhost:1313/tags/2003/</link>
+      <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/2003/</guid>
       <description></description>
     </item>
     <item>
@@ -242,22 +242,8 @@
     <item>
       <title>2002</title>
       <link>http://localhost:1313/tags/2002/</link>
-      <pubDate>Sat, 12 Oct 2002 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 13 Aug 2002 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/2002/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Integration</title>
-      <link>http://localhost:1313/tags/integration/</link>
-      <pubDate>Sat, 12 Oct 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/integration/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Iteration</title>
-      <link>http://localhost:1313/tags/iteration/</link>
-      <pubDate>Sat, 12 Oct 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/iteration/</guid>
       <description></description>
     </item>
     <item>
@@ -275,17 +261,17 @@
       <description></description>
     </item>
     <item>
-      <title>Mobile</title>
-      <link>http://localhost:1313/tags/mobile/</link>
-      <pubDate>Wed, 15 May 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mobile/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>3g</title>
       <link>http://localhost:1313/tags/3g/</link>
       <pubDate>Thu, 14 Feb 2002 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/3g/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mobile</title>
+      <link>http://localhost:1313/tags/mobile/</link>
+      <pubDate>Thu, 14 Feb 2002 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mobile/</guid>
       <description></description>
     </item>
     <item>
@@ -405,6 +391,13 @@
       <link>http://localhost:1313/tags/networking/</link>
       <pubDate>Thu, 25 May 2000 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scaling</title>
+      <link>http://localhost:1313/tags/scaling/</link>
+      <pubDate>Thu, 25 May 2000 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/scaling/</guid>
       <description></description>
     </item>
     <item>
