@@ -128,19 +128,20 @@ Mobile device development and innovation
 ## Education
 
 ### Massachusetts Institute of Technology
-**Postgraduate Degree, Artificial Intelligence**
+**Postgraduate Degree, Advanced AI/LLMs**
 2024 - 2026 (In Progress)
 
 ### The University of Texas at Austin
 **Postgraduate Degree, Artificial Intelligence**
-2019 - 2020
+2019
 
 ### University of Wales, Aberystwyth
-**MSc, Computer Science**
+**MSc, Computer Science - Neural Networks**
 2007
 
-### Nanyang Technological University
-**BASc, Computer Engineering**
+### Nanyang Technological University, Singapore
+**BASc, Computer Engineering - Machine Learning**
+2001
 
 ---
 

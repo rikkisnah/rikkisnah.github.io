@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Browser on Rik Kisnah - Blog</title>
-    <link>https://rikkisnah.github.io/tags/browser/</link>
+    <link>http://localhost:1313/tags/browser/</link>
     <description>Recent content in Browser on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 25 Feb 2000 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://rikkisnah.github.io/tags/browser/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/browser/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java Applets In Dorms: The Browser Wars Begin</title>
-      <link>https://rikkisnah.github.io/posts/java-applets-in-dorms-feb-2000/</link>
+      <link>http://localhost:1313/posts/java-applets-in-dorms-feb-2000/</link>
       <pubDate>Fri, 25 Feb 2000 00:00:00 +0000</pubDate>
-      <guid>https://rikkisnah.github.io/posts/java-applets-in-dorms-feb-2000/</guid>
+      <guid>http://localhost:1313/posts/java-applets-in-dorms-feb-2000/</guid>
       <description>Java: The Future of Computing? In February 2000, just two months after the Y2K celebration, the tech world buzzed with a different promise: write once, run anywhere. Java was going to revolutionize computing. Sun Microsystems was betting big on applets—small Java programs that would run in web browsers, turning the browser into a universal application platform.&#xA;As an NTU student in the dorms, I had front-row access to this revolution. Every lab machine had Java installed.</description>
     </item>
   </channel>

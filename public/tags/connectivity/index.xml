@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Connectivity on Rik Kisnah - Blog</title>
-    <link>https://rikkisnah.github.io/tags/connectivity/</link>
+    <link>http://localhost:1313/tags/connectivity/</link>
     <description>Recent content in Connectivity on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 13 Aug 2002 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://rikkisnah.github.io/tags/connectivity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/connectivity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bluetooth Prototypes: Wireless Devices Finally Talk</title>
-      <link>https://rikkisnah.github.io/posts/bluetooth-prototypes-aug-2002/</link>
+      <link>http://localhost:1313/posts/bluetooth-prototypes-aug-2002/</link>
       <pubDate>Tue, 13 Aug 2002 00:00:00 +0000</pubDate>
-      <guid>https://rikkisnah.github.io/posts/bluetooth-prototypes-aug-2002/</guid>
+      <guid>http://localhost:1313/posts/bluetooth-prototypes-aug-2002/</guid>
       <description>The Bluetooth Promise By August 2002, Bluetooth had been standardized for a few years, but actual working implementations were still rare. The promise was revolutionary: wirelessly connect your phone to headsets, computers, other devices—all without wires, all at close range.&#xA;At Motorola, we saw Bluetooth as the future. Instead of wired connections or limited infrared, devices could communicate wirelessly over a distance of 10 meters. You could leave your headset at your desk and walk around the office with your phone.</description>
     </item>
   </channel>

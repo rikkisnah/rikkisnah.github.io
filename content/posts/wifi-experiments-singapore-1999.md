@@ -33,6 +33,6 @@ Through these experiments, I learned:
 
 ## The Vision
 
-Tying back to my roots—from NTU code jams to OCI racks—this era shaped how I see tech: not as gadgets, but as bridges to possibility. Wi-Fi didn't just connect computers; it connected people.
+Tying back to my roots—from NTU code jams to Data Center racks—this era shaped how I see tech: not as gadgets, but as bridges to possibility. Wi-Fi didn't just connect computers; it connected people.
 
 Looking ahead, wireless technology would become the foundation of modern connectivity. We didn't know it then, but we were building the infrastructure of the 21st century.
