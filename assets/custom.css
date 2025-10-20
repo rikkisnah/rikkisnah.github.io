@@ -191,7 +191,15 @@ html.dark th {
   display: none !important;
 }
 
-/* Improve code block line number visibility - make line numbers darker and visible */
+/* Improve code block visibility - make code text darker and visible */
+article pre code,
+article pre,
+pre code {
+  color: #333 !important;
+  opacity: 1 !important;
+}
+
+/* Line numbers in highlighted code blocks */
 article .highlight > div table tr:first-of-type code span,
 article .highlight pre code span,
 .highlight table tr:first-of-type code span {
