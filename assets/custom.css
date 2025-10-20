@@ -190,3 +190,8 @@ html.dark th {
 .btn-dark {
   display: none !important;
 }
+
+/* Improve code block line number visibility */
+.highlight > div table tr:first-of-type pre code span {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
