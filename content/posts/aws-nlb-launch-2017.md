@@ -4,7 +4,7 @@ date: 2017-09-21T09:00:00-07:00
 draft: false
 ---
 
-![AWS ELB](/aws_elb.jpg)
+![Network Load Balancer: DNS routing with cross-zone load balancing](/aws_nlb.png)
 
 ALB solved microservices routing. NLB solved an entirely different problem: what if you need 20M requests per second at 10 microseconds of latency?
 
