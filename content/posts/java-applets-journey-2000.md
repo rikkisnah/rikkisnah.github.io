@@ -1,5 +1,5 @@
 ---
-title: "Java Applets Journey: Write Once, Run Anywhere? (2000)"
+title: "Java Applets Journey: Write Once, Run Anywhere?"
 date: 2000-11-21T00:00:00Z
 draft: false
 tags: ["java", "applets", "2000", "ntu", "browser", "dorms", "security", "optimization"]
