@@ -4,7 +4,7 @@ date: 2013-11-15T09:00:00-07:00
 draft: false
 ---
 
-![Amazon WorkSpaces](/amazon_workspaces.jpg)
+![Amazon WorkSpaces - Desktop as a Service](/workspaces_desktop_as_service.png)
 
 Desktop-as-a-Service: rent a Windows desktop from AWS, get VPN-free remote work, no hardware to manage, pay per user per month.
 
