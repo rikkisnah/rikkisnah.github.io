@@ -4,7 +4,7 @@ date: 2016-08-11T09:00:00-07:00
 draft: false
 ---
 
-![AWS ELB](/aws_elb.jpg)
+![Setting up an Application Load Balancer with AWS EC2](/aws_alb.png)
 
 Classic Load Balancer shipped in 2009 and became a tech debt monster by 2016: 3 microservices = 3 load balancers = $150/month just for routing.
 
