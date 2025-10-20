@@ -4,7 +4,7 @@ date: 2018-06-15T09:00:00-07:00
 draft: false
 ---
 
-![AWS ELB](/aws_elb.jpg)
+![Classic Load Balancer vs Application Load Balancer vs Network Load Balancer](/clb_alb_elb.png)
 
 By mid-2018, AWS had three load balancers: CLB (2009), ALB (2016), NLB (2017). Millions of customers ran each type in production. The question: how do you migrate without breaking live applications?
 
