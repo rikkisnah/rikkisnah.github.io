@@ -22,10 +22,10 @@ The renovation took 2 years, with incredible help from Estelle's Dad - Jose Nico
 
 Flic en Flac is beautiful and close to our friends from Singapore. This house is more than just property - it's a connection to family, to memories, and to the future.
 
-![Laxmi Villa Address](Laxmi_Villa_Address.JPG)
-![Laxmi Villa Side Yard](Laxmi_Villa_sideyard.jpg)
-![Laxmi Villa Swimming Pool](Laxmi_Villa_SwimmingPool.jpg)
-![Mauritius Beach](MRU_Beach.jpg)
+![Laxmi Villa Address](/posts/mauritius-summer-holidays-2025/Laxmi_Villa_Address.JPG)
+![Laxmi Villa Side Yard](/posts/mauritius-summer-holidays-2025/Laxmi_Villa_sideyard.jpg)
+![Laxmi Villa Swimming Pool](/posts/mauritius-summer-holidays-2025/Laxmi_Villa_SwimmingPool.jpg)
+![Mauritius Beach](/posts/mauritius-summer-holidays-2025/MRU_Beach.jpg)
 
 ## 2. Working with Mauritius Government, Oracle, and Telecoms
 
@@ -33,9 +33,9 @@ I spent one week working with the Mauritius Government, Mauritius Oracle, and Ma
 
 The hope is to have Oracle invest more in Mauritius and vice-versa - to make Mauritius an AI hub in Southern Africa. It's exciting to think about the potential impact this could have on the island's technology future.
 
-![Government MU Presentation](Govt_MU_Presentation.jpg)
-![Mauritius Telecoms Data Center](Mauritius_Telcoms_DataCenter.jpg)
-![Oracle Mauritius](Oracle_Mauritius.jpg)
+![Government MU Presentation](/posts/mauritius-summer-holidays-2025/Govt_MU_Presentation.jpg)
+![Mauritius Telecoms Data Center](/posts/mauritius-summer-holidays-2025/Mauritius_Telcoms_DataCenter.jpg)
+![Oracle Mauritius](/posts/mauritius-summer-holidays-2025/Oracle_Mauritius.jpg)
 
 ## 3. Dad's 75th Birthday and 47th Wedding Anniversary
 
@@ -43,9 +43,9 @@ We celebrated Dad's 75th birthday and my parents' 47th wedding anniversary. It w
 
 We also took time to remember Dada and Dad's father - honoring the generations that came before us.
 
-![Pa and Ma Celebration](pa_ma_celebration.jpg)
-![Dada and Dad Remembrance](Dada_Dad_remembrance.jpg)
-![The Baby Boomers - Family](The%20Baby%20Boomers%20-%20Family.jpg)
+![Pa and Ma Celebration](/posts/mauritius-summer-holidays-2025/pa_ma_celebration.jpg)
+![Dada and Dad Remembrance](/posts/mauritius-summer-holidays-2025/Dada_Dad_remembrance.jpg)
+![The Baby Boomers - Family](/posts/mauritius-summer-holidays-2025/The%20Baby%20Boomers%20-%20Family.jpg)
 
 ---
 

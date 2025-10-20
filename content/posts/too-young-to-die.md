@@ -74,17 +74,17 @@ A poem for my brother. Reflecting on life, family, and the passage of time.
 
 ### Family Memories
 
-![Family gathering with Rik, Rekha, and others](ran-family.jpg)
+![Family gathering with Rik, Rekha, and others](/posts/too-young-to-die/ran-family.jpg)
 
-![Rik and Ma together](ran-ma-rik.jpg)
+![Rik and Ma together](/posts/too-young-to-die/ran-ma-rik.jpg)
 
-![Rekha and Rik with friends at the beach](ran-rekha.jpg)
+![Rekha and Rik with friends at the beach](/posts/too-young-to-die/ran-rekha.jpg)
 
-![Rik, Ma, and family](ran-rik-ma.jpg)
+![Rik, Ma, and family](/posts/too-young-to-die/ran-rik-ma.jpg)
 
-![Family portrait - Rik, Pa, and Ma](ran-rik-pa-ma.jpg)
+![Family portrait - Rik, Pa, and Ma](/posts/too-young-to-die/ran-rik-pa-ma.jpg)
 
-![Rik and Ran at home](rik-ran.JPG)
+![Rik and Ran at home](/posts/too-young-to-die/rik-ran.JPG)
 
 ---
 

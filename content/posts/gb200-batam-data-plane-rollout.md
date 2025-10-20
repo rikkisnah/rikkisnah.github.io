@@ -41,7 +41,7 @@ We faced questions that only real deployment could answer:
 
 Each day brought new insights. Some came from elegant solutions. Others came from failures that taught us more than successes ever could.
 
-![NVIDIA GB200 NVL72 Rack System](gb200_hero.png)
+![NVIDIA GB200 NVL72 Rack System](/posts/gb200-batam-data-plane-rollout/gb200_hero.png)
 *The NVIDIA GB200 NVL72 - 36 Grace CPUs and 72 Blackwell GPUs in a single liquid-cooled rack*
 
 ## Working with the Best
@@ -60,7 +60,7 @@ By the end of three weeks, we had:
 
 Not every deployment challenge was solved, but we had momentum. We had patterns. And we had a team that understood the system deeply enough to adapt when new problems emerged.
 
-![OCI Supercluster with NVIDIA Blackwell](oci_supercluster.png)
+![OCI Supercluster with NVIDIA Blackwell](/posts/gb200-batam-data-plane-rollout/oci_supercluster.png)
 *OCI's state-of-the-art infrastructure combining NVIDIA Quantum-2 InfiniBand networking with GB200 systems*
 
 ## The Lesson
