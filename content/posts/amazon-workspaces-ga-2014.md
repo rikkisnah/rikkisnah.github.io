@@ -4,7 +4,7 @@ date: 2014-03-25T09:00:00-07:00
 draft: false
 ---
 
-![Amazon WorkSpaces](/amazon_workspaces.jpg)
+![Amazon WorkSpaces Desktop - Cloud-based Windows workspace](/aws_workspaces_desktop.png)
 
 WorkSpaces went GA when we nailed the three things enterprises absolutely required: Active Directory integration, local printing, and compliance frameworks (HIPAA/PCI).
 
