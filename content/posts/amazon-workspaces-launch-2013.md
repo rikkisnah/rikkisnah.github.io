@@ -1,5 +1,5 @@
 ---
-title: "Amazon WorkSpaces: The Birth of Desktop-as-a-Service (2013)"
+title: "Amazon WorkSpaces: The Birth of Desktop-as-a-Service"
 date: 2013-11-15T09:00:00-07:00
 draft: false
 ---

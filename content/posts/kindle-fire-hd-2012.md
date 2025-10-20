@@ -1,5 +1,5 @@
 ---
-title: "Kindle Fire HD: Amazon's Tablet Strategy (2012)"
+title: "Kindle Fire HD: Amazon's Tablet Strategy"
 date: 2012-09-06T10:00:00-07:00
 draft: false
 ---

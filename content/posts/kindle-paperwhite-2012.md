@@ -1,5 +1,5 @@
 ---
-title: "Kindle Paperwhite: The Game Changer (2012)"
+title: "Kindle Paperwhite: The Game Changer"
 date: 2012-09-06T09:00:00-07:00
 draft: false
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Application Load Balancer: The Layer 7 Revolution (2016)"
+title: "Application Load Balancer: The Layer 7 Revolution"
 date: 2016-08-11T09:00:00-07:00
 draft: false
 ---

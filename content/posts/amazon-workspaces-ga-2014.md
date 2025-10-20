@@ -1,5 +1,5 @@
 ---
-title: "Amazon WorkSpaces GA: Enterprise Readiness (2014)"
+title: "Amazon WorkSpaces GA: Enterprise Readiness"
 date: 2014-03-25T09:00:00-07:00
 draft: false
 ---

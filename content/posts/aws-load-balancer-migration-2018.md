@@ -1,5 +1,5 @@
 ---
-title: "The Great Load Balancer Migration: Managing Three Generations (2018)"
+title: "The Great Load Balancer Migration: Managing Three Generations"
 date: 2018-06-15T09:00:00-07:00
 draft: false
 ---

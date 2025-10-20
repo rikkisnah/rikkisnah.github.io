@@ -1,5 +1,5 @@
 ---
-title: "Network Load Balancer: Extreme Performance for the Cloud (2017)"
+title: "Network Load Balancer: Extreme Performance for the Cloud"
 date: 2017-09-21T09:00:00-07:00
 draft: false
 ---

@@ -1,5 +1,5 @@
 ---
-title: "WorkSpaces Application Manager: Scaling Application Deployment (2015)"
+title: "WorkSpaces Application Manager: Scaling Application Deployment"
 date: 2015-04-15T09:00:00-07:00
 draft: false
 ---

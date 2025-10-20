@@ -1,5 +1,5 @@
 ---
-title: "Kindle Fire HDX: The High-Performance Tablet Revolution (2013)"
+title: "Kindle Fire HDX: The High-Performance Tablet Revolution"
 date: 2013-09-06T10:00:00-07:00
 draft: false
 ---
