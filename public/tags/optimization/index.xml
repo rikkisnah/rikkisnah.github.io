@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Optimization on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/optimization/</link>
+    <link>http://localhost:45053/tags/optimization/</link>
     <description>Recent content in Optimization on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 21 Nov 2000 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:45053/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Java Applets Journey: Write Once, Run Anywhere? (2000)</title>
-      <link>http://localhost:1313/posts/java-applets-journey-2000/</link>
+      <title>Java Applets Journey: Write Once, Run Anywhere?</title>
+      <link>http://localhost:45053/posts/java-applets-journey-2000/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/java-applets-journey-2000/</guid>
-      <description>Java: The Future of Computing (February 2000) In February 2000, just two months after the Y2K celebration, the tech world buzzed with a different promise: write once, run anywhere. Java was going to revolutionize computing. Sun Microsystems was betting big on applets—small Java programs that would run in web browsers, turning the browser into a universal application platform.&#xA;As an NTU student in the dorms, I had front-row access to this revolution.</description>
+      <guid>http://localhost:45053/posts/java-applets-journey-2000/</guid>
+      <description>&amp;ldquo;Write Once, Run Anywhere&amp;rdquo; (2000) Java shipped 1995. By 2000, Sun was convinced: Java applets would replace native applications. Download an applet from a website, it runs in your browser on any OS. Windows, Mac, Linux—same code everywhere.&#xA;At NTU, every CS class assignment involved Java. The promise was seductive. But reality was brutal: applets were slow (multi-MB downloads!), full of security bugs, and incompatible across browsers. Try to download a file?</description>
     </item>
   </channel>
 </rss>

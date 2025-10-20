@@ -11,7 +11,7 @@
   style="--bg:#fff"
   lang="en"
   dir="ltr"
-><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=45053&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
@@ -20,36 +20,36 @@
   />
 
   
-  <title>Y2K Debugging Journey: From Crisis to Lessons Learned (1999-2001) - Rik Kisnah - Blog</title>
+  <title>Y2K Debugging Journey: From Crisis to Lessons Learned - Rik Kisnah - Blog</title>
 
   
   <meta name="theme-color" />
 
-  <meta name="description" content="The Millennium Bug Looms As an NTU student in Singapore during the waning days of 1998 and early 1999, I found myself swept up in what would become the defining technical challenge of the era: Y2K debugging. The humid labs of Nanyang Technological University buzzed with anxiety and excitement as midnight on December 31st approached—would systems across the world crash when the calendar rolled from 1999 to 2000?
-In 1999, Y2K debugging was all the rage in my corner of the tech world." />
-  <meta name="author" content="Rik Kisnah" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+  <meta name="description" content="The Crisis That Never Was (1999-2000) Summer 1999: The world was panicked. Every computer system would crash at midnight on Dec 31, 1999 because programmers in the 1970s had stored years as 2-digit numbers. 99 rolled to 00, and—disaster.
+At NTU, we treated it seriously. Every system we touched had the same problem: years stored as YY instead of YYYY. The fix was mechanical but tedious: find every date field, add validation, test like hell." />
+  <meta name="author" content="Rik Kisnah" /><link rel="preload stylesheet" as="style" href="http://localhost:45053/main.min.css" />
 
   
-  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+  <link rel="preload" as="image" href="http://localhost:45053/theme.png" />
 
   
 
-  <link rel="preload" as="image" href="http://localhost:1313/github.svg" /><link rel="preload" as="image" href="http://localhost:1313/linkedin.svg" />
+  <link rel="preload" as="image" href="http://localhost:45053/github.svg" /><link rel="preload" as="image" href="http://localhost:45053/linkedin.svg" />
 
   <script
     defer
-    src="http://localhost:1313/highlight.min.js"
+    src="http://localhost:45053/highlight.min.js"
     onload="hljs.initHighlightingOnLoad();"
   ></script>
 
   
   <link
     rel="icon"
-    href="http://localhost:1313/favicon.ico"
+    href="http://localhost:45053/favicon.ico"
   />
   <link
     rel="apple-touch-icon"
-    href="http://localhost:1313/apple-touch-icon.png"
+    href="http://localhost:45053/apple-touch-icon.png"
   />
 
   <meta name="generator" content="Hugo 0.123.7">
@@ -62,7 +62,7 @@ In 1999, Y2K debugging was all the rage in my corner of the tech world." />
   <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
     <a
       class="-translate-y-[1px] text-2xl font-medium"
-      href="http://localhost:1313/"
+      href="http://localhost:45053/"
       >Rik Kisnah - Blog</a
     >
     <div
@@ -155,12 +155,13 @@ In 1999, Y2K debugging was all the rage in my corner of the tech world." />
       class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
     ><article>
   <header class="mb-14">
-    <h1 class="my-0! pb-2.5">Y2K Debugging Journey: From Crisis to Lessons Learned (1999-2001)</h1><div class="text-xs antialiased opacity-60"><time>Dec 20, 2001</time></div></header>
+    <h1 class="my-0! pb-2.5">Y2K Debugging Journey: From Crisis to Lessons Learned</h1><div class="text-xs antialiased opacity-60"><time>Dec 20, 2001</time></div></header>
 
-  <section><h2 id="the-millennium-bug-looms">The Millennium Bug Looms</h2>
-<p>As an NTU student in Singapore during the waning days of 1998 and early 1999, I found myself swept up in what would become the defining technical challenge of the era: Y2K debugging. The humid labs of Nanyang Technological University buzzed with anxiety and excitement as midnight on December 31st approached—would systems across the world crash when the calendar rolled from 1999 to 2000?</p>
-<p>In 1999, Y2K debugging was all the rage in my corner of the tech world. I spent weeks deploying solutions, wrestling with legacy systems that had been storing years as two-digit numbers for decades. The problem seemed simple enough on paper: find every instance where dates were stored or processed, understand the cascade of dependencies, and implement fixes without breaking existing functionality.</p>
-<p>The challenges were real. Latency spikes became common as systems groaned under the weight of additional validation logic. Every bug fix introduced the possibility of new ones. We worked late into the humid Singapore nights, fueled by teh tarik from the nearby kopitiam and the determination to prevent a global meltdown.</p>
+  <section><h2 id="the-crisis-that-never-was-1999-2000">The Crisis That Never Was (1999-2000)</h2>
+<p>Summer 1999: The world was panicked. Every computer system would crash at midnight on Dec 31, 1999 because programmers in the 1970s had stored years as 2-digit numbers. 99 rolled to 00, and—disaster.</p>
+<p>At NTU, we treated it seriously. Every system we touched had the same problem: years stored as <code>YY</code> instead of <code>YYYY</code>. The fix was mechanical but tedious: find every date field, add validation, test like hell.</p>
+<p>But something odd happened: it wasn&rsquo;t that hard. Not magic, just systematic. Map every date field. Write fixes. Test. Move on.</p>
+<p>By December 30, 1999, the panic had faded. We were confident the world wouldn&rsquo;t end. And it didn&rsquo;t.</p>
 <h2 id="the-breakthroughs">The Breakthroughs</h2>
 <p>When the fixes worked—when we saw systems correctly handling the millennium transition—it was pure magic. There was something deeply satisfying about staving off what could have been a technological catastrophe. We were problem-solvers, systems architects, detectives hunting through thousands of lines of code.</p>
 <h2 id="scaling-solutions-march-1999">Scaling Solutions (March 1999)</h2>
@@ -209,45 +210,45 @@ In 1999, Y2K debugging was all the rage in my corner of the tech world." />
 
   <footer class="mt-12 flex flex-wrap"><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/y2k"
+      href="http://localhost:45053/tags/y2k"
       >y2k</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/debugging"
+      href="http://localhost:45053/tags/debugging"
       >debugging</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/1999-2001"
+      href="http://localhost:45053/tags/1999-2001"
       >1999-2001</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/ntu"
+      href="http://localhost:45053/tags/ntu"
       >ntu</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/millennium"
+      href="http://localhost:45053/tags/millennium"
       >millennium</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/systems"
+      href="http://localhost:45053/tags/systems"
       >systems</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/crisis-management"
+      href="http://localhost:45053/tags/crisis-management"
       >crisis-management</a
     ></footer><nav
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
-  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/posts/3g-rollout-thrills/"
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:45053/posts/3g-rollout-thrills/"
       ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>3G Rollout: The Future of Mobile Communication</span></a
     ><a
       class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
-      href="http://localhost:1313/posts/early-linux-at-ntu/"
+      href="http://localhost:45053/posts/early-linux-at-ntu/"
       ><span>Early Linux at NTU: Open Source Becomes Real</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
     ></nav></article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >
   <div class="mr-auto">&copy;2025
-    <a class="link" href="http://localhost:1313/">Rik Kisnah - Blog</a></div>
+    <a class="link" href="http://localhost:45053/">Rik Kisnah - Blog</a></div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
     >powered by hugo️️</a
   >️

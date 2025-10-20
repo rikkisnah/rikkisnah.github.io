@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Motorola on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/motorola/</link>
+    <link>http://localhost:45053/tags/motorola/</link>
     <description>Recent content in Motorola on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 09 Jul 2003 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/motorola/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:45053/tags/motorola/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>iPod Integration Journey: From Dream to Modular Architecture (2002-2003)</title>
-      <link>http://localhost:1313/posts/ipod-integration-journey-2002-2003/</link>
+      <title>iPod Integration Journey: From Dream to Modular Architecture</title>
+      <link>http://localhost:45053/posts/ipod-integration-journey-2002-2003/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ipod-integration-journey-2002-2003/</guid>
-      <description>The iPod Phenomenon and the Integration Dream In May 2002, Apple&amp;rsquo;s iPod was just a year old but already reshaping how people thought about digital music. At Motorola, we faced a critical question: how do we integrate iPod functionality into mobile devices?&#xA;The vision was seductive: your phone would be your music player. Not two devices—one elegant handset that played music, made calls, managed contacts, and did everything in between. What followed was over a year of iterative development that fundamentally shaped my understanding of modular systems and scalable architecture.</description>
+      <guid>http://localhost:45053/posts/ipod-integration-journey-2002-2003/</guid>
+      <description>The Dream: Phone as Music Player iPod shipped May 2001. By May 2002, it was already a phenomenon. At Motorola Design Center Singapore, we asked: what if your phone was the iPod?&#xA;Not &amp;ldquo;what if your phone had an MP3 player.&amp;rdquo; But: what if the form factor, the UX, the simplicity—all of it could live in a Motorola handset?&#xA;Over 15 months, I learned that modular architecture beats monolithic design every time.</description>
     </item>
     <item>
-      <title>Bluetooth Prototypes: From Experimental to Production (2002-2003)</title>
-      <link>http://localhost:1313/posts/bluetooth-prototypes-journey-2002-2003/</link>
+      <title>Bluetooth Prototypes: From Experimental to Production</title>
+      <link>http://localhost:45053/posts/bluetooth-prototypes-journey-2002-2003/</link>
       <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/bluetooth-prototypes-journey-2002-2003/</guid>
-      <description>The Bluetooth Promise (August 2002) By August 2002, Bluetooth had been standardized for a few years, but actual working implementations were still rare. The promise was revolutionary: wirelessly connect your phone to headsets, computers, other devices—all without wires, all at close range.&#xA;At Motorola, we saw Bluetooth as the future. Instead of wired connections or limited infrared, devices could communicate wirelessly over a distance of 10 meters. You could leave your headset at your desk and walk around the office with your phone.</description>
+      <guid>http://localhost:45053/posts/bluetooth-prototypes-journey-2002-2003/</guid>
+      <description>Wireless Phones (2002) Bluetooth standard existed since 1998. By 2002, nobody had actually shipped it in a phone. At Motorola, we saw the real opportunity: wireless headphones. No more headset cords tangled in your pocket.&#xA;But standards look clean on paper. In reality? Manufacturers interpreted the spec differently. Pairing was flaky. Range was spotty. We spent months debugging why Bluetooth worked 70% of the time instead of 100%.&#xA;We&amp;rsquo;d get two devices talking, then change something in our protocol stack, and suddenly they wouldn&amp;rsquo;t.</description>
     </item>
     <item>
       <title>3G Rollout: The Future of Mobile Communication</title>
-      <link>http://localhost:1313/posts/3g-rollout-thrills/</link>
+      <link>http://localhost:45053/posts/3g-rollout-thrills/</link>
       <pubDate>Thu, 14 Feb 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/3g-rollout-thrills/</guid>
+      <guid>http://localhost:45053/posts/3g-rollout-thrills/</guid>
       <description>Moving to Motorola In 2002, I left academia and joined Motorola Mobile Devices. The timing was perfect. Motorola was at the center of the 3G revolution—the transition from 2G networks (which enabled SMS and basic data) to 3G networks (which promised high-speed data and multimedia).&#xA;The 3G Vision The promise was intoxicating. Imagine a mobile phone that could stream video, enable real-time applications, support navigation and location services. 3G would deliver megabits per second instead of kilobits.</description>
     </item>
   </channel>

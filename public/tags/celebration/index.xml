@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Celebration on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/celebration/</link>
+    <link>http://localhost:45053/tags/celebration/</link>
     <description>Recent content in Celebration on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 15 Aug 2025 10:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/celebration/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:45053/tags/celebration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mauritius Summer Holidays 2025 - Three Weeks of Family, Legacy, and New Beginnings</title>
-      <link>http://localhost:1313/posts/mauritius-summer-holidays-2025/</link>
+      <link>http://localhost:45053/posts/mauritius-summer-holidays-2025/</link>
       <pubDate>Fri, 15 Aug 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/mauritius-summer-holidays-2025/</guid>
+      <guid>http://localhost:45053/posts/mauritius-summer-holidays-2025/</guid>
       <description>I spent three unforgettable weeks in Mauritius during July-August 2025. This trip was special in so many ways - it was about honoring family legacy, building new opportunities, and celebrating the people who matter most.&#xA;1. Baptism of Laxmi Villa - A Dream Reborn Estelle and I completed the renovation of Laxmi Villa, the house Dad and Ma built in 1999 after I left Mauritius. The three-floor structure has always held meaning for our family:</description>
     </item>
   </channel>

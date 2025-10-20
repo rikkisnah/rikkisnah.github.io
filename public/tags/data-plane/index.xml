@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data-Plane on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/data-plane/</link>
+    <link>http://localhost:45053/tags/data-plane/</link>
     <description>Recent content in Data-Plane on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 15 Mar 2025 10:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/data-plane/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:45053/tags/data-plane/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Three Weeks in Batam: Bringing NVIDIA GB200 to Life on the Data Plane</title>
-      <link>http://localhost:1313/posts/gb200-batam-data-plane-rollout/</link>
+      <link>http://localhost:45053/posts/gb200-batam-data-plane-rollout/</link>
       <pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/gb200-batam-data-plane-rollout/</guid>
+      <guid>http://localhost:45053/posts/gb200-batam-data-plane-rollout/</guid>
       <description>Three weeks in Batam, Indonesia in March 2025. Not a vacation - something far more meaningful. I was there to help bring the NVIDIA GB200 data plane to life, working alongside some of the brightest minds at OCI and NVIDIA. This was the moment where cutting-edge technology meets real-world infrastructure, and I got to be part of making it happen.&#xA;Related readings:&#xA;Behind the Scenes: NVIDIA GB200 NVL72 on OCI APIs - Technical deep dive on the NVIDIA GB200 and OCI integration Supercluster: NVIDIA Blackwell Dedicated Alloy - OCI&amp;rsquo;s Supercluster offering with Blackwell GPUs Nvidia GB200 NVL72 Now Available via Oracle Cloud - Data Center Dynamics coverage of the launch The Mission: Time to Market When I arrived in Batam, the pressure was real.</description>
     </item>
   </channel>

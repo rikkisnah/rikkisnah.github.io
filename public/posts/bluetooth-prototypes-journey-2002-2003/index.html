@@ -11,7 +11,7 @@
   style="--bg:#fff"
   lang="en"
   dir="ltr"
-><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=45053&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
@@ -20,36 +20,37 @@
   />
 
   
-  <title>Bluetooth Prototypes: From Experimental to Production (2002-2003) - Rik Kisnah - Blog</title>
+  <title>Bluetooth Prototypes: From Experimental to Production - Rik Kisnah - Blog</title>
 
   
   <meta name="theme-color" />
 
-  <meta name="description" content="The Bluetooth Promise (August 2002) By August 2002, Bluetooth had been standardized for a few years, but actual working implementations were still rare. The promise was revolutionary: wirelessly connect your phone to headsets, computers, other devices—all without wires, all at close range.
-At Motorola, we saw Bluetooth as the future. Instead of wired connections or limited infrared, devices could communicate wirelessly over a distance of 10 meters. You could leave your headset at your desk and walk around the office with your phone." />
-  <meta name="author" content="Rik Kisnah" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+  <meta name="description" content="Wireless Phones (2002) Bluetooth standard existed since 1998. By 2002, nobody had actually shipped it in a phone. At Motorola, we saw the real opportunity: wireless headphones. No more headset cords tangled in your pocket.
+But standards look clean on paper. In reality? Manufacturers interpreted the spec differently. Pairing was flaky. Range was spotty. We spent months debugging why Bluetooth worked 70% of the time instead of 100%.
+We&rsquo;d get two devices talking, then change something in our protocol stack, and suddenly they wouldn&rsquo;t." />
+  <meta name="author" content="Rik Kisnah" /><link rel="preload stylesheet" as="style" href="http://localhost:45053/main.min.css" />
 
   
-  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+  <link rel="preload" as="image" href="http://localhost:45053/theme.png" />
 
   
 
-  <link rel="preload" as="image" href="http://localhost:1313/github.svg" /><link rel="preload" as="image" href="http://localhost:1313/linkedin.svg" />
+  <link rel="preload" as="image" href="http://localhost:45053/github.svg" /><link rel="preload" as="image" href="http://localhost:45053/linkedin.svg" />
 
   <script
     defer
-    src="http://localhost:1313/highlight.min.js"
+    src="http://localhost:45053/highlight.min.js"
     onload="hljs.initHighlightingOnLoad();"
   ></script>
 
   
   <link
     rel="icon"
-    href="http://localhost:1313/favicon.ico"
+    href="http://localhost:45053/favicon.ico"
   />
   <link
     rel="apple-touch-icon"
-    href="http://localhost:1313/apple-touch-icon.png"
+    href="http://localhost:45053/apple-touch-icon.png"
   />
 
   <meta name="generator" content="Hugo 0.123.7">
@@ -62,7 +63,7 @@ At Motorola, we saw Bluetooth as the future. Instead of wired connections or lim
   <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
     <a
       class="-translate-y-[1px] text-2xl font-medium"
-      href="http://localhost:1313/"
+      href="http://localhost:45053/"
       >Rik Kisnah - Blog</a
     >
     <div
@@ -155,12 +156,11 @@ At Motorola, we saw Bluetooth as the future. Instead of wired connections or lim
       class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
     ><article>
   <header class="mb-14">
-    <h1 class="my-0! pb-2.5">Bluetooth Prototypes: From Experimental to Production (2002-2003)</h1><div class="text-xs antialiased opacity-60"><time>Mar 11, 2003</time></div></header>
+    <h1 class="my-0! pb-2.5">Bluetooth Prototypes: From Experimental to Production</h1><div class="text-xs antialiased opacity-60"><time>Mar 11, 2003</time></div></header>
 
-  <section><h2 id="the-bluetooth-promise-august-2002">The Bluetooth Promise (August 2002)</h2>
-<p>By August 2002, Bluetooth had been standardized for a few years, but actual working implementations were still rare. The promise was revolutionary: wirelessly connect your phone to headsets, computers, other devices—all without wires, all at close range.</p>
-<p>At Motorola, we saw Bluetooth as the future. Instead of wired connections or limited infrared, devices could communicate wirelessly over a distance of 10 meters. You could leave your headset at your desk and walk around the office with your phone. You could sync your laptop and phone automatically.</p>
-<p>I spent weeks deploying Bluetooth solutions—and encountered the messy reality of standards. The Bluetooth specification was complex. Different manufacturers implemented it differently. Compatibility was hit-or-miss.</p>
+  <section><h2 id="wireless-phones-2002">Wireless Phones (2002)</h2>
+<p>Bluetooth standard existed since 1998. By 2002, nobody had actually shipped it in a phone. At Motorola, we saw the real opportunity: wireless headphones. No more headset cords tangled in your pocket.</p>
+<p>But standards look clean on paper. In reality? Manufacturers interpreted the spec differently. Pairing was flaky. Range was spotty. We spent months debugging why Bluetooth worked 70% of the time instead of 100%.</p>
 <p>We&rsquo;d get two devices talking, then change something in our protocol stack, and suddenly they wouldn&rsquo;t. We&rsquo;d spend days debugging, only to discover the issue was a misunderstanding of the specification&rsquo;s wording.</p>
 <h3 id="compliance-hurdles">Compliance Hurdles</h3>
 <p>One huge challenge was compliance. Bluetooth operated in the unlicensed 2.4 GHz band—the same band used by Wi-Fi, cordless phones, microwaves, and baby monitors. Avoiding interference required sophisticated frequency hopping, power management, and protocol design.</p>
@@ -197,45 +197,45 @@ At Motorola, we saw Bluetooth as the future. Instead of wired connections or lim
 
   <footer class="mt-12 flex flex-wrap"><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/bluetooth"
+      href="http://localhost:45053/tags/bluetooth"
       >bluetooth</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/wireless"
+      href="http://localhost:45053/tags/wireless"
       >wireless</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/motorola"
+      href="http://localhost:45053/tags/motorola"
       >motorola</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/2002-2003"
+      href="http://localhost:45053/tags/2002-2003"
       >2002-2003</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/connectivity"
+      href="http://localhost:45053/tags/connectivity"
       >connectivity</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/protocols"
+      href="http://localhost:45053/tags/protocols"
       >protocols</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/standardization"
+      href="http://localhost:45053/tags/standardization"
       >standardization</a
     ></footer><nav
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
-  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/posts/ipod-integration-journey-2002-2003/"
-      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>iPod Integration Journey: From Dream to Modular Architecture (2002-2003)</span></a
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:45053/posts/motorola-v70-pebble-2003/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Motorola V70 (Pebble) - Design Center Singapore</span></a
     ><a
       class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
-      href="http://localhost:1313/posts/3g-rollout-thrills/"
+      href="http://localhost:45053/posts/3g-rollout-thrills/"
       ><span>3G Rollout: The Future of Mobile Communication</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
     ></nav></article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >
   <div class="mr-auto">&copy;2025
-    <a class="link" href="http://localhost:1313/">Rik Kisnah - Blog</a></div>
+    <a class="link" href="http://localhost:45053/">Rik Kisnah - Blog</a></div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
     >powered by hugo️️</a
   >️

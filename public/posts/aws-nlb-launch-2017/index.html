@@ -1,0 +1,316 @@
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#fff"
+  lang="en"
+  dir="ltr"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=45053&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Network Load Balancer: Extreme Performance for the Cloud - Rik Kisnah - Blog</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="ALB solved microservices routing. NLB solved an entirely different problem: what if you need 20M requests per second at 10 microseconds of latency?
+Answer: don&rsquo;t use ALB. ALB&rsquo;s Layer 7 inspection has overhead. NLB dropped back to Layer 4 and optimized for raw speed.
+The Market Gap By 2017, certain workloads were impossible on AWS:
+High-frequency trading: Microsecond latencies matter (literally worth $1M per millisecond) Gaming: 50M concurrent sessions, sub-100ms latency required DNS: Billions of queries/day, must be answered in &lt;50ms Video streaming: Millions of concurrent UDP streams These needed a load balancer that didn&rsquo;t inspect application data—just hashed flows and forwarded packets fast." />
+  <meta name="author" content="Rik Kisnah" /><link rel="preload stylesheet" as="style" href="http://localhost:45053/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="http://localhost:45053/theme.png" />
+
+  
+
+  <link rel="preload" as="image" href="http://localhost:45053/github.svg" /><link rel="preload" as="image" href="http://localhost:45053/linkedin.svg" />
+
+  <script
+    defer
+    src="http://localhost:45053/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="http://localhost:45053/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:45053/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.123.7">
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="http://localhost:45053/"
+      >Rik Kisnah - Blog</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#fff'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkVal = localStorage.getItem('dark');
+    setDark(darkVal === 'true');
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/posts/"
+        >Posts</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/publications/"
+        >Publications</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/resume/"
+        >Resume</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/rikkisnah"
+        target="_blank"
+        rel="me"
+      >github</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/rikkisnah"
+        target="_blank"
+        rel="me"
+      >linkedin</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">Network Load Balancer: Extreme Performance for the Cloud</h1><div class="text-xs antialiased opacity-60"><time>Sep 21, 2017</time></div></header>
+
+  <section><p><img src="/aws_nlb.png" alt="Network Load Balancer: DNS routing with cross-zone load balancing"></p>
+<p>ALB solved microservices routing. NLB solved an entirely different problem: what if you need 20M requests per second at 10 microseconds of latency?</p>
+<p>Answer: don&rsquo;t use ALB. ALB&rsquo;s Layer 7 inspection has overhead. NLB dropped back to Layer 4 and optimized for raw speed.</p>
+<h2 id="the-market-gap">The Market Gap</h2>
+<p>By 2017, certain workloads were impossible on AWS:</p>
+<ul>
+<li><strong>High-frequency trading</strong>: Microsecond latencies matter (literally worth $1M per millisecond)</li>
+<li><strong>Gaming</strong>: 50M concurrent sessions, sub-100ms latency required</li>
+<li><strong>DNS</strong>: Billions of queries/day, must be answered in &lt;50ms</li>
+<li><strong>Video streaming</strong>: Millions of concurrent UDP streams</li>
+</ul>
+<p>These needed a load balancer that didn&rsquo;t inspect application data—just hashed flows and forwarded packets fast.</p>
+<h2 id="what-nlb-did">What NLB Did</h2>
+<p><strong>Flow hashing instead of connection state:</strong></p>
+<pre tabindex="0"><code>For each packet:
+  1. Extract: source IP, dest IP, source port, dest port, protocol
+  2. Hash the 5-tuple
+  3. Always route packets from same flow to same target
+  4. No connection state = scales infinitely horizontally
+</code></pre><p>Result: <strong>10–100 microsecond latency</strong> (vs. ALB&rsquo;s 5ms). 100x faster.</p>
+<p><strong>Static IP addresses per Availability Zone:</strong></p>
+<p>For the first time, an AWS load balancer gave you known, static IP addresses. This mattered for:</p>
+<ul>
+<li>Firewall allowlisting (on-premises integration)</li>
+<li>BGP announcements (for CDN providers)</li>
+<li>DNS caching (ISPs cache based on IP)</li>
+</ul>
+<p><strong>UDP support:</strong></p>
+<p>ALB was HTTP/HTTPS only. NLB handled UDP, enabling:</p>
+<ul>
+<li>DNS queries</li>
+<li>Gaming protocols</li>
+<li>Video streaming protocols</li>
+<li>IoT sensor data</li>
+</ul>
+<h2 id="real-wins">Real Wins</h2>
+<ul>
+<li>
+<p><strong>Cryptocurrency exchange</strong>: 500K traders sending orders per second. NLB&rsquo;s latency meant their orders hit the exchange microseconds faster than competitors. Worth millions in Q4.</p>
+</li>
+<li>
+<p><strong>Gaming company</strong>: 50M concurrent players. NLB handled it at 1/10th the latency of ALB. Players noticed.</p>
+</li>
+<li>
+<p><strong>DNS provider</strong>: Billions of queries/day. NLB&rsquo;s static IPs meant ISP caching worked. Their query response time improved 20%.</p>
+</li>
+</ul>
+<h2 id="the-trade-off">The Trade-off</h2>
+<p>NLB didn&rsquo;t do path-based routing. You couldn&rsquo;t say &ldquo;route /api to one service.&rdquo; It was pure Layer 4: TCP/UDP only.</p>
+<p>For 90% of applications: wrong choice. You&rsquo;re paying for microsecond latency you don&rsquo;t need.</p>
+<p>For 10% (real-time, extreme scale, non-HTTP): only choice.</p>
+<h2 id="market-adoption">Market Adoption</h2>
+<ul>
+<li><strong>Gaming</strong>: NLB became standard</li>
+<li><strong>Financial services</strong>: Default for trading systems</li>
+<li><strong>DNS/CDN</strong>: Adopted rapidly</li>
+<li><strong>General web apps</strong>: Still preferred ALB (simpler mental model)</li>
+</ul>
+<p>By 2019, AWS had three load balancers, each optimized for different constraints:</p>
+<ul>
+<li><strong>Classic (CLB)</strong>: Legacy, backward compatibility</li>
+<li><strong>Application (ALB)</strong>: Microservices, HTTP-first, simplicity</li>
+<li><strong>Network (NLB)</strong>: Extreme performance, non-HTTP, millions of RPS</li>
+</ul>
+<p>This portfolio strategy—multiple products optimized for different trade-offs—became the AWS playbook everywhere.</p>
+</section>
+
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:45053/posts/aws-load-balancer-migration-2018/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>The Great Load Balancer Migration: Managing Three Generations</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="http://localhost:45053/posts/aws-alb-launch-2016/"
+      ><span>Application Load Balancer: The Layer 7 Revolution</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025
+    <a class="link" href="http://localhost:45053/">Rik Kisnah - Blog</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+<script>// Force light theme as default
+(function() {
+  'use strict';
+  
+  // Override the theme detection and force light mode
+  const forceLightTheme = () => {
+    const html = document.documentElement;
+    const body = document.body;
+    
+    // Remove dark class if present
+    html.classList.remove('dark');
+    
+    // Force light theme styles
+    html.style.setProperty('color-scheme', 'light');
+    body.style.setProperty('background-color', '#ffffff');
+    body.style.setProperty('color', '#1a202c');
+    
+    // Override localStorage to always use light theme
+    localStorage.setItem('dark', 'false');
+  };
+  
+  // Run immediately
+  forceLightTheme();
+  
+  // Run after DOM is loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', forceLightTheme);
+  }
+  
+  // Run after window is loaded
+  window.addEventListener('load', forceLightTheme);
+  
+  // Override any theme toggle buttons
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('btn-dark') || 
+        e.target.closest('.btn-dark')) {
+      e.preventDefault();
+      e.stopPropagation();
+      forceLightTheme();
+      return false;
+    }
+  });
+  
+  // Monitor for any dark class additions and remove them
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.type === 'attributes' && 
+          mutation.attributeName === 'class' && 
+          mutation.target.classList.contains('dark')) {
+        mutation.target.classList.remove('dark');
+        forceLightTheme();
+      }
+    });
+  });
+  
+  // Start observing
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class']
+  });
+  
+})();
+</script></body>
+</html>

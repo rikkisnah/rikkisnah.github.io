@@ -1,0 +1,303 @@
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#fff"
+  lang="en"
+  dir="ltr"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=45053&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Application Load Balancer: The Layer 7 Revolution - Rik Kisnah - Blog</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="Classic Load Balancer shipped in 2009 and became a tech debt monster by 2016: 3 microservices = 3 load balancers = $150/month just for routing.
+ALB fixed this with Layer 7 intelligence: one load balancer could route traffic based on paths, hostnames, and HTTP headers.
+The Problem CLB worked fine for one big app per load balancer. But by 2016, everything was microservices:
+GET /api/users → User Service (port 3000) GET /api/products → Product Service (port 3001) GET /images/* → Image Cache (port 8080) GET /* → Web Frontend (port 3000) With CLB, you needed 4 separate load balancers (one per service)." />
+  <meta name="author" content="Rik Kisnah" /><link rel="preload stylesheet" as="style" href="http://localhost:45053/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="http://localhost:45053/theme.png" />
+
+  
+
+  <link rel="preload" as="image" href="http://localhost:45053/github.svg" /><link rel="preload" as="image" href="http://localhost:45053/linkedin.svg" />
+
+  <script
+    defer
+    src="http://localhost:45053/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="http://localhost:45053/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:45053/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.123.7">
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="http://localhost:45053/"
+      >Rik Kisnah - Blog</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#fff'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkVal = localStorage.getItem('dark');
+    setDark(darkVal === 'true');
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/posts/"
+        >Posts</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/publications/"
+        >Publications</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/resume/"
+        >Resume</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/rikkisnah"
+        target="_blank"
+        rel="me"
+      >github</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/rikkisnah"
+        target="_blank"
+        rel="me"
+      >linkedin</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">Application Load Balancer: The Layer 7 Revolution</h1><div class="text-xs antialiased opacity-60"><time>Aug 11, 2016</time></div></header>
+
+  <section><p><img src="/aws_alb.png" alt="Setting up an Application Load Balancer with AWS EC2"></p>
+<p>Classic Load Balancer shipped in 2009 and became a tech debt monster by 2016: 3 microservices = 3 load balancers = $150/month just for routing.</p>
+<p>ALB fixed this with Layer 7 intelligence: one load balancer could route traffic based on paths, hostnames, and HTTP headers.</p>
+<h2 id="the-problem">The Problem</h2>
+<p>CLB worked fine for one big app per load balancer. But by 2016, everything was microservices:</p>
+<pre tabindex="0"><code>GET /api/users     → User Service (port 3000)
+GET /api/products  → Product Service (port 3001)
+GET /images/*      → Image Cache (port 8080)
+GET /*             → Web Frontend (port 3000)
+</code></pre><p>With CLB, you needed 4 separate load balancers (one per service). 4 × $30/month = $120/month, plus management overhead.</p>
+<h2 id="what-alb-did">What ALB Did</h2>
+<p><strong>Path-based routing</strong> meant one load balancer could intelligently distribute traffic:</p>
+<pre tabindex="0"><code>ALB listens on :80/:443
+  ├─ /api/* → route to API target group
+  ├─ /images/* → route to Image target group
+  └─ /* → route to Web target group
+</code></pre><p>Same for host-based:</p>
+<pre tabindex="0"><code>api.myapp.com     → API target group
+images.myapp.com  → CDN origin
+www.myapp.com     → Web target group
+</code></pre><p>And dynamic port mapping (critical for ECS):</p>
+<pre tabindex="0"><code>EC2 instance 1 runs:
+  - Microservice A on port 3000
+  - Microservice B on port 3001
+  - Microservice C on port 3002
+
+ALB automatically discovers + routes to all 3
+</code></pre><h2 id="why-it-mattered">Why It Mattered</h2>
+<p>ALB was perfect for containerized workloads. When you run 5 containers on the same EC2 instance, each on different ports, you need intelligent routing. ALB was <em>designed</em> for this.</p>
+<p>Performance:</p>
+<ul>
+<li><strong>Latency</strong>: ~5ms (vs. CLB&rsquo;s ~8ms, not huge)</li>
+<li><strong>Throughput</strong>: 1–3M RPS per load balancer</li>
+<li><strong>Features</strong>: WebSockets, HTTP/2, Gzip compression</li>
+</ul>
+<p>Market impact:</p>
+<ul>
+<li>By late 2016: ALB became the default for new deployments</li>
+<li>By 2017: ALB shipped more units than CLB</li>
+<li>By 2020: CLB was legacy; ALB was standard</li>
+</ul>
+<h2 id="the-missed-insight-almost">The Missed Insight (Almost)</h2>
+<p>Early ALB design proposed &ldquo;just make it faster than CLB.&rdquo; But the winning feature wasn&rsquo;t speed—it was <em>architectural simplicity.</em></p>
+<p>One load balancer instead of three meant:</p>
+<ul>
+<li>75% lower operational overhead</li>
+<li>Fewer DNS entries to manage</li>
+<li>Simpler monitoring and alerting</li>
+<li>Fewer things to break</li>
+</ul>
+<p>This taught me: <strong>in infrastructure, simplicity beats performance.</strong> A 10% faster system that requires 3x the management loses to a simpler system every time.</p>
+<p>ALB proved that constraint: better operational model &gt; better specs.</p>
+</section>
+
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:45053/posts/aws-nlb-launch-2017/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Network Load Balancer: Extreme Performance for the Cloud</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="http://localhost:45053/posts/too-young-to-die/"
+      ><span>Too Young to Die</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025
+    <a class="link" href="http://localhost:45053/">Rik Kisnah - Blog</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+<script>// Force light theme as default
+(function() {
+  'use strict';
+  
+  // Override the theme detection and force light mode
+  const forceLightTheme = () => {
+    const html = document.documentElement;
+    const body = document.body;
+    
+    // Remove dark class if present
+    html.classList.remove('dark');
+    
+    // Force light theme styles
+    html.style.setProperty('color-scheme', 'light');
+    body.style.setProperty('background-color', '#ffffff');
+    body.style.setProperty('color', '#1a202c');
+    
+    // Override localStorage to always use light theme
+    localStorage.setItem('dark', 'false');
+  };
+  
+  // Run immediately
+  forceLightTheme();
+  
+  // Run after DOM is loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', forceLightTheme);
+  }
+  
+  // Run after window is loaded
+  window.addEventListener('load', forceLightTheme);
+  
+  // Override any theme toggle buttons
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('btn-dark') || 
+        e.target.closest('.btn-dark')) {
+      e.preventDefault();
+      e.stopPropagation();
+      forceLightTheme();
+      return false;
+    }
+  });
+  
+  // Monitor for any dark class additions and remove them
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.type === 'attributes' && 
+          mutation.attributeName === 'class' && 
+          mutation.target.classList.contains('dark')) {
+        mutation.target.classList.remove('dark');
+        forceLightTheme();
+      }
+    });
+  });
+  
+  // Start observing
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class']
+  });
+  
+})();
+</script></body>
+</html>

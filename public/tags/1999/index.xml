@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1999 on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/1999/</link>
+    <link>http://localhost:45053/tags/1999/</link>
     <description>Recent content in 1999 on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 May 1999 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/1999/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:45053/tags/1999/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Matrix Neural Net Dreams: Reflections from 1999</title>
-      <link>http://localhost:1313/posts/matrix-neural-net-dreams/</link>
+      <title>Matrix Neural Net Dreams: Reflections on Early AI</title>
+      <link>http://localhost:45053/posts/matrix-neural-net-dreams/</link>
       <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/matrix-neural-net-dreams/</guid>
-      <description>The Dream of Artificial Intelligence In May 1999, while the world was preoccupied with the approaching Y2K crisis, I found myself exploring something entirely different in the NTU labs: neural networks. The term &amp;ldquo;neural net dreams&amp;rdquo; might sound whimsical now, but in 1999, this was genuinely visionary work. We were exploring how computers could learn from data, much like the human brain.&#xA;The Technical Challenge Matrix operations are the backbone of neural networks.</description>
+      <guid>http://localhost:45053/posts/matrix-neural-net-dreams/</guid>
+      <description>Machine Learning Before It Was Cool (1999) While everyone worried about Y2K, I was playing with neural networks at NTU. Not because I thought they&amp;rsquo;d ship in products—they were academic curiosities then. But because the math was beautiful.&#xA;The core insight: if you could represent a problem as matrices, you could teach a network to solve it via backpropagation. Weights → matrix multiply → gradient descent → improved weights. Repeat until convergence.</description>
     </item>
   </channel>
 </rss>

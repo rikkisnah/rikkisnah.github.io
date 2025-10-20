@@ -1,0 +1,317 @@
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#fff"
+  lang="en"
+  dir="ltr"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=45053&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>WorkSpaces Application Manager: Scaling Application Deployment - Rik Kisnah - Blog</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="WorkSpaces Application Manager solved the problem we couldn&rsquo;t solve with GA: how to manage Microsoft Office updates across 1M&#43; workspaces without downtime.
+The Problem Every Enterprise Customer Hit After a year of WorkSpaces deployments, customers had thousands of workspaces. Then:
+Scenario: Microsoft Office patch Tuesday
+Old way:
+Download Office update Test on isolated machine (1 day) Rebuild golden image with new Office (4 hours) Terminate 5,000 workspaces Reprovision from new image (overnight) Users lose all desktop customizations 😡 Users lost a full day of productivity every month." />
+  <meta name="author" content="Rik Kisnah" /><link rel="preload stylesheet" as="style" href="http://localhost:45053/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="http://localhost:45053/theme.png" />
+
+  
+
+  <link rel="preload" as="image" href="http://localhost:45053/github.svg" /><link rel="preload" as="image" href="http://localhost:45053/linkedin.svg" />
+
+  <script
+    defer
+    src="http://localhost:45053/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="http://localhost:45053/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:45053/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.123.7">
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="http://localhost:45053/"
+      >Rik Kisnah - Blog</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#fff'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkVal = localStorage.getItem('dark');
+    setDark(darkVal === 'true');
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/posts/"
+        >Posts</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/publications/"
+        >Publications</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/resume/"
+        >Resume</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/rikkisnah"
+        target="_blank"
+        rel="me"
+      >github</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/rikkisnah"
+        target="_blank"
+        rel="me"
+      >linkedin</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">WorkSpaces Application Manager: Scaling Application Deployment</h1><div class="text-xs antialiased opacity-60"><time>Apr 15, 2015</time></div></header>
+
+  <section><p><img src="/aws_workspaces.jpg" alt="AWS Marketplace for Desktop Apps - Amazon WAM Catalog deployment"></p>
+<p>WorkSpaces Application Manager solved the problem we couldn&rsquo;t solve with GA: how to manage Microsoft Office updates across 1M+ workspaces without downtime.</p>
+<h2 id="the-problem-every-enterprise-customer-hit">The Problem Every Enterprise Customer Hit</h2>
+<p>After a year of WorkSpaces deployments, customers had thousands of workspaces. Then:</p>
+<p><strong>Scenario: Microsoft Office patch Tuesday</strong></p>
+<p>Old way:</p>
+<ol>
+<li>Download Office update</li>
+<li>Test on isolated machine (1 day)</li>
+<li>Rebuild golden image with new Office (4 hours)</li>
+<li>Terminate 5,000 workspaces</li>
+<li>Reprovision from new image (overnight)</li>
+<li>Users lose all desktop customizations 😡</li>
+</ol>
+<p><strong>Users lost a full day of productivity every month.</strong></p>
+<h2 id="what-wam-did">What WAM Did</h2>
+<p>WAM separated <em>base OS</em> from <em>applications.</em> Instead of golden images containing everything, we had:</p>
+<ul>
+<li><strong>Base Image</strong>: Windows (versioned, rarely updated)</li>
+<li><strong>App Bundles</strong>: Office, Adobe, Slack, etc. (versioned independently)</li>
+<li><strong>User Profile</strong>: Desktop settings, installed fonts, preferences</li>
+<li><strong>Data</strong>: User files (on EBS)</li>
+</ul>
+<p>Now Office patch Tuesday:</p>
+<ol>
+<li>Create new Office bundle version (15 minutes)</li>
+<li>Test with 10 users (1 hour)</li>
+<li>Deploy to all users in background (30 minutes, no downtime)</li>
+<li>If broken, instant rollback</li>
+</ol>
+<p><strong>Users: zero downtime. IT: one-hour lead time instead of 24 hours.</strong></p>
+<h2 id="the-traction">The Traction</h2>
+<p>WAM adoption was instant:</p>
+<ul>
+<li><strong>Deployment velocity</strong>: 20x faster (from days to minutes)</li>
+<li><strong>Rollback safety</strong>: Full version history; any bad patch could be reverted instantly</li>
+<li><strong>Compliance</strong>: Every app version tracked with audit trail (critical for healthcare/finance)</li>
+<li><strong>Cost</strong>: Reduced IT labor by 40% (less firefighting, fewer reprovisioning windows)</li>
+</ul>
+<p>By end of 2015: 50K+ workspaces using WAM. Enterprises shifted from &ldquo;WorkSpaces is for startup remote workers&rdquo; to &ldquo;WorkSpaces is our standard desktop.&rdquo;</p>
+<h2 id="what-we-learned">What We Learned</h2>
+<p>Three insights reshaped how I thought about infrastructure:</p>
+<ol>
+<li>
+<p><strong>Layering beats monoliths</strong>: Monolithic images (OS + apps) break easily. Layered bundles iterate safely.</p>
+</li>
+<li>
+<p><strong>Versioning + rollback &gt; prevention</strong>: You can&rsquo;t prevent all bugs. But you <em>can</em> rollback in seconds. This confidence makes users <em>want</em> updates.</p>
+</li>
+<li>
+<p><strong>Operational simplicity wins deals</strong>: WAM didn&rsquo;t have 10x the performance. It had 10x fewer update headaches. That was enough to convert skeptics.</p>
+</li>
+</ol>
+<h2 id="the-broader-pattern">The Broader Pattern</h2>
+<p>WorkSpaces + WAM showed that cloud infrastructure doesn&rsquo;t just <em>replace</em> on-prem. It <em>reimagines</em> the operational model.</p>
+<p>On-prem: golden images, batch updates, scheduled downtime.
+Cloud: versioned bundles, instant rollback, zero-downtime deployments.</p>
+<p>This pattern would repeat everywhere at AWS:</p>
+<ul>
+<li><strong>EC2</strong>: versions and AMIs</li>
+<li><strong>Kubernetes</strong>: versioned container images</li>
+<li><strong>Lambda</strong>: versioned functions</li>
+<li><strong>Databases</strong>: point-in-time recovery</li>
+</ul>
+<p>The theme: <em>make versioning and rollback first-class concepts.</em> That&rsquo;s how cloud infrastructure scales to enterprise size without becoming operational hell.</p>
+</section>
+
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:45053/posts/too-young-to-die/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Too Young to Die</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="http://localhost:45053/posts/amazon-workspaces-ga-2014/"
+      ><span>Amazon WorkSpaces GA: Enterprise Readiness</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025
+    <a class="link" href="http://localhost:45053/">Rik Kisnah - Blog</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+<script>// Force light theme as default
+(function() {
+  'use strict';
+  
+  // Override the theme detection and force light mode
+  const forceLightTheme = () => {
+    const html = document.documentElement;
+    const body = document.body;
+    
+    // Remove dark class if present
+    html.classList.remove('dark');
+    
+    // Force light theme styles
+    html.style.setProperty('color-scheme', 'light');
+    body.style.setProperty('background-color', '#ffffff');
+    body.style.setProperty('color', '#1a202c');
+    
+    // Override localStorage to always use light theme
+    localStorage.setItem('dark', 'false');
+  };
+  
+  // Run immediately
+  forceLightTheme();
+  
+  // Run after DOM is loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', forceLightTheme);
+  }
+  
+  // Run after window is loaded
+  window.addEventListener('load', forceLightTheme);
+  
+  // Override any theme toggle buttons
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('btn-dark') || 
+        e.target.closest('.btn-dark')) {
+      e.preventDefault();
+      e.stopPropagation();
+      forceLightTheme();
+      return false;
+    }
+  });
+  
+  // Monitor for any dark class additions and remove them
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.type === 'attributes' && 
+          mutation.attributeName === 'class' && 
+          mutation.target.classList.contains('dark')) {
+        mutation.target.classList.remove('dark');
+        forceLightTheme();
+      }
+    });
+  });
+  
+  // Start observing
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class']
+  });
+  
+})();
+</script></body>
+</html>

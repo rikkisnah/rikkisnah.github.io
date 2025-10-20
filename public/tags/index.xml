@@ -2,423 +2,423 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://localhost:45053/tags/</link>
     <description>Recent content in Tags on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 18 Oct 2025 09:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:45053/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/tags/ai/</link>
+      <link>http://localhost:45053/tags/ai/</link>
       <pubDate>Sat, 18 Oct 2025 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <guid>http://localhost:45053/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Cloud</title>
-      <link>http://localhost:1313/tags/cloud/</link>
+      <link>http://localhost:45053/tags/cloud/</link>
       <pubDate>Sat, 18 Oct 2025 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/cloud/</guid>
+      <guid>http://localhost:45053/tags/cloud/</guid>
       <description></description>
     </item>
     <item>
       <title>Enterprise</title>
-      <link>http://localhost:1313/tags/enterprise/</link>
+      <link>http://localhost:45053/tags/enterprise/</link>
       <pubDate>Sat, 18 Oct 2025 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/enterprise/</guid>
+      <guid>http://localhost:45053/tags/enterprise/</guid>
       <description></description>
     </item>
     <item>
       <title>Infrastructure</title>
-      <link>http://localhost:1313/tags/infrastructure/</link>
+      <link>http://localhost:45053/tags/infrastructure/</link>
       <pubDate>Sat, 18 Oct 2025 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/infrastructure/</guid>
+      <guid>http://localhost:45053/tags/infrastructure/</guid>
       <description></description>
     </item>
     <item>
       <title>Oracle</title>
-      <link>http://localhost:1313/tags/oracle/</link>
+      <link>http://localhost:45053/tags/oracle/</link>
       <pubDate>Sat, 18 Oct 2025 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/oracle/</guid>
+      <guid>http://localhost:45053/tags/oracle/</guid>
       <description></description>
     </item>
     <item>
       <title>2025</title>
-      <link>http://localhost:1313/tags/2025/</link>
+      <link>http://localhost:45053/tags/2025/</link>
       <pubDate>Fri, 15 Aug 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/2025/</guid>
+      <guid>http://localhost:45053/tags/2025/</guid>
       <description></description>
     </item>
     <item>
       <title>Celebration</title>
-      <link>http://localhost:1313/tags/celebration/</link>
+      <link>http://localhost:45053/tags/celebration/</link>
       <pubDate>Fri, 15 Aug 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/celebration/</guid>
+      <guid>http://localhost:45053/tags/celebration/</guid>
       <description></description>
     </item>
     <item>
       <title>Family</title>
-      <link>http://localhost:1313/tags/family/</link>
+      <link>http://localhost:45053/tags/family/</link>
       <pubDate>Fri, 15 Aug 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/family/</guid>
+      <guid>http://localhost:45053/tags/family/</guid>
       <description></description>
     </item>
     <item>
       <title>Laxmi-Villa</title>
-      <link>http://localhost:1313/tags/laxmi-villa/</link>
+      <link>http://localhost:45053/tags/laxmi-villa/</link>
       <pubDate>Fri, 15 Aug 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/laxmi-villa/</guid>
+      <guid>http://localhost:45053/tags/laxmi-villa/</guid>
       <description></description>
     </item>
     <item>
       <title>Mauritius</title>
-      <link>http://localhost:1313/tags/mauritius/</link>
+      <link>http://localhost:45053/tags/mauritius/</link>
       <pubDate>Fri, 15 Aug 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/mauritius/</guid>
+      <guid>http://localhost:45053/tags/mauritius/</guid>
       <description></description>
     </item>
     <item>
       <title>Memories</title>
-      <link>http://localhost:1313/tags/memories/</link>
+      <link>http://localhost:45053/tags/memories/</link>
       <pubDate>Fri, 15 Aug 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/memories/</guid>
+      <guid>http://localhost:45053/tags/memories/</guid>
       <description></description>
     </item>
     <item>
       <title>Batam</title>
-      <link>http://localhost:1313/tags/batam/</link>
+      <link>http://localhost:45053/tags/batam/</link>
       <pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/batam/</guid>
+      <guid>http://localhost:45053/tags/batam/</guid>
       <description></description>
     </item>
     <item>
       <title>Data-Plane</title>
-      <link>http://localhost:1313/tags/data-plane/</link>
+      <link>http://localhost:45053/tags/data-plane/</link>
       <pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/data-plane/</guid>
+      <guid>http://localhost:45053/tags/data-plane/</guid>
       <description></description>
     </item>
     <item>
       <title>Gb200</title>
-      <link>http://localhost:1313/tags/gb200/</link>
+      <link>http://localhost:45053/tags/gb200/</link>
       <pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/gb200/</guid>
+      <guid>http://localhost:45053/tags/gb200/</guid>
       <description></description>
     </item>
     <item>
       <title>Indonesia</title>
-      <link>http://localhost:1313/tags/indonesia/</link>
+      <link>http://localhost:45053/tags/indonesia/</link>
       <pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/indonesia/</guid>
+      <guid>http://localhost:45053/tags/indonesia/</guid>
       <description></description>
     </item>
     <item>
       <title>Nvidia</title>
-      <link>http://localhost:1313/tags/nvidia/</link>
+      <link>http://localhost:45053/tags/nvidia/</link>
       <pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/nvidia/</guid>
+      <guid>http://localhost:45053/tags/nvidia/</guid>
       <description></description>
     </item>
     <item>
       <title>Oci</title>
-      <link>http://localhost:1313/tags/oci/</link>
+      <link>http://localhost:45053/tags/oci/</link>
       <pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/oci/</guid>
+      <guid>http://localhost:45053/tags/oci/</guid>
       <description></description>
     </item>
     <item>
       <title>Brother</title>
-      <link>http://localhost:1313/tags/brother/</link>
+      <link>http://localhost:45053/tags/brother/</link>
       <pubDate>Sun, 29 May 2016 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/brother/</guid>
+      <guid>http://localhost:45053/tags/brother/</guid>
       <description></description>
     </item>
     <item>
       <title>Poetry</title>
-      <link>http://localhost:1313/tags/poetry/</link>
+      <link>http://localhost:45053/tags/poetry/</link>
       <pubDate>Sun, 29 May 2016 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/poetry/</guid>
+      <guid>http://localhost:45053/tags/poetry/</guid>
       <description></description>
     </item>
     <item>
       <title>2002-2003</title>
-      <link>http://localhost:1313/tags/2002-2003/</link>
+      <link>http://localhost:45053/tags/2002-2003/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/2002-2003/</guid>
+      <guid>http://localhost:45053/tags/2002-2003/</guid>
       <description></description>
     </item>
     <item>
       <title>Architecture</title>
-      <link>http://localhost:1313/tags/architecture/</link>
+      <link>http://localhost:45053/tags/architecture/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/architecture/</guid>
+      <guid>http://localhost:45053/tags/architecture/</guid>
       <description></description>
     </item>
     <item>
       <title>Integration</title>
-      <link>http://localhost:1313/tags/integration/</link>
+      <link>http://localhost:45053/tags/integration/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/integration/</guid>
+      <guid>http://localhost:45053/tags/integration/</guid>
       <description></description>
     </item>
     <item>
       <title>Ipod</title>
-      <link>http://localhost:1313/tags/ipod/</link>
+      <link>http://localhost:45053/tags/ipod/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ipod/</guid>
+      <guid>http://localhost:45053/tags/ipod/</guid>
       <description></description>
     </item>
     <item>
       <title>Modularity</title>
-      <link>http://localhost:1313/tags/modularity/</link>
+      <link>http://localhost:45053/tags/modularity/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/modularity/</guid>
+      <guid>http://localhost:45053/tags/modularity/</guid>
       <description></description>
     </item>
     <item>
       <title>Motorola</title>
-      <link>http://localhost:1313/tags/motorola/</link>
+      <link>http://localhost:45053/tags/motorola/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/motorola/</guid>
+      <guid>http://localhost:45053/tags/motorola/</guid>
       <description></description>
     </item>
     <item>
       <title>Music</title>
-      <link>http://localhost:1313/tags/music/</link>
+      <link>http://localhost:45053/tags/music/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/music/</guid>
+      <guid>http://localhost:45053/tags/music/</guid>
       <description></description>
     </item>
     <item>
       <title>Wireless</title>
-      <link>http://localhost:1313/tags/wireless/</link>
+      <link>http://localhost:45053/tags/wireless/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/wireless/</guid>
+      <guid>http://localhost:45053/tags/wireless/</guid>
       <description></description>
     </item>
     <item>
       <title>Bluetooth</title>
-      <link>http://localhost:1313/tags/bluetooth/</link>
+      <link>http://localhost:45053/tags/bluetooth/</link>
       <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/bluetooth/</guid>
+      <guid>http://localhost:45053/tags/bluetooth/</guid>
       <description></description>
     </item>
     <item>
       <title>Connectivity</title>
-      <link>http://localhost:1313/tags/connectivity/</link>
+      <link>http://localhost:45053/tags/connectivity/</link>
       <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/connectivity/</guid>
+      <guid>http://localhost:45053/tags/connectivity/</guid>
       <description></description>
     </item>
     <item>
       <title>Protocols</title>
-      <link>http://localhost:1313/tags/protocols/</link>
+      <link>http://localhost:45053/tags/protocols/</link>
       <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/protocols/</guid>
+      <guid>http://localhost:45053/tags/protocols/</guid>
       <description></description>
     </item>
     <item>
       <title>Standardization</title>
-      <link>http://localhost:1313/tags/standardization/</link>
+      <link>http://localhost:45053/tags/standardization/</link>
       <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/standardization/</guid>
+      <guid>http://localhost:45053/tags/standardization/</guid>
       <description></description>
     </item>
     <item>
       <title>2002</title>
-      <link>http://localhost:1313/tags/2002/</link>
+      <link>http://localhost:45053/tags/2002/</link>
       <pubDate>Thu, 14 Feb 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/2002/</guid>
+      <guid>http://localhost:45053/tags/2002/</guid>
       <description></description>
     </item>
     <item>
       <title>3g</title>
-      <link>http://localhost:1313/tags/3g/</link>
+      <link>http://localhost:45053/tags/3g/</link>
       <pubDate>Thu, 14 Feb 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/3g/</guid>
+      <guid>http://localhost:45053/tags/3g/</guid>
       <description></description>
     </item>
     <item>
       <title>Mobile</title>
-      <link>http://localhost:1313/tags/mobile/</link>
+      <link>http://localhost:45053/tags/mobile/</link>
       <pubDate>Thu, 14 Feb 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mobile/</guid>
+      <guid>http://localhost:45053/tags/mobile/</guid>
       <description></description>
     </item>
     <item>
       <title>Telecommunications</title>
-      <link>http://localhost:1313/tags/telecommunications/</link>
+      <link>http://localhost:45053/tags/telecommunications/</link>
       <pubDate>Thu, 14 Feb 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/telecommunications/</guid>
+      <guid>http://localhost:45053/tags/telecommunications/</guid>
       <description></description>
     </item>
     <item>
       <title>1999-2001</title>
-      <link>http://localhost:1313/tags/1999-2001/</link>
+      <link>http://localhost:45053/tags/1999-2001/</link>
       <pubDate>Thu, 20 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/1999-2001/</guid>
+      <guid>http://localhost:45053/tags/1999-2001/</guid>
       <description></description>
     </item>
     <item>
       <title>Crisis-Management</title>
-      <link>http://localhost:1313/tags/crisis-management/</link>
+      <link>http://localhost:45053/tags/crisis-management/</link>
       <pubDate>Thu, 20 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/crisis-management/</guid>
+      <guid>http://localhost:45053/tags/crisis-management/</guid>
       <description></description>
     </item>
     <item>
       <title>Debugging</title>
-      <link>http://localhost:1313/tags/debugging/</link>
+      <link>http://localhost:45053/tags/debugging/</link>
       <pubDate>Thu, 20 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/debugging/</guid>
+      <guid>http://localhost:45053/tags/debugging/</guid>
       <description></description>
     </item>
     <item>
       <title>Millennium</title>
-      <link>http://localhost:1313/tags/millennium/</link>
+      <link>http://localhost:45053/tags/millennium/</link>
       <pubDate>Thu, 20 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/millennium/</guid>
+      <guid>http://localhost:45053/tags/millennium/</guid>
       <description></description>
     </item>
     <item>
       <title>Ntu</title>
-      <link>http://localhost:1313/tags/ntu/</link>
+      <link>http://localhost:45053/tags/ntu/</link>
       <pubDate>Thu, 20 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ntu/</guid>
+      <guid>http://localhost:45053/tags/ntu/</guid>
       <description></description>
     </item>
     <item>
       <title>Systems</title>
-      <link>http://localhost:1313/tags/systems/</link>
+      <link>http://localhost:45053/tags/systems/</link>
       <pubDate>Thu, 20 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/systems/</guid>
+      <guid>http://localhost:45053/tags/systems/</guid>
       <description></description>
     </item>
     <item>
       <title>Y2k</title>
-      <link>http://localhost:1313/tags/y2k/</link>
+      <link>http://localhost:45053/tags/y2k/</link>
       <pubDate>Thu, 20 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/y2k/</guid>
+      <guid>http://localhost:45053/tags/y2k/</guid>
       <description></description>
     </item>
     <item>
       <title>2001</title>
-      <link>http://localhost:1313/tags/2001/</link>
+      <link>http://localhost:45053/tags/2001/</link>
       <pubDate>Mon, 17 Sep 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/2001/</guid>
+      <guid>http://localhost:45053/tags/2001/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>http://localhost:45053/tags/linux/</link>
       <pubDate>Mon, 17 Sep 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>http://localhost:45053/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Open-Source</title>
-      <link>http://localhost:1313/tags/open-source/</link>
+      <link>http://localhost:45053/tags/open-source/</link>
       <pubDate>Mon, 17 Sep 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/open-source/</guid>
+      <guid>http://localhost:45053/tags/open-source/</guid>
       <description></description>
     </item>
     <item>
       <title>2000</title>
-      <link>http://localhost:1313/tags/2000/</link>
+      <link>http://localhost:45053/tags/2000/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/2000/</guid>
+      <guid>http://localhost:45053/tags/2000/</guid>
       <description></description>
     </item>
     <item>
       <title>Applets</title>
-      <link>http://localhost:1313/tags/applets/</link>
+      <link>http://localhost:45053/tags/applets/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/applets/</guid>
+      <guid>http://localhost:45053/tags/applets/</guid>
       <description></description>
     </item>
     <item>
       <title>Browser</title>
-      <link>http://localhost:1313/tags/browser/</link>
+      <link>http://localhost:45053/tags/browser/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/browser/</guid>
+      <guid>http://localhost:45053/tags/browser/</guid>
       <description></description>
     </item>
     <item>
       <title>Dorms</title>
-      <link>http://localhost:1313/tags/dorms/</link>
+      <link>http://localhost:45053/tags/dorms/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/dorms/</guid>
+      <guid>http://localhost:45053/tags/dorms/</guid>
       <description></description>
     </item>
     <item>
       <title>Java</title>
-      <link>http://localhost:1313/tags/java/</link>
+      <link>http://localhost:45053/tags/java/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/java/</guid>
+      <guid>http://localhost:45053/tags/java/</guid>
       <description></description>
     </item>
     <item>
       <title>Optimization</title>
-      <link>http://localhost:1313/tags/optimization/</link>
+      <link>http://localhost:45053/tags/optimization/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/optimization/</guid>
+      <guid>http://localhost:45053/tags/optimization/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>http://localhost:1313/tags/security/</link>
+      <link>http://localhost:45053/tags/security/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/security/</guid>
+      <guid>http://localhost:45053/tags/security/</guid>
       <description></description>
     </item>
     <item>
       <title>1999-2000</title>
-      <link>http://localhost:1313/tags/1999-2000/</link>
+      <link>http://localhost:45053/tags/1999-2000/</link>
       <pubDate>Thu, 25 May 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/1999-2000/</guid>
+      <guid>http://localhost:45053/tags/1999-2000/</guid>
       <description></description>
     </item>
     <item>
       <title>Networking</title>
-      <link>http://localhost:1313/tags/networking/</link>
+      <link>http://localhost:45053/tags/networking/</link>
       <pubDate>Thu, 25 May 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/networking/</guid>
+      <guid>http://localhost:45053/tags/networking/</guid>
       <description></description>
     </item>
     <item>
       <title>Singapore</title>
-      <link>http://localhost:1313/tags/singapore/</link>
+      <link>http://localhost:45053/tags/singapore/</link>
       <pubDate>Thu, 25 May 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/singapore/</guid>
+      <guid>http://localhost:45053/tags/singapore/</guid>
       <description></description>
     </item>
     <item>
       <title>Wifi</title>
-      <link>http://localhost:1313/tags/wifi/</link>
+      <link>http://localhost:45053/tags/wifi/</link>
       <pubDate>Thu, 25 May 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/wifi/</guid>
+      <guid>http://localhost:45053/tags/wifi/</guid>
       <description></description>
     </item>
     <item>
       <title>1999</title>
-      <link>http://localhost:1313/tags/1999/</link>
+      <link>http://localhost:45053/tags/1999/</link>
       <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/1999/</guid>
+      <guid>http://localhost:45053/tags/1999/</guid>
       <description></description>
     </item>
     <item>
       <title>Matrices</title>
-      <link>http://localhost:1313/tags/matrices/</link>
+      <link>http://localhost:45053/tags/matrices/</link>
       <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/matrices/</guid>
+      <guid>http://localhost:45053/tags/matrices/</guid>
       <description></description>
     </item>
     <item>
       <title>Neural-Networks</title>
-      <link>http://localhost:1313/tags/neural-networks/</link>
+      <link>http://localhost:45053/tags/neural-networks/</link>
       <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/neural-networks/</guid>
+      <guid>http://localhost:45053/tags/neural-networks/</guid>
       <description></description>
     </item>
   </channel>
