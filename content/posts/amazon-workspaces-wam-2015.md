@@ -4,7 +4,7 @@ date: 2015-04-15T09:00:00-07:00
 draft: false
 ---
 
-![Amazon WorkSpaces](/amazon_workspaces.jpg)
+![AWS Marketplace for Desktop Apps - Amazon WAM Catalog deployment](/aws_workspaces.jpg)
 
 WorkSpaces Application Manager solved the problem we couldn't solve with GA: how to manage Microsoft Office updates across 1M+ workspaces without downtime.
 
