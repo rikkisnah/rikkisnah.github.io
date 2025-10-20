@@ -1,5 +1,5 @@
 ---
-title: "Wi-Fi Experiments: From Lab to Campus Networks (1999-2000)"
+title: "Wi-Fi Experiments: From Lab to Campus Networks"
 date: 2000-05-25T00:00:00Z
 draft: false
 tags: ["wifi", "wireless", "1999-2000", "ntu", "networking", "singapore", "infrastructure"]

@@ -1,5 +1,5 @@
 ---
-title: "Bluetooth Prototypes: From Experimental to Production (2002-2003)"
+title: "Bluetooth Prototypes: From Experimental to Production"
 date: 2003-03-11T00:00:00Z
 draft: false
 tags: ["bluetooth", "wireless", "motorola", "2002-2003", "connectivity", "protocols", "standardization"]

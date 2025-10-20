@@ -1,5 +1,5 @@
 ---
-title: "Matrix Neural Net Dreams: Reflections from 1999"
+title: "Matrix Neural Net Dreams: Reflections on Early AI"
 date: 1999-05-01T00:00:00Z
 draft: false
 tags: ["neural-networks", "ai", "1999", "ntu", "matrices"]

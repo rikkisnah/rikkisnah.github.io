@@ -1,5 +1,5 @@
 ---
-title: "iPod Integration Journey: From Dream to Modular Architecture (2002-2003)"
+title: "iPod Integration Journey: From Dream to Modular Architecture"
 date: 2003-07-09T00:00:00Z
 draft: false
 tags: ["ipod", "integration", "motorola", "2002-2003", "music", "architecture", "modularity", "wireless"]

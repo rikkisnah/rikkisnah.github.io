@@ -1,5 +1,5 @@
 ---
-title: "Y2K Debugging Journey: From Crisis to Lessons Learned (1999-2001)"
+title: "Y2K Debugging Journey: From Crisis to Lessons Learned"
 date: 2001-12-20T00:00:00Z
 draft: false
 tags: ["y2k", "debugging", "1999-2001", "ntu", "millennium", "systems", "crisis-management"]
