@@ -6,184 +6,76 @@ draft: false
 
 ![AWS ELB](/aws_elb.jpg)
 
-## The Limits of Layer 4 Load Balancing
+Classic Load Balancer shipped in 2009 and became a tech debt monster by 2016: 3 microservices = 3 load balancers = $150/month just for routing.
 
-For years, AWS's Classic Load Balancer (CLB) had been the backbone of application availability. It handled TCP/UDP traffic and basic HTTP/HTTPS proxying. But by 2015-2016, the architecture of modern applications was fundamentally changing.
+ALB fixed this with Layer 7 intelligence: one load balancer could route traffic based on paths, hostnames, and HTTP headers.
 
-The rise of microservices, containerization, and API-driven architectures created a new set of requirements that CLB simply couldn't address:
+## The Problem
 
-- **Multiple Services Per Instance**: Containers enabled running multiple services on the same EC2 instance at different ports
-- **Path-Based Routing**: Different application paths needed to route to different backend services
-- **Host-Based Routing**: Virtual hosting required intelligent routing based on hostname
-- **Advanced HTTP Features**: HTTP/2, WebSockets, and modern APIs needed native support
-- **Container Native**: Docker and ECS needed load balancers that could dynamically discover and route to container ports
+CLB worked fine for one big app per load balancer. But by 2016, everything was microservices:
 
-In August 2016, AWS launched the **Application Load Balancer (ALB)**—a revolutionary new load balancing architecture optimized for modern, distributed applications.
-
-## ALB Architecture: Layer 7 Routing
-
-ALB represented a complete rethinking of load balancing architecture:
-
-### Traditional CLB (Layer 4):
-- TCP/UDP level routing decisions
-- Limited to IP, protocol, and port
-- No visibility into application-level intent
-- Each service needed its own load balancer instance
-
-### ALB (Layer 7):
-- Application-level routing intelligence
-- Can inspect HTTP headers, paths, and hostnames
-- Single load balancer instance handles multiple services
-- Deep understanding of application intent
-
-### Key ALB Capabilities:
-
-**1. Path-Based Routing**
 ```
-/images/* → Image Processing Service
-/api/* → API Backend Service
-/static/* → Static Content CDN
-/ → Homepage Service
+GET /api/users     → User Service (port 3000)
+GET /api/products  → Product Service (port 3001)
+GET /images/*      → Image Cache (port 8080)
+GET /*             → Web Frontend (port 3000)
 ```
 
-This single capability eliminated the need for separate load balancers for each service tier.
+With CLB, you needed 4 separate load balancers (one per service). 4 × $30/month = $120/month, plus management overhead.
 
-**2. Host-Based Routing**
-```
-api.example.com → API Backend
-www.example.com → Web Application
-cdn.example.com → CDN Origin
-static.example.com → Static Content
-```
+## What ALB Did
 
-Multiple virtual services, one load balancer.
+**Path-based routing** meant one load balancer could intelligently distribute traffic:
 
-**3. Port-Based Routing with Dynamic Discovery**
 ```
-10.0.1.100:3000 → Microservice A
-10.0.1.100:3001 → Microservice B
-10.0.1.100:3002 → Microservice C
+ALB listens on :80/:443
+  ├─ /api/* → route to API target group
+  ├─ /images/* → route to Image target group
+  └─ /* → route to Web target group
 ```
 
-All running on the same EC2 instance, automatically discovered and routed.
+Same for host-based:
+```
+api.myapp.com     → API target group
+images.myapp.com  → CDN origin
+www.myapp.com     → Web target group
+```
 
-**4. HTTP/2 and WebSocket Support**
-- Native HTTP/2 for improved performance
-- WebSocket for real-time bidirectional communication
-- Server-Sent Events (SSE) for streaming data
+And dynamic port mapping (critical for ECS):
+```
+EC2 instance 1 runs:
+  - Microservice A on port 3000
+  - Microservice B on port 3001
+  - Microservice C on port 3002
 
-## ALB and ECS Integration: A Perfect Match
+ALB automatically discovers + routes to all 3
+```
 
-ALB's capabilities were tailor-made for containerized workloads. When ECS (Elastic Container Service) launched container support, ALB's dynamic port mapping became essential:
+## Why It Mattered
 
-### Container Service Discovery:
-- ECS registers containers with ALB dynamically
-- Containers can use any port on the host machine
-- ALB automatically discovers and routes to new container ports
-- On container termination, ALB automatically removes routing
-- Zero-downtime deployments possible through gradual traffic shifting
+ALB was perfect for containerized workloads. When you run 5 containers on the same EC2 instance, each on different ports, you need intelligent routing. ALB was *designed* for this.
 
-This was revolutionary. For the first time, you could:
-- Deploy multiple containerized applications on a single EC2 instance
-- Scale containers independently
-- Update individual services without redeploying entire instances
-- Achieve true microservices architectures in AWS
+Performance:
+- **Latency**: ~5ms (vs. CLB's ~8ms, not huge)
+- **Throughput**: 1–3M RPS per load balancer
+- **Features**: WebSockets, HTTP/2, Gzip compression
 
-## Technical Deep Dive: ALB Performance
+Market impact:
+- By late 2016: ALB became the default for new deployments
+- By 2017: ALB shipped more units than CLB
+- By 2020: CLB was legacy; ALB was standard
 
-ALB wasn't just smarter—it was *faster*:
+## The Missed Insight (Almost)
 
-### Performance Characteristics:
-- **Latency**: Ultra-low latency (single-digit milliseconds)
-- **Throughput**: Capable of handling millions of requests per second
-- **Scalability**: Automatically scales to handle traffic spikes
-- **Connection Limits**: Supports hundreds of thousands of concurrent connections
+Early ALB design proposed "just make it faster than CLB." But the winning feature wasn't speed—it was *architectural simplicity.*
 
-### Connection Handling:
-- **Persistent Connections**: HTTP keep-alive support for connection reuse
-- **Connection Draining**: Graceful shutdown of in-flight requests
-- **Idle Timeout**: Configurable timeout for idle connections
+One load balancer instead of three meant:
+- 75% lower operational overhead
+- Fewer DNS entries to manage
+- Simpler monitoring and alerting
+- Fewer things to break
 
-## ALB Target Groups: Flexible Routing
+This taught me: **in infrastructure, simplicity beats performance.** A 10% faster system that requires 3x the management loses to a simpler system every time.
 
-Instead of a simple list of targets, ALB introduced **Target Groups**:
-
-### Target Group Features:
-- Define routing rules targeting specific groups
-- Health checks per target group
-- Sticky sessions with cookie-based affinity
-- Custom HTTP response codes (200, 201, etc.)
-- Request/response attribute manipulation
-
-This architectural flexibility meant:
-- Different routing logic for different request types
-- Independent health checking per service
-- Sophisticated traffic management patterns
-- A/B testing and canary deployments
-
-## Cost and Operational Impact
-
-ALB initially had a different pricing model than CLB, but the economics were compelling:
-
-### CLB Architecture (Pre-ALB):
-- 3-tier application = 3 load balancers ($30-50/month each)
-- Static IP routing to EC2 instances
-- Limited ability to consolidate services
-- Total monthly cost: $90-150
-
-### ALB Architecture (Post-ALB):
-- 3-tier application = 1 load balancer ($30/month)
-- Dynamic routing to multiple services
-- Better resource utilization
-- Total monthly cost: $30-40
-
-Beyond cost, ALB enabled:
-- **Operational Simplicity**: One load balancer instead of three
-- **Agility**: Deploy new services without changing load balancer configuration
-- **Reliability**: Path-based routing prevents cascading failures
-
-## Migration from CLB to ALB
-
-The launch of ALB didn't mean instant migration. CLB was mature, reliable, and deeply embedded in millions of applications. But forward-thinking customers saw the advantages:
-
-### Why Migrate to ALB:
-1. **Containerization**: Enabling Docker and ECS adoption
-2. **Microservices**: Supporting modern service architectures
-3. **API-First**: Serving multiple APIs from single load balancer
-4. **Cost**: Fewer load balancer instances
-5. **Features**: Path/host-based routing, WebSocket support
-
-### Challenges:
-- Existing CLB deployments were working well
-- Migration required testing and validation
-- Some older application patterns weren't directly compatible
-- Teams needed to understand new Layer 7 concepts
-
-## Market Reception and Impact
-
-ALB received overwhelming positive reception:
-
-- **Early Adopters**: Companies building microservices and containerized applications
-- **ECS Growth**: ALB became essential for ECS-based workloads
-- **Startup Advantage**: New companies built cloud-native from inception
-- **Enterprise**: Large companies began modernizing architectures
-
-Within 18 months, ALB became the most deployed load balancer in AWS, surpassing CLB for new deployments.
-
-## The Broader Architectural Shift
-
-ALB represented more than just a new product—it reflected a fundamental shift in how applications were being built:
-
-**From**: Single monolith per instance → **To**: Multiple microservices per instance
-**From**: Static routing → **To**: Dynamic, intelligent routing
-**From**: Pets (lovingly maintained servers) → **To**: Cattle (interchangeable container instances)
-**From**: Vertical scaling → **To**: Horizontal scaling with efficient resource utilization
-
-## Looking Back
-
-The Application Load Balancer (2016) was one of the most impactful AWS network services launched. It wasn't the most complex technology, but it was perfectly timed to enable the architectural revolution happening in software development: the shift from monoliths to microservices, from virtual machines to containers, from static infrastructure to dynamic, code-driven infrastructure.
-
-ALB proved that the most powerful innovations often come not from raw technology, but from deeply understanding customer problems and architecting solutions that enable new ways of building systems.
-
-By 2018, ALB would be joined by the Network Load Balancer (NLB), creating a complete portfolio of load balancing options for every use case. But ALB's 2016 launch marked the moment when AWS recognized that applications were becoming more distributed, more containerized, and more dynamic—and ALB was the load balancer for that future.
+ALB proved that constraint: better operational model > better specs.
 
