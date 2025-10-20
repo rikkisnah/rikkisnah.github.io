@@ -8,7 +8,7 @@ draft: false
 **Senior Principal Engineer (HPC/GPU) at Oracle Cloud Infrastructure (OCI) for AI/ML Infrastructure**
 Seattle, Washington, United States
 
-> "In God we Trust, all others bring data"
+> In God we Trust, all others bring data
 
 ---
 
