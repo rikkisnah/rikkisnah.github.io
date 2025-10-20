@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Neural-Networks on Rik Kisnah - Blog</title>
-    <link>http://localhost:45053/tags/neural-networks/</link>
+    <link>https://rikkisnah.github.io/tags/neural-networks/</link>
     <description>Recent content in Neural-Networks on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 May 1999 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:45053/tags/neural-networks/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rikkisnah.github.io/tags/neural-networks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Matrix Neural Net Dreams: Reflections on Early AI</title>
-      <link>http://localhost:45053/posts/matrix-neural-net-dreams/</link>
+      <link>https://rikkisnah.github.io/posts/matrix-neural-net-dreams/</link>
       <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:45053/posts/matrix-neural-net-dreams/</guid>
+      <guid>https://rikkisnah.github.io/posts/matrix-neural-net-dreams/</guid>
       <description>Machine Learning Before It Was Cool (1999) While everyone worried about Y2K, I was playing with neural networks at NTU. Not because I thought they&amp;rsquo;d ship in products—they were academic curiosities then. But because the math was beautiful.&#xA;The core insight: if you could represent a problem as matrices, you could teach a network to solve it via backpropagation. Weights → matrix multiply → gradient descent → improved weights. Repeat until convergence.</description>
     </item>
   </channel>

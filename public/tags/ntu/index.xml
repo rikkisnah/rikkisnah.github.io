@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ntu on Rik Kisnah - Blog</title>
-    <link>http://localhost:45053/tags/ntu/</link>
+    <link>https://rikkisnah.github.io/tags/ntu/</link>
     <description>Recent content in Ntu on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 20 Dec 2001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:45053/tags/ntu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rikkisnah.github.io/tags/ntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Y2K Debugging Journey: From Crisis to Lessons Learned</title>
-      <link>http://localhost:45053/posts/y2k-debugging-journey-1999-2001/</link>
+      <link>https://rikkisnah.github.io/posts/y2k-debugging-journey-1999-2001/</link>
       <pubDate>Thu, 20 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:45053/posts/y2k-debugging-journey-1999-2001/</guid>
+      <guid>https://rikkisnah.github.io/posts/y2k-debugging-journey-1999-2001/</guid>
       <description>The Crisis That Never Was (1999-2000) Summer 1999: The world was panicked. Every computer system would crash at midnight on Dec 31, 1999 because programmers in the 1970s had stored years as 2-digit numbers. 99 rolled to 00, and—disaster.&#xA;At NTU, we treated it seriously. Every system we touched had the same problem: years stored as YY instead of YYYY. The fix was mechanical but tedious: find every date field, add validation, test like hell.</description>
     </item>
     <item>
       <title>Early Linux at NTU: Open Source Becomes Real</title>
-      <link>http://localhost:45053/posts/early-linux-at-ntu/</link>
+      <link>https://rikkisnah.github.io/posts/early-linux-at-ntu/</link>
       <pubDate>Mon, 17 Sep 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:45053/posts/early-linux-at-ntu/</guid>
+      <guid>https://rikkisnah.github.io/posts/early-linux-at-ntu/</guid>
       <description>The Linux Revolution Reaches NTU By September 2001, Linux was transitioning from hobbyist project to legitimate alternative to proprietary Unix systems. NTU, as a forward-thinking institution, started deploying Linux in labs. After years of expensive proprietary systems, here was an free, open operating system that actually worked.&#xA;For students raised on Windows, encountering Linux was revelatory. The source code was available. You could modify it. You could understand how everything worked down to the kernel level.</description>
     </item>
     <item>
       <title>Java Applets Journey: Write Once, Run Anywhere?</title>
-      <link>http://localhost:45053/posts/java-applets-journey-2000/</link>
+      <link>https://rikkisnah.github.io/posts/java-applets-journey-2000/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:45053/posts/java-applets-journey-2000/</guid>
+      <guid>https://rikkisnah.github.io/posts/java-applets-journey-2000/</guid>
       <description>&amp;ldquo;Write Once, Run Anywhere&amp;rdquo; (2000) Java shipped 1995. By 2000, Sun was convinced: Java applets would replace native applications. Download an applet from a website, it runs in your browser on any OS. Windows, Mac, Linux—same code everywhere.&#xA;At NTU, every CS class assignment involved Java. The promise was seductive. But reality was brutal: applets were slow (multi-MB downloads!), full of security bugs, and incompatible across browsers. Try to download a file?</description>
     </item>
     <item>
       <title>Wi-Fi Experiments: From Lab to Campus Networks</title>
-      <link>http://localhost:45053/posts/wifi-experiments-journey-1999-2000/</link>
+      <link>https://rikkisnah.github.io/posts/wifi-experiments-journey-1999-2000/</link>
       <pubDate>Thu, 25 May 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:45053/posts/wifi-experiments-journey-1999-2000/</guid>
+      <guid>https://rikkisnah.github.io/posts/wifi-experiments-journey-1999-2000/</guid>
       <description>Wireless Networking (1999) IEEE 802.11 shipped in 1997. By 1999, Singapore was ahead of the curve—early 802.11b trials at universities. At NTU, we had access to experimental wireless infrastructure. The dream: no wires. Just laptops talking over the air.&#xA;Reality: signal was weak, interference constant, range 20 meters on a good day. Tropical humidity killed performance. Water vapor absorbs radio waves. Our tests worked in the lab, then failed in the hallway.</description>
     </item>
     <item>
       <title>Matrix Neural Net Dreams: Reflections on Early AI</title>
-      <link>http://localhost:45053/posts/matrix-neural-net-dreams/</link>
+      <link>https://rikkisnah.github.io/posts/matrix-neural-net-dreams/</link>
       <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:45053/posts/matrix-neural-net-dreams/</guid>
+      <guid>https://rikkisnah.github.io/posts/matrix-neural-net-dreams/</guid>
       <description>Machine Learning Before It Was Cool (1999) While everyone worried about Y2K, I was playing with neural networks at NTU. Not because I thought they&amp;rsquo;d ship in products—they were academic curiosities then. But because the math was beautiful.&#xA;The core insight: if you could represent a problem as matrices, you could teach a network to solve it via backpropagation. Weights → matrix multiply → gradient descent → improved weights. Repeat until convergence.</description>
     </item>
   </channel>

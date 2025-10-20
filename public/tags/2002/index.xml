@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2002 on Rik Kisnah - Blog</title>
-    <link>http://localhost:45053/tags/2002/</link>
+    <link>https://rikkisnah.github.io/tags/2002/</link>
     <description>Recent content in 2002 on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 14 Feb 2002 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:45053/tags/2002/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rikkisnah.github.io/tags/2002/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3G Rollout: The Future of Mobile Communication</title>
-      <link>http://localhost:45053/posts/3g-rollout-thrills/</link>
+      <link>https://rikkisnah.github.io/posts/3g-rollout-thrills/</link>
       <pubDate>Thu, 14 Feb 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:45053/posts/3g-rollout-thrills/</guid>
+      <guid>https://rikkisnah.github.io/posts/3g-rollout-thrills/</guid>
       <description>Moving to Motorola In 2002, I left academia and joined Motorola Mobile Devices. The timing was perfect. Motorola was at the center of the 3G revolution—the transition from 2G networks (which enabled SMS and basic data) to 3G networks (which promised high-speed data and multimedia).&#xA;The 3G Vision The promise was intoxicating. Imagine a mobile phone that could stream video, enable real-time applications, support navigation and location services. 3G would deliver megabits per second instead of kilobits.</description>
     </item>
   </channel>

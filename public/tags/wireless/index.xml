@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wireless on Rik Kisnah - Blog</title>
-    <link>http://localhost:45053/tags/wireless/</link>
+    <link>https://rikkisnah.github.io/tags/wireless/</link>
     <description>Recent content in Wireless on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 09 Jul 2003 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:45053/tags/wireless/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rikkisnah.github.io/tags/wireless/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iPod Integration Journey: From Dream to Modular Architecture</title>
-      <link>http://localhost:45053/posts/ipod-integration-journey-2002-2003/</link>
+      <link>https://rikkisnah.github.io/posts/ipod-integration-journey-2002-2003/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:45053/posts/ipod-integration-journey-2002-2003/</guid>
+      <guid>https://rikkisnah.github.io/posts/ipod-integration-journey-2002-2003/</guid>
       <description>The Dream: Phone as Music Player iPod shipped May 2001. By May 2002, it was already a phenomenon. At Motorola Design Center Singapore, we asked: what if your phone was the iPod?&#xA;Not &amp;ldquo;what if your phone had an MP3 player.&amp;rdquo; But: what if the form factor, the UX, the simplicity—all of it could live in a Motorola handset?&#xA;Over 15 months, I learned that modular architecture beats monolithic design every time.</description>
     </item>
     <item>
       <title>Bluetooth Prototypes: From Experimental to Production</title>
-      <link>http://localhost:45053/posts/bluetooth-prototypes-journey-2002-2003/</link>
+      <link>https://rikkisnah.github.io/posts/bluetooth-prototypes-journey-2002-2003/</link>
       <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:45053/posts/bluetooth-prototypes-journey-2002-2003/</guid>
+      <guid>https://rikkisnah.github.io/posts/bluetooth-prototypes-journey-2002-2003/</guid>
       <description>Wireless Phones (2002) Bluetooth standard existed since 1998. By 2002, nobody had actually shipped it in a phone. At Motorola, we saw the real opportunity: wireless headphones. No more headset cords tangled in your pocket.&#xA;But standards look clean on paper. In reality? Manufacturers interpreted the spec differently. Pairing was flaky. Range was spotty. We spent months debugging why Bluetooth worked 70% of the time instead of 100%.&#xA;We&amp;rsquo;d get two devices talking, then change something in our protocol stack, and suddenly they wouldn&amp;rsquo;t.</description>
     </item>
     <item>
       <title>3G Rollout: The Future of Mobile Communication</title>
-      <link>http://localhost:45053/posts/3g-rollout-thrills/</link>
+      <link>https://rikkisnah.github.io/posts/3g-rollout-thrills/</link>
       <pubDate>Thu, 14 Feb 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:45053/posts/3g-rollout-thrills/</guid>
+      <guid>https://rikkisnah.github.io/posts/3g-rollout-thrills/</guid>
       <description>Moving to Motorola In 2002, I left academia and joined Motorola Mobile Devices. The timing was perfect. Motorola was at the center of the 3G revolution—the transition from 2G networks (which enabled SMS and basic data) to 3G networks (which promised high-speed data and multimedia).&#xA;The 3G Vision The promise was intoxicating. Imagine a mobile phone that could stream video, enable real-time applications, support navigation and location services. 3G would deliver megabits per second instead of kilobits.</description>
     </item>
     <item>
       <title>Wi-Fi Experiments: From Lab to Campus Networks</title>
-      <link>http://localhost:45053/posts/wifi-experiments-journey-1999-2000/</link>
+      <link>https://rikkisnah.github.io/posts/wifi-experiments-journey-1999-2000/</link>
       <pubDate>Thu, 25 May 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:45053/posts/wifi-experiments-journey-1999-2000/</guid>
+      <guid>https://rikkisnah.github.io/posts/wifi-experiments-journey-1999-2000/</guid>
       <description>Wireless Networking (1999) IEEE 802.11 shipped in 1997. By 1999, Singapore was ahead of the curve—early 802.11b trials at universities. At NTU, we had access to experimental wireless infrastructure. The dream: no wires. Just laptops talking over the air.&#xA;Reality: signal was weak, interference constant, range 20 meters on a good day. Tropical humidity killed performance. Water vapor absorbs radio waves. Our tests worked in the lab, then failed in the hallway.</description>
     </item>
   </channel>

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2002-2003 on Rik Kisnah - Blog</title>
-    <link>http://localhost:45053/tags/2002-2003/</link>
+    <link>https://rikkisnah.github.io/tags/2002-2003/</link>
     <description>Recent content in 2002-2003 on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 09 Jul 2003 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:45053/tags/2002-2003/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rikkisnah.github.io/tags/2002-2003/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iPod Integration Journey: From Dream to Modular Architecture</title>
-      <link>http://localhost:45053/posts/ipod-integration-journey-2002-2003/</link>
+      <link>https://rikkisnah.github.io/posts/ipod-integration-journey-2002-2003/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:45053/posts/ipod-integration-journey-2002-2003/</guid>
+      <guid>https://rikkisnah.github.io/posts/ipod-integration-journey-2002-2003/</guid>
       <description>The Dream: Phone as Music Player iPod shipped May 2001. By May 2002, it was already a phenomenon. At Motorola Design Center Singapore, we asked: what if your phone was the iPod?&#xA;Not &amp;ldquo;what if your phone had an MP3 player.&amp;rdquo; But: what if the form factor, the UX, the simplicity—all of it could live in a Motorola handset?&#xA;Over 15 months, I learned that modular architecture beats monolithic design every time.</description>
     </item>
     <item>
       <title>Bluetooth Prototypes: From Experimental to Production</title>
-      <link>http://localhost:45053/posts/bluetooth-prototypes-journey-2002-2003/</link>
+      <link>https://rikkisnah.github.io/posts/bluetooth-prototypes-journey-2002-2003/</link>
       <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:45053/posts/bluetooth-prototypes-journey-2002-2003/</guid>
+      <guid>https://rikkisnah.github.io/posts/bluetooth-prototypes-journey-2002-2003/</guid>
       <description>Wireless Phones (2002) Bluetooth standard existed since 1998. By 2002, nobody had actually shipped it in a phone. At Motorola, we saw the real opportunity: wireless headphones. No more headset cords tangled in your pocket.&#xA;But standards look clean on paper. In reality? Manufacturers interpreted the spec differently. Pairing was flaky. Range was spotty. We spent months debugging why Bluetooth worked 70% of the time instead of 100%.&#xA;We&amp;rsquo;d get two devices talking, then change something in our protocol stack, and suddenly they wouldn&amp;rsquo;t.</description>
     </item>
   </channel>

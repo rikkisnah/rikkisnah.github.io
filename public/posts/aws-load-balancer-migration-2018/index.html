@@ -11,7 +11,7 @@
   style="--bg:#fff"
   lang="en"
   dir="ltr"
-><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=45053&amp;path=livereload" data-no-instant defer></script>
+><head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
@@ -27,32 +27,49 @@
 
   <meta name="description" content="By mid-2018, AWS had three load balancers: CLB (2009), ALB (2016), NLB (2017). Millions of customers ran each type in production. The question: how do you migrate without breaking live applications?
 The Problem CLB users: &ldquo;ALB looks nice but our app works fine.&rdquo; ALB users: &ldquo;NLB&rsquo;s latency is seductive but we don&rsquo;t need it.&rdquo; Enterprise IT: &ldquo;Three load balancers? Pick one.&rdquo; Migrations were hard because each load balancer had different routing semantics:" />
-  <meta name="author" content="Rik Kisnah" /><link rel="preload stylesheet" as="style" href="http://localhost:45053/main.min.css" />
+  <meta name="author" content="Rik Kisnah" /><link rel="preload stylesheet" as="style" href="https://rikkisnah.github.io/main.min.css" />
 
   
-  <link rel="preload" as="image" href="http://localhost:45053/theme.png" />
+  <link rel="preload" as="image" href="https://rikkisnah.github.io/theme.png" />
 
   
 
-  <link rel="preload" as="image" href="http://localhost:45053/github.svg" /><link rel="preload" as="image" href="http://localhost:45053/linkedin.svg" />
+  <link rel="preload" as="image" href="https://rikkisnah.github.io/github.svg" /><link rel="preload" as="image" href="https://rikkisnah.github.io/linkedin.svg" />
 
   <script
     defer
-    src="http://localhost:45053/highlight.min.js"
+    src="https://rikkisnah.github.io/highlight.min.js"
     onload="hljs.initHighlightingOnLoad();"
   ></script>
 
   
   <link
     rel="icon"
-    href="http://localhost:45053/favicon.ico"
+    href="https://rikkisnah.github.io/favicon.ico"
   />
   <link
     rel="apple-touch-icon"
-    href="http://localhost:45053/apple-touch-icon.png"
+    href="https://rikkisnah.github.io/apple-touch-icon.png"
   />
 
-  <meta name="generator" content="Hugo 0.123.7">
+  <meta name="generator" content="Hugo 0.123.7"><meta itemprop="name" content="The Great Load Balancer Migration: Managing Three Generations">
+<meta itemprop="description" content="By mid-2018, AWS had three load balancers: CLB (2009), ALB (2016), NLB (2017). Millions of customers ran each type in production. The question: how do you migrate without breaking live applications?
+The Problem CLB users: &ldquo;ALB looks nice but our app works fine.&rdquo; ALB users: &ldquo;NLB&rsquo;s latency is seductive but we don&rsquo;t need it.&rdquo; Enterprise IT: &ldquo;Three load balancers? Pick one.&rdquo; Migrations were hard because each load balancer had different routing semantics:"><meta itemprop="datePublished" content="2018-06-15T09:00:00-07:00" />
+<meta itemprop="dateModified" content="2018-06-15T09:00:00-07:00" />
+<meta itemprop="wordCount" content="555">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="The Great Load Balancer Migration: Managing Three Generations" />
+<meta property="og:description" content="By mid-2018, AWS had three load balancers: CLB (2009), ALB (2016), NLB (2017). Millions of customers ran each type in production. The question: how do you migrate without breaking live applications?
+The Problem CLB users: &ldquo;ALB looks nice but our app works fine.&rdquo; ALB users: &ldquo;NLB&rsquo;s latency is seductive but we don&rsquo;t need it.&rdquo; Enterprise IT: &ldquo;Three load balancers? Pick one.&rdquo; Migrations were hard because each load balancer had different routing semantics:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rikkisnah.github.io/posts/aws-load-balancer-migration-2018/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-06-15T09:00:00-07:00" />
+<meta property="article:modified_time" content="2018-06-15T09:00:00-07:00" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="The Great Load Balancer Migration: Managing Three Generations"/>
+<meta name="twitter:description" content="By mid-2018, AWS had three load balancers: CLB (2009), ALB (2016), NLB (2017). Millions of customers ran each type in production. The question: how do you migrate without breaking live applications?
+The Problem CLB users: &ldquo;ALB looks nice but our app works fine.&rdquo; ALB users: &ldquo;NLB&rsquo;s latency is seductive but we don&rsquo;t need it.&rdquo; Enterprise IT: &ldquo;Three load balancers? Pick one.&rdquo; Migrations were hard because each load balancer had different routing semantics:"/>
+
+  <link rel="canonical" href="https://rikkisnah.github.io/posts/aws-load-balancer-migration-2018/" />
 </head>
 <body
     class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
@@ -62,7 +79,7 @@ The Problem CLB users: &ldquo;ALB looks nice but our app works fine.&rdquo; ALB 
   <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
     <a
       class="-translate-y-[1px] text-2xl font-medium"
-      href="http://localhost:45053/"
+      href="https://rikkisnah.github.io/"
       >Rik Kisnah - Blog</a
     >
     <div
@@ -295,17 +312,17 @@ Day 29+:      100% traffic (old LB decommissioned)
 
   <nav
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
-  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:45053/posts/gb200-batam-data-plane-rollout/"
+  ><a class="ltr:pr-3 rtl:pl-3" href="https://rikkisnah.github.io/posts/gb200-batam-data-plane-rollout/"
       ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Three Weeks in Batam: Bringing NVIDIA GB200 to Life on the Data Plane</span></a
     ><a
       class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
-      href="http://localhost:45053/posts/aws-nlb-launch-2017/"
+      href="https://rikkisnah.github.io/posts/aws-nlb-launch-2017/"
       ><span>Network Load Balancer: Extreme Performance for the Cloud</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
     ></nav></article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >
   <div class="mr-auto">&copy;2025
-    <a class="link" href="http://localhost:45053/">Rik Kisnah - Blog</a></div>
+    <a class="link" href="https://rikkisnah.github.io/">Rik Kisnah - Blog</a></div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
     >powered by hugo️️</a
   >️
