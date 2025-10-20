@@ -191,14 +191,16 @@ html.dark th {
   display: none !important;
 }
 
-/* Improve code block line number visibility */
-article .highlight > div table tr:first-of-type pre code span {
-  color: #fff !important;
+/* Improve code block line number visibility - make line numbers 100% visible */
+article .highlight > div table tr:first-of-type code span,
+article .highlight pre code span {
+  color: rgba(255, 255, 255, 1) !important;
   opacity: 1 !important;
+  background: transparent !important;
 }
 
-/* Dark mode code block line numbers */
-html.dark article .highlight > div table tr:first-of-type pre code span {
-  color: #333 !important;
+/* Also target direct span elements */
+.highlight table tr:first-of-type span {
+  color: rgba(255, 255, 255, 1) !important;
   opacity: 1 !important;
 }
