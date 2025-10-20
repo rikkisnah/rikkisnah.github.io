@@ -5,13 +5,15 @@ draft: false
 tags: ["y2k", "debugging", "1999-2001", "ntu", "millennium", "systems", "crisis-management"]
 ---
 
-## The Millennium Bug Looms
+## The Crisis That Never Was (1999-2000)
 
-As an NTU student in Singapore during the waning days of 1998 and early 1999, I found myself swept up in what would become the defining technical challenge of the era: Y2K debugging. The humid labs of Nanyang Technological University buzzed with anxiety and excitement as midnight on December 31st approached—would systems across the world crash when the calendar rolled from 1999 to 2000?
+Summer 1999: The world was panicked. Every computer system would crash at midnight on Dec 31, 1999 because programmers in the 1970s had stored years as 2-digit numbers. 99 rolled to 00, and—disaster.
 
-In 1999, Y2K debugging was all the rage in my corner of the tech world. I spent weeks deploying solutions, wrestling with legacy systems that had been storing years as two-digit numbers for decades. The problem seemed simple enough on paper: find every instance where dates were stored or processed, understand the cascade of dependencies, and implement fixes without breaking existing functionality.
+At NTU, we treated it seriously. Every system we touched had the same problem: years stored as `YY` instead of `YYYY`. The fix was mechanical but tedious: find every date field, add validation, test like hell.
 
-The challenges were real. Latency spikes became common as systems groaned under the weight of additional validation logic. Every bug fix introduced the possibility of new ones. We worked late into the humid Singapore nights, fueled by teh tarik from the nearby kopitiam and the determination to prevent a global meltdown.
+But something odd happened: it wasn't that hard. Not magic, just systematic. Map every date field. Write fixes. Test. Move on.
+
+By December 30, 1999, the panic had faded. We were confident the world wouldn't end. And it didn't.
 
 ## The Breakthroughs
 

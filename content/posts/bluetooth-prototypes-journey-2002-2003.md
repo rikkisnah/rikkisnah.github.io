@@ -5,13 +5,11 @@ draft: false
 tags: ["bluetooth", "wireless", "motorola", "2002-2003", "connectivity", "protocols", "standardization"]
 ---
 
-## The Bluetooth Promise (August 2002)
+## Wireless Phones (2002)
 
-By August 2002, Bluetooth had been standardized for a few years, but actual working implementations were still rare. The promise was revolutionary: wirelessly connect your phone to headsets, computers, other devices—all without wires, all at close range.
+Bluetooth standard existed since 1998. By 2002, nobody had actually shipped it in a phone. At Motorola, we saw the real opportunity: wireless headphones. No more headset cords tangled in your pocket.
 
-At Motorola, we saw Bluetooth as the future. Instead of wired connections or limited infrared, devices could communicate wirelessly over a distance of 10 meters. You could leave your headset at your desk and walk around the office with your phone. You could sync your laptop and phone automatically.
-
-I spent weeks deploying Bluetooth solutions—and encountered the messy reality of standards. The Bluetooth specification was complex. Different manufacturers implemented it differently. Compatibility was hit-or-miss.
+But standards look clean on paper. In reality? Manufacturers interpreted the spec differently. Pairing was flaky. Range was spotty. We spent months debugging why Bluetooth worked 70% of the time instead of 100%.
 
 We'd get two devices talking, then change something in our protocol stack, and suddenly they wouldn't. We'd spend days debugging, only to discover the issue was a misunderstanding of the specification's wording.
 

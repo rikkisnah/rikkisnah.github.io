@@ -5,13 +5,13 @@ draft: false
 tags: ["java", "applets", "2000", "ntu", "browser", "dorms", "security", "optimization"]
 ---
 
-## Java: The Future of Computing (February 2000)
+## "Write Once, Run Anywhere" (2000)
 
-In February 2000, just two months after the Y2K celebration, the tech world buzzed with a different promise: write once, run anywhere. Java was going to revolutionize computing. Sun Microsystems was betting big on applets—small Java programs that would run in web browsers, turning the browser into a universal application platform.
+Java shipped 1995. By 2000, Sun was convinced: Java applets would replace native applications. Download an applet from a website, it runs in your browser on any OS. Windows, Mac, Linux—same code everywhere.
 
-As an NTU student in the dorms, I had front-row access to this revolution. Every lab machine had Java installed. Every CS assignment seemed to involve writing applets. The promise was intoxicating: real programming in the browser.
+At NTU, every CS class assignment involved Java. The promise was seductive. But reality was brutal: applets were slow (multi-MB downloads!), full of security bugs, and incompatible across browsers. Try to download a file? Permission denied. Try to use a system library? ClassNotFoundExceptions.
 
-Of course, reality was messier. I spent weeks debugging applet issues—compatibility problems between browsers, security restrictions that made applets nearly useless, download times that felt glacial. The "data floods" I faced weren't just network bandwidth; they were floods of ClassNotFoundExceptions, security permission denials, and frustrated users.
+By 2005, Java applets were dead in the browser. But the lesson stuck: **cross-platform write-once code is harder than people think.**
 
 ### Challenges That Shaped Thinking
 

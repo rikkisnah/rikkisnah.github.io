@@ -5,13 +5,13 @@ draft: false
 tags: ["wifi", "wireless", "1999-2000", "ntu", "networking", "singapore", "infrastructure"]
 ---
 
-## Wireless Revolution Begins (July 1999)
+## Wireless Networking (1999)
 
-By July 1999, Wi-Fi technology was emerging from IEEE 802.11 specifications into practical reality. Singapore, as a forward-thinking tech hub, was one of the first places to experiment with widespread wireless networking. As an NTU student, I had access to some of these early deployments, and the possibilities seemed limitless.
+IEEE 802.11 shipped in 1997. By 1999, Singapore was ahead of the curve—early 802.11b trials at universities. At NTU, we had access to experimental wireless infrastructure. The dream: no wires. Just laptops talking over the air.
 
-I spent weeks debugging solutions for wireless connectivity. The early Wi-Fi standards had significant challenges. Signal attenuation was unpredictable. Interference from other devices caused packet loss. Range was limited—often just a few meters reliably. Yet the promise was extraordinary: computers could communicate without wires.
+Reality: signal was weak, interference constant, range 20 meters on a good day. Tropical humidity killed performance. Water vapor absorbs radio waves. Our tests worked in the lab, then failed in the hallway.
 
-The humidity of Singapore added another layer of complexity. Moisture affects radio propagation in ways we didn't fully understand. Our experimental setups in the NTU labs sometimes worked perfectly, sometimes failed mysteriously. Debugging wireless issues felt more like art than science.
+But the core promise was undeniable: **wireless beats wires**, if you can make the technology reliable.
 
 ### Early Challenges
 

@@ -5,13 +5,13 @@ draft: false
 tags: ["neural-networks", "ai", "1999", "ntu", "matrices"]
 ---
 
-## The Dream of Artificial Intelligence
+## Machine Learning Before It Was Cool (1999)
 
-In May 1999, while the world was preoccupied with the approaching Y2K crisis, I found myself exploring something entirely different in the NTU labs: neural networks. The term "neural net dreams" might sound whimsical now, but in 1999, this was genuinely visionary work. We were exploring how computers could learn from data, much like the human brain.
+While everyone worried about Y2K, I was playing with neural networks at NTU. Not because I thought they'd ship in products—they were academic curiosities then. But because the math was beautiful.
 
-## The Technical Challenge
+The core insight: if you could represent a problem as matrices, you could teach a network to solve it via backpropagation. Weights → matrix multiply → gradient descent → improved weights. Repeat until convergence.
 
-Matrix operations are the backbone of neural networks. Every forward pass through a network involves complex matrix multiplications. I spent weeks debugging solutions—understanding backpropagation, working through the mathematics of gradient descent, trying to make these networks actually learn from data.
+Problem: matrix ops were *slow* on 1999 computers. Training a small network could take hours. GPUs didn't exist. The dream was real, but the compute wasn't there yet.
 
 The challenge was overwhelming. Data floods were constant. We had limited computational resources, yet we were trying to train networks on datasets that pushed our machines to their limits. Every iteration took hours. Patience became a virtue; failure was frequent.
 
