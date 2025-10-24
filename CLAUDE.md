@@ -59,8 +59,24 @@ The site configuration in `hugo.toml` includes:
 - Base URL: https://rikkisnah.github.io/
 - Language: en
 - Title: 'Rik Kisnah - Blog'
-- Menu: Posts and About pages
-- Params: Author name, bio, color scheme
+- Params: Author name, bio, color scheme, social links (LinkedIn, GitHub)
+
+### Navigation Menu
+The main navigation menu is configured in `hugo.toml` and currently includes:
+- Posts (`/posts/`) - Blog post listing
+- About (`/about/`) - About page
+- Publications (`/publications/`) - Featured publications and talks
+- Resume (`/resume/`) - Resume/CV page
+
+To add or modify menu items, edit the `[menu]` section in `hugo.toml`:
+```toml
+[menu]
+  [[menu.main]]
+    identifier = "page-id"
+    name = "Display Name"
+    url = "/path/"
+    weight = 10  # Lower weight = appears first
+```
 
 ### Content Front Matter
 Blog posts should include front matter with at least:
@@ -69,13 +85,30 @@ Blog posts should include front matter with at least:
 title: "Post Title"
 date: YYYY-MM-DDTHH:MM:SS-07:00
 draft: false
+tags: ["tag1", "tag2"]
 ---
 ```
+
+**Front Matter Fields:**
+- `title`: Post title (required)
+- `date`: Publication date in RFC3339 format with `-07:00` timezone (required)
+- `draft`: Set to `false` to publish, `true` to keep as draft (required)
+- `tags`: Array of tags for categorization (optional)
+
+**Important:** Always use `-07:00` (Pacific Time) for dates to match the site's default timezone.
+
+### Static Assets and Images
+Images and other static assets should be organized in the `static/` directory:
+- `static/posts/[post-slug]/` - Images for specific blog posts (organized by post filename)
+- Reference images in posts using: `![Alt text](/posts/post-slug/image-name.jpg)`
+- Example: For post `content/posts/my-post.md`, place images in `static/posts/my-post/`
+
+This keeps post content and related images organized together while leveraging Hugo's static asset handling.
 
 ### Theme Customization
 The hugo-paper theme is managed as a Git submodule. To customize:
 - Create corresponding files in local `layouts/` directory to override theme layouts
-- Create `static/` directory for custom static assets
+- Create custom CSS in `static/custom.css` for styling overrides
 - Never modify files directly in `themes/hugo-paper/`
 
 ## Deployment & Workflow
@@ -112,7 +145,17 @@ Two helper scripts simplify the workflow:
 - Preview locally: `hugo server -D` then visit http://localhost:1313
 
 **GitHub Actions (CI/CD):**
-- The workflow uses Hugo 0.128.0 Extended with Dart Sass
-- Builds are minified and garbage-collected for optimal site performance
+- Build environment: Ubuntu latest
+- Hugo version: 0.128.0 Extended
+- CSS preprocessing: Dart Sass
+- Build flags: `--gc` (garbage collection), `--minify` (minification)
 - Timezone: America/Los_Angeles (affects date rendering)
-- All builds push to https://rikkisnah.github.io/
+- Deployment: Automatic push to GitHub Pages on every main branch push
+- Build workflow file: `.github/workflows/hugo.yaml`
+
+The workflow automatically handles:
+- Checking out code with Git submodules
+- Installing Hugo and dependencies
+- Building with production settings
+- Uploading artifacts to GitHub Pages
+- All builds are live within 2-3 minutes
