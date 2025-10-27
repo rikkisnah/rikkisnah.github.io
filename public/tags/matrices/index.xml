@@ -4,7 +4,7 @@
     <title>Matrices on Rik Kisnah - Blog</title>
     <link>https://rikkisnah.github.io/tags/matrices/</link>
     <description>Recent content in Matrices on Rik Kisnah - Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 May 1999 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://rikkisnah.github.io/tags/matrices/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://rikkisnah.github.io/posts/matrix-neural-net-dreams/</link>
       <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
       <guid>https://rikkisnah.github.io/posts/matrix-neural-net-dreams/</guid>
-      <description>Machine Learning Before It Was Cool (1999) While everyone worried about Y2K, I was playing with neural networks at NTU. Not because I thought they&amp;rsquo;d ship in products—they were academic curiosities then. But because the math was beautiful.&#xA;The core insight: if you could represent a problem as matrices, you could teach a network to solve it via backpropagation. Weights → matrix multiply → gradient descent → improved weights. Repeat until convergence.</description>
+      <description>&lt;h2 id=&#34;machine-learning-before-it-was-cool-1999&#34;&gt;Machine Learning Before It Was Cool (1999)&lt;/h2&gt;&#xA;&lt;p&gt;While everyone worried about Y2K, I was playing with neural networks at NTU. Not because I thought they&amp;rsquo;d ship in products—they were academic curiosities then. But because the math was beautiful.&lt;/p&gt;&#xA;&lt;p&gt;The core insight: if you could represent a problem as matrices, you could teach a network to solve it via backpropagation. Weights → matrix multiply → gradient descent → improved weights. Repeat until convergence.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

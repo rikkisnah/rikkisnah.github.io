@@ -4,7 +4,7 @@
     <title>Java on Rik Kisnah - Blog</title>
     <link>https://rikkisnah.github.io/tags/java/</link>
     <description>Recent content in Java on Rik Kisnah - Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 21 Nov 2000 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://rikkisnah.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://rikkisnah.github.io/posts/java-applets-journey-2000/</link>
       <pubDate>Tue, 21 Nov 2000 00:00:00 +0000</pubDate>
       <guid>https://rikkisnah.github.io/posts/java-applets-journey-2000/</guid>
-      <description>&amp;ldquo;Write Once, Run Anywhere&amp;rdquo; (2000) Java shipped 1995. By 2000, Sun was convinced: Java applets would replace native applications. Download an applet from a website, it runs in your browser on any OS. Windows, Mac, Linux—same code everywhere.&#xA;At NTU, every CS class assignment involved Java. The promise was seductive. But reality was brutal: applets were slow (multi-MB downloads!), full of security bugs, and incompatible across browsers. Try to download a file?</description>
+      <description>&lt;h2 id=&#34;write-once-run-anywhere-2000&#34;&gt;&amp;ldquo;Write Once, Run Anywhere&amp;rdquo; (2000)&lt;/h2&gt;&#xA;&lt;p&gt;Java shipped 1995. By 2000, Sun was convinced: Java applets would replace native applications. Download an applet from a website, it runs in your browser on any OS. Windows, Mac, Linux—same code everywhere.&lt;/p&gt;&#xA;&lt;p&gt;At NTU, every CS class assignment involved Java. The promise was seductive. But reality was brutal: applets were slow (multi-MB downloads!), full of security bugs, and incompatible across browsers. Try to download a file? Permission denied. Try to use a system library? ClassNotFoundExceptions.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -4,7 +4,7 @@
     <title>Systems on Rik Kisnah - Blog</title>
     <link>https://rikkisnah.github.io/tags/systems/</link>
     <description>Recent content in Systems on Rik Kisnah - Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 20 Dec 2001 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://rikkisnah.github.io/tags/systems/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>https://rikkisnah.github.io/posts/y2k-debugging-journey-1999-2001/</link>
       <pubDate>Thu, 20 Dec 2001 00:00:00 +0000</pubDate>
       <guid>https://rikkisnah.github.io/posts/y2k-debugging-journey-1999-2001/</guid>
-      <description>The Crisis That Never Was (1999-2000) Summer 1999: The world was panicked. Every computer system would crash at midnight on Dec 31, 1999 because programmers in the 1970s had stored years as 2-digit numbers. 99 rolled to 00, and—disaster.&#xA;At NTU, we treated it seriously. Every system we touched had the same problem: years stored as YY instead of YYYY. The fix was mechanical but tedious: find every date field, add validation, test like hell.</description>
+      <description>&lt;h2 id=&#34;the-crisis-that-never-was-1999-2000&#34;&gt;The Crisis That Never Was (1999-2000)&lt;/h2&gt;&#xA;&lt;p&gt;Summer 1999: The world was panicked. Every computer system would crash at midnight on Dec 31, 1999 because programmers in the 1970s had stored years as 2-digit numbers. 99 rolled to 00, and—disaster.&lt;/p&gt;&#xA;&lt;p&gt;At NTU, we treated it seriously. Every system we touched had the same problem: years stored as &lt;code&gt;YY&lt;/code&gt; instead of &lt;code&gt;YYYY&lt;/code&gt;. The fix was mechanical but tedious: find every date field, add validation, test like hell.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Early Linux at NTU: Open Source Becomes Real</title>
       <link>https://rikkisnah.github.io/posts/early-linux-at-ntu/</link>
       <pubDate>Mon, 17 Sep 2001 00:00:00 +0000</pubDate>
       <guid>https://rikkisnah.github.io/posts/early-linux-at-ntu/</guid>
-      <description>The Linux Revolution Reaches NTU By September 2001, Linux was transitioning from hobbyist project to legitimate alternative to proprietary Unix systems. NTU, as a forward-thinking institution, started deploying Linux in labs. After years of expensive proprietary systems, here was an free, open operating system that actually worked.&#xA;For students raised on Windows, encountering Linux was revelatory. The source code was available. You could modify it. You could understand how everything worked down to the kernel level.</description>
+      <description>&lt;h2 id=&#34;the-linux-revolution-reaches-ntu&#34;&gt;The Linux Revolution Reaches NTU&lt;/h2&gt;&#xA;&lt;p&gt;By September 2001, Linux was transitioning from hobbyist project to legitimate alternative to proprietary Unix systems. NTU, as a forward-thinking institution, started deploying Linux in labs. After years of expensive proprietary systems, here was an free, open operating system that actually worked.&lt;/p&gt;&#xA;&lt;p&gt;For students raised on Windows, encountering Linux was revelatory. The source code was available. You could modify it. You could understand how everything worked down to the kernel level.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
