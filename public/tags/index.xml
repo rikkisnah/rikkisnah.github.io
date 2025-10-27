@@ -6,20 +6,69 @@
     <description>Recent content in Tags on Rik Kisnah - Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Oct 2025 09:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 26 Oct 2025 22:43:15 -0400</lastBuildDate>
     <atom:link href="https://rikkisnah.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
       <link>https://rikkisnah.github.io/tags/ai/</link>
-      <pubDate>Sat, 18 Oct 2025 09:00:00 -0700</pubDate>
+      <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
       <guid>https://rikkisnah.github.io/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Cloud</title>
       <link>https://rikkisnah.github.io/tags/cloud/</link>
-      <pubDate>Sat, 18 Oct 2025 09:00:00 -0700</pubDate>
+      <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
       <guid>https://rikkisnah.github.io/tags/cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Engineering</title>
+      <link>https://rikkisnah.github.io/tags/engineering/</link>
+      <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
+      <guid>https://rikkisnah.github.io/tags/engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GPU</title>
+      <link>https://rikkisnah.github.io/tags/gpu/</link>
+      <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
+      <guid>https://rikkisnah.github.io/tags/gpu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HPC</title>
+      <link>https://rikkisnah.github.io/tags/hpc/</link>
+      <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
+      <guid>https://rikkisnah.github.io/tags/hpc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Infrastructure</title>
+      <link>https://rikkisnah.github.io/tags/infrastructure/</link>
+      <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
+      <guid>https://rikkisnah.github.io/tags/infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OCI</title>
+      <link>https://rikkisnah.github.io/tags/oci/</link>
+      <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
+      <guid>https://rikkisnah.github.io/tags/oci/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RDMA</title>
+      <link>https://rikkisnah.github.io/tags/rdma/</link>
+      <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
+      <guid>https://rikkisnah.github.io/tags/rdma/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Seattle</title>
+      <link>https://rikkisnah.github.io/tags/seattle/</link>
+      <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
+      <guid>https://rikkisnah.github.io/tags/seattle/</guid>
       <description></description>
     </item>
     <item>
@@ -27,13 +76,6 @@
       <link>https://rikkisnah.github.io/tags/enterprise/</link>
       <pubDate>Sat, 18 Oct 2025 09:00:00 -0700</pubDate>
       <guid>https://rikkisnah.github.io/tags/enterprise/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Infrastructure</title>
-      <link>https://rikkisnah.github.io/tags/infrastructure/</link>
-      <pubDate>Sat, 18 Oct 2025 09:00:00 -0700</pubDate>
-      <guid>https://rikkisnah.github.io/tags/infrastructure/</guid>
       <description></description>
     </item>
     <item>
@@ -118,13 +160,6 @@
       <link>https://rikkisnah.github.io/tags/nvidia/</link>
       <pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate>
       <guid>https://rikkisnah.github.io/tags/nvidia/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Oci</title>
-      <link>https://rikkisnah.github.io/tags/oci/</link>
-      <pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate>
-      <guid>https://rikkisnah.github.io/tags/oci/</guid>
       <description></description>
     </item>
     <item>

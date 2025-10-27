@@ -1,0 +1,526 @@
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#fff"
+  lang="en"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>From First Principles to Zettascale: How OCI&#39;s GPU/RDMA Architecture Redefines AI Infrastructure - Rik Kisnah - Blog</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&rsquo;s official position.
+In the rapidly evolving landscape of AI infrastructure, one company has quietly revolutionized how we think about GPU computing at scale. Through a series of &ldquo;First Principles&rdquo; engineering blogs and groundbreaking deployments, Oracle Cloud Infrastructure (OCI) has demonstrated that starting from fundamental physics and systems design—rather than following industry conventions—can yield extraordinary results. This is the story of how OCI went from concept to operating the world&rsquo;s largest GPU superclusters, and what it means for the future of AI." />
+  <meta name="author" content="Rik Kisnah" /><link rel="preload stylesheet" as="style" href="https://rikkisnah.github.io/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="https://rikkisnah.github.io/theme.png" />
+
+  
+
+  <link rel="preload" as="image" href="https://rikkisnah.github.io/github.svg" /><link rel="preload" as="image" href="https://rikkisnah.github.io/linkedin.svg" />
+
+  <script
+    defer
+    src="https://rikkisnah.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="https://rikkisnah.github.io/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="https://rikkisnah.github.io/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.151.2">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDFDXYW4CB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PDFDXYW4CB');
+  </script>
+
+  
+  <meta itemprop="name" content="From First Principles to Zettascale: How OCI&#39;s GPU/RDMA Architecture Redefines AI Infrastructure">
+  <meta itemprop="description" content="Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer’s official position.
+In the rapidly evolving landscape of AI infrastructure, one company has quietly revolutionized how we think about GPU computing at scale. Through a series of “First Principles” engineering blogs and groundbreaking deployments, Oracle Cloud Infrastructure (OCI) has demonstrated that starting from fundamental physics and systems design—rather than following industry conventions—can yield extraordinary results. This is the story of how OCI went from concept to operating the world’s largest GPU superclusters, and what it means for the future of AI.">
+  <meta itemprop="datePublished" content="2025-10-26T22:43:15-04:00">
+  <meta itemprop="dateModified" content="2025-10-26T22:43:15-04:00">
+  <meta itemprop="wordCount" content="1474">
+  <meta itemprop="keywords" content="OCI,GPU,RDMA,AI,Infrastructure,Cloud,HPC,Seattle,Engineering"><meta property="og:url" content="https://rikkisnah.github.io/posts/summary-gpu-oci-first-principles-blog/">
+  <meta property="og:site_name" content="Rik Kisnah - Blog">
+  <meta property="og:title" content="From First Principles to Zettascale: How OCI&#39;s GPU/RDMA Architecture Redefines AI Infrastructure">
+  <meta property="og:description" content="Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer’s official position.
+In the rapidly evolving landscape of AI infrastructure, one company has quietly revolutionized how we think about GPU computing at scale. Through a series of “First Principles” engineering blogs and groundbreaking deployments, Oracle Cloud Infrastructure (OCI) has demonstrated that starting from fundamental physics and systems design—rather than following industry conventions—can yield extraordinary results. This is the story of how OCI went from concept to operating the world’s largest GPU superclusters, and what it means for the future of AI.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-26T22:43:15-04:00">
+    <meta property="article:modified_time" content="2025-10-26T22:43:15-04:00">
+    <meta property="article:tag" content="OCI">
+    <meta property="article:tag" content="GPU">
+    <meta property="article:tag" content="RDMA">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Infrastructure">
+    <meta property="article:tag" content="Cloud">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="From First Principles to Zettascale: How OCI&#39;s GPU/RDMA Architecture Redefines AI Infrastructure">
+  <meta name="twitter:description" content="Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer’s official position.
+In the rapidly evolving landscape of AI infrastructure, one company has quietly revolutionized how we think about GPU computing at scale. Through a series of “First Principles” engineering blogs and groundbreaking deployments, Oracle Cloud Infrastructure (OCI) has demonstrated that starting from fundamental physics and systems design—rather than following industry conventions—can yield extraordinary results. This is the story of how OCI went from concept to operating the world’s largest GPU superclusters, and what it means for the future of AI.">
+
+  <link rel="canonical" href="https://rikkisnah.github.io/posts/summary-gpu-oci-first-principles-blog/" />
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="https://rikkisnah.github.io/"
+      >Rik Kisnah - Blog</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#fff'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkVal = localStorage.getItem('dark');
+    setDark(darkVal === 'true');
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/posts/"
+        >Posts</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/publications/"
+        >Publications</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/resume/"
+        >Resume</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/rikkisnah"
+        target="_blank"
+        rel="me"
+      >github</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/rikkisnah"
+        target="_blank"
+        rel="me"
+      >linkedin</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">From First Principles to Zettascale: How OCI&#39;s GPU/RDMA Architecture Redefines AI Infrastructure</h1><div class="text-xs antialiased opacity-60"><time>Oct 26, 2025</time></div></header>
+
+  <section><p><strong>Disclaimer:</strong> This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&rsquo;s official position.</p>
+<p>In the rapidly evolving landscape of AI infrastructure, one company has quietly revolutionized how we think about GPU computing at scale. Through a series of &ldquo;First Principles&rdquo; engineering blogs and groundbreaking deployments, Oracle Cloud Infrastructure (OCI) has demonstrated that starting from fundamental physics and systems design—rather than following industry conventions—can yield extraordinary results. This is the story of how OCI went from concept to operating the world&rsquo;s largest GPU superclusters, and what it means for the future of AI.</p>
+<h2 id="a-seattle-perspective">A Seattle Perspective</h2>
+<p>Walking the halls of Oracle&rsquo;s RIC Seattle office alongside industry leaders like Pradeep Vincent (OCI Chief Technical Architect), Jag Brar (OCI Distinguished Engineer), and David Becker (OCI Senior Architect) feels like witnessing the future being engineered in real time. These are not incremental thinkers—they&rsquo;re redefining cloud infrastructure from first principles. The work emerging from this dream team on Oracle Cloud Infrastructure&rsquo;s (OCI) GPU superclusters and Remote Direct Memory Access (RDMA) networking represents a complete re-architecture of AI systems. Here, engineering precision meets scale, creating the foundation for the world&rsquo;s most advanced AI workloads.</p>
+<p>The OCI Engineering community publishes a series of &ldquo;First Principles&rdquo; blogs that explore how complex problems are solved using fundamental engineering concepts. As part of the engineering teams working on these projects, I&rsquo;ve witnessed firsthand how these principles translate into production systems. These blogs provide invaluable insight into OCI&rsquo;s engineering excellence in AI and GPU infrastructure.</p>
+<h2 id="key-resources-the-first-principles-journey">Key Resources: The First Principles Journey</h2>
+<p>The following timeline chronicles OCI&rsquo;s systematic approach to building AI infrastructure, each entry representing a milestone in our journey from concept to zettascale reality:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Date</th>
+          <th>Resource</th>
+          <th>Focus Area</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Dec 2022</strong></td>
+          <td><a href="https://www.youtube.com/watch?v=ca_OGqCVHDM">Building a High Performance Network</a></td>
+          <td>RDMA architecture foundations</td>
+      </tr>
+      <tr>
+          <td><strong>Feb 2023</strong></td>
+          <td><a href="https://blogs.oracle.com/cloud-infrastructure/post/superclusters-rdma-high-performance">Superclusters with RDMA</a></td>
+          <td>Ultra-high performance at massive scale</td>
+      </tr>
+      <tr>
+          <td><strong>Jul 2023</strong></td>
+          <td><a href="https://blogs.oracle.com/cloud-infrastructure/post/oci-accelerates-hpc-ai-db-roce-nvidia-connectx">OCI Accelerates HPC/AI Using RoCE</a></td>
+          <td>ConnectX optimizations</td>
+      </tr>
+      <tr>
+          <td><strong>Mar 2024</strong></td>
+          <td><a href="https://blogs.oracle.com/cloud-infrastructure/post/first-principles-oci-generative-ai-service">First Principles: Generative AI Service</a></td>
+          <td>RDMA-backed AI infrastructure</td>
+      </tr>
+      <tr>
+          <td><strong>May 2024</strong></td>
+          <td><a href="https://blogs.oracle.com/cloud-infrastructure/post/deploying-hpc-cluster-rdma-network-oke-fss-mount">Deploying HPC Clusters with RDMA on Kubernetes</a></td>
+          <td>Production deployment patterns</td>
+      </tr>
+      <tr>
+          <td><strong>Mar 2024</strong></td>
+          <td><a href="https://blogs.oracle.com/cloud-infrastructure/post/first-principles-zettascale-oci-superclusters">Inside Zettascale OCI Superclusters</a></td>
+          <td>131K+ GPU engineering</td>
+      </tr>
+      <tr>
+          <td><strong>May 2024</strong></td>
+          <td><a href="https://blogs.oracle.com/cloud-infrastructure/post/high-performance-networking-ai-infrastructure">High-Performance Networking for AI at Scale</a></td>
+          <td>Latest performance metrics</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="the-journey-from-vision-to-zettascale-reality">The Journey: From Vision to Zettascale Reality</h2>
+<h3 id="phase-1-laying-the-foundation-20222023">Phase 1: Laying the Foundation (2022–2023)</h3>
+<p>In December 2022, Jag Brar articulated OCI&rsquo;s vision for a revolutionary high-performance network built around RDMA, eliminating CPU and kernel bottlenecks to enable direct GPU-to-GPU communication. This wasn&rsquo;t just theory—by February 2023, OCI deployed its first production GPU supercluster, proving that architecture grounded in physics and systems design could scale massively. This marked OCI&rsquo;s ascent into the upper echelon of AI infrastructure providers.</p>
+<h3 id="phase-2-refining-for-real-world-impact-20232024">Phase 2: Refining for Real-World Impact (2023–2024)</h3>
+<p>Throughout 2023, OCI systematically optimized RDMA over Converged Ethernet (RoCE) and NVIDIA ConnectX technologies, achieving sub-3 microsecond latencies and dramatically higher throughput. By May 2024, these designs evolved into production-grade, Kubernetes-orchestrated clusters—delivering elastic GPU supercomputing to enterprise customers training large language models (LLMs) and running complex AI workloads. This phase transformed bleeding-edge performance into reliable, repeatable systems.</p>
+<h3 id="phase-3-zettascale-reality-2024">Phase 3: Zettascale Reality (2024)</h3>
+<p>In March 2024, OCI achieved a watershed moment: zettascale computing. With over 131,000 GPUs running in production superclusters powered by the revolutionary multi-planar Acceleron architecture, OCI delivered unprecedented redundancy, deterministic performance, and built-in zero-trust security. Supported by gigawatt-scale data centers with advanced liquid cooling, these systems didn&rsquo;t just scale incrementally—they redefined the boundaries of AI infrastructure.</p>
+<hr>
+<h2 id="why-oci-wins-the-technical-advantages">Why OCI Wins: The Technical Advantages</h2>
+<h3 id="rdma-the-performance-edge">RDMA: The Performance Edge</h3>
+<p>OCI&rsquo;s RDMA implementation achieves industry-leading sub-3 microsecond latency and 3,200 Gb/sec bandwidth—an order of magnitude faster than traditional cloud networking. By enabling direct GPU-to-GPU communication and bypassing CPU overhead entirely, OCI drastically accelerates both model training and inference. This isn&rsquo;t incremental improvement—it&rsquo;s a fundamental reimagining of data movement in distributed computing.</p>
+<h3 id="unmatched-scale">Unmatched Scale</h3>
+<p>While competitors plateau at tens of thousands of GPUs, OCI superclusters scale to an unprecedented 800,000 GPUs. Consider the implications:</p>
+<ul>
+<li><strong>AWS</strong>: ~20,000 GPU maximum cluster</li>
+<li><strong>Azure</strong>: ~30,000 GPU maximum cluster</li>
+<li><strong>GCP</strong>: ~15,000 GPU maximum cluster</li>
+<li><strong>OCI</strong>: 800,000 GPU capability</li>
+</ul>
+<p>This 25-40x advantage translates directly into faster training cycles, reduced cost per experiment, and the ability to tackle AI models of unprecedented complexity.</p>
+<h3 id="multi-planar-acceleron-architecture">Multi-Planar Acceleron Architecture</h3>
+<p>The Acceleron architecture represents a paradigm shift from traditional single-plane networks. Its multi-planar design delivers:</p>
+<ul>
+<li><strong>Fabric redundancy</strong> eliminating single points of failure</li>
+<li><strong>Deterministic paths</strong> ensuring predictable performance</li>
+<li><strong>Intrinsic zero-trust segmentation</strong> for enterprise security</li>
+<li><strong>Linear scalability</strong> maintaining performance regardless of cluster size</li>
+</ul>
+<h3 id="gigawatt-scale-infrastructure">Gigawatt-Scale Infrastructure</h3>
+<p>OCI&rsquo;s gigawatt-class data centers aren&rsquo;t just about raw power—they&rsquo;re engineering marvels featuring:</p>
+<ul>
+<li>Advanced liquid cooling systems maintaining optimal GPU temperatures</li>
+<li>Thermal-adaptive density management preventing throttling</li>
+<li>Sustained maximum GPU performance even under extreme computational loads</li>
+<li>Power infrastructure designed for the next generation of accelerated computing</li>
+</ul>
+<hr>
+<h2 id="real-world-impact-seattles-engineering-excellence">Real-World Impact: Seattle&rsquo;s Engineering Excellence</h2>
+<p>The Seattle engineering teams serve as the critical validation and operational layer for OCI&rsquo;s global GPU infrastructure. Our contributions extend far beyond routine operations—we&rsquo;re the proving ground where theoretical excellence transforms into production reality.</p>
+<p>Working at the intersection of hardware validation, RDMA optimization, and infrastructure automation, we ensure that every GPU cluster meets OCI&rsquo;s exacting standards before reaching customers. Our teams have developed sophisticated validation frameworks and operational tools that enable OCI to maintain industry-leading reliability at unprecedented scale.</p>
+<p>The symbiotic relationship between our operational insights and OCI&rsquo;s architectural design creates a powerful feedback loop. Every pattern we identify, every optimization we implement, and every issue we resolve contributes directly to the evolution of the infrastructure. This collaborative approach between Seattle&rsquo;s operational teams and OCI&rsquo;s architects ensures that the platform continuously improves based on real-world performance data.</p>
+<p>Our recent contributions to the <a href="https://blogs.oracle.com/cloud-infrastructure/post/behind-the-scenes-nvidia-gb200-nvl72-oci-apis">NVIDIA GB200 NVL72 deployment</a> exemplify this partnership—where operational excellence meets architectural innovation to deliver GPU infrastructure that sets new industry standards.</p>
+<hr>
+<h2 id="competitive-reality-the-numbers-dont-lie">Competitive Reality: The Numbers Don&rsquo;t Lie</h2>
+<p>Let&rsquo;s examine how OCI&rsquo;s first-principles approach translates into measurable advantages:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Capability</th>
+          <th><strong>OCI</strong></th>
+          <th><strong>AWS</strong></th>
+          <th><strong>Azure</strong></th>
+          <th><strong>GCP</strong></th>
+          <th><strong>OCI Advantage</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Max GPU Cluster</strong></td>
+          <td>800,000 GPUs</td>
+          <td>20,000 GPUs</td>
+          <td>30,000 GPUs</td>
+          <td>15,000 GPUs</td>
+          <td>25-53x larger</td>
+      </tr>
+      <tr>
+          <td><strong>RDMA Latency</strong></td>
+          <td>2.5 µs</td>
+          <td>≥10 µs</td>
+          <td>≥15 µs</td>
+          <td>≥20 µs</td>
+          <td>4-8x faster</td>
+      </tr>
+      <tr>
+          <td><strong>Network Architecture</strong></td>
+          <td>Multi-planar</td>
+          <td>Single-plane</td>
+          <td>Hybrid</td>
+          <td>Single-plane</td>
+          <td>Full redundancy</td>
+      </tr>
+      <tr>
+          <td><strong>Bare-Metal Access</strong></td>
+          <td>Full</td>
+          <td>Limited</td>
+          <td>Limited</td>
+          <td>None</td>
+          <td>Complete control</td>
+      </tr>
+      <tr>
+          <td><strong>Power Infrastructure</strong></td>
+          <td>Gigawatt</td>
+          <td>Megawatt</td>
+          <td>Megawatt</td>
+          <td>Megawatt</td>
+          <td>100-1000x scale</td>
+      </tr>
+      <tr>
+          <td><strong>Bandwidth per GPU</strong></td>
+          <td>3,200 Gb/s</td>
+          <td>800 Gb/s</td>
+          <td>400 Gb/s</td>
+          <td>100 Gb/s</td>
+          <td>4-32x higher</td>
+      </tr>
+  </tbody>
+</table>
+<p>These aren&rsquo;t marginal improvements—they represent fundamental architectural advantages that compound at scale. When training frontier AI models, these differences translate into weeks versus months of training time and millions of dollars in compute costs.</p>
+<hr>
+<h2 id="the-seattle-advantage-where-innovation-meets-execution">The Seattle Advantage: Where Innovation Meets Execution</h2>
+<p>Seattle represents more than just another OCI engineering site—it&rsquo;s the crucible where theoretical excellence transforms into operational reality. Our unique position at the intersection of hardware validation, RDMA research, and control-plane automation gives us unparalleled insight into what makes OCI&rsquo;s infrastructure exceptional.</p>
+<p>Every diagnostic rule we write, every failure pattern we analyze, and every optimization we implement directly enhances the reliability and performance of OCI&rsquo;s global GPU fleet. We don&rsquo;t just operate infrastructure—we co-create it with the architects who designed it.</p>
+<p>When industry leaders ask <em>&ldquo;Why OCI for AI?&rdquo;</em>, the answer lies in this synergy: world-class architecture designed from first principles, validated and refined by engineers who understand both the theory and the practice.</p>
+<hr>
+<h2 id="looking-ahead-the-next-frontier">Looking Ahead: The Next Frontier</h2>
+<p>As we prepare for NVIDIA&rsquo;s Blackwell generation and approach the era of million-GPU clusters, OCI&rsquo;s foundational principles—simplicity, physics-aligned design, and operational excellence—position us uniquely for the challenges ahead.</p>
+<p>The infrastructure we&rsquo;re building today isn&rsquo;t just meeting current AI demands—it&rsquo;s anticipating the computational requirements of AGI, scientific simulation at unprecedented scales, and workloads we haven&rsquo;t yet imagined. While others scramble to catch up with today&rsquo;s requirements, OCI is already engineering tomorrow&rsquo;s solutions.</p>
+<hr>
+<h2 id="conclusion-engineering-excellence-at-scale">Conclusion: Engineering Excellence at Scale</h2>
+<p>From the first-principles thinking that drives our architecture to the zettascale reality of our production systems, OCI represents a fundamental reimagining of AI infrastructure. The journey from concept to 131,000+ GPU superclusters demonstrates that with the right team, the right principles, and unwavering commitment to excellence, it&rsquo;s possible to not just compete but to redefine what&rsquo;s possible.</p>
+<p>As someone privileged to work alongside the architects and engineers making this happen in Seattle, I can say with confidence: we&rsquo;re not just building cloud infrastructure—we&rsquo;re building the foundation for humanity&rsquo;s AI future.</p>
+<hr>
+<h2 id="references-and-further-reading">References and Further Reading</h2>
+<h3 id="primary-sources---oci-first-principles-series">Primary Sources - OCI First Principles Series</h3>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=ca_OGqCVHDM">Building a High Performance Network</a> - Foundation of RDMA architecture</li>
+<li><a href="https://blogs.oracle.com/cloud-infrastructure/post/superclusters-rdma-high-performance">Superclusters with RDMA—Ultra-High Performance at Massive Scale</a></li>
+<li><a href="https://blogs.oracle.com/cloud-infrastructure/post/first-principles-zettascale-oci-superclusters">Inside Zettascale OCI Superclusters for Next-Gen AI</a></li>
+<li><a href="https://blogs.oracle.com/cloud-infrastructure/post/first-principles-oracle-acceleron-multiplanar">Oracle Acceleron Multiplanar Network Architecture</a></li>
+<li><a href="https://blogs.oracle.com/cloud-infrastructure/post/first-principles-data-center-innovations">Data Center Innovations to Power Gigawatt-Scale Superclusters</a></li>
+</ol>
+<h3 id="technical-deep-dives">Technical Deep Dives</h3>
+<ol start="6">
+<li><a href="https://blogs.oracle.com/cloud-infrastructure/post/oci-accelerates-hpc-ai-db-roce-nvidia-connectx">OCI Accelerates HPC, AI Using RoCE and NVIDIA ConnectX</a></li>
+<li><a href="https://blogs.oracle.com/cloud-infrastructure/post/high-performance-networking-ai-infrastructure">High-Performance Networking for AI Infrastructure at Scale</a></li>
+<li><a href="https://blogs.oracle.com/cloud-infrastructure/post/deploying-hpc-cluster-rdma-network-oke-fss-mount">Deploying HPC Clusters with RDMA on Kubernetes</a></li>
+</ol>
+<h3 id="industry-recognition">Industry Recognition</h3>
+<ol start="9">
+<li><a href="https://blogs.oracle.com/cloud-infrastructure/post/worlds-largest-ai-supercomputer-in-the-cloud">Announcing the World&rsquo;s Largest AI Supercomputer in the Cloud</a></li>
+<li><a href="https://datacenternews.asia/story/oracle-launches-first-zettascale-supercluster-with-nvidia-tech">Oracle Launches First Zettascale Supercluster</a></li>
+</ol>
+<h3 id="additional-resources">Additional Resources</h3>
+<ul>
+<li><a href="https://www.oracle.com/cloud/networking/acceleron/">Oracle Acceleron Architecture</a></li>
+<li><a href="https://www.oracle.com/cloud/compute/gpu/">OCI GPU Compute Overview</a></li>
+<li><a href="https://www.oracle.com/cloud/ai-world-oci-roundup/">OCI AI Infrastructure</a></li>
+</ul>
+<hr>
+<p><em>About the author: A member of OCI&rsquo;s Seattle engineering team, specializing in GPU infrastructure validation and AI system reliability.</em></p>
+</section>
+
+  <footer class="mt-12 flex flex-wrap"><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://rikkisnah.github.io/tags/oci"
+      >OCI</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://rikkisnah.github.io/tags/gpu"
+      >GPU</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://rikkisnah.github.io/tags/rdma"
+      >RDMA</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://rikkisnah.github.io/tags/ai"
+      >AI</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://rikkisnah.github.io/tags/infrastructure"
+      >Infrastructure</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://rikkisnah.github.io/tags/cloud"
+      >Cloud</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://rikkisnah.github.io/tags/hpc"
+      >HPC</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://rikkisnah.github.io/tags/seattle"
+      >Seattle</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://rikkisnah.github.io/tags/engineering"
+      >Engineering</a
+    ></footer><nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="https://rikkisnah.github.io/posts/oracle-ai-world-2025/"
+      ><span>Oracle AI World 2025: Enterprise AI from Promise to Production</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025
+    <a class="link" href="https://rikkisnah.github.io/">Rik Kisnah - Blog</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+<script>// Force light theme as default
+(function() {
+  'use strict';
+  
+  // Override the theme detection and force light mode
+  const forceLightTheme = () => {
+    const html = document.documentElement;
+    const body = document.body;
+    
+    // Remove dark class if present
+    html.classList.remove('dark');
+    
+    // Force light theme styles
+    html.style.setProperty('color-scheme', 'light');
+    body.style.setProperty('background-color', '#ffffff');
+    body.style.setProperty('color', '#1a202c');
+    
+    // Override localStorage to always use light theme
+    localStorage.setItem('dark', 'false');
+  };
+  
+  // Run immediately
+  forceLightTheme();
+  
+  // Run after DOM is loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', forceLightTheme);
+  }
+  
+  // Run after window is loaded
+  window.addEventListener('load', forceLightTheme);
+  
+  // Override any theme toggle buttons
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('btn-dark') || 
+        e.target.closest('.btn-dark')) {
+      e.preventDefault();
+      e.stopPropagation();
+      forceLightTheme();
+      return false;
+    }
+  });
+  
+  // Monitor for any dark class additions and remove them
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.type === 'attributes' && 
+          mutation.attributeName === 'class' && 
+          mutation.target.classList.contains('dark')) {
+        mutation.target.classList.remove('dark');
+        forceLightTheme();
+      }
+    });
+  });
+  
+  // Start observing
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class']
+  });
+  
+})();
+</script></body>
+</html>
