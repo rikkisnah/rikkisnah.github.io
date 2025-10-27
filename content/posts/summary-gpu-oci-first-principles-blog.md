@@ -22,15 +22,17 @@ The OCI Engineering community publishes a series of "First Principles" blogs tha
 
 The following timeline chronicles OCI's systematic approach to building AI infrastructure, each entry representing a milestone in our journey from concept to zettascale reality:
 
-| Date | Resource | Focus Area |
-|------|----------|------------|
-| **Dec 2022** | [Building a High Performance Network](https://www.youtube.com/watch?v=ca_OGqCVHDM) | RDMA architecture foundations |
-| **Feb 2023** | [Superclusters with RDMA](https://blogs.oracle.com/cloud-infrastructure/post/superclusters-rdma-high-performance) | Ultra-high performance at massive scale |
-| **Jul 2023** | [OCI Accelerates HPC/AI Using RoCE](https://blogs.oracle.com/cloud-infrastructure/post/oci-accelerates-hpc-ai-db-roce-nvidia-connectx) | ConnectX optimizations |
-| **Mar 2024** | [First Principles: Generative AI Service](https://blogs.oracle.com/cloud-infrastructure/post/first-principles-oci-generative-ai-service) | RDMA-backed AI infrastructure |
-| **May 2024** | [Deploying HPC Clusters with RDMA on Kubernetes](https://blogs.oracle.com/cloud-infrastructure/post/deploying-hpc-cluster-rdma-network-oke-fss-mount) | Production deployment patterns |
-| **Mar 2024** | [Inside Zettascale OCI Superclusters](https://blogs.oracle.com/cloud-infrastructure/post/first-principles-zettascale-oci-superclusters) | 131K+ GPU engineering |
-| **May 2024** | [High-Performance Networking for AI at Scale](https://blogs.oracle.com/cloud-infrastructure/post/high-performance-networking-ai-infrastructure) | Latest performance metrics |
+| Date            | Resource                                                                                                                                                                       | Focus Area                                      |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------- |
+| **Dec 13 2022** | [Building a High-Performance Network](https://www.youtube.com/watch?v=ca_OGqCVHDM)                                                                                             | RDMA architecture foundations                   |
+| **Feb 14 2023** | [Superclusters with RDMA](https://blogs.oracle.com/cloud-infrastructure/post/superclusters-rdma-high-performance)                                                              | Ultra-high performance at massive scale         |
+| **Jul 24 2023** | [OCI Accelerates HPC, AI, and Database Using RoCE and NVIDIA ConnectX](https://blogs.oracle.com/cloud-infrastructure/post/oci-accelerates-hpc-ai-db-roce-nvidia-connectx)      | ConnectX optimizations                          |
+| **Mar 5 2024**  | [First Principles: Generative AI Service](https://blogs.oracle.com/cloud-infrastructure/post/first-principles-oci-generative-ai-service)                                       | RDMA-backed AI infrastructure                   |
+| **May 30 2024** | [Deploying HPC Clusters with RDMA on Kubernetes](https://blogs.oracle.com/cloud-infrastructure/post/deploying-hpc-cluster-rdma-network-oke-fss-mount)                          | Production deployment patterns                  |
+| **Mar 18 2025** | [First Principles: Inside Zettascale OCI Superclusters](https://blogs.oracle.com/cloud-infrastructure/post/first-principles-zettascale-oci-superclusters)                      | 131 K + GPU engineering                         |
+| **May 2 2025**  | [High-Performance Networking for AI Infrastructure at Scale](https://blogs.oracle.com/cloud-infrastructure/post/high-performance-networking-ai-infrastructure)                 | Latest performance metrics                      |
+| **Oct 14 2025** | [First Principles: Oracle Acceleron Multiplanar Network Architecture](https://blogs.oracle.com/cloud-infrastructure/post/first-principles-oracle-acceleron-multiplanar)        | Multiplanar fabric and latency domains          |
+| **Oct 14 2025** | [First Principles: Data Center Innovations to Power Gigawatt-Scale Superclusters](https://blogs.oracle.com/cloud-infrastructure/post/first-principles-data-center-innovations) | Datacenter design and thermal/power innovations |
 
 ---
 
