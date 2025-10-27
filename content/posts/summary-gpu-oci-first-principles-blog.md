@@ -8,6 +8,8 @@ categories: ["Technical Deep Dive", "Cloud Infrastructure"]
 
 **Disclaimer:** This article reflects my personal research and analysis based on publicly available information and is not representative of my employer's official position.
 
+![From First Principles to Zettascale: How OCI's GPU/RDMA Architecture Redefines AI Infrastructure](/blog_supercomputer.png)
+
 In the rapidly evolving landscape of AI infrastructure, one company has quietly revolutionized how we think about GPU computing at scale. Through a series of "First Principles" engineering blogs and groundbreaking deployments, Oracle Cloud Infrastructure (OCI) has demonstrated that starting from fundamental physics and systems design—rather than following industry conventions—can yield extraordinary results. This is the story of how OCI went from concept to operating the world's largest GPU superclusters, and what it means for the future of AI.
 
 ## A Seattle Perspective
