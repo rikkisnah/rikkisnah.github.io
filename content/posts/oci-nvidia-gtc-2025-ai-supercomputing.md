@@ -50,15 +50,15 @@ The following sessions and presentations from GTC DC 2025 showcase the breadth a
 
 | Title | Description | Link |
 |-------|-------------|------|
-| **Jensen Huang Keynote** | Visionary keynote introducing AI Factories, GB300 cable-free platforms, and OCI's central role in U.S. AI supercomputing. | [Watch here](https://www.nvidia.com/gtc/session-catalog/?search=keynote) |
-| **GTC Pregame Panel** | Industry leaders (Altimeter, Moor Insights, CNBC) preview the keynote themes: national AI strategy, infrastructure, and innovation. | [Watch here](https://www.nvidia.com/gtc/session-catalog/) |
-| **NVQLink: Quantum-GPU Supercomputing** | Explores hybrid quantum-classical systems and how AI supercomputing complements quantum control. | [Watch here](https://www.nvidia.com/gtc/session-catalog/?search=quantum) |
-| **Newton Physics Engine** | NVIDIA, Disney, and DeepMind demo open-source physics simulation for robotics—training agents with real-world material interactions. | [Watch here](https://www.youtube.com/@NVIDIA) |
-| **Accelerating 6G with AI-Native Wireless** | Booz Allen, Cisco, and NVIDIA unveil the first AI-native wireless stack, prepping networks for 6G and AI traffic. | [Watch here](https://www.nvidia.com/gtc/session-catalog/?search=6G) |
-| **Palantir + NVIDIA at Lowe's** | Real-time supply chain optimization using AI and data unification—thousands of stores operate as one intelligent system. | [Watch here](https://www.nvidia.com/gtc/session-catalog/?search=palantir) |
-| **Fusion Reactor Digital Twin** | General Atomics and NVIDIA showcase the world's first AI-enabled digital twin for fusion reactors—simulating plasma hotter than the sun. | [Watch here](https://www.nvidia.com/gtc/session-catalog/?search=fusion) |
-| **Future-Proofing America's AI Infrastructure** | Omniverse DSX powers gigascale AI factories with digital twin co-design for buildings, cooling, and compute density. | [Watch here](https://www.nvidia.com/gtc/session-catalog/?search=omniverse) |
-| **America's Next Great Leap** | A cinematic overview of how AI and accelerated computing are driving the next industrial revolution in the U.S. | [Watch here](https://www.youtube.com/@NVIDIA) |
+| **Jensen Huang Keynote** | Visionary keynote introducing AI Factories, GB300 cable-free platforms, and OCI's central role in U.S. AI supercomputing. | [Watch here](https://www.youtube.com/watch?v=lQHK61IDFH4) |
+| **GTC Pregame Panel** | Industry leaders (Altimeter, Moor Insights, CNBC) preview the keynote themes: national AI strategy, infrastructure, and innovation. | [Watch here](https://www.youtube.com/watch?v=VHLYXuqja4c) |
+| **NVQLink: Quantum-GPU Supercomputing** | Explores hybrid quantum-classical systems and how AI supercomputing complements quantum control. | [Watch here](https://www.youtube.com/watch?v=8gplA-fUlbY) |
+| **Newton Physics Engine** | NVIDIA, Disney, and DeepMind demo open-source physics simulation for robotics—training agents with real-world material interactions. | [Watch here](https://www.youtube.com/watch?v=B1fqovX1c6s) |
+| **Accelerating 6G with AI-Native Wireless** | Booz Allen, Cisco, and NVIDIA unveil the first AI-native wireless stack, prepping networks for 6G and AI traffic. | [Watch here](https://www.youtube.com/watch?v=f40DlANmJmo) |
+| **Palantir + NVIDIA at Lowe's** | Real-time supply chain optimization using AI and data unification—thousands of stores operate as one intelligent system. | [Watch here](https://www.youtube.com/watch?v=AsnE98temZo) |
+| **Fusion Reactor Digital Twin** | General Atomics and NVIDIA showcase the world's first AI-enabled digital twin for fusion reactors—simulating plasma hotter than the sun. | [Watch here](https://www.youtube.com/watch?v=mxs0Z8hmMZU) |
+| **Future-Proofing America's AI Infrastructure** | Omniverse DSX powers gigascale AI factories with digital twin co-design for buildings, cooling, and compute density. | [Watch here](https://www.youtube.com/watch?v=Odve87ieiYE) |
+| **America's Next Great Leap** | A cinematic overview of how AI and accelerated computing are driving the next industrial revolution in the U.S. | [Watch here](https://www.youtube.com/watch?v=r6RT0JJgRIc) |
 
 ## Technical Deep Dives: Quantum, Edge AI, and Infrastructure Evolution
 
