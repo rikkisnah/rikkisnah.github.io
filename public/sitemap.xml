@@ -3,7 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/ai/</loc>
-    <lastmod>2025-10-26T22:43:15-04:00</lastmod>
+    <lastmod>2025-10-30T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ai-infrastructure/</loc>
+    <lastmod>2025-10-30T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/blackwell/</loc>
+    <lastmod>2025-10-30T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cloud-computing/</loc>
+    <lastmod>2025-10-30T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/department-of-energy/</loc>
+    <lastmod>2025-10-30T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/gpu/</loc>
+    <lastmod>2025-10-30T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/gtc/</loc>
+    <lastmod>2025-10-30T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/nvidia/</loc>
+    <lastmod>2025-10-30T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/oci/</loc>
+    <lastmod>2025-10-30T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/oci-nvidia-gtc-2025-ai-supercomputing/</loc>
+    <lastmod>2025-10-30T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-10-30T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/supercomputing/</loc>
+    <lastmod>2025-10-30T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-10-30T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-10-30T10:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-10-26T22:43:15-04:00</lastmod>
@@ -20,19 +59,10 @@
     <loc>http://localhost:1313/posts/summary-gpu-oci-first-principles-blog/</loc>
     <lastmod>2025-10-26T22:43:15-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/gpu/</loc>
-    <lastmod>2025-10-26T22:43:15-04:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/hpc/</loc>
     <lastmod>2025-10-26T22:43:15-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/infrastructure/</loc>
-    <lastmod>2025-10-26T22:43:15-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/oci/</loc>
-    <lastmod>2025-10-26T22:43:15-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-10-26T22:43:15-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/rdma/</loc>
@@ -41,13 +71,7 @@
     <loc>http://localhost:1313/tags/seattle/</loc>
     <lastmod>2025-10-26T22:43:15-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-10-26T22:43:15-04:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/technical-deep-dive/</loc>
-    <lastmod>2025-10-26T22:43:15-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-10-26T22:43:15-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/enterprise/</loc>
@@ -90,9 +114,6 @@
     <lastmod>2025-03-15T10:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/indonesia/</loc>
-    <lastmod>2025-03-15T10:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/nvidia/</loc>
     <lastmod>2025-03-15T10:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/gb200-batam-data-plane-rollout/</loc>

@@ -6,13 +6,76 @@
     <description>Recent content in Tags on Rik Kisnah - Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Oct 2025 22:43:15 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 30 Oct 2025 10:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
       <link>http://localhost:1313/tags/ai/</link>
-      <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
+      <pubDate>Thu, 30 Oct 2025 10:00:00 -0700</pubDate>
       <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI Infrastructure</title>
+      <link>http://localhost:1313/tags/ai-infrastructure/</link>
+      <pubDate>Thu, 30 Oct 2025 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/ai-infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blackwell</title>
+      <link>http://localhost:1313/tags/blackwell/</link>
+      <pubDate>Thu, 30 Oct 2025 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/blackwell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Computing</title>
+      <link>http://localhost:1313/tags/cloud-computing/</link>
+      <pubDate>Thu, 30 Oct 2025 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/cloud-computing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Department of Energy</title>
+      <link>http://localhost:1313/tags/department-of-energy/</link>
+      <pubDate>Thu, 30 Oct 2025 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/department-of-energy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GPU</title>
+      <link>http://localhost:1313/tags/gpu/</link>
+      <pubDate>Thu, 30 Oct 2025 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/gpu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GTC</title>
+      <link>http://localhost:1313/tags/gtc/</link>
+      <pubDate>Thu, 30 Oct 2025 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/gtc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NVIDIA</title>
+      <link>http://localhost:1313/tags/nvidia/</link>
+      <pubDate>Thu, 30 Oct 2025 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/nvidia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OCI</title>
+      <link>http://localhost:1313/tags/oci/</link>
+      <pubDate>Thu, 30 Oct 2025 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/oci/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Supercomputing</title>
+      <link>http://localhost:1313/tags/supercomputing/</link>
+      <pubDate>Thu, 30 Oct 2025 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/supercomputing/</guid>
       <description></description>
     </item>
     <item>
@@ -30,13 +93,6 @@
       <description></description>
     </item>
     <item>
-      <title>GPU</title>
-      <link>http://localhost:1313/tags/gpu/</link>
-      <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
-      <guid>http://localhost:1313/tags/gpu/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>HPC</title>
       <link>http://localhost:1313/tags/hpc/</link>
       <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
@@ -48,13 +104,6 @@
       <link>http://localhost:1313/tags/infrastructure/</link>
       <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
       <guid>http://localhost:1313/tags/infrastructure/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>OCI</title>
-      <link>http://localhost:1313/tags/oci/</link>
-      <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
-      <guid>http://localhost:1313/tags/oci/</guid>
       <description></description>
     </item>
     <item>
@@ -153,13 +202,6 @@
       <link>http://localhost:1313/tags/indonesia/</link>
       <pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate>
       <guid>http://localhost:1313/tags/indonesia/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nvidia</title>
-      <link>http://localhost:1313/tags/nvidia/</link>
-      <pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/nvidia/</guid>
       <description></description>
     </item>
     <item>
