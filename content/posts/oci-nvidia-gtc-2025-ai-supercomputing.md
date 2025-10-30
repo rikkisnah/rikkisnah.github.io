@@ -1,6 +1,6 @@
 ---
 title: "OCI Powers America's AI Future at NVIDIA GTC 2025: Supercomputers, AI Factories, and Strategic Leadership"
-date: 2025-10-30T10:00:00-07:00
+date: 2025-10-29T10:00:00-07:00
 draft: false
 tags: ["AI", "Cloud Computing", "NVIDIA", "OCI", "Supercomputing", "GTC", "AI Infrastructure", "GPU", "Blackwell", "Department of Energy"]
 ---
