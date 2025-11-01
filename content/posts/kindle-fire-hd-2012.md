@@ -4,7 +4,7 @@ date: 2012-09-06T10:00:00-07:00
 draft: false
 ---
 
-![Kindle Fire HD 2012](/kindle_fire_hd_2012.jpg)
+![Kindle Fire HD 2012](/posts/kindle-fire-hd-2012/kindle_fire_hd_2012.jpg)
 
 Amazon's $299 tablet undercut iPad by $200 and owned content delivery, shipping 3M+ units in year one despite iOS app dominance.
 

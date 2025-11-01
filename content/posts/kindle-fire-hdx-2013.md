@@ -4,7 +4,7 @@ date: 2013-09-06T10:00:00-07:00
 draft: false
 ---
 
-![Kindle Fire HDX 2013](/kindle_fire_hdx_2013.jpg)
+![Kindle Fire HDX 2013](/posts/kindle-fire-hdx-2013/kindle_fire_hdx_2013.jpg)
 
 Mayday Button + 339ppi display + Snapdragon S4 = Fire HD customers willing to spend $50–100 more for a tablet that actually felt premium.
 

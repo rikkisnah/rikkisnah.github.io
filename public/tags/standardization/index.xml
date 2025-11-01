@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Standardization on Rik Kisnah - Blog</title>
-    <link>https://rikkisnah.github.io/tags/standardization/</link>
+    <link>http://localhost:1313/tags/standardization/</link>
     <description>Recent content in Standardization on Rik Kisnah - Blog</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 11 Mar 2003 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://rikkisnah.github.io/tags/standardization/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/standardization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bluetooth Prototypes: From Experimental to Production</title>
-      <link>https://rikkisnah.github.io/posts/bluetooth-prototypes-journey-2002-2003/</link>
+      <link>http://localhost:1313/posts/bluetooth-prototypes-journey-2002-2003/</link>
       <pubDate>Tue, 11 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>https://rikkisnah.github.io/posts/bluetooth-prototypes-journey-2002-2003/</guid>
-      <description>&lt;h2 id=&#34;wireless-phones-2002&#34;&gt;Wireless Phones (2002)&lt;/h2&gt;&#xA;&lt;p&gt;Bluetooth standard existed since 1998. By 2002, nobody had actually shipped it in a phone. At Motorola, we saw the real opportunity: wireless headphones. No more headset cords tangled in your pocket.&lt;/p&gt;&#xA;&lt;p&gt;But standards look clean on paper. In reality? Manufacturers interpreted the spec differently. Pairing was flaky. Range was spotty. We spent months debugging why Bluetooth worked 70% of the time instead of 100%.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;d get two devices talking, then change something in our protocol stack, and suddenly they wouldn&amp;rsquo;t. We&amp;rsquo;d spend days debugging, only to discover the issue was a misunderstanding of the specification&amp;rsquo;s wording.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/bluetooth-prototypes-journey-2002-2003/</guid>
+      <description>Wireless Phones (2002) Bluetooth standard existed since 1998. By 2002, nobody had actually shipped it in a phone. At Motorola, we saw the real opportunity: wireless headphones. No more headset cords tangled in your pocket.&#xA;But standards look clean on paper. In reality? Manufacturers interpreted the spec differently. Pairing was flaky. Range was spotty. We spent months debugging why Bluetooth worked 70% of the time instead of 100%.&#xA;We&amp;rsquo;d get two devices talking, then change something in our protocol stack, and suddenly they wouldn&amp;rsquo;t.</description>
     </item>
   </channel>
 </rss>

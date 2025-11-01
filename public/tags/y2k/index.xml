@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Y2k on Rik Kisnah - Blog</title>
-    <link>https://rikkisnah.github.io/tags/y2k/</link>
+    <link>http://localhost:1313/tags/y2k/</link>
     <description>Recent content in Y2k on Rik Kisnah - Blog</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 20 Dec 2001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://rikkisnah.github.io/tags/y2k/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/y2k/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Y2K Debugging Journey: From Crisis to Lessons Learned</title>
-      <link>https://rikkisnah.github.io/posts/y2k-debugging-journey-1999-2001/</link>
+      <link>http://localhost:1313/posts/y2k-debugging-journey-1999-2001/</link>
       <pubDate>Thu, 20 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>https://rikkisnah.github.io/posts/y2k-debugging-journey-1999-2001/</guid>
-      <description>&lt;h2 id=&#34;the-crisis-that-never-was-1999-2000&#34;&gt;The Crisis That Never Was (1999-2000)&lt;/h2&gt;&#xA;&lt;p&gt;Summer 1999: The world was panicked. Every computer system would crash at midnight on Dec 31, 1999 because programmers in the 1970s had stored years as 2-digit numbers. 99 rolled to 00, and—disaster.&lt;/p&gt;&#xA;&lt;p&gt;At NTU, we treated it seriously. Every system we touched had the same problem: years stored as &lt;code&gt;YY&lt;/code&gt; instead of &lt;code&gt;YYYY&lt;/code&gt;. The fix was mechanical but tedious: find every date field, add validation, test like hell.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/y2k-debugging-journey-1999-2001/</guid>
+      <description>The Crisis That Never Was (1999-2000) Summer 1999: The world was panicked. Every computer system would crash at midnight on Dec 31, 1999 because programmers in the 1970s had stored years as 2-digit numbers. 99 rolled to 00, and—disaster.&#xA;At NTU, we treated it seriously. Every system we touched had the same problem: years stored as YY instead of YYYY. The fix was mechanical but tedious: find every date field, add validation, test like hell.</description>
     </item>
   </channel>
 </rss>

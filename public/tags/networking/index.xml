@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Networking on Rik Kisnah - Blog</title>
-    <link>https://rikkisnah.github.io/tags/networking/</link>
+    <link>http://localhost:1313/tags/networking/</link>
     <description>Recent content in Networking on Rik Kisnah - Blog</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 25 May 2000 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://rikkisnah.github.io/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wi-Fi Experiments: From Lab to Campus Networks</title>
-      <link>https://rikkisnah.github.io/posts/wifi-experiments-journey-1999-2000/</link>
+      <link>http://localhost:1313/posts/wifi-experiments-journey-1999-2000/</link>
       <pubDate>Thu, 25 May 2000 00:00:00 +0000</pubDate>
-      <guid>https://rikkisnah.github.io/posts/wifi-experiments-journey-1999-2000/</guid>
-      <description>&lt;h2 id=&#34;wireless-networking-1999&#34;&gt;Wireless Networking (1999)&lt;/h2&gt;&#xA;&lt;p&gt;IEEE 802.11 shipped in 1997. By 1999, Singapore was ahead of the curve—early 802.11b trials at universities. At NTU, we had access to experimental wireless infrastructure. The dream: no wires. Just laptops talking over the air.&lt;/p&gt;&#xA;&lt;p&gt;Reality: signal was weak, interference constant, range 20 meters on a good day. Tropical humidity killed performance. Water vapor absorbs radio waves. Our tests worked in the lab, then failed in the hallway.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/wifi-experiments-journey-1999-2000/</guid>
+      <description>Wireless Networking (1999) IEEE 802.11 shipped in 1997. By 1999, Singapore was ahead of the curve—early 802.11b trials at universities. At NTU, we had access to experimental wireless infrastructure. The dream: no wires. Just laptops talking over the air.&#xA;Reality: signal was weak, interference constant, range 20 meters on a good day. Tropical humidity killed performance. Water vapor absorbs radio waves. Our tests worked in the lab, then failed in the hallway.</description>
     </item>
   </channel>
 </rss>

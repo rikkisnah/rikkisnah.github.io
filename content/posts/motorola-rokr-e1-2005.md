@@ -8,7 +8,7 @@ draft: false
 
 Working at Motorola's Design Center in Singapore (Ang Mo Kio), I had the opportunity to contribute to the **Motorola ROKR E1**, Motorola's first phone with iTunes integration. This was a significant moment in mobile history—though we didn't realize at the time how much it would define the path forward.
 
-![Motorola ROKR E1](/rokr.png)
+![Motorola ROKR E1](/posts/motorola-rokr-e1-2005/rokr.png)
 
 ### The Phone: A Vision of Music Integration
 

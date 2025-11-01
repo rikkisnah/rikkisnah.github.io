@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open-Source on Rik Kisnah - Blog</title>
-    <link>https://rikkisnah.github.io/tags/open-source/</link>
+    <link>http://localhost:1313/tags/open-source/</link>
     <description>Recent content in Open-Source on Rik Kisnah - Blog</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 17 Sep 2001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://rikkisnah.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Early Linux at NTU: Open Source Becomes Real</title>
-      <link>https://rikkisnah.github.io/posts/early-linux-at-ntu/</link>
+      <link>http://localhost:1313/posts/early-linux-at-ntu/</link>
       <pubDate>Mon, 17 Sep 2001 00:00:00 +0000</pubDate>
-      <guid>https://rikkisnah.github.io/posts/early-linux-at-ntu/</guid>
-      <description>&lt;h2 id=&#34;the-linux-revolution-reaches-ntu&#34;&gt;The Linux Revolution Reaches NTU&lt;/h2&gt;&#xA;&lt;p&gt;By September 2001, Linux was transitioning from hobbyist project to legitimate alternative to proprietary Unix systems. NTU, as a forward-thinking institution, started deploying Linux in labs. After years of expensive proprietary systems, here was an free, open operating system that actually worked.&lt;/p&gt;&#xA;&lt;p&gt;For students raised on Windows, encountering Linux was revelatory. The source code was available. You could modify it. You could understand how everything worked down to the kernel level.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/early-linux-at-ntu/</guid>
+      <description>The Linux Revolution Reaches NTU By September 2001, Linux was transitioning from hobbyist project to legitimate alternative to proprietary Unix systems. NTU, as a forward-thinking institution, started deploying Linux in labs. After years of expensive proprietary systems, here was an free, open operating system that actually worked.&#xA;For students raised on Windows, encountering Linux was revelatory. The source code was available. You could modify it. You could understand how everything worked down to the kernel level.</description>
     </item>
   </channel>
 </rss>

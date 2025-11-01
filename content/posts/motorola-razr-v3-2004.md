@@ -8,7 +8,7 @@ draft: false
 
 Working at Motorola's Design Center in Singapore (Ang Mo Kio), I had the privilege to be part of the team that brought the **Motorola RAZR V3** to life. This wasn't just another phone—it was a cultural phenomenon that redefined what people expected from mobile devices.
 
-![Motorola RAZR V3](/razr.png)
+![Motorola RAZR V3](/posts/motorola-razr-v3-2004/razr.png)
 
 ### The Revolutionary Phone
 

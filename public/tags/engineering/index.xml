@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Engineering on Rik Kisnah - Blog</title>
-    <link>https://rikkisnah.github.io/tags/engineering/</link>
+    <link>http://localhost:1313/tags/engineering/</link>
     <description>Recent content in Engineering on Rik Kisnah - Blog</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 26 Oct 2025 22:43:15 -0400</lastBuildDate>
-    <atom:link href="https://rikkisnah.github.io/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From First Principles to Zettascale: How OCI&#39;s GPU/RDMA Architecture Redefines AI Infrastructure</title>
-      <link>https://rikkisnah.github.io/posts/summary-gpu-oci-first-principles-blog/</link>
+      <link>http://localhost:1313/posts/summary-gpu-oci-first-principles-blog/</link>
       <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
-      <guid>https://rikkisnah.github.io/posts/summary-gpu-oci-first-principles-blog/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://rikkisnah.github.io/blog_supercomputer.png&#34; alt=&#34;From First Principles to Zettascale: How OCI&amp;rsquo;s GPU/RDMA Architecture Redefines AI Infrastructure&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In the rapidly evolving landscape of AI infrastructure, one company has quietly revolutionized how we think about GPU computing at scale. Through a series of &amp;ldquo;First Principles&amp;rdquo; engineering blogs and groundbreaking deployments, Oracle Cloud Infrastructure (OCI) has demonstrated that starting from fundamental physics and systems design—rather than following industry conventions—can yield extraordinary results. This is the story of how OCI went from concept to operating the world&amp;rsquo;s largest GPU superclusters, and what it means for the future of AI.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/summary-gpu-oci-first-principles-blog/</guid>
+      <description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.&#xA;In the rapidly evolving landscape of AI infrastructure, one company has quietly revolutionized how we think about GPU computing at scale. Through a series of &amp;ldquo;First Principles&amp;rdquo; engineering blogs and groundbreaking deployments, Oracle Cloud Infrastructure (OCI) has demonstrated that starting from fundamental physics and systems design—rather than following industry conventions—can yield extraordinary results.</description>
     </item>
   </channel>
 </rss>

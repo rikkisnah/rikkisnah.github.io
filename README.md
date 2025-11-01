@@ -294,13 +294,45 @@ Override theme layouts by creating corresponding files in `layouts/`. For exampl
 - `layouts/partials/header.html` - overrides theme header
 - `layouts/_default/single.html` - overrides post layout
 
-### Adding Images
+### Adding Images to Posts
 
-1. Place images in `static/images/`
-2. Reference them in your posts:
-   ```markdown
-   ![Alt text](/images/my-image.jpg)
+**Important:** Always organize post images in post-specific directories for better organization.
+
+1. **Create the post-specific directory** (if it doesn't exist):
+   ```bash
+   mkdir -p static/posts/your-post-slug
    ```
+   Note: The post slug matches your post filename (e.g., `the-circle-of-three.md` → `the-circle-of-three`)
+
+2. **Place your images** in that directory:
+   ```bash
+   # Copy or move your image file
+   cp /path/to/your-image.jpg static/posts/your-post-slug/your-image.jpg
+   ```
+
+3. **Reference them in your post** using the post-specific path:
+   ```markdown
+   ![Alt text](/posts/your-post-slug/your-image.jpg)
+   ```
+
+**Example workflow:**
+```bash
+# For a post named "my-awesome-post.md"
+mkdir -p static/posts/my-awesome-post
+cp ~/Pictures/photo.jpg static/posts/my-awesome-post/photo.jpg
+```
+
+Then in `content/posts/my-awesome-post.md`:
+```markdown
+![My Photo](/posts/my-awesome-post/photo.jpg)
+```
+
+**Common image formats:** `.jpg`, `.jpeg`, `.png`, `.gif`
+
+**Tips:**
+- Keep image filenames lowercase with hyphens (e.g., `family-photo.jpg`)
+- Ensure file extensions match in your markdown reference
+- Images in `static/posts/` are automatically copied to the final site during build
 
 ## Troubleshooting
 

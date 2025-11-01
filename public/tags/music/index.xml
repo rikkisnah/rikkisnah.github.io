@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Music on Rik Kisnah - Blog</title>
-    <link>https://rikkisnah.github.io/tags/music/</link>
+    <link>http://localhost:1313/tags/music/</link>
     <description>Recent content in Music on Rik Kisnah - Blog</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 09 Jul 2003 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://rikkisnah.github.io/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/music/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iPod Integration Journey: From Dream to Modular Architecture</title>
-      <link>https://rikkisnah.github.io/posts/ipod-integration-journey-2002-2003/</link>
+      <link>http://localhost:1313/posts/ipod-integration-journey-2002-2003/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>https://rikkisnah.github.io/posts/ipod-integration-journey-2002-2003/</guid>
-      <description>&lt;h2 id=&#34;the-dream-phone-as-music-player&#34;&gt;The Dream: Phone as Music Player&lt;/h2&gt;&#xA;&lt;p&gt;iPod shipped May 2001. By May 2002, it was already a phenomenon. At Motorola Design Center Singapore, we asked: what if your phone &lt;em&gt;was&lt;/em&gt; the iPod?&lt;/p&gt;&#xA;&lt;p&gt;Not &amp;ldquo;what if your phone had an MP3 player.&amp;rdquo; But: what if the form factor, the UX, the simplicity—all of it could live in a Motorola handset?&lt;/p&gt;&#xA;&lt;p&gt;Over 15 months, I learned that modular architecture beats monolithic design every time.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/ipod-integration-journey-2002-2003/</guid>
+      <description>The Dream: Phone as Music Player iPod shipped May 2001. By May 2002, it was already a phenomenon. At Motorola Design Center Singapore, we asked: what if your phone was the iPod?&#xA;Not &amp;ldquo;what if your phone had an MP3 player.&amp;rdquo; But: what if the form factor, the UX, the simplicity—all of it could live in a Motorola handset?&#xA;Over 15 months, I learned that modular architecture beats monolithic design every time.</description>
     </item>
   </channel>
 </rss>

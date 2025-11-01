@@ -8,7 +8,7 @@ draft: false
 
 Working at Motorola's Design Center in Singapore (Ang Mo Kio), I had the opportunity to work on the **Motorola V70**, codenamed "Pebble" during development. This was one of Motorola's rugged, business-focused candybar phones designed for durability and reliability.
 
-![Motorola V70 Pebble](/pebble.png)
+![Motorola V70 Pebble](/posts/motorola-v70-pebble-2003/pebble.png)
 
 ### The Phone
 

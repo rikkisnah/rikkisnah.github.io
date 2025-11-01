@@ -4,7 +4,7 @@ date: 2012-09-06T09:00:00-07:00
 draft: false
 ---
 
-![Kindle Paperwhite 2012](/kindle_paperwhite_2012.jpg)
+![Kindle Paperwhite 2012](/posts/kindle-paperwhite-2012/kindle_paperwhite_2012.jpg)
 
 Front-lit e-ink solved the #1 Kindle complaint in one product, driving 50M+ units shipped and establishing Paperwhite as the flagship.
 

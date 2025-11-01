@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Brother on Rik Kisnah - Blog</title>
-    <link>https://rikkisnah.github.io/tags/brother/</link>
+    <link>http://localhost:1313/tags/brother/</link>
     <description>Recent content in Brother on Rik Kisnah - Blog</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 29 May 2016 00:00:00 -0700</lastBuildDate>
-    <atom:link href="https://rikkisnah.github.io/tags/brother/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/brother/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Too Young to Die</title>
-      <link>https://rikkisnah.github.io/posts/too-young-to-die/</link>
+      <link>http://localhost:1313/posts/too-young-to-die/</link>
       <pubDate>Sun, 29 May 2016 00:00:00 -0700</pubDate>
-      <guid>https://rikkisnah.github.io/posts/too-young-to-die/</guid>
-      <description>&lt;h2 id=&#34;a-poem-for-my-brother-reflecting-on-life-family-and-the-passage-of-time&#34;&gt;A poem for my brother. Reflecting on life, family, and the passage of time.&lt;/h2&gt;&#xA;&lt;h3 id=&#34;in-remembrance&#34;&gt;In Remembrance&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://youtu.be/nc3k6MO_ZDI&#34;&gt;Memorial and Remembrance for Ranjiv&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;too-young-to-die&#34;&gt;Too Young to Die&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Once I was four years old, i told my mama&#xA;&amp;ldquo;Pretty woman walking down the streah haha&amp;rdquo;&#xA;Then she shouted at me and i said mama&#xA;&amp;ldquo;You ugly woman, yacking down the stream yah&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;That was then and the world was smaller&#xA;And everything was so simpler and life was gentler&#xA;My brother and I were running down the roads in Sodnac&#xA;Drinking our dad&amp;rsquo;s secret stash of cognac&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/too-young-to-die/</guid>
+      <description>A poem for my brother. Reflecting on life, family, and the passage of time. In Remembrance Memorial and Remembrance for Ranjiv&#xA;Too Young to Die Once I was four years old, i told my mama &amp;ldquo;Pretty woman walking down the streah haha&amp;rdquo; Then she shouted at me and i said mama &amp;ldquo;You ugly woman, yacking down the stream yah&amp;rdquo;&#xA;That was then and the world was smaller And everything was so simpler and life was gentler My brother and I were running down the roads in Sodnac Drinking our dad&amp;rsquo;s secret stash of cognac</description>
     </item>
   </channel>
 </rss>
