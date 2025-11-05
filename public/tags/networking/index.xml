@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Networking on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/networking/</link>
+    <link>http://localhost:39491/tags/networking/</link>
     <description>Recent content in Networking on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 25 May 2000 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:39491/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wi-Fi Experiments: From Lab to Campus Networks</title>
-      <link>http://localhost:1313/posts/wifi-experiments-journey-1999-2000/</link>
+      <link>http://localhost:39491/posts/wifi-experiments-journey-1999-2000/</link>
       <pubDate>Thu, 25 May 2000 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/wifi-experiments-journey-1999-2000/</guid>
+      <guid>http://localhost:39491/posts/wifi-experiments-journey-1999-2000/</guid>
       <description>Wireless Networking (1999) IEEE 802.11 shipped in 1997. By 1999, Singapore was ahead of the curve—early 802.11b trials at universities. At NTU, we had access to experimental wireless infrastructure. The dream: no wires. Just laptops talking over the air.&#xA;Reality: signal was weak, interference constant, range 20 meters on a good day. Tropical humidity killed performance. Water vapor absorbs radio waves. Our tests worked in the lab, then failed in the hallway.</description>
     </item>
   </channel>

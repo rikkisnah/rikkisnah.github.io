@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Enterprise on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/enterprise/</link>
+    <link>http://localhost:39491/tags/enterprise/</link>
     <description>Recent content in Enterprise on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 18 Oct 2025 09:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/enterprise/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:39491/tags/enterprise/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oracle AI World 2025: Enterprise AI from Promise to Production</title>
-      <link>http://localhost:1313/posts/oracle-ai-world-2025/</link>
+      <link>http://localhost:39491/posts/oracle-ai-world-2025/</link>
       <pubDate>Sat, 18 Oct 2025 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/oracle-ai-world-2025/</guid>
+      <guid>http://localhost:39491/posts/oracle-ai-world-2025/</guid>
       <description>The AI Inflection Point At Oracle AI World 2025, a clear message emerged: AI isn&amp;rsquo;t just another technology trend—it&amp;rsquo;s the bridge between decades of enterprise data and the future of business innovation.1&#xA;Unlocking Enterprise Data&amp;rsquo;s True Potential Oracle founder Larry Ellison framed the opportunity succinctly: &amp;ldquo;AI offers the highest-value technology we have ever seen so far.&amp;rdquo;2 The critical insight? Most AI models train on internet data, missing the real competitive advantage: enterprise databases containing mission-critical business information.</description>
     </item>
   </channel>

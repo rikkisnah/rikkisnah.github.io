@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OCI on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/oci/</link>
+    <link>http://localhost:39491/tags/oci/</link>
     <description>Recent content in OCI on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 29 Oct 2025 10:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/oci/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:39491/tags/oci/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OCI Powers America&#39;s AI Future at NVIDIA GTC 2025: Supercomputers, AI Factories, and Strategic Leadership</title>
-      <link>http://localhost:1313/posts/oci-nvidia-gtc-2025-ai-supercomputing/</link>
+      <link>http://localhost:39491/posts/oci-nvidia-gtc-2025-ai-supercomputing/</link>
       <pubDate>Wed, 29 Oct 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/oci-nvidia-gtc-2025-ai-supercomputing/</guid>
+      <guid>http://localhost:39491/posts/oci-nvidia-gtc-2025-ai-supercomputing/</guid>
       <description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.&#xA;Highlights from NVIDIA GTC DC 2025: OCI at the Heart of the AI Revolution Oracle Cloud Infrastructure (OCI) demonstrated its central role in shaping the future of AI infrastructure at NVIDIA&amp;rsquo;s GTC conference in Washington, DC (October 28-29, 2025). The event showcased groundbreaking announcements, technical innovations, and strategic partnerships that position OCI as a cornerstone of America&amp;rsquo;s AI leadership.</description>
     </item>
     <item>
       <title>From First Principles to Zettascale: How OCI&#39;s GPU/RDMA Architecture Redefines AI Infrastructure</title>
-      <link>http://localhost:1313/posts/summary-gpu-oci-first-principles-blog/</link>
+      <link>http://localhost:39491/posts/summary-gpu-oci-first-principles-blog/</link>
       <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
-      <guid>http://localhost:1313/posts/summary-gpu-oci-first-principles-blog/</guid>
+      <guid>http://localhost:39491/posts/summary-gpu-oci-first-principles-blog/</guid>
       <description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.&#xA;In the rapidly evolving landscape of AI infrastructure, one company has quietly revolutionized how we think about GPU computing at scale. Through a series of &amp;ldquo;First Principles&amp;rdquo; engineering blogs and groundbreaking deployments, Oracle Cloud Infrastructure (OCI) has demonstrated that starting from fundamental physics and systems design—rather than following industry conventions—can yield extraordinary results.</description>
     </item>
     <item>
       <title>Three Weeks in Batam: Bringing NVIDIA GB200 to Life on the Data Plane</title>
-      <link>http://localhost:1313/posts/gb200-batam-data-plane-rollout/</link>
+      <link>http://localhost:39491/posts/gb200-batam-data-plane-rollout/</link>
       <pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/gb200-batam-data-plane-rollout/</guid>
+      <guid>http://localhost:39491/posts/gb200-batam-data-plane-rollout/</guid>
       <description>Three weeks in Batam, Indonesia in March 2025. Not a vacation - something far more meaningful. I was there to help bring the NVIDIA GB200 data plane to life, working alongside some of the brightest minds at OCI and NVIDIA. This was the moment where cutting-edge technology meets real-world infrastructure, and I got to be part of making it happen.&#xA;Related readings:&#xA;Behind the Scenes: NVIDIA GB200 NVL72 on OCI APIs - Technical deep dive on the NVIDIA GB200 and OCI integration Supercluster: NVIDIA Blackwell Dedicated Alloy - OCI&amp;rsquo;s Supercluster offering with Blackwell GPUs Nvidia GB200 NVL72 Now Available via Oracle Cloud - Data Center Dynamics coverage of the launch The Mission: Time to Market When I arrived in Batam, the pressure was real.</description>
     </item>
   </channel>

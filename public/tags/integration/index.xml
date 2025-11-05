@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Integration on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/integration/</link>
+    <link>http://localhost:39491/tags/integration/</link>
     <description>Recent content in Integration on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 09 Jul 2003 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/integration/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:39491/tags/integration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iPod Integration Journey: From Dream to Modular Architecture</title>
-      <link>http://localhost:1313/posts/ipod-integration-journey-2002-2003/</link>
+      <link>http://localhost:39491/posts/ipod-integration-journey-2002-2003/</link>
       <pubDate>Wed, 09 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ipod-integration-journey-2002-2003/</guid>
+      <guid>http://localhost:39491/posts/ipod-integration-journey-2002-2003/</guid>
       <description>The Dream: Phone as Music Player iPod shipped May 2001. By May 2002, it was already a phenomenon. At Motorola Design Center Singapore, we asked: what if your phone was the iPod?&#xA;Not &amp;ldquo;what if your phone had an MP3 player.&amp;rdquo; But: what if the form factor, the UX, the simplicity—all of it could live in a Motorola handset?&#xA;Over 15 months, I learned that modular architecture beats monolithic design every time.</description>
     </item>
   </channel>

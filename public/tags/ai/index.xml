@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/ai/</link>
+    <link>http://localhost:39491/tags/ai/</link>
     <description>Recent content in AI on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 29 Oct 2025 10:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:39491/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OCI Powers America&#39;s AI Future at NVIDIA GTC 2025: Supercomputers, AI Factories, and Strategic Leadership</title>
-      <link>http://localhost:1313/posts/oci-nvidia-gtc-2025-ai-supercomputing/</link>
+      <link>http://localhost:39491/posts/oci-nvidia-gtc-2025-ai-supercomputing/</link>
       <pubDate>Wed, 29 Oct 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/oci-nvidia-gtc-2025-ai-supercomputing/</guid>
+      <guid>http://localhost:39491/posts/oci-nvidia-gtc-2025-ai-supercomputing/</guid>
       <description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.&#xA;Highlights from NVIDIA GTC DC 2025: OCI at the Heart of the AI Revolution Oracle Cloud Infrastructure (OCI) demonstrated its central role in shaping the future of AI infrastructure at NVIDIA&amp;rsquo;s GTC conference in Washington, DC (October 28-29, 2025). The event showcased groundbreaking announcements, technical innovations, and strategic partnerships that position OCI as a cornerstone of America&amp;rsquo;s AI leadership.</description>
     </item>
     <item>
       <title>From First Principles to Zettascale: How OCI&#39;s GPU/RDMA Architecture Redefines AI Infrastructure</title>
-      <link>http://localhost:1313/posts/summary-gpu-oci-first-principles-blog/</link>
+      <link>http://localhost:39491/posts/summary-gpu-oci-first-principles-blog/</link>
       <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
-      <guid>http://localhost:1313/posts/summary-gpu-oci-first-principles-blog/</guid>
+      <guid>http://localhost:39491/posts/summary-gpu-oci-first-principles-blog/</guid>
       <description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.&#xA;In the rapidly evolving landscape of AI infrastructure, one company has quietly revolutionized how we think about GPU computing at scale. Through a series of &amp;ldquo;First Principles&amp;rdquo; engineering blogs and groundbreaking deployments, Oracle Cloud Infrastructure (OCI) has demonstrated that starting from fundamental physics and systems design—rather than following industry conventions—can yield extraordinary results.</description>
     </item>
     <item>
       <title>Oracle AI World 2025: Enterprise AI from Promise to Production</title>
-      <link>http://localhost:1313/posts/oracle-ai-world-2025/</link>
+      <link>http://localhost:39491/posts/oracle-ai-world-2025/</link>
       <pubDate>Sat, 18 Oct 2025 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/oracle-ai-world-2025/</guid>
+      <guid>http://localhost:39491/posts/oracle-ai-world-2025/</guid>
       <description>The AI Inflection Point At Oracle AI World 2025, a clear message emerged: AI isn&amp;rsquo;t just another technology trend—it&amp;rsquo;s the bridge between decades of enterprise data and the future of business innovation.1&#xA;Unlocking Enterprise Data&amp;rsquo;s True Potential Oracle founder Larry Ellison framed the opportunity succinctly: &amp;ldquo;AI offers the highest-value technology we have ever seen so far.&amp;rdquo;2 The critical insight? Most AI models train on internet data, missing the real competitive advantage: enterprise databases containing mission-critical business information.</description>
     </item>
     <item>
       <title>Mauritius Summer Holidays 2025 - Three Weeks of Family, Legacy, and New Beginnings</title>
-      <link>http://localhost:1313/posts/mauritius-summer-holidays-2025/</link>
+      <link>http://localhost:39491/posts/mauritius-summer-holidays-2025/</link>
       <pubDate>Fri, 15 Aug 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/mauritius-summer-holidays-2025/</guid>
+      <guid>http://localhost:39491/posts/mauritius-summer-holidays-2025/</guid>
       <description>I spent three unforgettable weeks in Mauritius during July-August 2025. This trip was special in so many ways - it was about honoring family legacy, building new opportunities, and celebrating the people who matter most.&#xA;1. Baptism of Laxmi Villa - A Dream Reborn Estelle and I completed the renovation of Laxmi Villa, the house Dad and Ma built in 1999 after I left Mauritius. The three-floor structure has always held meaning for our family:</description>
     </item>
     <item>
       <title>Matrix Neural Net Dreams: Reflections on Early AI</title>
-      <link>http://localhost:1313/posts/matrix-neural-net-dreams/</link>
+      <link>http://localhost:39491/posts/matrix-neural-net-dreams/</link>
       <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/matrix-neural-net-dreams/</guid>
+      <guid>http://localhost:39491/posts/matrix-neural-net-dreams/</guid>
       <description>Machine Learning Before It Was Cool (1999) While everyone worried about Y2K, I was playing with neural networks at NTU. Not because I thought they&amp;rsquo;d ship in products—they were academic curiosities then. But because the math was beautiful.&#xA;The core insight: if you could represent a problem as matrices, you could teach a network to solve it via backpropagation. Weights → matrix multiply → gradient descent → improved weights. Repeat until convergence.</description>
     </item>
   </channel>

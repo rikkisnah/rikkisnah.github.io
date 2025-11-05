@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloud Computing on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/cloud-computing/</link>
+    <link>http://localhost:39491/tags/cloud-computing/</link>
     <description>Recent content in Cloud Computing on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 29 Oct 2025 10:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cloud-computing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:39491/tags/cloud-computing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OCI Powers America&#39;s AI Future at NVIDIA GTC 2025: Supercomputers, AI Factories, and Strategic Leadership</title>
-      <link>http://localhost:1313/posts/oci-nvidia-gtc-2025-ai-supercomputing/</link>
+      <link>http://localhost:39491/posts/oci-nvidia-gtc-2025-ai-supercomputing/</link>
       <pubDate>Wed, 29 Oct 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/oci-nvidia-gtc-2025-ai-supercomputing/</guid>
+      <guid>http://localhost:39491/posts/oci-nvidia-gtc-2025-ai-supercomputing/</guid>
       <description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.&#xA;Highlights from NVIDIA GTC DC 2025: OCI at the Heart of the AI Revolution Oracle Cloud Infrastructure (OCI) demonstrated its central role in shaping the future of AI infrastructure at NVIDIA&amp;rsquo;s GTC conference in Washington, DC (October 28-29, 2025). The event showcased groundbreaking announcements, technical innovations, and strategic partnerships that position OCI as a cornerstone of America&amp;rsquo;s AI leadership.</description>
     </item>
   </channel>

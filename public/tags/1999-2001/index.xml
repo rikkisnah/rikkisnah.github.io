@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1999-2001 on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/1999-2001/</link>
+    <link>http://localhost:39491/tags/1999-2001/</link>
     <description>Recent content in 1999-2001 on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 20 Dec 2001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/1999-2001/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:39491/tags/1999-2001/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Y2K Debugging Journey: From Crisis to Lessons Learned</title>
-      <link>http://localhost:1313/posts/y2k-debugging-journey-1999-2001/</link>
+      <link>http://localhost:39491/posts/y2k-debugging-journey-1999-2001/</link>
       <pubDate>Thu, 20 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/y2k-debugging-journey-1999-2001/</guid>
+      <guid>http://localhost:39491/posts/y2k-debugging-journey-1999-2001/</guid>
       <description>The Crisis That Never Was (1999-2000) Summer 1999: The world was panicked. Every computer system would crash at midnight on Dec 31, 1999 because programmers in the 1970s had stored years as 2-digit numbers. 99 rolled to 00, and—disaster.&#xA;At NTU, we treated it seriously. Every system we touched had the same problem: years stored as YY instead of YYYY. The fix was mechanical but tedious: find every date field, add validation, test like hell.</description>
     </item>
   </channel>
