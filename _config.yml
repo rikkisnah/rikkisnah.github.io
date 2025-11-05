@@ -1,0 +1,6 @@
+# Minimal Jekyll config to disable GitHub Pages Jekyll processing
+# The actual site is built by Hugo via GitHub Actions workflow
+# This file exists only to satisfy GitHub Pages requirements
+
+# Tell GitHub Pages to skip the default Jekyll build
+future: true
