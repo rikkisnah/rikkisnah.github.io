@@ -159,3 +159,139 @@ The workflow automatically handles:
 - Building with production settings
 - Uploading artifacts to GitHub Pages
 - All builds are live within 2-3 minutes
+
+## Preventing Common Deployment Issues
+
+### Critical Files (Never Delete or Modify)
+
+These files are **essential** for GitHub Pages to work correctly with Hugo:
+
+```
+.nojekyll              # CRITICAL: Disables Jekyll processing
+_config.yml            # CRITICAL: GitHub Pages configuration
+.github/workflows/hugo.yaml  # CI/CD workflow
+```
+
+**Why:** Without `.nojekyll` and `_config.yml`, GitHub Pages defaults to Jekyll processing instead of serving your Hugo-generated static files, breaking the entire site.
+
+### Theme Submodule Protection
+
+**NEVER modify files in `themes/hugo-paper/` directly.** This breaks Git submodule tracking.
+
+**Correct way to customize:**
+```bash
+# ✅ DO: Override theme files in local layouts/
+layouts/partials/head.html      # Overrides theme's head partial
+layouts/partials/footer.html    # Overrides theme's footer partial
+
+# ✅ DO: Add custom CSS to static/
+static/custom.css               # Custom styles (included in head.html)
+static/css/theme-overrides.css  # Additional theme overrides
+
+# ❌ DON'T: Modify theme files directly
+themes/hugo-paper/assets/main.css           # NEVER EDIT
+themes/hugo-paper/layouts/partials/...      # NEVER EDIT
+```
+
+**If you accidentally modify the theme:**
+```bash
+# Reset the theme submodule to clean state
+cd themes/hugo-paper
+git checkout .                  # Reset all changes
+git clean -fd                   # Remove untracked files
+cd ../..
+
+# Verify it's clean
+git status                      # Should show clean working tree
+```
+
+### Pre-deployment Checklist
+
+Before running `./saveall.sh`, verify:
+
+```bash
+# 1. Check for uncommitted theme changes
+git status
+# ✅ GOOD: No changes in themes/hugo-paper/
+# ❌ BAD: "modified: themes/hugo-paper" → fix with git checkout
+
+# 2. Verify critical files exist
+ls -la .nojekyll _config.yml .github/workflows/hugo.yaml
+# All three must exist and be committed
+
+# 3. Test local build with GitHub Actions flags
+hugo --gc --minify --buildFuture
+# Should complete without errors
+
+# 4. Verify no broken image links
+# Check that static/posts/[post-slug]/ directories exist
+# and images are referenced correctly in markdown
+```
+
+### Local Build vs GitHub Build
+
+**Always test locally first to catch issues early:**
+
+```bash
+# Test with exact GitHub Actions settings
+hugo --gc --minify --buildFuture
+
+# Or use the development server to preview
+hugo server -D
+# Visit http://localhost:1313 to verify
+```
+
+**Key differences between local and GitHub:**
+- Local: Hugo 0.123.7+ (current version)
+- GitHub: Hugo 0.128.0 Extended (fixed version in workflow)
+- Local: Runs with your timezone
+- GitHub: Always uses America/Los_Angeles timezone
+
+If build succeeds locally but fails on GitHub:
+1. Check GitHub Actions logs: https://github.com/rikkisnah/rikkisnah.github.io/actions
+2. Look for Hugo version mismatches or missing dependencies
+3. Verify all content files have proper front matter
+
+### GitHub Pages Configuration
+
+**Current working setup:**
+- `.nojekyll` - Signals GitHub Pages to skip Jekyll
+- `_config.yml` - Minimal config (just `future: true`)
+- `.github/workflows/hugo.yaml` - Builds and deploys to Pages
+
+**Never:**
+- Delete `.nojekyll` or `_config.yml`
+- Change GitHub Pages source to "Branch: main" (must be "GitHub Actions")
+- Commit the `public/` directory (it's git-ignored for a reason)
+
+### Deployment Recovery
+
+**If site goes down or shows wrong content:**
+
+1. **Check current status:**
+   ```bash
+   curl -s https://rikkisnah.github.io/ | grep -o 'generator.*>'
+   # Should show: Hugo 0.128.0
+   # If shows: Jekyll v3... then GitHub is processing with Jekyll (wrong!)
+   ```
+
+2. **Verify critical files exist:**
+   ```bash
+   git log --oneline -1 -- .nojekyll _config.yml
+   # Both should appear in recent commits
+   ```
+
+3. **Force GitHub Actions rebuild:**
+   ```bash
+   git commit --allow-empty -m "Force rebuild"
+   git push
+   # GitHub Actions will rebuild the site
+   ```
+
+4. **Last resort - full reset:**
+   ```bash
+   # Push a commit that ensures critical files are present
+   git add .nojekyll _config.yml
+   git commit -m "Restore critical GitHub Pages configuration"
+   git push
+   ```
