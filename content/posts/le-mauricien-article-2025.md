@@ -5,7 +5,7 @@ draft: false
 tags: ["mauritius", "ai", "technology", "innovation", "economic-development", "publications"]
 ---
 
-![Le Mauricien Article](/posts/le-mauricien-article-2025/rik-page-20-le-mauricien-nov-5-2025.pdf)
+**Published in Le Mauricien:** [Download Original Article (PDF)](/posts/le-mauricien-article-2025/rik-page-20-le-mauricien-nov-5-2025.pdf)
 
 I'm honored to share that my opinion piece on Mauritius's AI transformation journey was published in Le Mauricien on November 5, 2025. This article reflects on our nation's economic evolution and the urgent need to position Mauritius as Africa's technology leader in the AI era.
 
@@ -110,5 +110,3 @@ The future is ours to shape.
 ---
 
 *This article was originally published in Le Mauricien, Forum section, page 20, Wednesday November 5, 2025.*
-
-**Download the full article:** [Le Mauricien Article (PDF)](/posts/le-mauricien-article-2025/rik-page-20-le-mauricien-nov-5-2025.pdf)
