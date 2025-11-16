@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloud Infrastructure on Rik Kisnah - Blog</title>
-    <link>http://localhost:39491/categories/cloud-infrastructure/</link>
+    <link>http://localhost:1313/categories/cloud-infrastructure/</link>
     <description>Recent content in Cloud Infrastructure on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Oct 2025 22:43:15 -0400</lastBuildDate>
-    <atom:link href="http://localhost:39491/categories/cloud-infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Nov 2025 00:00:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/cloud-infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Complete NCCL Reference Guide: Commands, Errors, and Troubleshooting for OCI GPU Infrastructure</title>
+      <link>http://localhost:1313/posts/nccl-complete-reference-guide/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/nccl-complete-reference-guide/</guid>
+      <description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.&#xA;Executive Summary NCCL (NVIDIA Collective Communication Library) is the cornerstone of distributed GPU computing, enabling efficient communication between GPUs in multi-node clusters. This comprehensive guide provides every NCCL command, parameter, error message, and troubleshooting technique you need for successful deployment on Oracle Cloud Infrastructure (OCI).&#xA;Table of Contents Why NCCL Exists Understanding Collective Communications NCCL Fundamentals Complete NCCL Commands Reference All NCCL Environment Variables NCCL Error Messages and Solutions OCI GPU-Specific Configurations Advanced Troubleshooting Scenarios Performance Tuning Reference Quick Reference Tables Why NCCL Exists The Distributed Training Challenge Modern AI models have grown exponentially in size and complexity.</description>
+    </item>
     <item>
       <title>From First Principles to Zettascale: How OCI&#39;s GPU/RDMA Architecture Redefines AI Infrastructure</title>
-      <link>http://localhost:39491/posts/summary-gpu-oci-first-principles-blog/</link>
+      <link>http://localhost:1313/posts/summary-gpu-oci-first-principles-blog/</link>
       <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
-      <guid>http://localhost:39491/posts/summary-gpu-oci-first-principles-blog/</guid>
+      <guid>http://localhost:1313/posts/summary-gpu-oci-first-principles-blog/</guid>
       <description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.&#xA;In the rapidly evolving landscape of AI infrastructure, one company has quietly revolutionized how we think about GPU computing at scale. Through a series of &amp;ldquo;First Principles&amp;rdquo; engineering blogs and groundbreaking deployments, Oracle Cloud Infrastructure (OCI) has demonstrated that starting from fundamental physics and systems design—rather than following industry conventions—can yield extraordinary results.</description>
     </item>
   </channel>
