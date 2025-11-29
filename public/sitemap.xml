@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/2025/</loc>
+    <lastmod>2025-11-28T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/celebration/</loc>
+    <lastmod>2025-11-28T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/family/</loc>
+    <lastmod>2025-11-28T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-11-28T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-11-28T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/thanksgiving/</loc>
+    <lastmod>2025-11-28T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/thanksgivings-2025/</loc>
+    <lastmod>2025-11-28T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-28T00:00:00-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/a100/</loc>
     <lastmod>2025-11-15T00:00:00-07:00</lastmod>
   </url><url>
@@ -41,12 +65,6 @@
     <loc>http://localhost:1313/tags/oci/</loc>
     <lastmod>2025-11-15T00:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-11-15T00:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-11-15T00:00:00-07:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/technical-deep-dive/</loc>
     <lastmod>2025-11-15T00:00:00-07:00</lastmod>
   </url><url>
@@ -54,9 +72,6 @@
     <lastmod>2025-11-15T00:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/troubleshooting/</loc>
-    <lastmod>2025-11-15T00:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-11-15T00:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ai/</loc>
@@ -82,9 +97,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/rekha-fifteen-years-old-birthday/</loc>
     <lastmod>2025-11-03T17:11:16-08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/family/</loc>
-    <lastmod>2025-10-31T15:00:40-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/love/</loc>
     <lastmod>2025-10-31T15:00:40-07:00</lastmod>
@@ -139,12 +151,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/oracle-ai-world-2025/</loc>
     <lastmod>2025-10-18T09:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/2025/</loc>
-    <lastmod>2025-08-15T10:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/celebration/</loc>
-    <lastmod>2025-08-15T10:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/laxmi-villa/</loc>
     <lastmod>2025-08-15T10:00:00-07:00</lastmod>
