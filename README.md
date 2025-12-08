@@ -429,7 +429,7 @@ The site includes a podcast with RSS feed compatible with Apple Podcasts, Spotif
    date: 2025-01-15T10:00:00-08:00
    draft: false
    audio: "https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-podcast-media/o/my-audio.MP3"
-   youtube: "https://www.youtube.com/watch?v=VIDEO_ID"
+   youtubeVideo: "https://www.youtube.com/watch?v=VIDEO_ID"
    duration: "00:03:00"
    episode: 1
    season: 1

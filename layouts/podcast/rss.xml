@@ -86,10 +86,10 @@
       {{- if .Params.episodeImage }}
       <googleplay:image href="{{ .Params.episodeImage | absURL }}"/>
       {{- end }}
-      {{- if .Params.youtube }}
+      {{- if .Params.youtubeVideo }}
 
       <!-- YouTube Video Link -->
-      <comments>{{ .Params.youtube }}</comments>
+      <comments>{{ .Params.youtubeVideo }}</comments>
       {{- end }}
     </item>
     {{- end }}

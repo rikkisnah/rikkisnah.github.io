@@ -331,7 +331,7 @@ static/images/podcast/
    date: 2025-01-15T10:00:00-08:00
    draft: false
    audio: "https://objectstorage.us-phoenix-1.oraclecloud.com/n/[namespace]/b/[bucket]/o/filename.mp3"
-   youtube: "https://www.youtube.com/watch?v=VIDEO_ID"  # Optional
+   youtubeVideo: "https://www.youtube.com/watch?v=VIDEO_ID"  # Optional
    length: 0                    # File size in bytes (optional)
    duration: "00:03:00"         # HH:MM:SS format
    episode: 1                   # Episode number
@@ -359,7 +359,7 @@ static/images/podcast/
 | `date` | Yes | Publication date in RFC3339 format |
 | `draft` | Yes | Set to `false` to publish |
 | `audio` | Yes | Direct URL to MP3 file (OCI Object Storage) |
-| `youtube` | No | YouTube video URL (adds "Watch on YouTube" link) |
+| `youtubeVideo` | No | YouTube video URL (adds "Watch on YouTube" link) - use `youtubeVideo` not `youtube` to avoid Hugo OpenGraph conflict |
 | `duration` | Yes | Episode length in HH:MM:SS format |
 | `episode` | Yes | Episode number (integer) |
 | `season` | Yes | Season number (integer) |
