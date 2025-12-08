@@ -45,7 +45,36 @@ theme = 'hugo-paper'
     name = "Resume"
     url = "/resume/"
     weight = 30
+  [[menu.main]]
+    identifier = "podcast"
+    name = "Podcast"
+    url = "/podcast/"
+    weight = 35
 
 [taxonomies]
 category = "categories"
 tag = "tags"
+
+# Podcast Configuration
+[params.podcast]
+  title = "Kisnah Family Podcast"
+  author = "Rik Kisnah"
+  email = "rik.kisnah@gmail.com"
+  description = "Stories, celebrations, and reflections from the Kisnah family"
+  language = "en-us"
+  category = "Family"
+  subcategory = "Personal Journals"
+  explicit = "no"
+  cover = "/images/podcast/cover.png"
+
+# Output formats for RSS
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[outputFormats.RSS]
+  mediaType = "application/rss+xml"
+  baseName = "feed"
+
+[mediaTypes."application/rss+xml"]
+  suffixes = ["xml"]

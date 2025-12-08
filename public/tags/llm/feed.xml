@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LLM on Rik Kisnah - Blog</title>
+    <link>http://localhost:1313/tags/llm/</link>
+    <description>Recent content in LLM on Rik Kisnah - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 30 Nov 2025 00:00:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/llm/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Large Language Models Actually Work</title>
+      <link>http://localhost:1313/posts/how-oci-works-with-oci/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/how-oci-works-with-oci/</guid>
+      <description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.&#xA;When you type a question into an AI assistant and receive a coherent, contextually relevant response seconds later, something remarkable happens between your keyboard and that reply. For engineers and developers building applications on top of these systems, understanding that process matters. It determines how you architect inference endpoints, allocate GPU resources, and optimize costs.</description>
+    </item>
+  </channel>
+</rss>
