@@ -330,7 +330,7 @@ static/images/podcast/
    title: "Episode X: Episode Title"
    date: 2025-01-15T10:00:00-08:00
    draft: false
-   audio: "https://objectstorage.us-phoenix-1.oraclecloud.com/n/[namespace]/b/[bucket]/o/filename.mp3"
+   audioUrl: "https://objectstorage.us-phoenix-1.oraclecloud.com/n/[namespace]/b/[bucket]/o/filename.mp3"
    youtubeVideo: "https://www.youtube.com/watch?v=VIDEO_ID"  # Optional
    length: 0                    # File size in bytes (optional)
    duration: "00:03:00"         # HH:MM:SS format
@@ -358,7 +358,7 @@ static/images/podcast/
 | `title` | Yes | Episode title (include "Episode X:" prefix) |
 | `date` | Yes | Publication date in RFC3339 format |
 | `draft` | Yes | Set to `false` to publish |
-| `audio` | Yes | Direct URL to MP3 file (OCI Object Storage) |
+| `audioUrl` | Yes | Direct URL to MP3 file (OCI Object Storage) - use `audioUrl` not `audio` to avoid Hugo OpenGraph conflict |
 | `youtubeVideo` | No | YouTube video URL (adds "Watch on YouTube" link) - use `youtubeVideo` not `youtube` to avoid Hugo OpenGraph conflict |
 | `duration` | Yes | Episode length in HH:MM:SS format |
 | `episode` | Yes | Episode number (integer) |

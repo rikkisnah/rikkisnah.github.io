@@ -53,7 +53,7 @@
 
     <!-- Episodes -->
     {{- range $pages }}
-    {{- if .Params.audio }}
+    {{- if .Params.audioUrl }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
@@ -63,7 +63,7 @@
       <content:encoded>{{ printf "<![CDATA[%s]]>" .Content | safeHTML }}</content:encoded>
 
       <!-- Audio Enclosure -->
-      <enclosure url="{{ .Params.audio }}" length="{{ .Params.length | default 0 }}" type="audio/mpeg"/>
+      <enclosure url="{{ .Params.audioUrl }}" length="{{ .Params.length | default 0 }}" type="audio/mpeg"/>
 
       <!-- iTunes Episode Info -->
       <itunes:title>{{ .Title }}</itunes:title>

@@ -2,7 +2,7 @@
 title: "Episode 1: Happy 15th Birthday, Rekha"
 date: 2025-11-03T17:11:16-08:00
 draft: false
-audio: "https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-podcast-media/o/rekha15thbirthday.MP3"
+audioUrl: "https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-podcast-media/o/rekha15thbirthday.MP3"
 youtubeVideo: "https://www.youtube.com/watch?v=ZPcvZEvJeYQ"
 length: 0
 duration: "00:03:00"
