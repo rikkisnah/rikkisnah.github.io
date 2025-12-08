@@ -6,8 +6,22 @@
     <description>Recent content in Welcome to Rik Kisnah&#39;s Blog on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Nov 2025 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 04 Dec 2025 09:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Will AI Eclipse Human Roles? A Mauritius Lens on Job Shifts and Societal Waves</title>
+      <link>http://localhost:1313/posts/mauritius-ai-jobs-evolution/</link>
+      <pubDate>Thu, 04 Dec 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/mauritius-ai-jobs-evolution/</guid>
+      <description>Published in Le Mauricien: Download Original Article (PDF)&#xA;In 1984, my grandfather—Mohun Persad Kisnah—took me to see the first ATM machine at the State Bank in Port Louis. I was a boy, watching adults queue nervously before this strange metal box that dispensed cash without a teller.&#xA;&amp;ldquo;Beta,&amp;rdquo; my dada said quietly, &amp;ldquo;this machine is going to replace many jobs.&amp;rdquo; I looked up at him. &amp;ldquo;What will happen to those people?</description>
+    </item>
+    <item>
+      <title>How Large Language Models Actually Work</title>
+      <link>http://localhost:1313/posts/how-oci-works-with-oci/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/how-oci-works-with-oci/</guid>
+      <description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.&#xA;When you type a question into an AI assistant and receive a coherent, contextually relevant response seconds later, something remarkable happens between your keyboard and that reply. For engineers and developers building applications on top of these systems, understanding that process matters. It determines how you architect inference endpoints, allocate GPU resources, and optimize costs.</description>
+    </item>
     <item>
       <title>Thanksgivings 2025</title>
       <link>http://localhost:1313/posts/thanksgivings-2025/</link>
@@ -237,7 +251,7 @@
       <link>http://localhost:1313/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publications/</guid>
-      <description>Publications &amp;amp; Articles A collection of my written work and articles on technology, society, and civil discourse.&#xA;Featured Publications Zettascale Performance: OSU and NCCL Benchmarks on H100 AI Workloads&#xA;Oracle Cloud Infrastructure Blog November 5, 2025 Performance analysis of NVIDIA H100 GPUs at scale using OSU and NCCL benchmarks Demonstrates zettascale performance capabilities for AI/ML workloads on OCI infrastructure Mauritius at the Digital Crossroads: From Sugar Fields to Silicon Dreams</description>
+      <description>Publications &amp;amp; Articles A collection of my written work and articles on technology, society, and civil discourse.&#xA;Featured Publications Will AI Eclipse Human Roles? A Mauritius Lens on Job Shifts and Societal Waves&#xA;Le Mauricien (Forum Section) December 4, 2025 Read Blog Post | Download Original Article (PDF) Examines AI&amp;rsquo;s impact on employment through a Mauritius perspective Explores job transformation, skills development, and opportunities in Rodrigues and emerging tech sectors Zettascale Performance: OSU and NCCL Benchmarks on H100 AI Workloads</description>
     </item>
     <item>
       <title>Resume</title>

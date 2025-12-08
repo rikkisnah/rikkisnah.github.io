@@ -400,12 +400,12 @@ NCCL implements five fundamental collective operations:
 
 ### NCCL Algorithms
 
-| Algorithm | Best For | Characteristics | Bandwidth Scaling |
-|-----------|----------|-----------------|-------------------|
-| **Ring** | Small messages | Linear topology, low memory overhead | O(n) latency |
-| **Tree** | Medium messages | Hierarchical, reduced latency | O(log n) latency |
-| **SplitTree** | Large messages | Multiple trees, maximum bandwidth | Parallel processing |
-| **CollNet** | Network offload | Hardware acceleration | Hardware-dependent |
+| Algorithm     | Best For                                                              | Characteristics                                                                                                                             | Latency Scaling           | Bandwidth Scaling                                                            |
+| ------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ---------------------------------------------------------------------------- |
+| **Ring**      | Large messages (bandwidth-bound ops)                                  | Simple linear topology; excellent bandwidth utilization; minimal per-rank memory; stable performance                                        | **O(n)**                  | **1× full link bandwidth** (optimal for big messages)                        |
+| **Tree**      | Small–medium messages (latency-sensitive ops)                         | Hierarchical reduction/broadcast; fewer sequential hops than ring                                                                           | **O(log n)**              | Lower than ring; not optimal for very large messages                         |
+| **SplitTree** | Very large messages requiring both low latency and high bandwidth     | Combines tree for reduce-scatter + tree for all-gather with message splitting; takes advantage of parallel paths                            | **O(log n)**              | **Approaches ring-level bandwidth**, often better on large clusters          |
+| **CollNet**   | Large-scale clusters with NVSwitch + NIC parallelism; network offload | Two-level algorithm: intra-node (NVLink/NVSwitch) + inter-node (NICs) with delegated "leaders"; improves latency & bandwidth for multi-node | **O(log n)** (inter-node) | Higher multi-node bandwidth; depends heavily on cluster topology & NIC count |
 
 ### NCCL Protocols
 

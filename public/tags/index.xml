@@ -6,8 +6,78 @@
     <description>Recent content in Tags on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Nov 2025 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 04 Dec 2025 09:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/tags/ai/</link>
+      <pubDate>Thu, 04 Dec 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Economic-Development</title>
+      <link>http://localhost:1313/tags/economic-development/</link>
+      <pubDate>Thu, 04 Dec 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/economic-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jobs</title>
+      <link>http://localhost:1313/tags/jobs/</link>
+      <pubDate>Thu, 04 Dec 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/jobs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mauritius</title>
+      <link>http://localhost:1313/tags/mauritius/</link>
+      <pubDate>Thu, 04 Dec 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/mauritius/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/tags/publications/</link>
+      <pubDate>Thu, 04 Dec 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/publications/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>http://localhost:1313/tags/technology/</link>
+      <pubDate>Thu, 04 Dec 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CloudInfrastructure</title>
+      <link>http://localhost:1313/tags/cloudinfrastructure/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/cloudinfrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GenerativeAI</title>
+      <link>http://localhost:1313/tags/generativeai/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/generativeai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>http://localhost:1313/tags/llm/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OCI</title>
+      <link>http://localhost:1313/tags/oci/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/oci/</guid>
+      <description></description>
+    </item>
     <item>
       <title>2025</title>
       <link>http://localhost:1313/tags/2025/</link>
@@ -107,13 +177,6 @@
       <description></description>
     </item>
     <item>
-      <title>OCI</title>
-      <link>http://localhost:1313/tags/oci/</link>
-      <pubDate>Sat, 15 Nov 2025 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/oci/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Troubleshooting</title>
       <link>http://localhost:1313/tags/troubleshooting/</link>
       <pubDate>Sat, 15 Nov 2025 00:00:00 -0700</pubDate>
@@ -121,45 +184,10 @@
       <description></description>
     </item>
     <item>
-      <title>AI</title>
-      <link>http://localhost:1313/tags/ai/</link>
-      <pubDate>Tue, 04 Nov 2025 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Economic-Development</title>
-      <link>http://localhost:1313/tags/economic-development/</link>
-      <pubDate>Tue, 04 Nov 2025 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/economic-development/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Innovation</title>
       <link>http://localhost:1313/tags/innovation/</link>
       <pubDate>Tue, 04 Nov 2025 09:00:00 -0700</pubDate>
       <guid>http://localhost:1313/tags/innovation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mauritius</title>
-      <link>http://localhost:1313/tags/mauritius/</link>
-      <pubDate>Tue, 04 Nov 2025 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/mauritius/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Publications</title>
-      <link>http://localhost:1313/tags/publications/</link>
-      <pubDate>Tue, 04 Nov 2025 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/publications/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Technology</title>
-      <link>http://localhost:1313/tags/technology/</link>
-      <pubDate>Tue, 04 Nov 2025 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/technology/</guid>
       <description></description>
     </item>
     <item>

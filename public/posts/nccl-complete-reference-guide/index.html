@@ -576,33 +576,38 @@ Result: Minimize slow cross-node traffic
 <th>Algorithm</th>
 <th>Best For</th>
 <th>Characteristics</th>
+<th>Latency Scaling</th>
 <th>Bandwidth Scaling</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Ring</strong></td>
-<td>Small messages</td>
-<td>Linear topology, low memory overhead</td>
-<td>O(n) latency</td>
+<td>Large messages (bandwidth-bound ops)</td>
+<td>Simple linear topology; excellent bandwidth utilization; minimal per-rank memory; stable performance</td>
+<td><strong>O(n)</strong></td>
+<td><strong>1× full link bandwidth</strong> (optimal for big messages)</td>
 </tr>
 <tr>
 <td><strong>Tree</strong></td>
-<td>Medium messages</td>
-<td>Hierarchical, reduced latency</td>
-<td>O(log n) latency</td>
+<td>Small–medium messages (latency-sensitive ops)</td>
+<td>Hierarchical reduction/broadcast; fewer sequential hops than ring</td>
+<td><strong>O(log n)</strong></td>
+<td>Lower than ring; not optimal for very large messages</td>
 </tr>
 <tr>
 <td><strong>SplitTree</strong></td>
-<td>Large messages</td>
-<td>Multiple trees, maximum bandwidth</td>
-<td>Parallel processing</td>
+<td>Very large messages requiring both low latency and high bandwidth</td>
+<td>Combines tree for reduce-scatter + tree for all-gather with message splitting; takes advantage of parallel paths</td>
+<td><strong>O(log n)</strong></td>
+<td><strong>Approaches ring-level bandwidth</strong>, often better on large clusters</td>
 </tr>
 <tr>
 <td><strong>CollNet</strong></td>
-<td>Network offload</td>
-<td>Hardware acceleration</td>
-<td>Hardware-dependent</td>
+<td>Large-scale clusters with NVSwitch + NIC parallelism; network offload</td>
+<td>Two-level algorithm: intra-node (NVLink/NVSwitch) + inter-node (NICs) with delegated &ldquo;leaders&rdquo;; improves latency &amp; bandwidth for multi-node</td>
+<td><strong>O(log n)</strong> (inter-node)</td>
+<td>Higher multi-node bandwidth; depends heavily on cluster topology &amp; NIC count</td>
 </tr>
 </tbody>
 </table>
