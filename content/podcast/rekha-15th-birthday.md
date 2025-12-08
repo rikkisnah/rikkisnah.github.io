@@ -11,7 +11,7 @@ season: 1
 summary: "A heartfelt birthday message for Rekha Laxmi Clara Kisnah on her 15th birthday"
 description: "Dad shares a special poem and birthday wishes for his daughter Rekha as she turns fifteen — a milestone year with new roads ahead."
 keywords: ["birthday", "family", "celebration", "daughter"]
-image: "/posts/rekha-fifteen-years-old-birthday/rekha_born.JPG"
+episodeImage: "/posts/rekha-fifteen-years-old-birthday/rekha_born.JPG"
 ---
 
 ## Show Notes

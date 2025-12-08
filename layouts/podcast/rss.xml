@@ -77,14 +77,14 @@
       {{- if .Params.season }}
       <itunes:season>{{ .Params.season }}</itunes:season>
       {{- end }}
-      {{- if .Params.image }}
-      <itunes:image href="{{ .Params.image | absURL }}"/>
+      {{- if .Params.episodeImage }}
+      <itunes:image href="{{ .Params.episodeImage | absURL }}"/>
       {{- end }}
 
       <!-- Google/YouTube -->
       <googleplay:description>{{ .Params.summary | default .Summary | plainify | htmlUnescape }}</googleplay:description>
-      {{- if .Params.image }}
-      <googleplay:image href="{{ .Params.image | absURL }}"/>
+      {{- if .Params.episodeImage }}
+      <googleplay:image href="{{ .Params.episodeImage | absURL }}"/>
       {{- end }}
       {{- if .Params.youtube }}
 

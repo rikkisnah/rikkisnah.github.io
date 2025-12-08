@@ -31,9 +31,9 @@
 {{- if .Params.audio }}
 <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0 border-b border-gray-200 dark:border-gray-700 pb-6">
   <div class="flex flex-col sm:flex-row gap-4">
-    {{- if .Params.image }}
+    {{- if .Params.episodeImage }}
     <div class="shrink-0">
-      <img src="{{ .Params.image }}" alt="{{ .Title }}" class="w-24 h-24 rounded object-cover" />
+      <img src="{{ .Params.episodeImage }}" alt="{{ .Title }}" class="w-24 h-24 rounded object-cover" />
     </div>
     {{- end }}
     <div class="flex-1">

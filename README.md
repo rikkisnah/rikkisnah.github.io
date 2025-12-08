@@ -411,6 +411,75 @@ This blog is designed for seamless development across machines:
 - **Tag posts:** Use tags to help readers discover related content.
 - **Dates matter:** Use accurate publication dates; they affect post ordering.
 
+## Podcast
+
+The site includes a podcast with RSS feed compatible with Apple Podcasts, Spotify, YouTube Music, and other podcast apps.
+
+### Creating a Podcast Episode
+
+1. **Create a new episode:**
+   ```bash
+   hugo new content/podcast/my-episode-name.md
+   ```
+
+2. **Edit the front matter:**
+   ```yaml
+   ---
+   title: "Episode 1: My Episode Title"
+   date: 2025-01-15T10:00:00-08:00
+   draft: false
+   audio: "https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-podcast-media/o/my-audio.MP3"
+   youtube: "https://www.youtube.com/watch?v=VIDEO_ID"
+   duration: "00:03:00"
+   episode: 1
+   season: 1
+   summary: "Short summary for RSS feed"
+   keywords: ["tag1", "tag2"]
+   ---
+
+   ## Show Notes
+
+   Your episode content here...
+   ```
+
+3. **Upload audio to OCI Object Storage:**
+   - Upload your MP3 to the `rikkisnah-github-podcast-media` bucket
+   - Use the public URL in the `audio` field
+   - Note: File extensions are case-sensitive (`.MP3` vs `.mp3`)
+
+4. **Deploy:**
+   ```bash
+   ./saveall.sh
+   ```
+
+### Podcast RSS Feed
+
+The RSS feed is available at:
+```
+https://rikkisnah.github.io/podcast/feed.xml
+```
+
+Use this URL to submit to podcast directories:
+- [Apple Podcasts](https://podcasters.apple.com/)
+- [Spotify](https://podcasters.spotify.com/)
+- [YouTube Music](https://www.youtube.com/podcasts)
+
+### Podcast Structure
+
+```
+content/podcast/
+├── _index.md           # Podcast landing page
+└── episode-name.md     # Individual episodes
+
+layouts/podcast/
+├── list.html           # Episode listing
+├── single.html         # Episode page with audio player
+└── rss.xml             # RSS feed template
+
+static/images/podcast/
+└── cover.png           # Podcast cover art (1400x1400)
+```
+
 ## Resources
 
 - [Hugo Documentation](https://gohugo.io/documentation/)

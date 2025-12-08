@@ -295,3 +295,150 @@ If build succeeds locally but fails on GitHub:
    git commit -m "Restore critical GitHub Pages configuration"
    git push
    ```
+
+## Podcast
+
+The site includes a podcast section with RSS feed compatible with Apple Podcasts, Spotify, YouTube Music, and other podcast apps.
+
+### Podcast Structure
+
+```
+content/podcast/
+├── _index.md              # Podcast landing page with metadata
+├── episode-name.md        # Individual episode files
+└── ...
+
+layouts/podcast/
+├── list.html              # Episode listing page with audio players
+├── single.html            # Individual episode page
+└── rss.xml                # Custom RSS feed (iTunes/Google Play compliant)
+
+static/images/podcast/
+└── cover.png              # Podcast cover art (1400x1400 minimum)
+```
+
+### Creating a New Podcast Episode
+
+1. **Create the episode file:**
+   ```bash
+   hugo new content/podcast/episode-name.md
+   ```
+
+2. **Edit the front matter:**
+   ```yaml
+   ---
+   title: "Episode X: Episode Title"
+   date: 2025-01-15T10:00:00-08:00
+   draft: false
+   audio: "https://objectstorage.us-phoenix-1.oraclecloud.com/n/[namespace]/b/[bucket]/o/filename.mp3"
+   youtube: "https://www.youtube.com/watch?v=VIDEO_ID"  # Optional
+   length: 0                    # File size in bytes (optional)
+   duration: "00:03:00"         # HH:MM:SS format
+   episode: 1                   # Episode number
+   season: 1                    # Season number
+   summary: "Short summary for RSS feed (under 250 chars)"
+   description: "Longer description for show notes"
+   keywords: ["tag1", "tag2"]
+   episodeImage: "/posts/related-post/image.jpg"  # Optional (use episodeImage, not image)
+   ---
+
+   ## Show Notes
+
+   Episode content and show notes go here.
+
+   ## Links Mentioned
+
+   - [Link 1](url)
+   ```
+
+### Episode Front Matter Fields
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `title` | Yes | Episode title (include "Episode X:" prefix) |
+| `date` | Yes | Publication date in RFC3339 format |
+| `draft` | Yes | Set to `false` to publish |
+| `audio` | Yes | Direct URL to MP3 file (OCI Object Storage) |
+| `youtube` | No | YouTube video URL (adds "Watch on YouTube" link) |
+| `duration` | Yes | Episode length in HH:MM:SS format |
+| `episode` | Yes | Episode number (integer) |
+| `season` | Yes | Season number (integer) |
+| `summary` | Yes | Short description for RSS feed (< 250 chars) |
+| `description` | No | Longer description for show notes |
+| `keywords` | No | Array of topic tags |
+| `episodeImage` | No | Episode-specific image URL (use `episodeImage` not `image` to avoid Hugo OpenGraph conflict) |
+| `length` | No | MP3 file size in bytes |
+
+### Podcast RSS Feed
+
+The RSS feed is generated at:
+```
+https://rikkisnah.github.io/podcast/feed.xml
+```
+
+**Features:**
+- iTunes/Apple Podcasts namespace (itunes:*)
+- Google Play/YouTube Music namespace (googleplay:*)
+- Atom self-referencing link
+- Full episode metadata (duration, episode number, season)
+- CDATA-wrapped HTML content
+- YouTube video links in `<comments>` element
+
+### Podcast Configuration
+
+Global podcast settings in `hugo.toml`:
+```toml
+[params.podcast]
+  title = "Podcast Title"
+  author = "Author Name"
+  email = "email@example.com"
+  description = "Podcast description"
+  language = "en-us"
+  category = "Technology"      # Apple Podcasts category
+  subcategory = "Tech News"    # Apple Podcasts subcategory
+  explicit = "no"
+  cover = "/images/podcast/cover.png"
+```
+
+Section-level overrides in `content/podcast/_index.md`:
+```yaml
+---
+title: "Podcast"
+description: "Custom description"
+category: "Family"
+subcategory: "Personal Journals"
+---
+```
+
+### Audio File Hosting (OCI Object Storage)
+
+Audio files are hosted on OCI Object Storage with public read access.
+
+**URL format:**
+```
+https://objectstorage.[region].oraclecloud.com/n/[namespace]/b/[bucket]/o/[filename]
+```
+
+**Current bucket:**
+- Region: `us-phoenix-1`
+- Namespace: `axbtr6skl2h2`
+- Bucket: `rikkisnah-github-podcast-media`
+
+**Example URL:**
+```
+https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-podcast-media/o/episode.MP3
+```
+
+**Note:** File extensions are case-sensitive in OCI Object Storage URLs.
+
+### Submitting to Podcast Directories
+
+After creating episodes and deploying, submit the RSS feed to:
+
+- **Apple Podcasts:** https://podcasters.apple.com/
+- **Spotify:** https://podcasters.spotify.com/
+- **YouTube Music:** https://www.youtube.com/podcasts
+- **Google Podcasts:** https://podcasters.google.com/
+- **Pocket Casts:** https://pocketcasts.com/submit/
+
+RSS Feed URL: `https://rikkisnah.github.io/podcast/feed.xml`

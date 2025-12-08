@@ -1,56 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-     xmlns:content="http://purl.org/rss/1.0/modules/content/"
-     xmlns:atom="http://www.w3.org/2005/Atom"
-     xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">
-  <channel>
-    <title>Podcast</title>
-    <link>http://localhost:1313/podcast/</link>
-    <description>Stories, celebrations, and reflections from the Kisnah family</description>
-    <language>en-us</language>
-    <copyright>Copyright 2025 Rik Kisnah</copyright>
-    <lastBuildDate>Sun, 07 Dec 2025 21:07:53 -0800</lastBuildDate>
-    <pubDate>Mon, 03 Nov 2025 17:11:16 -0800</pubDate>
-    <atom:link href="http://localhost:1313/podcast/feed.xml" rel="self" type="application/rss+xml"/>
-
-    
-    <itunes:author>Rik Kisnah</itunes:author>
-    <itunes:summary>Stories, celebrations, and reflections from the Kisnah family</itunes:summary>
-    <itunes:subtitle>Stories, celebrations, and reflections from the Kisnah family</itunes:subtitle>
-    <itunes:owner>
-      <itunes:name>Rik Kisnah</itunes:name>
-      <itunes:email>rik.kisnah@gmail.com</itunes:email>
-    </itunes:owner>
-    <itunes:explicit>no</itunes:explicit>
-    <itunes:category text="Technology">
-      <itunes:category text="Personal Journals"/>
-    </itunes:category>
-    <itunes:image href="http://localhost:1313/images/podcast/cover.png"/>
-    <itunes:type>episodic</itunes:type>
-
-    
-    <googleplay:author>Rik Kisnah</googleplay:author>
-    <googleplay:description>Stories, celebrations, and reflections from the Kisnah family</googleplay:description>
-    <googleplay:email>rik.kisnah@gmail.com</googleplay:email>
-    <googleplay:image href="http://localhost:1313/images/podcast/cover.png"/>
-    <googleplay:category text="Technology"/>
-    <googleplay:explicit>no</googleplay:explicit>
-
-    
-    <image>
-      <url>http://localhost:1313/images/podcast/cover.png</url>
-      <title>Podcast</title>
-      <link>http://localhost:1313/podcast/</link>
-    </image>
-
-    
-    <item>
-      <title>Episode 1: Happy 15th Birthday, Rekha</title>
-      <link>http://localhost:1313/podcast/rekha-15th-birthday/</link>
-      <guid isPermaLink="true">http://localhost:1313/podcast/rekha-15th-birthday/</guid>
-      <pubDate>Mon, 03 Nov 2025 17:11:16 -0800</pubDate>
-      <description>A heartfelt birthday message for Rekha Laxmi Clara Kisnah on her 15th birthday</description>
-      <content:encoded><![CDATA[<h2 id="show-notes">Show Notes</h2>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"><channel><title>Podcast</title><link>https://rikkisnah.github.io/podcast/</link><description>Stories, celebrations, and reflections from the Kisnah family</description><language>en-us</language><copyright>Copyright 2025 Rik Kisnah</copyright><lastBuildDate>Sun, 07 Dec 2025 21:10:50 -0800</lastBuildDate><pubDate>Mon, 03 Nov 2025 17:11:16 -0800</pubDate><atom:link href="https://rikkisnah.github.io/podcast/feed.xml" rel="self" type="application/rss+xml"/><itunes:author>Rik Kisnah</itunes:author><itunes:summary>Stories, celebrations, and reflections from the Kisnah family</itunes:summary><itunes:subtitle>Stories, celebrations, and reflections from the Kisnah family</itunes:subtitle><itunes:owner><itunes:name>Rik Kisnah</itunes:name><itunes:email>rik.kisnah@gmail.com</itunes:email></itunes:owner><itunes:explicit>no</itunes:explicit><itunes:category text="Technology"><itunes:category text="Personal Journals"/></itunes:category><itunes:image href="https://rikkisnah.github.io/images/podcast/cover.png"/><itunes:type>episodic</itunes:type><googleplay:author>Rik Kisnah</googleplay:author><googleplay:description>Stories, celebrations, and reflections from the Kisnah family</googleplay:description><googleplay:email>rik.kisnah@gmail.com</googleplay:email><googleplay:image href="https://rikkisnah.github.io/images/podcast/cover.png"/><googleplay:category text="Technology"/><googleplay:explicit>no</googleplay:explicit><image><url>https://rikkisnah.github.io/images/podcast/cover.png</url><title>Podcast</title><link>https://rikkisnah.github.io/podcast/</link></image><item><title>Episode 1: Happy 15th Birthday, Rekha</title><link>https://rikkisnah.github.io/podcast/rekha-15th-birthday/</link><guid isPermaLink="true">https://rikkisnah.github.io/podcast/rekha-15th-birthday/</guid><pubDate>Mon, 03 Nov 2025 17:11:16 -0800</pubDate><description>A heartfelt birthday message for Rekha Laxmi Clara Kisnah on her 15th birthday</description><content:encoded><![CDATA[<h2 id="show-notes">Show Notes</h2>
 <p>A special birthday message for Rekha Laxmi Clara Kisnah on her 15th birthday. This episode features a poem written for her, celebrating the princess who turned a house into a kingdom.</p>
 <h2 id="the-birthday-poem">The Birthday Poem</h2>
 <blockquote>
@@ -86,27 +34,4 @@ Happy birthday, center of our galaxy.</p>
 <li><a href="/posts/rekha-fifteen-years-old-birthday/">Blog post: Rekha Fifteen Years Old Birthday</a></li>
 </ul>
 <p><img src="/posts/rekha-fifteen-years-old-birthday/rekha_born.JPG" alt="Rekha is born"></p>
-]]></content:encoded>
-
-      
-      <enclosure url="https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-podcast-media/o/rekha15thbirthday.MP3" length="0" type="audio/mpeg"/>
-
-      
-      <itunes:title>Episode 1: Happy 15th Birthday, Rekha</itunes:title>
-      <itunes:summary>A heartfelt birthday message for Rekha Laxmi Clara Kisnah on her 15th birthday</itunes:summary>
-      <itunes:duration>00:03:00</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>1</itunes:episode>
-      <itunes:season>1</itunes:season>
-      <itunes:image href="http://localhost:1313/posts/rekha-fifteen-years-old-birthday/rekha_born.JPG"/>
-
-      
-      <googleplay:description>A heartfelt birthday message for Rekha Laxmi Clara Kisnah on her 15th birthday</googleplay:description>
-      <googleplay:image href="http://localhost:1313/posts/rekha-fifteen-years-old-birthday/rekha_born.JPG"/>
-
-      
-      <comments>https://www.youtube.com/watch?v=ZPcvZEvJeYQ</comments>
-    </item>
-  </channel>
-</rss>
+]]></content:encoded><enclosure url="https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-podcast-media/o/rekha15thbirthday.MP3" length="0" type="audio/mpeg"/><itunes:title>Episode 1: Happy 15th Birthday, Rekha</itunes:title><itunes:summary>A heartfelt birthday message for Rekha Laxmi Clara Kisnah on her 15th birthday</itunes:summary><itunes:duration>00:03:00</itunes:duration><itunes:explicit>no</itunes:explicit><itunes:episodeType>full</itunes:episodeType><itunes:episode>1</itunes:episode><itunes:season>1</itunes:season><itunes:image href="https://rikkisnah.github.io/posts/rekha-fifteen-years-old-birthday/rekha_born.JPG"/><googleplay:description>A heartfelt birthday message for Rekha Laxmi Clara Kisnah on her 15th birthday</googleplay:description><googleplay:image href="https://rikkisnah.github.io/posts/rekha-fifteen-years-old-birthday/rekha_born.JPG"/><comments>https://www.youtube.com/watch?v=ZPcvZEvJeYQ</comments></item></channel></rss>
