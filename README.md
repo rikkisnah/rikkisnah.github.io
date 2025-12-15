@@ -444,8 +444,15 @@ The site includes a podcast with RSS feed compatible with Apple Podcasts, Spotif
 
 3. **Upload audio to OCI Object Storage:**
    - Upload your MP3 to the `rikkisnah-github-podcast-media` bucket
-   - Use the public URL in the `audio` field
+   - Use the public URL in the `audioUrl` field
    - Note: File extensions are case-sensitive (`.MP3` vs `.mp3`)
+
+**Important:** Use these specific field names to avoid Hugo OpenGraph conflicts:
+- `audioUrl` (not `audio`)
+- `youtubeVideo` (not `youtube` or `video`)
+- `episodeImage` (not `image`)
+
+See CLAUDE.md for the full list of reserved field names.
 
 4. **Deploy:**
    ```bash

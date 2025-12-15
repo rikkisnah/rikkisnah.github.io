@@ -109,6 +109,15 @@ Tokens are money, but well-structured context is the hygiene that unlocks levera
 
 ---
 
+## Watch & Listen
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jYPSvKXUhcg" title="Markdown Is the New Source Code" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+- [Watch on YouTube](https://www.youtube.com/watch?v=jYPSvKXUhcg)
+- [Listen to Podcast Episode](/podcast/markdown-is-the-new-source-code/)
+
+---
+
 *Rik Kisnah is a Senior Principal Engineer working on GPU/AI infrastructure. He writes about infrastructure engineering, AI-assisted development, and the practical realities of building systems at scale.*
 
 ---

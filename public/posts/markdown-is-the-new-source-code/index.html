@@ -1,0 +1,372 @@
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#fff"
+  lang="en"
+  dir="ltr"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Markdown Is the New Source Code: A Paradigm Shift for AI-Assisted Development - Rik Kisnah - Blog</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="Disclaimer: This blog post was written with AI assistance using Claude Code. The ideas and perspectives are my own, refined through conversation with AI. The accompanying image was generated using AI tools.
+The way we write software is changing. Not just the tools—the fundamental structure of how we organize information for development.
+For the past two years, most of us have used AI assistants that autocomplete code and speed up boilerplate." />
+  <meta name="author" content="Rik Kisnah" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+
+  
+
+  <link rel="preload" as="image" href="http://localhost:1313/github.svg" /><link rel="preload" as="image" href="http://localhost:1313/linkedin.svg" />
+
+  <script
+    defer
+    src="http://localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="http://localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:1313/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.123.7">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDFDXYW4CB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PDFDXYW4CB');
+  </script>
+
+  
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="http://localhost:1313/"
+      >Rik Kisnah - Blog</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#fff'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkVal = localStorage.getItem('dark');
+    setDark(darkVal === 'true');
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/posts/"
+        >Posts</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/publications/"
+        >Publications</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/resume/"
+        >Resume</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/podcast/"
+        >Podcast</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/rikkisnah"
+        target="_blank"
+        rel="me"
+      >github</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/rikkisnah"
+        target="_blank"
+        rel="me"
+      >linkedin</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">Markdown Is the New Source Code: A Paradigm Shift for AI-Assisted Development</h1><div class="text-xs antialiased opacity-60"><time>Dec 14, 2025</time></div></header>
+
+  <section><p><img src="/posts/markdown-Is-the-new-source-code/markdown-Is-the-new-source-code.png" alt="Markdown Is the New Source Code"></p>
+<blockquote>
+<p><strong>Disclaimer:</strong> This blog post was written with AI assistance using Claude Code. The ideas and perspectives are my own, refined through conversation with AI. The accompanying image was generated using AI tools.</p>
+</blockquote>
+<p>The way we write software is changing. Not just the tools—the fundamental structure of how we organize information for development.</p>
+<p>For the past two years, most of us have used AI assistants that autocomplete code and speed up boilerplate. These tools are useful, but they keep humans firmly in the driver&rsquo;s seat. You type, the model suggests, you accept or reject. Simple.</p>
+<p>But something bigger is happening. Teams that achieve the best outcomes with AI tooling are doing something different: they are treating <strong>Markdown as a first-class citizen</strong> in their repositories. This sounds almost too simple to matter. It is not.</p>
+<h2 id="the-token-based-reality">The Token-Based Reality</h2>
+<p>Here is the fundamental shift: Large Language Models operate on tokens, not lines of code, not wiki pages, not Confluence articles. Every character, every whitespace, every piece of context consumes tokens. Tokens have a cost—both financial and cognitive for the model.</p>
+<p>This changes everything about how we should structure information.</p>
+<p>Traditional workflows push documentation to external systems—Jira for tickets, Confluence for design docs, wikis for runbooks. The code lives in one place, the context lives in another. For human developers, this is manageable. We can hold context in our heads, switch between browser tabs, piece together information from multiple sources.</p>
+<p>AI tools cannot do this efficiently. When you ask an AI to work on your codebase, it sees only what you put in front of it. If your architecture, your constraints, your design decisions live in scattered wiki pages and stale Confluence documents, the AI is flying blind. It has to guess at intent. It hallucinates confidently about things it should have been told.</p>
+<p>The fix is straightforward: bring the context to where the code lives.</p>
+<h2 id="documentation-as-the-prompt">Documentation as the Prompt</h2>
+<p>The insight that changed how I think about AI-assisted development came from a simple realization: <strong>documentation is no longer an afterthought—it becomes the prompt that drives implementation</strong>.</p>
+<p>Consider the traditional workflow:</p>
+<ol>
+<li>Ticket gets created in Jira</li>
+<li>Someone writes a design doc in Confluence</li>
+<li>Design doc gets stale within weeks</li>
+<li>Developer writes code based on half-remembered conversations</li>
+<li>Documentation is updated (maybe) after the fact</li>
+</ol>
+<p>Now consider the emerging workflow:</p>
+<ol>
+<li>Design document lives in the repository as Markdown</li>
+<li>Document describes architecture, constraints, and intent</li>
+<li>AI agent reads the document as context</li>
+<li>AI proposes implementation that respects the documented constraints</li>
+<li>Implementation and documentation evolve together</li>
+</ol>
+<p>The second workflow treats the design document as source-controlled, version-tracked, and executable context. When the AI reads your HLD (High-Level Design) before proposing changes, it produces dramatically better output than when it jumps straight into code generation.</p>
+<p>This is not theoretical. Teams that begin with structured Markdown documents—design docs, intake specs, architectural decision records—consistently achieve better outcomes than teams that jump straight into prompting for code. The upfront investment in structured context pays dividends in reduced iteration and fewer hallucinated assumptions.</p>
+<h2 id="the-diátaxis-connection">The Diátaxis Connection</h2>
+<p>There is a documentation framework called <a href="https://diataxis.fr/">Diátaxis</a> that organizes content into four categories: tutorials (learning-oriented), how-to guides (problem-solving), reference (information-oriented), and explanation (understanding-oriented). The framework predates the current AI wave, but it maps remarkably well to how AI agents discover and consume information.</p>
+<p>The core insight is that these four types serve different purposes and should be separated. Mixing them creates documents that are too long, too unfocused, and difficult to navigate—for humans and AI alike.</p>
+<p>When you structure repository documentation using this separation of concerns, agents can locate the right kind of guidance for the right kind of task. Need to understand <em>why</em> something is designed a certain way? Look in explanations. Need the exact API shape? Look in references. Need to accomplish a specific task? Look in how-tos.</p>
+<p>This dual-purpose documentation serves both human onboarding and AI context. As one colleague put it: &ldquo;Technically, we are onboarding the AI agent every time in a new session.&rdquo; If your documentation is good enough to onboard a new developer, it is good enough to provide context to an AI agent.</p>
+<h2 id="token-hygiene-and-toon">Token Hygiene and TOON</h2>
+<p>Once you accept that tokens are the fundamental unit of AI interaction, optimization patterns start to emerge.</p>
+<p>There is a concept called TOON (Token-Oriented Object Notation) that treats token efficiency the same way we treat byte efficiency in web performance. If you have ever minified JavaScript to reduce download time, you already understand the principle: same data, more compact encoding, optimized for a different consumer.</p>
+<p>TOON applies this to AI context. Instead of passing verbose, semi-structured data through the context window, you compress it into intentional, compact representations that preserve meaning while cutting token spend.</p>
+<p>This is not about being cheap with API costs (though that matters). It is about keeping the most relevant context in the model&rsquo;s attention. A bloated context window filled with noise means the model pays less attention to the signal. Compact, intentional structure helps the model focus on what matters.</p>
+<p>Practically, this means:</p>
+<ul>
+<li>Preferring structured Markdown over prose where possible</li>
+<li>Using YAML or JSON for configuration and structured data</li>
+<li>Creating explicit schemas rather than ad-hoc formats</li>
+<li>Treating context size as a constraint to design around</li>
+</ul>
+<h2 id="the-agentsmd-standard">The Agents.md Standard</h2>
+<p>A concrete example of this paradigm shift is the emerging <a href="https://agents.md/">Agents.md</a> standard. This is a simple Markdown file that lives at the repository root and acts as a &ldquo;README for agents.&rdquo; It provides machine-readable instructions on setup, testing, coding style, and boundaries.</p>
+<p>The format is straightforward: a Markdown document with specific sections that AI tools can parse. Different tools (Cline, Aider, Cursor, and others) are starting to recognize this file automatically, providing consistent guidance across tooling.</p>
+<p>This is what &ldquo;Markdown as first-class citizen&rdquo; looks like in practice. The same document that helps a human developer understand how to contribute to a project also tells an AI agent how to behave in that repository.</p>
+<h2 id="what-this-means-for-your-workflow">What This Means for Your Workflow</h2>
+<p>If you are exploring AI-assisted development, here are practical steps based on what I have seen work:</p>
+<p><strong>Start with structure, not prompts.</strong> Before asking an AI to write code, write down the context it needs. What are the constraints? What architectural patterns should it follow? What should it absolutely not do? Put this in Markdown files in your repository.</p>
+<p><strong>Adopt a documentation framework.</strong> Diátaxis is one option. The specific framework matters less than having separation between different types of content. Make it easy to find the right information for the right purpose.</p>
+<p><strong>Version-control your context.</strong> Design docs, architectural decision records, and coding standards belong in the repository, not in a wiki that drifts out of sync. When context is version-controlled, it evolves with the code.</p>
+<p><strong>Treat context size as a constraint.</strong> Think about token efficiency the way you think about memory efficiency or API response times. Compact, intentional structure is not premature optimization—it is hygiene.</p>
+<p><strong>Write for dual audiences.</strong> The best documentation serves both human developers and AI agents. If a new team member could onboard from your docs, an AI agent can get useful context from them too.</p>
+<h2 id="the-shift-in-mindset">The Shift in Mindset</h2>
+<p>The paradigm shift is not really about Markdown versus other formats. It is about recognizing that the structure of information—how it is organized, where it lives, how explicit it is—directly affects the quality of AI-assisted work.</p>
+<p>Code will always matter. But in an AI-assisted world, the context around code matters just as much. Engineers who invest in structured, explicit, version-controlled documentation will get better outcomes from AI tools than those who do not.</p>
+<p>Markdown and JSON are not the destination. They are the most practical vehicles right now for making context explicit and machine-readable. The underlying principle is simpler: treat context as seriously as you treat code.</p>
+<p>Tokens are money, but well-structured context is the hygiene that unlocks leverage.</p>
+<hr>
+<h2 id="watch--listen">Watch &amp; Listen</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jYPSvKXUhcg" title="Markdown Is the New Source Code" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=jYPSvKXUhcg">Watch on YouTube</a></li>
+<li><a href="/podcast/markdown-is-the-new-source-code/">Listen to Podcast Episode</a></li>
+</ul>
+<hr>
+<p><em>Rik Kisnah is a Senior Principal Engineer working on GPU/AI infrastructure. He writes about infrastructure engineering, AI-assisted development, and the practical realities of building systems at scale.</em></p>
+<hr>
+<p><strong>References:</strong></p>
+<ul>
+<li><a href="https://diataxis.fr/">Diátaxis Documentation Framework</a></li>
+<li><a href="https://agents.md/">Agents.md Standard</a></li>
+<li><a href="https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills">Anthropic: Equipping Agents for the Real World with Agent Skills</a></li>
+</ul>
+</section>
+
+  <footer class="mt-12 flex flex-wrap"><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/ai"
+      >AI</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/documentation"
+      >documentation</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/markdown"
+      >markdown</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/development"
+      >development</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/claude-code"
+      >Claude Code</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/agents"
+      >agents</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/token-hygiene"
+      >token-hygiene</a
+    ></footer><nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="http://localhost:1313/posts/mauritius-ai-jobs-evolution/"
+      ><span>Will AI Eclipse Human Roles? A Mauritius Lens on Job Shifts and Societal Waves</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025
+    <a class="link" href="http://localhost:1313/">Rik Kisnah - Blog</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+<script>// Force light theme as default
+(function() {
+  'use strict';
+  
+  // Override the theme detection and force light mode
+  const forceLightTheme = () => {
+    const html = document.documentElement;
+    const body = document.body;
+    
+    // Remove dark class if present
+    html.classList.remove('dark');
+    
+    // Force light theme styles
+    html.style.setProperty('color-scheme', 'light');
+    body.style.setProperty('background-color', '#ffffff');
+    body.style.setProperty('color', '#1a202c');
+    
+    // Override localStorage to always use light theme
+    localStorage.setItem('dark', 'false');
+  };
+  
+  // Run immediately
+  forceLightTheme();
+  
+  // Run after DOM is loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', forceLightTheme);
+  }
+  
+  // Run after window is loaded
+  window.addEventListener('load', forceLightTheme);
+  
+  // Override any theme toggle buttons
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('btn-dark') || 
+        e.target.closest('.btn-dark')) {
+      e.preventDefault();
+      e.stopPropagation();
+      forceLightTheme();
+      return false;
+    }
+  });
+  
+  // Monitor for any dark class additions and remove them
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.type === 'attributes' && 
+          mutation.attributeName === 'class' && 
+          mutation.target.classList.contains('dark')) {
+        mutation.target.classList.remove('dark');
+        forceLightTheme();
+      }
+    });
+  });
+  
+  // Start observing
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class']
+  });
+  
+})();
+</script></body>
+</html>

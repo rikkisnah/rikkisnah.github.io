@@ -369,6 +369,23 @@ static/images/podcast/
 | `episodeImage` | No | Episode-specific image URL (use `episodeImage` not `image` to avoid Hugo OpenGraph conflict) |
 | `length` | No | MP3 file size in bytes |
 
+### CRITICAL: Reserved Front Matter Field Names
+
+**DO NOT use these field names in podcast episode front matter.** Hugo's internal OpenGraph template (`_internal/opengraph.html`) reserves these names and will cause build failures on GitHub Actions (Hugo 0.128.0):
+
+| Reserved Name | Use Instead | Why |
+|---------------|-------------|-----|
+| `image` | `episodeImage` | OpenGraph expects `images` (array) |
+| `images` | `episodeImage` | OpenGraph iterates over this |
+| `audio` | `audioUrl` | OpenGraph expects `audio` (array) |
+| `video` | `youtubeVideo` | OpenGraph expects `videos` (array) |
+| `videos` | `youtubeVideo` | OpenGraph iterates over this |
+| `youtube` | `youtubeVideo` | Conflicts with OpenGraph video handling |
+
+**Error symptom:** Build fails with `range can't iterate over https:` at `_internal/opengraph.html:45`
+
+**Root cause:** Hugo 0.128.0's OpenGraph template tries to `range` over these fields expecting arrays, but receives a string URL instead.
+
 ### Podcast RSS Feed
 
 The RSS feed is generated at:

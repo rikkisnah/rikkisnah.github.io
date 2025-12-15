@@ -1,73 +1,386 @@
-<html class="not-ready lg:text-base" style=--bg:#fff lang=en dir=ltr><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>How Large Language Models Actually Work - Rik Kisnah - Blog</title>
-<meta name=theme-color><meta name=description content="Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&rsquo;s official position.
-When you type a question into an AI assistant and receive a coherent, contextually relevant response seconds later, something remarkable happens between your keyboard and that reply. For engineers and developers building applications on top of these systems, understanding that process matters. It determines how you architect inference endpoints, allocate GPU resources, and optimize costs."><meta name=author content="Rik Kisnah"><link rel="preload stylesheet" as=style href=https://rikkisnah.github.io/main.min.css><link rel=preload as=image href=https://rikkisnah.github.io/theme.png><link rel=preload as=image href=https://rikkisnah.github.io/github.svg><link rel=preload as=image href=https://rikkisnah.github.io/linkedin.svg><script defer src=https://rikkisnah.github.io/highlight.min.js onload=hljs.initHighlightingOnLoad()></script><link rel=icon href=https://rikkisnah.github.io/favicon.ico><link rel=apple-touch-icon href=https://rikkisnah.github.io/apple-touch-icon.png><meta name=generator content="Hugo 0.123.7"><script async src="https://www.googletagmanager.com/gtag/js?id=G-PDFDXYW4CB"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-PDFDXYW4CB")</script><meta itemprop=name content="How Large Language Models Actually Work"><meta itemprop=description content="Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&rsquo;s official position.
-When you type a question into an AI assistant and receive a coherent, contextually relevant response seconds later, something remarkable happens between your keyboard and that reply. For engineers and developers building applications on top of these systems, understanding that process matters. It determines how you architect inference endpoints, allocate GPU resources, and optimize costs."><meta itemprop=datePublished content="2025-11-30T00:00:00-07:00"><meta itemprop=dateModified content="2025-11-30T00:00:00-07:00"><meta itemprop=wordCount content="1743"><meta itemprop=keywords content="AI,LLM,OCI,GenerativeAI,CloudInfrastructure,"><meta property="og:title" content="How Large Language Models Actually Work"><meta property="og:description" content="Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&rsquo;s official position.
-When you type a question into an AI assistant and receive a coherent, contextually relevant response seconds later, something remarkable happens between your keyboard and that reply. For engineers and developers building applications on top of these systems, understanding that process matters. It determines how you architect inference endpoints, allocate GPU resources, and optimize costs."><meta property="og:type" content="article"><meta property="og:url" content="https://rikkisnah.github.io/posts/how-oci-works-with-oci/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-11-30T00:00:00-07:00"><meta property="article:modified_time" content="2025-11-30T00:00:00-07:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="How Large Language Models Actually Work"><meta name=twitter:description content="Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&rsquo;s official position.
-When you type a question into an AI assistant and receive a coherent, contextually relevant response seconds later, something remarkable happens between your keyboard and that reply. For engineers and developers building applications on top of these systems, understanding that process matters. It determines how you architect inference endpoints, allocate GPU resources, and optimize costs."><link rel=canonical href=https://rikkisnah.github.io/posts/how-oci-works-with-oci/></head><body class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"><header class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"><div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto"><a class="-translate-y-[1px] text-2xl font-medium" href=https://rikkisnah.github.io/>Rik Kisnah - Blog</a><div class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#fff".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkVal=localStorage.getItem("dark");setDark(darkVal==="true");const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/posts/>Posts</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/publications/>Publications</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/resume/>Resume</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/podcast/>Podcast</a></nav><nav class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"><a class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/rikkisnah target=_blank rel=me>github</a>
-<a class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./linkedin.svg) href=https://linkedin.com/in/rikkisnah target=_blank rel=me>linkedin</a></nav></div></header><main class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"><article><header class=mb-14><h1 class="my-0! pb-2.5">How Large Language Models Actually Work</h1><div class="text-xs antialiased opacity-60"><time>Nov 30, 2025</time></div></header><section><blockquote><p><strong>Disclaimer:</strong> This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&rsquo;s official position.</p></blockquote><p><img src=/posts/how-ai-works-with-oci/ai-oci.jpg alt="How Large Language Models Actually Work on OCI"></p><hr><p>When you type a question into an AI assistant and receive a coherent, contextually relevant response seconds later, something remarkable happens between your keyboard and that reply. For engineers and developers building applications on top of these systems, understanding that process matters. It determines how you architect inference endpoints, allocate GPU resources, and optimize costs. The infrastructure choices you make—from networking fabric to compute shapes—directly impact whether your AI workloads perform at enterprise scale or buckle under production load. Understanding how large language models actually function transforms them from mysterious black boxes into predictable engineering components you can reason about, debug, and optimize.</p><h2 id=the-core-idea-a-prediction-engine-not-magic>The Core Idea: A Prediction Engine, Not Magic</h2><p>Strip away the marketing and the hype, and you find a surprisingly simple mechanism at the core of every large language model: next-token prediction. When you send a prompt to an AI system, it does not &ldquo;understand&rdquo; your question the way a human would. Instead, it calculates probability distributions across its vocabulary—typically 50,000 to 100,000 tokens—to determine what word should come next.</p><p>Think of it like the most sophisticated autocomplete system ever built. When you start typing in a search bar and see suggestions, that is a primitive version of what happens inside these models. The difference is scale and depth. Modern language models have billions of parameters encoding patterns learned from enormous text corpora. Those patterns are rich enough to capture grammar, factual associations, reasoning styles, and contextual nuance.</p><p>The key insight is that by training a model to predict the next token, it inadvertently learns far more. It learns grammar because grammatically correct text appears more frequently in training data. It learns facts because factual statements appear frequently. It even learns reasoning patterns because logical sequences are prevalent in the text it processes. However, this mechanism also explains why these systems sometimes &ldquo;hallucinate&rdquo; or confidently state incorrect information—the model generates plausible-sounding text based on learned patterns, not verified facts.</p><h2 id=how-training-works>How Training Works</h2><p>Training is where the heavy computation happens. During this phase, a model processes billions of text examples, makes predictions about what token comes next, compares those predictions to reality, and adjusts its parameters to improve. This cycle repeats billions of times across weeks or months on clusters of thousands of GPUs.</p><p>The transformer architecture, introduced in a 2017 paper titled &ldquo;Attention Is All You Need,&rdquo; made modern language models possible [1]. Before transformers, language models processed text sequentially—one word at a time, left to right. This was slow and created difficulties when the model needed to connect information that appeared far apart in the text. Transformers introduced &ldquo;attention mechanisms&rdquo; that let the model consider all parts of the input simultaneously. When processing a sentence, a transformer can directly connect a pronoun to the noun it references, even if they are separated by dozens of words. This parallel processing maps beautifully to GPU compute, which is precisely why specialized hardware has become so critical to AI infrastructure.</p><p>Each training step involves massive matrix multiplications distributed across GPU clusters. The gradients—essentially the corrections the model needs to make—must flow back through the network and synchronize across all GPUs. This is why high-speed interconnects and RDMA networking matter so much for AI infrastructure. Oracle Cloud Infrastructure addressed this challenge head-on with its Supercluster architecture, connecting tens of thousands of NVIDIA H100 GPUs with ultra-fast RDMA over Converged Ethernet (RoCE v2) networking. This design makes thousands of GPUs behave like one giant computer, which is precisely why organizations like Meta and Cohere chose OCI to train their foundation models. A poorly optimized network elsewhere can turn a two-week training run into a two-month nightmare; OCI&rsquo;s bare-metal GPU instances with direct hardware access eliminate the virtualization overhead that plagues other cloud providers.</p><h2 id=how-inference-works>How Inference Works</h2><p>Inference is what happens when you actually use a trained model—when you call an API endpoint and receive a response. It is fundamentally different from training in terms of compute profile, but the infrastructure requirements are equally demanding for enterprise-scale deployments.</p><p>During inference, the model receives your prompt, tokenizes it (breaks it into numerical chunks the model can process), and then generates output one token at a time. For each token, it runs a forward pass through the network, computing attention scores and generating probability distributions. The token with the highest probability—or one sampled from the distribution, depending on temperature settings—gets selected, appended to the context, and the process repeats until the model produces a stop token or hits the maximum length.</p><p>The key performance characteristics here are latency and throughput. Users expect fast responses, so engineers optimize for time-to-first-token and tokens-per-second. Batching multiple requests together can improve throughput, but there is always tension between efficiency and responsiveness. The OCI Generative AI Service handles this complexity transparently, providing managed endpoints that automatically batch requests, scale capacity, and enforce tenancy isolation. When you invoke a model like Cohere&rsquo;s Command R+ or Meta&rsquo;s Llama 3 through OCI, your request routes to a dedicated GPU cluster where quantization techniques fit larger models onto fewer GPUs while maintaining throughputs of hundreds of tokens per second.</p><p>Parameters like temperature control the randomness in token selection. Lower values produce more deterministic, focused responses—useful for coding tasks or factual queries. Higher values introduce more variety, which can be better for creative applications. Understanding these parameters helps you tune the OCI endpoints for your specific use case without over-provisioning compute resources.</p><h2 id=practical-examples-calling-the-oci-generative-ai-api>Practical Examples: Calling the OCI Generative AI API</h2><p>Let us make this concrete with actual code. The OCI Python SDK provides a straightforward interface to the Generative AI inference endpoints. Unlike other cloud providers that charge premium rates and add layers of abstraction, OCI exposes the underlying mechanics while handling the infrastructure complexity. Here is a basic Python example showing how to call the OCI Generative AI Service:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> oci
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> oci.generative_ai_inference <span style=color:#f92672>import</span> GenerativeAiInferenceClient
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> oci.generative_ai_inference.models <span style=color:#f92672>import</span> (
-</span></span><span style=display:flex><span>    ChatDetails,
-</span></span><span style=display:flex><span>    GenericChatRequest,
-</span></span><span style=display:flex><span>    UserMessage,
-</span></span><span style=display:flex><span>    TextContent,
-</span></span><span style=display:flex><span>    OnDemandServingMode
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Initialize client with configuration</span>
-</span></span><span style=display:flex><span>config <span style=color:#f92672>=</span> oci<span style=color:#f92672>.</span>config<span style=color:#f92672>.</span>from_file(<span style=color:#e6db74>&#34;~/.oci/config&#34;</span>, <span style=color:#e6db74>&#34;DEFAULT&#34;</span>)
-</span></span><span style=display:flex><span>endpoint <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;https://inference.generativeai.us-chicago-1.oci.oraclecloud.com&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>client <span style=color:#f92672>=</span> GenerativeAiInferenceClient(
-</span></span><span style=display:flex><span>    config<span style=color:#f92672>=</span>config,
-</span></span><span style=display:flex><span>    service_endpoint<span style=color:#f92672>=</span>endpoint
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Build the chat request</span>
-</span></span><span style=display:flex><span>chat_request <span style=color:#f92672>=</span> GenericChatRequest(
-</span></span><span style=display:flex><span>    api_format<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;GENERIC&#34;</span>,
-</span></span><span style=display:flex><span>    messages<span style=color:#f92672>=</span>[
-</span></span><span style=display:flex><span>        UserMessage(content<span style=color:#f92672>=</span>[TextContent(text<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Explain how attention mechanisms work in one paragraph.&#34;</span>)])
-</span></span><span style=display:flex><span>    ],
-</span></span><span style=display:flex><span>    max_tokens<span style=color:#f92672>=</span><span style=color:#ae81ff>500</span>,
-</span></span><span style=display:flex><span>    temperature<span style=color:#f92672>=</span><span style=color:#ae81ff>0.7</span>
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>chat_details <span style=color:#f92672>=</span> ChatDetails(
-</span></span><span style=display:flex><span>    compartment_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;your-compartment-id&#34;</span>,
-</span></span><span style=display:flex><span>    serving_mode<span style=color:#f92672>=</span>OnDemandServingMode(model_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;meta.llama-3.3-70b-instruct&#34;</span>),
-</span></span><span style=display:flex><span>    chat_request<span style=color:#f92672>=</span>chat_request
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Make the API call</span>
-</span></span><span style=display:flex><span>response <span style=color:#f92672>=</span> client<span style=color:#f92672>.</span>chat(chat_details)
-</span></span><span style=display:flex><span>print(response<span style=color:#f92672>.</span>data<span style=color:#f92672>.</span>chat_response<span style=color:#f92672>.</span>choices[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>message<span style=color:#f92672>.</span>content[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>text)
-</span></span></code></pre></div><p>What happens when you execute this code? Your request travels to an OCI inference endpoint in your specified region, where it is routed to a dedicated GPU cluster running the specified model. The prompt gets tokenized, processed through the transformer layers, and tokens are generated sequentially until completion. The response object contains not just the generated text but metadata about token usage—useful for cost tracking and debugging. Notably, OCI does not charge data egress fees within the region, which can represent significant savings compared to other hyperscalers when processing high volumes of inference requests.</p><p>Here is a more detailed example showing how to inspect the request and response structure:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> oci.generative_ai_inference.models <span style=color:#f92672>import</span> SystemMessage
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Multi-turn conversation with system context</span>
-</span></span><span style=display:flex><span>messages <span style=color:#f92672>=</span> [
-</span></span><span style=display:flex><span>    SystemMessage(content<span style=color:#f92672>=</span>[TextContent(
-</span></span><span style=display:flex><span>        text<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;You are a technical advisor for cloud infrastructure engineers.&#34;</span>
-</span></span><span style=display:flex><span>    )]),
-</span></span><span style=display:flex><span>    UserMessage(content<span style=color:#f92672>=</span>[TextContent(
-</span></span><span style=display:flex><span>        text<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;What GPU memory considerations matter for running inference on a 70B parameter model?&#34;</span>
-</span></span><span style=display:flex><span>    )])
-</span></span><span style=display:flex><span>]
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>chat_request <span style=color:#f92672>=</span> GenericChatRequest(
-</span></span><span style=display:flex><span>    api_format<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;GENERIC&#34;</span>,
-</span></span><span style=display:flex><span>    messages<span style=color:#f92672>=</span>messages,
-</span></span><span style=display:flex><span>    max_tokens<span style=color:#f92672>=</span><span style=color:#ae81ff>1000</span>,
-</span></span><span style=display:flex><span>    temperature<span style=color:#f92672>=</span><span style=color:#ae81ff>0.3</span>  <span style=color:#75715e># Lower temperature for focused technical responses</span>
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>response <span style=color:#f92672>=</span> client<span style=color:#f92672>.</span>chat(chat_details)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Inspect the response structure</span>
-</span></span><span style=display:flex><span>result <span style=color:#f92672>=</span> response<span style=color:#f92672>.</span>data<span style=color:#f92672>.</span>chat_response
-</span></span><span style=display:flex><span>print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Model: </span><span style=color:#e6db74>{</span>result<span style=color:#f92672>.</span>model_id<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
-</span></span><span style=display:flex><span>print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Finish reason: </span><span style=color:#e6db74>{</span>result<span style=color:#f92672>.</span>choices[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>finish_reason<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
-</span></span><span style=display:flex><span>print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Response:</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>{</span>result<span style=color:#f92672>.</span>choices[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>message<span style=color:#f92672>.</span>content[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>text<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
-</span></span></code></pre></div><p>The request simply describes the model to use, the conversation history, and generation parameters. The response contains the assistant&rsquo;s message along with metadata. Conceptually, nothing mystical happens between request and response: the service repeatedly runs &ldquo;predict next token given this context&rdquo; and packages the results into a convenient structure. From an engineer&rsquo;s perspective, you can treat these OCI endpoints like any other internal platform service—protect them with IAM policies, route traffic through private endpoints, monitor them with OCI Observability, and integrate them into existing CI/CD pipelines. The difference is that instead of returning simple CRUD results, they return synthesized text generated by a very large function learned from data.</p><h2 id=conclusion-why-infrastructure-choices-matter>Conclusion: Why Infrastructure Choices Matter</h2><p>Understanding large language models as probability engines built on transformer architectures changes how you think about building with them. They predict tokens, one at a time, by computing attention across their input context. Training teaches them patterns from vast text corpora; inference applies those patterns to generate responses. But here is the critical insight for enterprise deployments: the underlying infrastructure determines whether these capabilities translate into production value or remain expensive experiments.</p><p>For developers integrating these systems into applications, this understanding helps with practical decisions. When you encounter latency issues, you know the bottleneck might be network communication between GPUs during distributed inference, or it might be batch size tuning at the application layer. When outputs seem off, you understand that adjusting temperature or providing better context in your prompts directly affects the probability distributions the model samples from. On OCI, the combination of bare-metal GPU instances, RDMA networking, and the managed Generative AI Service means you can focus on these application-layer concerns rather than fighting infrastructure constraints.</p><p>The models themselves will continue evolving—new architectures, new training techniques, new applications. But the fundamental pattern of massive parallel computation on specialized hardware, processing tokens through attention mechanisms, is here to stay. OCI has positioned itself as the infrastructure platform for this era, offering the most complete generative AI platform in the enterprise space: managed Cohere and Llama models, dedicated AI clusters, fine-tuning capabilities, vector search integration with Oracle Database 23ai, and RAG blueprints—all with enterprise governance and pricing that consistently beats other hyperscalers on equivalent hardware. The future of enterprise AI is not about who has the biggest model; it is about who can run the right model securely, reliably, and cost-effectively. That understanding makes you a better engineer when building systems that depend on them.</p><hr><h2 id=references>References</h2><p>[1] Vaswani, A., et al. (2017). &ldquo;Attention Is All You Need.&rdquo; <em>Advances in Neural Information Processing Systems</em>. <a href=https://arxiv.org/abs/1706.03762>https://arxiv.org/abs/1706.03762</a></p><p>[2] Oracle Cloud Infrastructure. &ldquo;Generative AI Service Documentation.&rdquo; <a href=https://docs.oracle.com/en-us/iaas/Content/generative-ai/home.htm>https://docs.oracle.com/en-us/iaas/Content/generative-ai/home.htm</a></p><p>[3] Oracle Cloud Infrastructure. &ldquo;Overview of Generative AI Service.&rdquo; <a href=https://docs.oracle.com/en-us/iaas/Content/generative-ai/overview.htm>https://docs.oracle.com/en-us/iaas/Content/generative-ai/overview.htm</a></p><p>[4] Oracle Cloud Infrastructure. &ldquo;Implement OCI Generative AI Based on Large Language Models.&rdquo; <a href=https://docs.oracle.com/en/solutions/oci-generative-ai-llm/index.html>https://docs.oracle.com/en/solutions/oci-generative-ai-llm/index.html</a></p><p>[5] Oracle Cloud Infrastructure. &ldquo;Using the Large Language Models in Generative AI.&rdquo; <a href=https://docs.oracle.com/en-us/iaas/Content/generative-ai/use-playground.htm>https://docs.oracle.com/en-us/iaas/Content/generative-ai/use-playground.htm</a></p><p>[6] Anthropic. (2024). &ldquo;Mapping the Mind of a Large Language Model.&rdquo; <a href=https://www.anthropic.com/research/mapping-mind-language-model>https://www.anthropic.com/research/mapping-mind-language-model</a></p><p>[7] OpenAI. &ldquo;How ChatGPT and Our Foundation Models Are Developed.&rdquo; <a href=https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-language-models-are-developed>https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-language-models-are-developed</a></p><hr><p>#AIFundamentals #OCI #GenerativeAI #CloudInfrastructure</p></section><footer class="mt-12 flex flex-wrap"><a class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]" href=https://rikkisnah.github.io/tags/ai>AI</a><a class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]" href=https://rikkisnah.github.io/tags/llm>LLM</a><a class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]" href=https://rikkisnah.github.io/tags/oci>OCI</a><a class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]" href=https://rikkisnah.github.io/tags/generativeai>GenerativeAI</a><a class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]" href=https://rikkisnah.github.io/tags/cloudinfrastructure>CloudInfrastructure</a></footer><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://rikkisnah.github.io/posts/mauritius-ai-jobs-evolution/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Will AI Eclipse Human Roles? A Mauritius Lens on Job Shifts and Societal Waves</span></a><a class="justify-end pl-3 ltr:ml-auto rtl:mr-auto" href=https://rikkisnah.github.io/posts/thanksgivings-2025/><span>Thanksgivings 2025</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav></article></main><footer class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"><div class=mr-auto>&copy;2025
-<a class=link href=https://rikkisnah.github.io/>Rik Kisnah - Blog</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>powered by hugo️️</a>️
-<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>hugo-paper</a></footer><script>(function(){"use strict";const e=()=>{const e=document.documentElement,t=document.body;e.classList.remove("dark"),e.style.setProperty("color-scheme","light"),t.style.setProperty("background-color","#ffffff"),t.style.setProperty("color","#1a202c"),localStorage.setItem("dark","false")};e(),document.readyState==="loading"&&document.addEventListener("DOMContentLoaded",e),window.addEventListener("load",e),document.addEventListener("click",function(t){if(t.target.classList.contains("btn-dark")||t.target.closest(".btn-dark"))return t.preventDefault(),t.stopPropagation(),e(),!1});const t=new MutationObserver(function(t){t.forEach(function(t){t.type==="attributes"&&t.attributeName==="class"&&t.target.classList.contains("dark")&&(t.target.classList.remove("dark"),e())})});t.observe(document.documentElement,{attributes:!0,attributeFilter:["class"]})})()</script></body></html>
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#fff"
+  lang="en"
+  dir="ltr"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>How Large Language Models Actually Work - Rik Kisnah - Blog</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&rsquo;s official position.
+When you type a question into an AI assistant and receive a coherent, contextually relevant response seconds later, something remarkable happens between your keyboard and that reply. For engineers and developers building applications on top of these systems, understanding that process matters. It determines how you architect inference endpoints, allocate GPU resources, and optimize costs." />
+  <meta name="author" content="Rik Kisnah" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+
+  
+
+  <link rel="preload" as="image" href="http://localhost:1313/github.svg" /><link rel="preload" as="image" href="http://localhost:1313/linkedin.svg" />
+
+  <script
+    defer
+    src="http://localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="http://localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:1313/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.123.7">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDFDXYW4CB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PDFDXYW4CB');
+  </script>
+
+  
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="http://localhost:1313/"
+      >Rik Kisnah - Blog</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#fff'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkVal = localStorage.getItem('dark');
+    setDark(darkVal === 'true');
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/posts/"
+        >Posts</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/publications/"
+        >Publications</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/resume/"
+        >Resume</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/podcast/"
+        >Podcast</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/rikkisnah"
+        target="_blank"
+        rel="me"
+      >github</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/rikkisnah"
+        target="_blank"
+        rel="me"
+      >linkedin</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">How Large Language Models Actually Work</h1><div class="text-xs antialiased opacity-60"><time>Nov 30, 2025</time></div></header>
+
+  <section><blockquote>
+<p><strong>Disclaimer:</strong> This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&rsquo;s official position.</p>
+</blockquote>
+<p><img src="/posts/how-ai-works-with-oci/ai-oci.jpg" alt="How Large Language Models Actually Work on OCI"></p>
+<hr>
+<p>When you type a question into an AI assistant and receive a coherent, contextually relevant response seconds later, something remarkable happens between your keyboard and that reply. For engineers and developers building applications on top of these systems, understanding that process matters. It determines how you architect inference endpoints, allocate GPU resources, and optimize costs. The infrastructure choices you make—from networking fabric to compute shapes—directly impact whether your AI workloads perform at enterprise scale or buckle under production load. Understanding how large language models actually function transforms them from mysterious black boxes into predictable engineering components you can reason about, debug, and optimize.</p>
+<h2 id="the-core-idea-a-prediction-engine-not-magic">The Core Idea: A Prediction Engine, Not Magic</h2>
+<p>Strip away the marketing and the hype, and you find a surprisingly simple mechanism at the core of every large language model: next-token prediction. When you send a prompt to an AI system, it does not &ldquo;understand&rdquo; your question the way a human would. Instead, it calculates probability distributions across its vocabulary—typically 50,000 to 100,000 tokens—to determine what word should come next.</p>
+<p>Think of it like the most sophisticated autocomplete system ever built. When you start typing in a search bar and see suggestions, that is a primitive version of what happens inside these models. The difference is scale and depth. Modern language models have billions of parameters encoding patterns learned from enormous text corpora. Those patterns are rich enough to capture grammar, factual associations, reasoning styles, and contextual nuance.</p>
+<p>The key insight is that by training a model to predict the next token, it inadvertently learns far more. It learns grammar because grammatically correct text appears more frequently in training data. It learns facts because factual statements appear frequently. It even learns reasoning patterns because logical sequences are prevalent in the text it processes. However, this mechanism also explains why these systems sometimes &ldquo;hallucinate&rdquo; or confidently state incorrect information—the model generates plausible-sounding text based on learned patterns, not verified facts.</p>
+<h2 id="how-training-works">How Training Works</h2>
+<p>Training is where the heavy computation happens. During this phase, a model processes billions of text examples, makes predictions about what token comes next, compares those predictions to reality, and adjusts its parameters to improve. This cycle repeats billions of times across weeks or months on clusters of thousands of GPUs.</p>
+<p>The transformer architecture, introduced in a 2017 paper titled &ldquo;Attention Is All You Need,&rdquo; made modern language models possible [1]. Before transformers, language models processed text sequentially—one word at a time, left to right. This was slow and created difficulties when the model needed to connect information that appeared far apart in the text. Transformers introduced &ldquo;attention mechanisms&rdquo; that let the model consider all parts of the input simultaneously. When processing a sentence, a transformer can directly connect a pronoun to the noun it references, even if they are separated by dozens of words. This parallel processing maps beautifully to GPU compute, which is precisely why specialized hardware has become so critical to AI infrastructure.</p>
+<p>Each training step involves massive matrix multiplications distributed across GPU clusters. The gradients—essentially the corrections the model needs to make—must flow back through the network and synchronize across all GPUs. This is why high-speed interconnects and RDMA networking matter so much for AI infrastructure. Oracle Cloud Infrastructure addressed this challenge head-on with its Supercluster architecture, connecting tens of thousands of NVIDIA H100 GPUs with ultra-fast RDMA over Converged Ethernet (RoCE v2) networking. This design makes thousands of GPUs behave like one giant computer, which is precisely why organizations like Meta and Cohere chose OCI to train their foundation models. A poorly optimized network elsewhere can turn a two-week training run into a two-month nightmare; OCI&rsquo;s bare-metal GPU instances with direct hardware access eliminate the virtualization overhead that plagues other cloud providers.</p>
+<h2 id="how-inference-works">How Inference Works</h2>
+<p>Inference is what happens when you actually use a trained model—when you call an API endpoint and receive a response. It is fundamentally different from training in terms of compute profile, but the infrastructure requirements are equally demanding for enterprise-scale deployments.</p>
+<p>During inference, the model receives your prompt, tokenizes it (breaks it into numerical chunks the model can process), and then generates output one token at a time. For each token, it runs a forward pass through the network, computing attention scores and generating probability distributions. The token with the highest probability—or one sampled from the distribution, depending on temperature settings—gets selected, appended to the context, and the process repeats until the model produces a stop token or hits the maximum length.</p>
+<p>The key performance characteristics here are latency and throughput. Users expect fast responses, so engineers optimize for time-to-first-token and tokens-per-second. Batching multiple requests together can improve throughput, but there is always tension between efficiency and responsiveness. The OCI Generative AI Service handles this complexity transparently, providing managed endpoints that automatically batch requests, scale capacity, and enforce tenancy isolation. When you invoke a model like Cohere&rsquo;s Command R+ or Meta&rsquo;s Llama 3 through OCI, your request routes to a dedicated GPU cluster where quantization techniques fit larger models onto fewer GPUs while maintaining throughputs of hundreds of tokens per second.</p>
+<p>Parameters like temperature control the randomness in token selection. Lower values produce more deterministic, focused responses—useful for coding tasks or factual queries. Higher values introduce more variety, which can be better for creative applications. Understanding these parameters helps you tune the OCI endpoints for your specific use case without over-provisioning compute resources.</p>
+<h2 id="practical-examples-calling-the-oci-generative-ai-api">Practical Examples: Calling the OCI Generative AI API</h2>
+<p>Let us make this concrete with actual code. The OCI Python SDK provides a straightforward interface to the Generative AI inference endpoints. Unlike other cloud providers that charge premium rates and add layers of abstraction, OCI exposes the underlying mechanics while handling the infrastructure complexity. Here is a basic Python example showing how to call the OCI Generative AI Service:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> oci
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> oci.generative_ai_inference <span style="color:#f92672">import</span> GenerativeAiInferenceClient
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> oci.generative_ai_inference.models <span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>    ChatDetails,
+</span></span><span style="display:flex;"><span>    GenericChatRequest,
+</span></span><span style="display:flex;"><span>    UserMessage,
+</span></span><span style="display:flex;"><span>    TextContent,
+</span></span><span style="display:flex;"><span>    OnDemandServingMode
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Initialize client with configuration</span>
+</span></span><span style="display:flex;"><span>config <span style="color:#f92672">=</span> oci<span style="color:#f92672">.</span>config<span style="color:#f92672">.</span>from_file(<span style="color:#e6db74">&#34;~/.oci/config&#34;</span>, <span style="color:#e6db74">&#34;DEFAULT&#34;</span>)
+</span></span><span style="display:flex;"><span>endpoint <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://inference.generativeai.us-chicago-1.oci.oraclecloud.com&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>client <span style="color:#f92672">=</span> GenerativeAiInferenceClient(
+</span></span><span style="display:flex;"><span>    config<span style="color:#f92672">=</span>config,
+</span></span><span style="display:flex;"><span>    service_endpoint<span style="color:#f92672">=</span>endpoint
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Build the chat request</span>
+</span></span><span style="display:flex;"><span>chat_request <span style="color:#f92672">=</span> GenericChatRequest(
+</span></span><span style="display:flex;"><span>    api_format<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;GENERIC&#34;</span>,
+</span></span><span style="display:flex;"><span>    messages<span style="color:#f92672">=</span>[
+</span></span><span style="display:flex;"><span>        UserMessage(content<span style="color:#f92672">=</span>[TextContent(text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Explain how attention mechanisms work in one paragraph.&#34;</span>)])
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    max_tokens<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>,
+</span></span><span style="display:flex;"><span>    temperature<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>chat_details <span style="color:#f92672">=</span> ChatDetails(
+</span></span><span style="display:flex;"><span>    compartment_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your-compartment-id&#34;</span>,
+</span></span><span style="display:flex;"><span>    serving_mode<span style="color:#f92672">=</span>OnDemandServingMode(model_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;meta.llama-3.3-70b-instruct&#34;</span>),
+</span></span><span style="display:flex;"><span>    chat_request<span style="color:#f92672">=</span>chat_request
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Make the API call</span>
+</span></span><span style="display:flex;"><span>response <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>chat(chat_details)
+</span></span><span style="display:flex;"><span>print(response<span style="color:#f92672">.</span>data<span style="color:#f92672">.</span>chat_response<span style="color:#f92672">.</span>choices[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>message<span style="color:#f92672">.</span>content[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>text)
+</span></span></code></pre></div><p>What happens when you execute this code? Your request travels to an OCI inference endpoint in your specified region, where it is routed to a dedicated GPU cluster running the specified model. The prompt gets tokenized, processed through the transformer layers, and tokens are generated sequentially until completion. The response object contains not just the generated text but metadata about token usage—useful for cost tracking and debugging. Notably, OCI does not charge data egress fees within the region, which can represent significant savings compared to other hyperscalers when processing high volumes of inference requests.</p>
+<p>Here is a more detailed example showing how to inspect the request and response structure:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> oci.generative_ai_inference.models <span style="color:#f92672">import</span> SystemMessage
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Multi-turn conversation with system context</span>
+</span></span><span style="display:flex;"><span>messages <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    SystemMessage(content<span style="color:#f92672">=</span>[TextContent(
+</span></span><span style="display:flex;"><span>        text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;You are a technical advisor for cloud infrastructure engineers.&#34;</span>
+</span></span><span style="display:flex;"><span>    )]),
+</span></span><span style="display:flex;"><span>    UserMessage(content<span style="color:#f92672">=</span>[TextContent(
+</span></span><span style="display:flex;"><span>        text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;What GPU memory considerations matter for running inference on a 70B parameter model?&#34;</span>
+</span></span><span style="display:flex;"><span>    )])
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>chat_request <span style="color:#f92672">=</span> GenericChatRequest(
+</span></span><span style="display:flex;"><span>    api_format<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;GENERIC&#34;</span>,
+</span></span><span style="display:flex;"><span>    messages<span style="color:#f92672">=</span>messages,
+</span></span><span style="display:flex;"><span>    max_tokens<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>,
+</span></span><span style="display:flex;"><span>    temperature<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3</span>  <span style="color:#75715e"># Lower temperature for focused technical responses</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>response <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>chat(chat_details)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Inspect the response structure</span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>data<span style="color:#f92672">.</span>chat_response
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Model: </span><span style="color:#e6db74">{</span>result<span style="color:#f92672">.</span>model_id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Finish reason: </span><span style="color:#e6db74">{</span>result<span style="color:#f92672">.</span>choices[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>finish_reason<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Response:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">{</span>result<span style="color:#f92672">.</span>choices[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>message<span style="color:#f92672">.</span>content[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>text<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><p>The request simply describes the model to use, the conversation history, and generation parameters. The response contains the assistant&rsquo;s message along with metadata. Conceptually, nothing mystical happens between request and response: the service repeatedly runs &ldquo;predict next token given this context&rdquo; and packages the results into a convenient structure. From an engineer&rsquo;s perspective, you can treat these OCI endpoints like any other internal platform service—protect them with IAM policies, route traffic through private endpoints, monitor them with OCI Observability, and integrate them into existing CI/CD pipelines. The difference is that instead of returning simple CRUD results, they return synthesized text generated by a very large function learned from data.</p>
+<h2 id="conclusion-why-infrastructure-choices-matter">Conclusion: Why Infrastructure Choices Matter</h2>
+<p>Understanding large language models as probability engines built on transformer architectures changes how you think about building with them. They predict tokens, one at a time, by computing attention across their input context. Training teaches them patterns from vast text corpora; inference applies those patterns to generate responses. But here is the critical insight for enterprise deployments: the underlying infrastructure determines whether these capabilities translate into production value or remain expensive experiments.</p>
+<p>For developers integrating these systems into applications, this understanding helps with practical decisions. When you encounter latency issues, you know the bottleneck might be network communication between GPUs during distributed inference, or it might be batch size tuning at the application layer. When outputs seem off, you understand that adjusting temperature or providing better context in your prompts directly affects the probability distributions the model samples from. On OCI, the combination of bare-metal GPU instances, RDMA networking, and the managed Generative AI Service means you can focus on these application-layer concerns rather than fighting infrastructure constraints.</p>
+<p>The models themselves will continue evolving—new architectures, new training techniques, new applications. But the fundamental pattern of massive parallel computation on specialized hardware, processing tokens through attention mechanisms, is here to stay. OCI has positioned itself as the infrastructure platform for this era, offering the most complete generative AI platform in the enterprise space: managed Cohere and Llama models, dedicated AI clusters, fine-tuning capabilities, vector search integration with Oracle Database 23ai, and RAG blueprints—all with enterprise governance and pricing that consistently beats other hyperscalers on equivalent hardware. The future of enterprise AI is not about who has the biggest model; it is about who can run the right model securely, reliably, and cost-effectively. That understanding makes you a better engineer when building systems that depend on them.</p>
+<hr>
+<h2 id="references">References</h2>
+<p>[1] Vaswani, A., et al. (2017). &ldquo;Attention Is All You Need.&rdquo; <em>Advances in Neural Information Processing Systems</em>. <a href="https://arxiv.org/abs/1706.03762">https://arxiv.org/abs/1706.03762</a></p>
+<p>[2] Oracle Cloud Infrastructure. &ldquo;Generative AI Service Documentation.&rdquo; <a href="https://docs.oracle.com/en-us/iaas/Content/generative-ai/home.htm">https://docs.oracle.com/en-us/iaas/Content/generative-ai/home.htm</a></p>
+<p>[3] Oracle Cloud Infrastructure. &ldquo;Overview of Generative AI Service.&rdquo; <a href="https://docs.oracle.com/en-us/iaas/Content/generative-ai/overview.htm">https://docs.oracle.com/en-us/iaas/Content/generative-ai/overview.htm</a></p>
+<p>[4] Oracle Cloud Infrastructure. &ldquo;Implement OCI Generative AI Based on Large Language Models.&rdquo; <a href="https://docs.oracle.com/en/solutions/oci-generative-ai-llm/index.html">https://docs.oracle.com/en/solutions/oci-generative-ai-llm/index.html</a></p>
+<p>[5] Oracle Cloud Infrastructure. &ldquo;Using the Large Language Models in Generative AI.&rdquo; <a href="https://docs.oracle.com/en-us/iaas/Content/generative-ai/use-playground.htm">https://docs.oracle.com/en-us/iaas/Content/generative-ai/use-playground.htm</a></p>
+<p>[6] Anthropic. (2024). &ldquo;Mapping the Mind of a Large Language Model.&rdquo; <a href="https://www.anthropic.com/research/mapping-mind-language-model">https://www.anthropic.com/research/mapping-mind-language-model</a></p>
+<p>[7] OpenAI. &ldquo;How ChatGPT and Our Foundation Models Are Developed.&rdquo; <a href="https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-language-models-are-developed">https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-language-models-are-developed</a></p>
+<hr>
+<p>#AIFundamentals #OCI #GenerativeAI #CloudInfrastructure</p>
+</section>
+
+  <footer class="mt-12 flex flex-wrap"><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/ai"
+      >AI</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/llm"
+      >LLM</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/oci"
+      >OCI</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/generativeai"
+      >GenerativeAI</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/cloudinfrastructure"
+      >CloudInfrastructure</a
+    ></footer><nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/posts/mauritius-ai-jobs-evolution/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Will AI Eclipse Human Roles? A Mauritius Lens on Job Shifts and Societal Waves</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="http://localhost:1313/posts/thanksgivings-2025/"
+      ><span>Thanksgivings 2025</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025
+    <a class="link" href="http://localhost:1313/">Rik Kisnah - Blog</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+<script>// Force light theme as default
+(function() {
+  'use strict';
+  
+  // Override the theme detection and force light mode
+  const forceLightTheme = () => {
+    const html = document.documentElement;
+    const body = document.body;
+    
+    // Remove dark class if present
+    html.classList.remove('dark');
+    
+    // Force light theme styles
+    html.style.setProperty('color-scheme', 'light');
+    body.style.setProperty('background-color', '#ffffff');
+    body.style.setProperty('color', '#1a202c');
+    
+    // Override localStorage to always use light theme
+    localStorage.setItem('dark', 'false');
+  };
+  
+  // Run immediately
+  forceLightTheme();
+  
+  // Run after DOM is loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', forceLightTheme);
+  }
+  
+  // Run after window is loaded
+  window.addEventListener('load', forceLightTheme);
+  
+  // Override any theme toggle buttons
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('btn-dark') || 
+        e.target.closest('.btn-dark')) {
+      e.preventDefault();
+      e.stopPropagation();
+      forceLightTheme();
+      return false;
+    }
+  });
+  
+  // Monitor for any dark class additions and remove them
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.type === 'attributes' && 
+          mutation.attributeName === 'class' && 
+          mutation.target.classList.contains('dark')) {
+        mutation.target.classList.remove('dark');
+        forceLightTheme();
+      }
+    });
+  });
+  
+  // Start observing
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class']
+  });
+  
+})();
+</script></body>
+</html>
