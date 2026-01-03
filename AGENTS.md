@@ -1,8 +1,8 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to coding assistants (Codex CLI and Claude Code) when working in this repository.
 
-Note: `AGENTS.md` is the Codex CLI counterpart and is intended to stay in sync with this document so either tool can be used interchangeably.
+This document is intended to stay in sync with `CLAUDE.md` so either tool can be used interchangeably.
 
 ## Project Overview
 
@@ -138,6 +138,10 @@ Two helper scripts simplify the workflow:
 4. GitHub Actions automatically builds and deploys the site
 5. Site is live at https://rikkisnah.github.io/ (usually within 2-3 minutes)
 
+### Commit Message Guidelines
+- Preferred commit messages follow existing history, e.g. `Blog update: YYYY-MM-DD HH:MM:SS from HOSTNAME` or `Add blog post: <Title>`.
+- Keep `public/` and `themes/hugo-paper/` clean in commits.
+
 ### Hugo Version Compatibility
 
 **Local Development:**
@@ -244,7 +248,7 @@ hugo server -D
 ```
 
 **Key differences between local and GitHub:**
-- Local: Hugo 0.123.7+ (current version)
+- Local: Hugo version varies
 - GitHub: Hugo 0.128.0 Extended (fixed version in workflow)
 - Local: Runs with your timezone
 - GitHub: Always uses America/Los_Angeles timezone
@@ -373,7 +377,7 @@ static/images/podcast/
 
 ### CRITICAL: Reserved Front Matter Field Names
 
-**DO NOT use these field names in podcast episode front matter.** Hugo's internal OpenGraph template (`_internal/opengraph.html`) reserves these names and will cause build failures on GitHub Actions (Hugo 0.128.0):
+**DO NOT use these field names in podcast episode front matter.** Hugo's internal OpenGraph template (`_internal/opengraph.html`) reserves these names and can cause build failures on GitHub Actions (Hugo 0.128.0):
 
 | Reserved Name | Use Instead | Why |
 |---------------|-------------|-----|

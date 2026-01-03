@@ -1,0 +1,17 @@
+# Hugo generated output (do not commit)
+public/
+.hugo_build.lock
+
+# Hugo build artifacts/cache (project-specific; keep untracked)
+resources/
+
+# Local editor/OS clutter
+.vscode/
+.DS_Store
+
+# Local runtime artifacts
+tmp/
+*.log
+
+# Repo tooling scratch files
+instructions.md
