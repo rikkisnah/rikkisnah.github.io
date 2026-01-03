@@ -89,7 +89,7 @@ Families, generation moving together. And yet, it never felt chaotic. It felt gu
 
 And everywhere you looked, systems were working, AI were working, quietly behind the scenes. So families could slow down, be present, and seemingly enjoy being together.
 
-### Day 2 (AM) — Transcript only (audio not uploaded yet)
+### Day 2 (AM) — Transcript only (audio not uploaded yet) - Rikesh
 
 Day one is finished. Our first day in Disney heaven. Dinner was fabulous.
 
@@ -99,7 +99,7 @@ Later, drinks at Skipper's Society Bar. A movie playing with my favourite actor,
 
 Lights on. Time slowed. We closed the night the way it began.
 
-Together. Me, Estelle, Rike and Roy. Day two will be at sea.
+Together. Me, Estelle, Rekha and Roy. Day two will be at sea.
 
 No schedule, no rushing. Just the ocean and the joy of being here.
 
@@ -137,11 +137,11 @@ Different moments, same ship, one family.
 
 <audio controls preload="none" src="https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-media/o/disney-cruise-dec-2025/day4-rikesh.mp3"></audio>
 
-Day four, afternoon, St. Thomas, U.S. Virgin Islands. Estelle, Rik and Roy, the island felt familiar. Like Mauritius, a reminder of what we left behind when we came to the U.S. It is small, rich with history, and yes, we drive on the wrong side of the road.
+Day four, afternoon, St. Thomas, U.S. Virgin Islands. Estelle, Rekha and Roy, the island felt familiar. Like Mauritius, a reminder of what we left behind when we came to the U.S. It is small, rich with history, and yes, we drive on the wrong side of the road.
 
 A great day. We explore together, side by side. Now we're back on board.
 
-Watch the movie of the year, Utopia. Laughter fell all around the place. Then dinner, fireworks in the sky.
+Watch the movie of the year, Zootopia. Laughter fell all around the place. Then dinner, fireworks in the sky.
 
 A full day, a family day, one to remember.
 
@@ -151,7 +151,7 @@ A full day, a family day, one to remember.
 
 Christmas at sea. No chimney, no snow, and yet the magic still found us. Presents open slowly, papers soft in our hands, as if time itself was being careful.
 
-Raycalf smiling, Roy laughing, Esther watching, knowing moments pass, even as they shine. We drifted to the haunted bar. Voices lower, the night a little quieter.
+Rekha smiling, Roy laughing, Estelle watching, knowing moments pass, even as they shine. We drifted to the haunted bar. Voices lower, the night a little quieter.
 
 Two days left, the ocean knows it, so do we. Still a ship, a family, holding on just a little long.
 
