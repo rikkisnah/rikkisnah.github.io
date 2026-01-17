@@ -6,8 +6,15 @@
     <description>Recent content in AI on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 Dec 2025 10:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 31 Dec 2025 05:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ai/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025: My Top 5 Lists</title>
+      <link>http://localhost:1313/posts/2025-top-5/</link>
+      <pubDate>Wed, 31 Dec 2025 05:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/2025-top-5/</guid>
+      <description>Disclaimer: The views expressed in this article are my own and do not represent those of my employer. This content was generated with the assistance of AI language models but curated and controlled by me. For more of my writing, visit rikkisnah.github.io.&#xA;I did not want to write another end of year list. I am writing one anyway because I kept notes (I have done so for decades - the writer and builder in me - have notes since 1993)</description>
+    </item>
     <item>
       <title>Markdown Is the New Source Code: A Paradigm Shift for AI-Assisted Development</title>
       <link>http://localhost:1313/posts/markdown-is-the-new-source-code/</link>

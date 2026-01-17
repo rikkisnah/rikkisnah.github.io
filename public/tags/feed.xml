@@ -6,20 +6,97 @@
     <description>Recent content in Tags on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 Dec 2025 10:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 17 Jan 2026 00:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Agents</title>
-      <link>http://localhost:1313/tags/agents/</link>
-      <pubDate>Sun, 14 Dec 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/agents/</guid>
+      <title>Anniversary</title>
+      <link>http://localhost:1313/tags/anniversary/</link>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/anniversary/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Family</title>
+      <link>http://localhost:1313/tags/family/</link>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/family/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Poems</title>
+      <link>http://localhost:1313/tags/poems/</link>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/poems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Remembrance</title>
+      <link>http://localhost:1313/tags/remembrance/</link>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/remembrance/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
       <link>http://localhost:1313/tags/ai/</link>
-      <pubDate>Sun, 14 Dec 2025 10:00:00 -0700</pubDate>
+      <pubDate>Wed, 31 Dec 2025 05:00:00 -0700</pubDate>
       <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Books</title>
+      <link>http://localhost:1313/tags/books/</link>
+      <pubDate>Wed, 31 Dec 2025 05:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/books/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Predictions</title>
+      <link>http://localhost:1313/tags/predictions/</link>
+      <pubDate>Wed, 31 Dec 2025 05:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/predictions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>http://localhost:1313/tags/technology/</link>
+      <pubDate>Wed, 31 Dec 2025 05:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Year-in-Review</title>
+      <link>http://localhost:1313/tags/year-in-review/</link>
+      <pubDate>Wed, 31 Dec 2025 05:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/year-in-review/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Disney-Cruise</title>
+      <link>http://localhost:1313/tags/disney-cruise/</link>
+      <pubDate>Sat, 27 Dec 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/disney-cruise/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tradition</title>
+      <link>http://localhost:1313/tags/tradition/</link>
+      <pubDate>Sat, 27 Dec 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/tradition/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Travel</title>
+      <link>http://localhost:1313/tags/travel/</link>
+      <pubDate>Sat, 27 Dec 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/travel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agents</title>
+      <link>http://localhost:1313/tags/agents/</link>
+      <pubDate>Sun, 14 Dec 2025 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/agents/</guid>
       <description></description>
     </item>
     <item>
@@ -86,13 +163,6 @@
       <description></description>
     </item>
     <item>
-      <title>Technology</title>
-      <link>http://localhost:1313/tags/technology/</link>
-      <pubDate>Thu, 04 Dec 2025 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/technology/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>CloudInfrastructure</title>
       <link>http://localhost:1313/tags/cloudinfrastructure/</link>
       <pubDate>Sun, 30 Nov 2025 00:00:00 -0700</pubDate>
@@ -132,13 +202,6 @@
       <link>http://localhost:1313/tags/celebration/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 -0700</pubDate>
       <guid>http://localhost:1313/tags/celebration/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Family</title>
-      <link>http://localhost:1313/tags/family/</link>
-      <pubDate>Fri, 28 Nov 2025 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/family/</guid>
       <description></description>
     </item>
     <item>

@@ -1,8 +1,11 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+> **Dual-Tool Environment**: This repository uses both **Claude Code** and **Codex CLI** interchangeably.
+> - `CLAUDE.md` and `AGENTS.md` contain identical content
+> - **Any change to one file must be copied to the other**
+> - Both tools read their respective files but follow the same instructions
 
-Note: `AGENTS.md` is the Codex CLI counterpart and is intended to stay in sync with this document so either tool can be used interchangeably.
+This file provides guidance to Claude Code (claude.ai/code) and Codex CLI when working with code in this repository.
 
 ## Project Overview
 

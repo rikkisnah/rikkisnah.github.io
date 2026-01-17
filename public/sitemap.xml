@@ -2,10 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/agents/</loc>
-    <lastmod>2025-12-14T10:00:00-07:00</lastmod>
+    <loc>http://localhost:1313/posts/ranjiv-ten-years-anniversary/</loc>
+    <lastmod>2026-01-17T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/anniversary/</loc>
+    <lastmod>2026-01-17T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/family/</loc>
+    <lastmod>2026-01-17T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/poems/</loc>
+    <lastmod>2026-01-17T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-01-17T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/remembrance/</loc>
+    <lastmod>2026-01-17T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-01-17T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-17T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025-top-5/</loc>
+    <lastmod>2025-12-31T05:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ai/</loc>
+    <lastmod>2025-12-31T05:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/books/</loc>
+    <lastmod>2025-12-31T05:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/predictions/</loc>
+    <lastmod>2025-12-31T05:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/technology/</loc>
+    <lastmod>2025-12-31T05:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/year-in-review/</loc>
+    <lastmod>2025-12-31T05:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/disney-cruise/</loc>
+    <lastmod>2025-12-27T09:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/disney-cruise-2025/</loc>
+    <lastmod>2025-12-27T09:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tradition/</loc>
+    <lastmod>2025-12-27T09:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/travel/</loc>
+    <lastmod>2025-12-27T09:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/agents/</loc>
     <lastmod>2025-12-14T10:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/claude-code/</loc>
@@ -29,16 +80,7 @@
     <loc>http://localhost:1313/podcast/</loc>
     <lastmod>2025-12-14T10:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-12-14T10:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-12-14T10:00:00-07:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/token-hygiene/</loc>
-    <lastmod>2025-12-14T10:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-12-14T10:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/economic-development/</loc>
@@ -51,9 +93,6 @@
     <lastmod>2025-12-04T09:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/publications/</loc>
-    <lastmod>2025-12-04T09:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/technology/</loc>
     <lastmod>2025-12-04T09:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/mauritius-ai-jobs-evolution/</loc>
@@ -78,9 +117,6 @@
     <lastmod>2025-11-28T00:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/celebration/</loc>
-    <lastmod>2025-11-28T00:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/family/</loc>
     <lastmod>2025-11-28T00:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/thanksgiving/</loc>
