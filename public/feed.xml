@@ -6,8 +6,15 @@
     <description>Recent content in Welcome to Rik Kisnah&#39;s Blog on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Jan 2026 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 00:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Content Engineering for AI Agents: Why Your Repository Isn&#39;t Ready</title>
+      <link>http://localhost:1313/posts/repos-not-built-for-ai-agents/</link>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/repos-not-built-for-ai-agents/</guid>
+      <description>Most repositories are designed for humans, not AI agents. Here’s the minimal set of repo context files and structure that makes agents reliable instead of chaotic.</description>
+    </item>
     <item>
       <title>A Decade of Ranjiv: Poems, Memory, and Love</title>
       <link>http://localhost:1313/posts/ranjiv-ten-years-anniversary/</link>

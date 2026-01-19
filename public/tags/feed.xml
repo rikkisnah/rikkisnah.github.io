@@ -6,8 +6,43 @@
     <description>Recent content in Tags on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Jan 2026 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 00:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agents</title>
+      <link>http://localhost:1313/tags/agents/</link>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/agents/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/tags/ai/</link>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Content-Engineering</title>
+      <link>http://localhost:1313/tags/content-engineering/</link>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/content-engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Developer-Experience</title>
+      <link>http://localhost:1313/tags/developer-experience/</link>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/developer-experience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Documentation</title>
+      <link>http://localhost:1313/tags/documentation/</link>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/documentation/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Anniversary</title>
       <link>http://localhost:1313/tags/anniversary/</link>
@@ -34,13 +69,6 @@
       <link>http://localhost:1313/tags/remembrance/</link>
       <pubDate>Sat, 17 Jan 2026 00:00:00 -0700</pubDate>
       <guid>http://localhost:1313/tags/remembrance/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI</title>
-      <link>http://localhost:1313/tags/ai/</link>
-      <pubDate>Wed, 31 Dec 2025 05:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
       <description></description>
     </item>
     <item>
@@ -93,13 +121,6 @@
       <description></description>
     </item>
     <item>
-      <title>Agents</title>
-      <link>http://localhost:1313/tags/agents/</link>
-      <pubDate>Sun, 14 Dec 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/agents/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Claude Code</title>
       <link>http://localhost:1313/tags/claude-code/</link>
       <pubDate>Sun, 14 Dec 2025 10:00:00 -0700</pubDate>
@@ -111,13 +132,6 @@
       <link>http://localhost:1313/tags/development/</link>
       <pubDate>Sun, 14 Dec 2025 10:00:00 -0700</pubDate>
       <guid>http://localhost:1313/tags/development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Documentation</title>
-      <link>http://localhost:1313/tags/documentation/</link>
-      <pubDate>Sun, 14 Dec 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/documentation/</guid>
       <description></description>
     </item>
     <item>
