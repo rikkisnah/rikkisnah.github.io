@@ -6,8 +6,22 @@
     <description>Recent content in Welcome to Rik Kisnah&#39;s Blog on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Jan 2026 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 09:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Attention Is All You Need — And All You Need to Know: An Infrastructure Engineer&#39;s Guide to the Paper That Built Your GPU Cluster</title>
+      <link>http://localhost:1313/posts/attention-is-all-you-need-and-all-you-need-to-know/</link>
+      <pubDate>Sat, 28 Feb 2026 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/attention-is-all-you-need-and-all-you-need-to-know/</guid>
+      <description>The 2017 Transformer paper replaced sequential processing with parallel attention and launched the GPU infrastructure boom. The same attention problem exists in your repository. Here is how to fix it.</description>
+    </item>
+    <item>
+      <title>Debugging Is Still a Science Even With AI</title>
+      <link>http://localhost:1313/posts/debugging-is-still-a-science-even-with-ai/</link>
+      <pubDate>Sun, 22 Feb 2026 20:25:02 -0800</pubDate>
+      <guid>http://localhost:1313/posts/debugging-is-still-a-science-even-with-ai/</guid>
+      <description>Debugging Is Science, Even When It Feels Like Art. AI Didn&amp;rsquo;t Change That. Disclaimer: This post was generated with Claude and researched with Perplexity, but the final technical judgment, edits, and conclusions are mine.&#xA;I don&amp;rsquo;t think AI made debugging automatic. I see engineers paste a stack trace into a chat window, copy the patch back, watch the red line disappear, and declare it fixed. I&amp;rsquo;ve done it too. Then the bug returns two weeks later under a different name, with more pages and more pain.</description>
+    </item>
     <item>
       <title>Bonne Année, Moris</title>
       <link>http://localhost:1313/posts/bonne-annee-moris/</link>

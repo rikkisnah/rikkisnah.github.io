@@ -6,8 +6,50 @@
     <description>Recent content in Tags on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Jan 2026 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 09:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Infrastructure</title>
+      <link>http://localhost:1313/tags/ai-infrastructure/</link>
+      <pubDate>Sat, 28 Feb 2026 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/ai-infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Attention</title>
+      <link>http://localhost:1313/tags/attention/</link>
+      <pubDate>Sat, 28 Feb 2026 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/attention/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Content-Engineering</title>
+      <link>http://localhost:1313/tags/content-engineering/</link>
+      <pubDate>Sat, 28 Feb 2026 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/content-engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GPU</title>
+      <link>http://localhost:1313/tags/gpu/</link>
+      <pubDate>Sat, 28 Feb 2026 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/gpu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>http://localhost:1313/tags/llm/</link>
+      <pubDate>Sat, 28 Feb 2026 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transformers</title>
+      <link>http://localhost:1313/tags/transformers/</link>
+      <pubDate>Sat, 28 Feb 2026 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/tags/transformers/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI</title>
       <link>http://localhost:1313/tags/ai/</link>
@@ -34,13 +76,6 @@
       <link>http://localhost:1313/tags/agents/</link>
       <pubDate>Mon, 19 Jan 2026 00:00:00 -0700</pubDate>
       <guid>http://localhost:1313/tags/agents/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Content-Engineering</title>
-      <link>http://localhost:1313/tags/content-engineering/</link>
-      <pubDate>Mon, 19 Jan 2026 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/content-engineering/</guid>
       <description></description>
     </item>
     <item>
@@ -191,13 +226,6 @@
       <description></description>
     </item>
     <item>
-      <title>LLM</title>
-      <link>http://localhost:1313/tags/llm/</link>
-      <pubDate>Sun, 30 Nov 2025 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/llm/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>OCI</title>
       <link>http://localhost:1313/tags/oci/</link>
       <pubDate>Sun, 30 Nov 2025 00:00:00 -0700</pubDate>
@@ -244,13 +272,6 @@
       <link>http://localhost:1313/tags/gb200/</link>
       <pubDate>Sat, 15 Nov 2025 00:00:00 -0700</pubDate>
       <guid>http://localhost:1313/tags/gb200/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>GPU</title>
-      <link>http://localhost:1313/tags/gpu/</link>
-      <pubDate>Sat, 15 Nov 2025 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/gpu/</guid>
       <description></description>
     </item>
     <item>
@@ -321,13 +342,6 @@
       <link>http://localhost:1313/tags/poetry/</link>
       <pubDate>Fri, 31 Oct 2025 15:00:40 -0700</pubDate>
       <guid>http://localhost:1313/tags/poetry/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI Infrastructure</title>
-      <link>http://localhost:1313/tags/ai-infrastructure/</link>
-      <pubDate>Wed, 29 Oct 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/ai-infrastructure/</guid>
       <description></description>
     </item>
     <item>

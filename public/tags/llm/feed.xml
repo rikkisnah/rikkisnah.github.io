@@ -6,8 +6,15 @@
     <description>Recent content in LLM on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 30 Nov 2025 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 09:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/llm/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Attention Is All You Need — And All You Need to Know: An Infrastructure Engineer&#39;s Guide to the Paper That Built Your GPU Cluster</title>
+      <link>http://localhost:1313/posts/attention-is-all-you-need-and-all-you-need-to-know/</link>
+      <pubDate>Sat, 28 Feb 2026 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/attention-is-all-you-need-and-all-you-need-to-know/</guid>
+      <description>The 2017 Transformer paper replaced sequential processing with parallel attention and launched the GPU infrastructure boom. The same attention problem exists in your repository. Here is how to fix it.</description>
+    </item>
     <item>
       <title>How Large Language Models Actually Work</title>
       <link>http://localhost:1313/posts/how-oci-works-with-oci/</link>
