@@ -5,8 +5,6 @@ draft: false
 tags: ["AI", "infrastructure", "OCI", "agents"]
 ---
 
-# The AI Pyramid: Five Layers Between Hardware and General Intelligence
-
 ![The AI Pyramid: Five layers from infrastructure to AGI](/posts/ai-pyramid-five-layers-between-hardware-and-agi/ai-pyramid.png)
 
 *Disclaimer: The views expressed in this article are my own and do not represent those of my employer. This content was written with the assistance of AI language models but curated and controlled by me.*
