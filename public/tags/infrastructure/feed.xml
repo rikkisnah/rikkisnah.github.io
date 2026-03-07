@@ -6,8 +6,15 @@
     <description>Recent content in Infrastructure on Rik Kisnah - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Nov 2025 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 21:33:29 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/infrastructure/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The AI Pyramid: Five Layers Between Hardware and AGI</title>
+      <link>http://localhost:1313/posts/ai-pyramid-five-layers-between-hardware-and-agi/</link>
+      <pubDate>Fri, 06 Mar 2026 21:33:29 -0800</pubDate>
+      <guid>http://localhost:1313/posts/ai-pyramid-five-layers-between-hardware-and-agi/</guid>
+      <description>The AI Pyramid: Five Layers Between Hardware and General Intelligence Disclaimer: The views expressed in this article are my own and do not represent those of my employer. This content was written with the assistance of AI language models but curated and controlled by me.&#xA;Most conversations about AI focus on the model. The chatbot, the assistant, the thing that answers your question in seconds. But the model is one layer in a larger stack.</description>
+    </item>
     <item>
       <title>The Complete NCCL Reference Guide: Commands, Errors, and Troubleshooting for OCI GPU Infrastructure</title>
       <link>http://localhost:1313/posts/nccl-complete-reference-guide/</link>
