@@ -102,6 +102,20 @@ tags: ["tag1", "tag2"]
 
 **Important:** Always use `-07:00` (Pacific Time) for dates to match the site's default timezone.
 
+### Blog Post Disclaimer Requirement
+
+Every blog post in `content/posts/` must include a disclaimer and caveat immediately after the lead image and before the main title/body.
+
+Use this default pattern unless the user explicitly requests different wording:
+
+```md
+*Disclaimer: This post reflects my personal views and does not represent the views of my employer.*
+
+*Caveat: This was written with research assistance from AI tools, but I curated the content, edited the draft, and cross-checked the references.*
+```
+
+If a post has no lead image, place the disclaimer and caveat directly below the front matter.
+
 ### Static Assets and Images
 Images and other static assets should be organized in the `static/` directory:
 - `static/posts/[post-slug]/` - Images for specific blog posts (organized by post filename)
