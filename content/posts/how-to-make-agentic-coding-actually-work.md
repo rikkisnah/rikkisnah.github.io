@@ -1,7 +1,7 @@
 ---
 title: "How to Make Agentic Coding Actually Work"
 date: 2026-03-14T15:31:48-07:00
-draft: true
+draft: false
 ---
 
 ![How to Make Agentic Coding Actually Work](/posts/how-to-make-agentic-coding-actually-work/agentic-coding.png)
