@@ -1,26 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>GB200 on Rik Kisnah - Blog</title>
-    <link>http://localhost:1313/tags/gb200/</link>
-    <description>Recent content in GB200 on Rik Kisnah - Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 15 Nov 2025 00:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/gb200/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Complete NCCL Reference Guide: Commands, Errors, and Troubleshooting for OCI GPU Infrastructure</title>
-      <link>http://localhost:1313/posts/nccl-complete-reference-guide/</link>
-      <pubDate>Sat, 15 Nov 2025 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/nccl-complete-reference-guide/</guid>
-      <description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.&#xA;Executive Summary NCCL (NVIDIA Collective Communication Library) is the cornerstone of distributed GPU computing, enabling efficient communication between GPUs in multi-node clusters. This comprehensive guide provides every NCCL command, parameter, error message, and troubleshooting technique you need for successful deployment on Oracle Cloud Infrastructure (OCI).&#xA;Table of Contents Why NCCL Exists Understanding Collective Communications NCCL Fundamentals Complete NCCL Commands Reference All NCCL Environment Variables NCCL Error Messages and Solutions OCI GPU-Specific Configurations Advanced Troubleshooting Scenarios Performance Tuning Reference Quick Reference Tables Why NCCL Exists The Distributed Training Challenge Modern AI models have grown exponentially in size and complexity.</description>
-    </item>
-    <item>
-      <title>Three Weeks in Batam: Bringing NVIDIA GB200 to Life on the Data Plane</title>
-      <link>http://localhost:1313/posts/gb200-batam-data-plane-rollout/</link>
-      <pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/gb200-batam-data-plane-rollout/</guid>
-      <description>Three weeks in Batam, Indonesia in March 2025. Not a vacation - something far more meaningful. I was there to help bring the NVIDIA GB200 data plane to life, working alongside some of the brightest minds at OCI and NVIDIA. This was the moment where cutting-edge technology meets real-world infrastructure, and I got to be part of making it happen.&#xA;Related readings:&#xA;Behind the Scenes: NVIDIA GB200 NVL72 on OCI APIs - Technical deep dive on the NVIDIA GB200 and OCI integration Supercluster: NVIDIA Blackwell Dedicated Alloy - OCI&amp;rsquo;s Supercluster offering with Blackwell GPUs Nvidia GB200 NVL72 Now Available via Oracle Cloud - Data Center Dynamics coverage of the launch The Mission: Time to Market When I arrived in Batam, the pressure was real.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GB200 on Rik Kisnah - Blog</title><link>https://rikkisnah.github.io/tags/gb200/</link><description>Recent content in GB200 on Rik Kisnah - Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 15 Nov 2025 00:00:00 -0700</lastBuildDate><atom:link href="https://rikkisnah.github.io/tags/gb200/feed.xml" rel="self" type="application/rss+xml"/><item><title>The Complete NCCL Reference Guide: Commands, Errors, and Troubleshooting for OCI GPU Infrastructure</title><link>https://rikkisnah.github.io/posts/nccl-complete-reference-guide/</link><pubDate>Sat, 15 Nov 2025 00:00:00 -0700</pubDate><guid>https://rikkisnah.github.io/posts/nccl-complete-reference-guide/</guid><description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.
+Executive Summary NCCL (NVIDIA Collective Communication Library) is the cornerstone of distributed GPU computing, enabling efficient communication between GPUs in multi-node clusters. This comprehensive guide provides every NCCL command, parameter, error message, and troubleshooting technique you need for successful deployment on Oracle Cloud Infrastructure (OCI).
+Table of Contents Why NCCL Exists Understanding Collective Communications NCCL Fundamentals Complete NCCL Commands Reference All NCCL Environment Variables NCCL Error Messages and Solutions OCI GPU-Specific Configurations Advanced Troubleshooting Scenarios Performance Tuning Reference Quick Reference Tables Why NCCL Exists The Distributed Training Challenge Modern AI models have grown exponentially in size and complexity.</description></item><item><title>Three Weeks in Batam: Bringing NVIDIA GB200 to Life on the Data Plane</title><link>https://rikkisnah.github.io/posts/gb200-batam-data-plane-rollout/</link><pubDate>Sat, 15 Mar 2025 10:00:00 -0700</pubDate><guid>https://rikkisnah.github.io/posts/gb200-batam-data-plane-rollout/</guid><description>Three weeks in Batam, Indonesia in March 2025. Not a vacation - something far more meaningful. I was there to help bring the NVIDIA GB200 data plane to life, working alongside some of the brightest minds at OCI and NVIDIA. This was the moment where cutting-edge technology meets real-world infrastructure, and I got to be part of making it happen.
+Related readings:
+Behind the Scenes: NVIDIA GB200 NVL72 on OCI APIs - Technical deep dive on the NVIDIA GB200 and OCI integration Supercluster: NVIDIA Blackwell Dedicated Alloy - OCI&amp;rsquo;s Supercluster offering with Blackwell GPUs Nvidia GB200 NVL72 Now Available via Oracle Cloud - Data Center Dynamics coverage of the launch The Mission: Time to Market When I arrived in Batam, the pressure was real.</description></item></channel></rss>

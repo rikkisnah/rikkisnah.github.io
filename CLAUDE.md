@@ -102,6 +102,14 @@ tags: ["tag1", "tag2"]
 
 **Important:** Always use `-07:00` (Pacific Time) for dates to match the site's default timezone.
 
+### Hugo front matter: avoid YAML/Markdown mix-ups
+
+Hugo treats everything between the **first** `---` and the **second** `---` as YAML. The Markdown body starts **after** that second delimiter.
+
+- **Always close front matter with a second `---` on its own line.** If you omit it, Hugo keeps parsing the rest of the file as YAML. Lines that start with `*` are YAML **alias** syntax (not Markdown italics), which produces errors like `yaml: unknown anchor 'Disclaimer' referenced` when your disclaimer lines follow immediately after `tags:` with no closing delimiter.
+- **Use YAML keys only in that block.** Write `title: "..."` as a normal key. Do **not** write `## title:` — `#` begins a YAML comment, so `title` may not be set, and `##` does not belong in front matter.
+- **Place `*Disclaimer` / `*Caveat` lines only in the Markdown body**, after the closing `---`. Those lines intentionally start with `*` for italics; they must not appear inside the YAML block.
+
 ### Blog Post Disclaimer Requirement
 
 Every blog post in `content/posts/` must include a disclaimer and caveat immediately after the lead image and before the main title/body.
