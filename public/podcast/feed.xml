@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"><channel><title>Podcast</title><link>https://rikkisnah.github.io/podcast/</link><description>Stories, celebrations, and reflections from the Kisnah family</description><language>en-us</language><copyright>Copyright 2026 Rik Kisnah</copyright><lastBuildDate>Sat, 28 Mar 2026 16:41:26 -0700</lastBuildDate><pubDate>Sun, 14 Dec 2025 10:00:00 -0700</pubDate><atom:link href="https://rikkisnah.github.io/podcast/feed.xml" rel="self" type="application/rss+xml"/><itunes:author>Rik Kisnah</itunes:author><itunes:summary>Stories, celebrations, and reflections from the Kisnah family</itunes:summary><itunes:subtitle>Stories, celebrations, and reflections from the Kisnah family</itunes:subtitle><itunes:owner><itunes:name>Rik Kisnah</itunes:name><itunes:email>rik.kisnah@gmail.com</itunes:email></itunes:owner><itunes:explicit>no</itunes:explicit><itunes:category text="Technology"><itunes:category text="Personal Journals"/></itunes:category><itunes:image href="https://rikkisnah.github.io/images/podcast/cover.png"/><itunes:type>episodic</itunes:type><googleplay:author>Rik Kisnah</googleplay:author><googleplay:description>Stories, celebrations, and reflections from the Kisnah family</googleplay:description><googleplay:email>rik.kisnah@gmail.com</googleplay:email><googleplay:image href="https://rikkisnah.github.io/images/podcast/cover.png"/><googleplay:category text="Technology"/><googleplay:explicit>no</googleplay:explicit><image><url>https://rikkisnah.github.io/images/podcast/cover.png</url><title>Podcast</title><link>https://rikkisnah.github.io/podcast/</link></image><item><title>Episode 2: Markdown Is the New Source Code</title><link>https://rikkisnah.github.io/podcast/markdown-is-the-new-source-code/</link><guid isPermaLink="true">https://rikkisnah.github.io/podcast/markdown-is-the-new-source-code/</guid><pubDate>Sun, 14 Dec 2025 10:00:00 -0700</pubDate><description>A paradigm shift in AI-assisted development: treating Markdown as first-class source code for better AI outcomes</description><content:encoded><![CDATA[<h2 id="show-notes">Show Notes</h2>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">
+  <channel>
+    <title>Podcast</title>
+    <link>http://localhost:1313/podcast/</link>
+    <description>Stories, celebrations, and reflections from the Kisnah family</description>
+    <language>en-us</language>
+    <copyright>Copyright 2026 Rik Kisnah</copyright>
+    <lastBuildDate>Sat, 28 Mar 2026 17:36:09 -0700</lastBuildDate>
+    <pubDate>Sun, 14 Dec 2025 10:00:00 -0700</pubDate>
+    <atom:link href="http://localhost:1313/podcast/feed.xml" rel="self" type="application/rss+xml"/>
+
+    
+    <itunes:author>Rik Kisnah</itunes:author>
+    <itunes:summary>Stories, celebrations, and reflections from the Kisnah family</itunes:summary>
+    <itunes:subtitle>Stories, celebrations, and reflections from the Kisnah family</itunes:subtitle>
+    <itunes:owner>
+      <itunes:name>Rik Kisnah</itunes:name>
+      <itunes:email>rik.kisnah@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:category text="Technology">
+      <itunes:category text="Personal Journals"/>
+    </itunes:category>
+    <itunes:image href="http://localhost:1313/images/podcast/cover.png"/>
+    <itunes:type>episodic</itunes:type>
+
+    
+    <googleplay:author>Rik Kisnah</googleplay:author>
+    <googleplay:description>Stories, celebrations, and reflections from the Kisnah family</googleplay:description>
+    <googleplay:email>rik.kisnah@gmail.com</googleplay:email>
+    <googleplay:image href="http://localhost:1313/images/podcast/cover.png"/>
+    <googleplay:category text="Technology"/>
+    <googleplay:explicit>no</googleplay:explicit>
+
+    
+    <image>
+      <url>http://localhost:1313/images/podcast/cover.png</url>
+      <title>Podcast</title>
+      <link>http://localhost:1313/podcast/</link>
+    </image>
+
+    
+    <item>
+      <title>Episode 2: Markdown Is the New Source Code</title>
+      <link>http://localhost:1313/podcast/markdown-is-the-new-source-code/</link>
+      <guid isPermaLink="true">http://localhost:1313/podcast/markdown-is-the-new-source-code/</guid>
+      <pubDate>Sun, 14 Dec 2025 10:00:00 -0700</pubDate>
+      <description>A paradigm shift in AI-assisted development: treating Markdown as first-class source code for better AI outcomes</description>
+      <content:encoded><![CDATA[<h2 id="show-notes">Show Notes</h2>
 <p>The way we write software is changing. Not just the tools—the fundamental structure of how we organize information for development.</p>
 <p>For the past two years, most of us have used AI assistants that autocomplete code and speed up boilerplate. These tools are useful, but they keep humans firmly in the driver&rsquo;s seat. You type, the model suggests, you accept or reject. Simple.</p>
 <p>But something bigger is happening. Teams that achieve the best outcomes with AI tooling are doing something different: they are treating Markdown as a first-class citizen in their repositories. This sounds almost too simple to matter. It is not.</p>
@@ -60,7 +112,35 @@
 <ul>
 <li><a href="/posts/markdown-is-the-new-source-code/">Blog post: Markdown Is the New Source Code</a></li>
 </ul>
-]]></content:encoded><enclosure url="https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-podcast-media/o/markdown-is-the-new-source-code-podcast.mp3" length="0" type="audio/mpeg"/><itunes:title>Episode 2: Markdown Is the New Source Code</itunes:title><itunes:summary>A paradigm shift in AI-assisted development: treating Markdown as first-class source code for better AI outcomes</itunes:summary><itunes:duration>00:05:00</itunes:duration><itunes:explicit>no</itunes:explicit><itunes:episodeType>full</itunes:episodeType><itunes:episode>2</itunes:episode><itunes:season>1</itunes:season><itunes:image href="https://rikkisnah.github.io/posts/markdown-Is-the-new-source-code/markdown-Is-the-new-source-code.png"/><googleplay:description>A paradigm shift in AI-assisted development: treating Markdown as first-class source code for better AI outcomes</googleplay:description><googleplay:image href="https://rikkisnah.github.io/posts/markdown-Is-the-new-source-code/markdown-Is-the-new-source-code.png"/><comments>https://www.youtube.com/watch?v=jYPSvKXUhcg</comments></item><item><title>Episode 1: Happy 15th Birthday, Rekha</title><link>https://rikkisnah.github.io/podcast/rekha-15th-birthday/</link><guid isPermaLink="true">https://rikkisnah.github.io/podcast/rekha-15th-birthday/</guid><pubDate>Mon, 03 Nov 2025 17:11:16 -0800</pubDate><description>A heartfelt birthday message for Rekha Laxmi Clara Kisnah on her 15th birthday</description><content:encoded><![CDATA[<h2 id="show-notes">Show Notes</h2>
+]]></content:encoded>
+
+      
+      <enclosure url="https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-podcast-media/o/markdown-is-the-new-source-code-podcast.mp3" length="0" type="audio/mpeg"/>
+
+      
+      <itunes:title>Episode 2: Markdown Is the New Source Code</itunes:title>
+      <itunes:summary>A paradigm shift in AI-assisted development: treating Markdown as first-class source code for better AI outcomes</itunes:summary>
+      <itunes:duration>00:05:00</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>2</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:image href="http://localhost:1313/posts/markdown-Is-the-new-source-code/markdown-Is-the-new-source-code.png"/>
+
+      
+      <googleplay:description>A paradigm shift in AI-assisted development: treating Markdown as first-class source code for better AI outcomes</googleplay:description>
+      <googleplay:image href="http://localhost:1313/posts/markdown-Is-the-new-source-code/markdown-Is-the-new-source-code.png"/>
+
+      
+      <comments>https://www.youtube.com/watch?v=jYPSvKXUhcg</comments>
+    </item>
+    <item>
+      <title>Episode 1: Happy 15th Birthday, Rekha</title>
+      <link>http://localhost:1313/podcast/rekha-15th-birthday/</link>
+      <guid isPermaLink="true">http://localhost:1313/podcast/rekha-15th-birthday/</guid>
+      <pubDate>Mon, 03 Nov 2025 17:11:16 -0800</pubDate>
+      <description>A heartfelt birthday message for Rekha Laxmi Clara Kisnah on her 15th birthday</description>
+      <content:encoded><![CDATA[<h2 id="show-notes">Show Notes</h2>
 <p>A special birthday message for Rekha Laxmi Clara Kisnah on her 15th birthday. This episode features a poem written for her, celebrating the princess who turned a house into a kingdom.</p>
 <h2 id="the-birthday-poem">The Birthday Poem</h2>
 <blockquote>
@@ -96,4 +176,27 @@ Happy birthday, center of our galaxy.</p>
 <li><a href="/posts/rekha-fifteen-years-old-birthday/">Blog post: Rekha Fifteen Years Old Birthday</a></li>
 </ul>
 <p><img src="/posts/rekha-fifteen-years-old-birthday/rekha_born.JPG" alt="Rekha is born"></p>
-]]></content:encoded><enclosure url="https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-podcast-media/o/rekha15thbirthday.MP3" length="0" type="audio/mpeg"/><itunes:title>Episode 1: Happy 15th Birthday, Rekha</itunes:title><itunes:summary>A heartfelt birthday message for Rekha Laxmi Clara Kisnah on her 15th birthday</itunes:summary><itunes:duration>00:03:00</itunes:duration><itunes:explicit>no</itunes:explicit><itunes:episodeType>full</itunes:episodeType><itunes:episode>1</itunes:episode><itunes:season>1</itunes:season><itunes:image href="https://rikkisnah.github.io/posts/rekha-fifteen-years-old-birthday/rekha_born.JPG"/><googleplay:description>A heartfelt birthday message for Rekha Laxmi Clara Kisnah on her 15th birthday</googleplay:description><googleplay:image href="https://rikkisnah.github.io/posts/rekha-fifteen-years-old-birthday/rekha_born.JPG"/><comments>https://www.youtube.com/watch?v=ZPcvZEvJeYQ</comments></item></channel></rss>
+]]></content:encoded>
+
+      
+      <enclosure url="https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-podcast-media/o/rekha15thbirthday.MP3" length="0" type="audio/mpeg"/>
+
+      
+      <itunes:title>Episode 1: Happy 15th Birthday, Rekha</itunes:title>
+      <itunes:summary>A heartfelt birthday message for Rekha Laxmi Clara Kisnah on her 15th birthday</itunes:summary>
+      <itunes:duration>00:03:00</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:image href="http://localhost:1313/posts/rekha-fifteen-years-old-birthday/rekha_born.JPG"/>
+
+      
+      <googleplay:description>A heartfelt birthday message for Rekha Laxmi Clara Kisnah on her 15th birthday</googleplay:description>
+      <googleplay:image href="http://localhost:1313/posts/rekha-fifteen-years-old-birthday/rekha_born.JPG"/>
+
+      
+      <comments>https://www.youtube.com/watch?v=ZPcvZEvJeYQ</comments>
+    </item>
+  </channel>
+</rss>

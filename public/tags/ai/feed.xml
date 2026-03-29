@@ -1,19 +1,110 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on Rik Kisnah - Blog</title><link>https://rikkisnah.github.io/tags/ai/</link><description>Recent content in AI on Rik Kisnah - Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 28 Mar 2026 12:00:00 -0700</lastBuildDate><atom:link href="https://rikkisnah.github.io/tags/ai/feed.xml" rel="self" type="application/rss+xml"/><item><title>A Short History of AI: From Greek Myths to Large Language Models</title><link>https://rikkisnah.github.io/posts/a-short-history-of-ai-from-greek-myths-to-large-language-models/</link><pubDate>Sat, 28 Mar 2026 12:00:00 -0700</pubDate><guid>https://rikkisnah.github.io/posts/a-short-history-of-ai-from-greek-myths-to-large-language-models/</guid><description>Disclaimer: This post reflects my personal views and does not represent the views of my employer.
-Caveat: This was written with research assistance from AI tools, but I curated the content, edited the draft, and cross-checked the references.
-A Short History of AI: From Greek Myths to Large Language Models Humans have been dreaming up artificial beings for millennia. For example, in Greek myths, Hephaestus was at a forge, creating metal servants.</description></item><item><title>The AI Pyramid: Five Layers Between Hardware and AGI</title><link>https://rikkisnah.github.io/posts/ai-pyramid-five-layers-between-hardware-and-agi/</link><pubDate>Fri, 06 Mar 2026 21:33:29 -0800</pubDate><guid>https://rikkisnah.github.io/posts/ai-pyramid-five-layers-between-hardware-and-agi/</guid><description>Disclaimer: The views expressed in this article are my own and do not represent those of my employer. This content was written with the assistance of AI language models but curated and controlled by me.
-Most conversations about AI focus on the model. The chatbot, the assistant, the thing that answers your question in seconds. But the model is one layer in a larger stack. Understanding the full stack changes how you think about AI strategy, investment, and what comes next.</description></item><item><title>Bonne Année, Moris</title><link>https://rikkisnah.github.io/posts/bonne-annee-moris/</link><pubDate>Tue, 20 Jan 2026 00:00:00 -0700</pubDate><guid>https://rikkisnah.github.io/posts/bonne-annee-moris/</guid><description>Published in Le Mauricien: Download Original Article (PDF)
-Reflections during a disney cruise with family While on a family Disney cruise through the US and the British Virgin Islands alongside Estelle and our children, Rekha and Roy, we remarked on how similar those countries are historically, yet how different they are. Mauritius is independent, has consistent leadership, is economically strong, and has made its place in the world. As we sail into 2026, I find myself thinking about the year ahead and what we wish for our homeland.</description></item><item><title>Content Engineering for AI Agents: Why Your Repository Isn't Ready</title><link>https://rikkisnah.github.io/posts/repos-not-built-for-ai-agents/</link><pubDate>Mon, 19 Jan 2026 00:00:00 -0700</pubDate><guid>https://rikkisnah.github.io/posts/repos-not-built-for-ai-agents/</guid><description>Most repositories are designed for humans, not AI agents. Here’s the minimal set of repo context files and structure that makes agents reliable instead of chaotic.</description></item><item><title>2025: My Top 5 Lists</title><link>https://rikkisnah.github.io/posts/2025-top-5/</link><pubDate>Wed, 31 Dec 2025 05:00:00 -0700</pubDate><guid>https://rikkisnah.github.io/posts/2025-top-5/</guid><description>Disclaimer: The views expressed in this article are my own and do not represent those of my employer. This content was generated with the assistance of AI language models but curated and controlled by me. For more of my writing, visit rikkisnah.github.io.
-I did not want to write another end of year list. I am writing one anyway because I kept notes (I have done so for decades - the writer and builder in me - have notes since 1993)</description></item><item><title>Markdown Is the New Source Code: A Paradigm Shift for AI-Assisted Development</title><link>https://rikkisnah.github.io/posts/markdown-is-the-new-source-code/</link><pubDate>Sun, 14 Dec 2025 10:00:00 -0700</pubDate><guid>https://rikkisnah.github.io/posts/markdown-is-the-new-source-code/</guid><description>Disclaimer: This blog post was written with AI assistance using Claude Code. The ideas and perspectives are my own, refined through conversation with AI. The accompanying image was generated using AI tools.
-The way we write software is changing. Not just the tools—the fundamental structure of how we organize information for development.
-For the past two years, most of us have used AI assistants that autocomplete code and speed up boilerplate.</description></item><item><title>Will AI Eclipse Human Roles? A Mauritius Lens on Job Shifts and Societal Waves</title><link>https://rikkisnah.github.io/posts/mauritius-ai-jobs-evolution/</link><pubDate>Thu, 04 Dec 2025 09:00:00 -0700</pubDate><guid>https://rikkisnah.github.io/posts/mauritius-ai-jobs-evolution/</guid><description>Published in Le Mauricien: Download Original Article (PDF)
-In 1984, my grandfather—Mohun Persad Kisnah—took me to see the first ATM machine at the State Bank in Port Louis. I was a boy, watching adults queue nervously before this strange metal box that dispensed cash without a teller.
-&amp;ldquo;Beta,&amp;rdquo; my dada said quietly, &amp;ldquo;this machine is going to replace many jobs.&amp;rdquo; I looked up at him. &amp;ldquo;What will happen to those people?</description></item><item><title>How Large Language Models Actually Work</title><link>https://rikkisnah.github.io/posts/how-oci-works-with-oci/</link><pubDate>Sun, 30 Nov 2025 00:00:00 -0700</pubDate><guid>https://rikkisnah.github.io/posts/how-oci-works-with-oci/</guid><description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.
-When you type a question into an AI assistant and receive a coherent, contextually relevant response seconds later, something remarkable happens between your keyboard and that reply. For engineers and developers building applications on top of these systems, understanding that process matters. It determines how you architect inference endpoints, allocate GPU resources, and optimize costs.</description></item><item><title>Mauritius at the Digital Crossroads: From Sugar Fields to Silicon Dreams</title><link>https://rikkisnah.github.io/posts/le-mauricien-article-2025/</link><pubDate>Tue, 04 Nov 2025 09:00:00 -0700</pubDate><guid>https://rikkisnah.github.io/posts/le-mauricien-article-2025/</guid><description>Published in Le Mauricien: Download Original Article (PDF)
-I&amp;rsquo;m honored to share that my opinion piece on Mauritius&amp;rsquo;s AI transformation journey was published in Le Mauricien on November 5, 2025. This article reflects on our nation&amp;rsquo;s economic evolution and the urgent need to position Mauritius as Africa&amp;rsquo;s technology leader in the AI era.
-From Sugar Cane to Silicon &amp;ldquo;As my grandfather would say, &amp;lsquo;Progress waits for no one.&amp;rsquo;&amp;rdquo;
-My grandfather, Mohun Persad Kisnah, came from an old Indian Diaspora family rooted in sugar cane.</description></item><item><title>OCI Powers America's AI Future at NVIDIA GTC 2025: Supercomputers, AI Factories, and Strategic Leadership</title><link>https://rikkisnah.github.io/posts/oci-nvidia-gtc-2025-ai-supercomputing/</link><pubDate>Wed, 29 Oct 2025 10:00:00 -0700</pubDate><guid>https://rikkisnah.github.io/posts/oci-nvidia-gtc-2025-ai-supercomputing/</guid><description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.
-Highlights from NVIDIA GTC DC 2025: OCI at the Heart of the AI Revolution Oracle Cloud Infrastructure (OCI) demonstrated its central role in shaping the future of AI infrastructure at NVIDIA&amp;rsquo;s GTC conference in Washington, DC (October 28-29, 2025). The event showcased groundbreaking announcements, technical innovations, and strategic partnerships that position OCI as a cornerstone of America&amp;rsquo;s AI leadership.</description></item><item><title>From First Principles to Zettascale: How OCI's GPU/RDMA Architecture Redefines AI Infrastructure</title><link>https://rikkisnah.github.io/posts/summary-gpu-oci-first-principles-blog/</link><pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate><guid>https://rikkisnah.github.io/posts/summary-gpu-oci-first-principles-blog/</guid><description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.
-In the rapidly evolving landscape of AI infrastructure, one company has quietly revolutionized how we think about GPU computing at scale. Through a series of &amp;ldquo;First Principles&amp;rdquo; engineering blogs and groundbreaking deployments, Oracle Cloud Infrastructure (OCI) has demonstrated that starting from fundamental physics and systems design—rather than following industry conventions—can yield extraordinary results.</description></item><item><title>Oracle AI World 2025: Enterprise AI from Promise to Production</title><link>https://rikkisnah.github.io/posts/oracle-ai-world-2025/</link><pubDate>Sat, 18 Oct 2025 09:00:00 -0700</pubDate><guid>https://rikkisnah.github.io/posts/oracle-ai-world-2025/</guid><description>The AI Inflection Point At Oracle AI World 2025, a clear message emerged: AI isn&amp;rsquo;t just another technology trend—it&amp;rsquo;s the bridge between decades of enterprise data and the future of business innovation.1
-Unlocking Enterprise Data&amp;rsquo;s True Potential Oracle founder Larry Ellison framed the opportunity succinctly: &amp;ldquo;AI offers the highest-value technology we have ever seen so far.&amp;rdquo;2 The critical insight? Most AI models train on internet data, missing the real competitive advantage: enterprise databases containing mission-critical business information.</description></item><item><title>Mauritius Summer Holidays 2025 - Three Weeks of Family, Legacy, and New Beginnings</title><link>https://rikkisnah.github.io/posts/mauritius-summer-holidays-2025/</link><pubDate>Fri, 15 Aug 2025 10:00:00 -0700</pubDate><guid>https://rikkisnah.github.io/posts/mauritius-summer-holidays-2025/</guid><description>I spent three unforgettable weeks in Mauritius during July-August 2025. This trip was special in so many ways - it was about honoring family legacy, building new opportunities, and celebrating the people who matter most.
-1. Baptism of Laxmi Villa - A Dream Reborn Estelle and I completed the renovation of Laxmi Villa, the house Dad and Ma built in 1999 after I left Mauritius. The three-floor structure has always held meaning for our family:</description></item><item><title>Matrix Neural Net Dreams: Reflections on Early AI</title><link>https://rikkisnah.github.io/posts/matrix-neural-net-dreams/</link><pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate><guid>https://rikkisnah.github.io/posts/matrix-neural-net-dreams/</guid><description>Machine Learning Before It Was Cool (1999) While everyone worried about Y2K, I was playing with neural networks at NTU. Not because I thought they&amp;rsquo;d ship in products—they were academic curiosities then. But because the math was beautiful.
-The core insight: if you could represent a problem as matrices, you could teach a network to solve it via backpropagation. Weights → matrix multiply → gradient descent → improved weights. Repeat until convergence.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on Rik Kisnah - Blog</title>
+    <link>http://localhost:1313/tags/ai/</link>
+    <description>Recent content in AI on Rik Kisnah - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 28 Mar 2026 12:00:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ai/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Short History of AI: From Greek Myths to Large Language Models</title>
+      <link>http://localhost:1313/posts/a-short-history-of-ai-from-greek-myths-to-large-language-models/</link>
+      <pubDate>Sat, 28 Mar 2026 12:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/a-short-history-of-ai-from-greek-myths-to-large-language-models/</guid>
+      <description>Disclaimer: This post reflects my personal views and does not represent the views of my employer.&#xA;Caveat: This was written with research assistance from AI tools, but I curated the content, edited the draft, and cross-checked the references.&#xA;A Short History of AI: From Greek Myths to Large Language Models Humans have been dreaming up artificial beings for millennia. For example, in Greek myths, Hephaestus was at a forge, creating metal servants.</description>
+    </item>
+    <item>
+      <title>The AI Pyramid: Five Layers Between Hardware and AGI</title>
+      <link>http://localhost:1313/posts/ai-pyramid-five-layers-between-hardware-and-agi/</link>
+      <pubDate>Fri, 06 Mar 2026 21:33:29 -0800</pubDate>
+      <guid>http://localhost:1313/posts/ai-pyramid-five-layers-between-hardware-and-agi/</guid>
+      <description>Disclaimer: The views expressed in this article are my own and do not represent those of my employer. This content was written with the assistance of AI language models but curated and controlled by me.&#xA;Most conversations about AI focus on the model. The chatbot, the assistant, the thing that answers your question in seconds. But the model is one layer in a larger stack. Understanding the full stack changes how you think about AI strategy, investment, and what comes next.</description>
+    </item>
+    <item>
+      <title>Bonne Année, Moris</title>
+      <link>http://localhost:1313/posts/bonne-annee-moris/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/bonne-annee-moris/</guid>
+      <description>Published in Le Mauricien: Download Original Article (PDF)&#xA;Reflections during a disney cruise with family While on a family Disney cruise through the US and the British Virgin Islands alongside Estelle and our children, Rekha and Roy, we remarked on how similar those countries are historically, yet how different they are. Mauritius is independent, has consistent leadership, is economically strong, and has made its place in the world. As we sail into 2026, I find myself thinking about the year ahead and what we wish for our homeland.</description>
+    </item>
+    <item>
+      <title>Content Engineering for AI Agents: Why Your Repository Isn&#39;t Ready</title>
+      <link>http://localhost:1313/posts/repos-not-built-for-ai-agents/</link>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/repos-not-built-for-ai-agents/</guid>
+      <description>Most repositories are designed for humans, not AI agents. Here’s the minimal set of repo context files and structure that makes agents reliable instead of chaotic.</description>
+    </item>
+    <item>
+      <title>2025: My Top 5 Lists</title>
+      <link>http://localhost:1313/posts/2025-top-5/</link>
+      <pubDate>Wed, 31 Dec 2025 05:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/2025-top-5/</guid>
+      <description>Disclaimer: The views expressed in this article are my own and do not represent those of my employer. This content was generated with the assistance of AI language models but curated and controlled by me. For more of my writing, visit rikkisnah.github.io.&#xA;I did not want to write another end of year list. I am writing one anyway because I kept notes (I have done so for decades - the writer and builder in me - have notes since 1993)</description>
+    </item>
+    <item>
+      <title>Markdown Is the New Source Code: A Paradigm Shift for AI-Assisted Development</title>
+      <link>http://localhost:1313/posts/markdown-is-the-new-source-code/</link>
+      <pubDate>Sun, 14 Dec 2025 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/markdown-is-the-new-source-code/</guid>
+      <description>Disclaimer: This blog post was written with AI assistance using Claude Code. The ideas and perspectives are my own, refined through conversation with AI. The accompanying image was generated using AI tools.&#xA;The way we write software is changing. Not just the tools—the fundamental structure of how we organize information for development.&#xA;For the past two years, most of us have used AI assistants that autocomplete code and speed up boilerplate.</description>
+    </item>
+    <item>
+      <title>Will AI Eclipse Human Roles? A Mauritius Lens on Job Shifts and Societal Waves</title>
+      <link>http://localhost:1313/posts/mauritius-ai-jobs-evolution/</link>
+      <pubDate>Thu, 04 Dec 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/mauritius-ai-jobs-evolution/</guid>
+      <description>Published in Le Mauricien: Download Original Article (PDF)&#xA;In 1984, my grandfather—Mohun Persad Kisnah—took me to see the first ATM machine at the State Bank in Port Louis. I was a boy, watching adults queue nervously before this strange metal box that dispensed cash without a teller.&#xA;&amp;ldquo;Beta,&amp;rdquo; my dada said quietly, &amp;ldquo;this machine is going to replace many jobs.&amp;rdquo; I looked up at him. &amp;ldquo;What will happen to those people?</description>
+    </item>
+    <item>
+      <title>How Large Language Models Actually Work</title>
+      <link>http://localhost:1313/posts/how-oci-works-with-oci/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/how-oci-works-with-oci/</guid>
+      <description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.&#xA;When you type a question into an AI assistant and receive a coherent, contextually relevant response seconds later, something remarkable happens between your keyboard and that reply. For engineers and developers building applications on top of these systems, understanding that process matters. It determines how you architect inference endpoints, allocate GPU resources, and optimize costs.</description>
+    </item>
+    <item>
+      <title>Mauritius at the Digital Crossroads: From Sugar Fields to Silicon Dreams</title>
+      <link>http://localhost:1313/posts/le-mauricien-article-2025/</link>
+      <pubDate>Tue, 04 Nov 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/le-mauricien-article-2025/</guid>
+      <description>Published in Le Mauricien: Download Original Article (PDF)&#xA;I&amp;rsquo;m honored to share that my opinion piece on Mauritius&amp;rsquo;s AI transformation journey was published in Le Mauricien on November 5, 2025. This article reflects on our nation&amp;rsquo;s economic evolution and the urgent need to position Mauritius as Africa&amp;rsquo;s technology leader in the AI era.&#xA;From Sugar Cane to Silicon &amp;ldquo;As my grandfather would say, &amp;lsquo;Progress waits for no one.&amp;rsquo;&amp;rdquo;&#xA;My grandfather, Mohun Persad Kisnah, came from an old Indian Diaspora family rooted in sugar cane.</description>
+    </item>
+    <item>
+      <title>OCI Powers America&#39;s AI Future at NVIDIA GTC 2025: Supercomputers, AI Factories, and Strategic Leadership</title>
+      <link>http://localhost:1313/posts/oci-nvidia-gtc-2025-ai-supercomputing/</link>
+      <pubDate>Wed, 29 Oct 2025 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/oci-nvidia-gtc-2025-ai-supercomputing/</guid>
+      <description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.&#xA;Highlights from NVIDIA GTC DC 2025: OCI at the Heart of the AI Revolution Oracle Cloud Infrastructure (OCI) demonstrated its central role in shaping the future of AI infrastructure at NVIDIA&amp;rsquo;s GTC conference in Washington, DC (October 28-29, 2025). The event showcased groundbreaking announcements, technical innovations, and strategic partnerships that position OCI as a cornerstone of America&amp;rsquo;s AI leadership.</description>
+    </item>
+    <item>
+      <title>From First Principles to Zettascale: How OCI&#39;s GPU/RDMA Architecture Redefines AI Infrastructure</title>
+      <link>http://localhost:1313/posts/summary-gpu-oci-first-principles-blog/</link>
+      <pubDate>Sun, 26 Oct 2025 22:43:15 -0400</pubDate>
+      <guid>http://localhost:1313/posts/summary-gpu-oci-first-principles-blog/</guid>
+      <description>Disclaimer: This article reflects my personal research and analysis based on publicly available information and is not representative of my employer&amp;rsquo;s official position.&#xA;In the rapidly evolving landscape of AI infrastructure, one company has quietly revolutionized how we think about GPU computing at scale. Through a series of &amp;ldquo;First Principles&amp;rdquo; engineering blogs and groundbreaking deployments, Oracle Cloud Infrastructure (OCI) has demonstrated that starting from fundamental physics and systems design—rather than following industry conventions—can yield extraordinary results.</description>
+    </item>
+    <item>
+      <title>Oracle AI World 2025: Enterprise AI from Promise to Production</title>
+      <link>http://localhost:1313/posts/oracle-ai-world-2025/</link>
+      <pubDate>Sat, 18 Oct 2025 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/oracle-ai-world-2025/</guid>
+      <description>The AI Inflection Point At Oracle AI World 2025, a clear message emerged: AI isn&amp;rsquo;t just another technology trend—it&amp;rsquo;s the bridge between decades of enterprise data and the future of business innovation.1&#xA;Unlocking Enterprise Data&amp;rsquo;s True Potential Oracle founder Larry Ellison framed the opportunity succinctly: &amp;ldquo;AI offers the highest-value technology we have ever seen so far.&amp;rdquo;2 The critical insight? Most AI models train on internet data, missing the real competitive advantage: enterprise databases containing mission-critical business information.</description>
+    </item>
+    <item>
+      <title>Mauritius Summer Holidays 2025 - Three Weeks of Family, Legacy, and New Beginnings</title>
+      <link>http://localhost:1313/posts/mauritius-summer-holidays-2025/</link>
+      <pubDate>Fri, 15 Aug 2025 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/mauritius-summer-holidays-2025/</guid>
+      <description>I spent three unforgettable weeks in Mauritius during July-August 2025. This trip was special in so many ways - it was about honoring family legacy, building new opportunities, and celebrating the people who matter most.&#xA;1. Baptism of Laxmi Villa - A Dream Reborn Estelle and I completed the renovation of Laxmi Villa, the house Dad and Ma built in 1999 after I left Mauritius. The three-floor structure has always held meaning for our family:</description>
+    </item>
+    <item>
+      <title>Matrix Neural Net Dreams: Reflections on Early AI</title>
+      <link>http://localhost:1313/posts/matrix-neural-net-dreams/</link>
+      <pubDate>Sat, 01 May 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/matrix-neural-net-dreams/</guid>
+      <description>Machine Learning Before It Was Cool (1999) While everyone worried about Y2K, I was playing with neural networks at NTU. Not because I thought they&amp;rsquo;d ship in products—they were academic curiosities then. But because the math was beautiful.&#xA;The core insight: if you could represent a problem as matrices, you could teach a network to solve it via backpropagation. Weights → matrix multiply → gradient descent → improved weights. Repeat until convergence.</description>
+    </item>
+  </channel>
+</rss>

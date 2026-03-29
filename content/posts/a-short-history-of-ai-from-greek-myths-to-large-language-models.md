@@ -27,7 +27,7 @@ The name arrived in 1956. At Dartmouth, John McCarthy ran a summer workshop and 
 
 The early programs came across as intelligent for their era. The Logic Theorist [11] and ELIZA (1966) [12] flattered back small talk with scripts. The catch: hand-coded rules. Reality has more angles than any rule list can hold.
 
-Then progress froze -- twice. The first “AI winter” arrived in the 1970s, when funders realized that hype had outpaced outcomes [10]. Money thinned. We had a brief renaissance of that in the 1980s with expert systems, including MYCIN, which diagnosed blood infections via hundreds of if-then rules written by doctors [4]. Clients threw money at it, yet systems collapsed when they operated outside their rule books. And then winter came again, by the late 1980s. A field that once held promise of humanlike thinking nearly perished twice. That time is glossed over in cheerier accounts; it matters. AI was never a smooth ramp.
+Then progress froze twice. The first “AI winter” arrived in the 1970s, when funders realized that hype had outpaced outcomes [10]. Money thinned. We had a brief renaissance of that in the 1980s with expert systems, including MYCIN, which diagnosed blood infections via hundreds of if-then rules written by doctors [4]. Clients threw money at it, yet systems collapsed when they operated outside their rule books. And then winter came again, by the late 1980s. A field that once held promise of humanlike thinking nearly perished twice. That time is glossed over in cheerier accounts; it matters. AI was never a smooth ramp.
 
 ## Letting Machines Learn (1990s-2000s)
 
@@ -41,7 +41,7 @@ In 1997, Garry Kasparov lost to IBM’s Deep Blue in a chess match [6]. Raw powe
 
 ## Deep Learning Changes the Game (2010s)
 
-In 2012, a team from Toronto submitted to an image contest, plumbing AlexNet: deep nets with many layers that take features from raw pixels [7]. Edges low down; shapes above that; upwards, objects and faces. AlexNet didn't just squeak past the field -- it nearly cut error rates in half.
+In 2012, a team from Toronto submitted to an image contest, plumbing AlexNet: deep nets with many layers that take features from raw pixels [7]. Edges low down; shapes above that; upwards, objects and faces. AlexNet didn't just squeak past the field; it nearly cut error rates in half.
 
 And two enablers he couldn’t spot at once. The internet had dumped vast mounds of labeled images and text to learn from. And gaming hardware was precisely what Matrix Math Networks needed. No one planned that pairing; it is pure luck.
 
@@ -53,7 +53,7 @@ Transformers were introduced in 2017 when Google released *Attention Is All You 
 
 Transformers are the foundational structure of today’s large language models. After initial hesitation, OpenAI released GPT-2, followed by GPT-3, with around 175 billion parameters, much larger than its predecessors [13]. ChatGPT, based on GPT-3, launched in November 2022. *Reuters* later reported UBS estimates that ChatGPT reached roughly 100 million monthly active users within two months of launch, a rate analysts called the fastest ramp they had seen for a consumer internet app [14]. AI ceased being something for the lab. It resided in unremarkable browsers.
 
-Since then, GPT-4, Gemini, Claude, LLaMA, and others have piled on. They program, summarize, translate, and chat in ways so convincing they may as well be a sharp human -- until you poke at the edges. They do not think as humans do. They guess the likely next tokens from all that has gone before [9][13]. Do that at a massive scale, and something useful, and occasionally eerie, develops.
+Since then, GPT-4, Gemini, Claude, LLaMA, and others have piled on. They program, summarize, translate, and chat in ways so convincing they may as well be a sharp human, until you poke at the edges. They do not think as humans do. They guess the likely next tokens from all that has gone before [9][13]. Do that at a massive scale, and something useful, and occasionally eerie, develops.
 
 ## What Comes Next
 
