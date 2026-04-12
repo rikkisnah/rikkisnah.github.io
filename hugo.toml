@@ -4,6 +4,8 @@ author = 'Rik Kisnah'
 languageCode = 'en'
 DefaultContentLanguage = 'en'
 enableInlineShortcodes = true
+# Include posts dated in the future (matches `hugo --buildFuture` in CI; avoids hiding “today” posts before their time-of-day).
+buildFuture = true
 ignoreErrors = ["error-remote-getjson"]
 
 theme = 'hugo-paper'
