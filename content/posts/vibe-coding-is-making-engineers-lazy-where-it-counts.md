@@ -17,7 +17,7 @@ tags: ["AI", "software engineering", "vibe coding", "developer productivity", "s
 
 ## The Moment I Keep Having
 
-I keep having the same moment (deja vu over deja-vus) with vibe coding. I reopen a file I touched three days earlier, and the first thing that comes back is the prompt, not the error handling or the thought. The code passed. The feature or article shipped fast. Yes,, I still need a few minutes (at times, hours) to rebuild the mental model of something that now sits in production. A week ago, I wrote about [AI slop in writing](https://rikkisnah.github.io/posts/beyond-the-slop-ai-writing-without-sounding-like-a-bot/). This post is about its more evil sibling. I baptized it as cognitive slop in code and writing.
+I keep having the same moment (deja vu over deja-vus) with vibe coding. I reopen a file I touched three days earlier, and the first thing that comes back is the prompt, not the error handling or the thought process in writing. The code passed the CI. The feature or article shipped fast. Yes, I still need a few minutes (at times, hours) to rebuild the mental model of something that now sits in production. A week ago, I wrote about [AI slop in writing](https://rikkisnah.github.io/posts/beyond-the-slop-ai-writing-without-sounding-like-a-bot/). This post is about its more evil sibling. I baptized it as cognitive slop in code and writing.
 
 ## The Productivity Is Real
 
