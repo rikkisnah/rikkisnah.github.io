@@ -124,6 +124,66 @@ Use this default pattern unless the user explicitly requests different wording:
 
 If a post has no lead image, place the disclaimer and caveat directly below the front matter.
 
+### Blog Post Reading Metadata Requirement
+
+Every blog post in `content/posts/` must include a single italic line with the body word count and estimated reading time. Place it **immediately below the lead image and above the disclaimer/caveat block** (or directly below the front matter when there is no lead image).
+
+Format:
+
+```md
+*<word count> words · <minutes> min read*
+```
+
+Example:
+
+```md
+*1,658 words · 8 min read*
+```
+
+**How to compute the numbers:**
+
+- **Word count:** Count only the article body. Exclude:
+  - YAML front matter
+  - The lead image line (`![...](...)`)
+  - The reading-metadata line itself
+  - The disclaimer, caveat, and image-credit italic lines
+  - All heading lines (lines starting with `#`)
+  - Everything from the `## References` heading onward (heading plus all reference entries)
+- **Reading time:** `ceil(word_count / 200)` minutes (web-reading rate of ~200 wpm).
+- **Formatting:** Use a thin-space-friendly middle dot (`·`, U+00B7) between the two values. Include a comma thousands separator for word counts ≥ 1,000.
+
+**Quick shell snippet for the word count:**
+
+```bash
+awk '
+/^## References/ {stop=1}
+stop {next}
+NR<=6 {next}
+/^!\[/ {next}
+/^\*[0-9]/ {next}
+/^\*Disclaimer/ {next}
+/^\*Caveat/ {next}
+/^\*Image:/ {next}
+/^## / {next}
+{print}
+' content/posts/<post>.md | wc -w
+```
+
+Adjust the `NR<=6` guard if the front matter is longer or shorter than six lines.
+
+### Standard Top-of-Post Stack
+
+Every new blog post should follow this exact order at the top, directly below the closing `---` of the front matter:
+
+1. Lead image (`![...](/posts/<slug>/lead.png)`)
+2. Reading metadata line (`*<count> words · <minutes> min read*`)
+3. Disclaimer line (`*Disclaimer: ...*`)
+4. Caveat line (`*Caveat: ...*`)
+5. Image credit line when the lead image is AI-generated (`*Image: The illustration above was generated with <tool>.*`)
+6. First section heading (`## ...`)
+
+Separate each of the above with a single blank line.
+
 ### Static Assets and Images
 Images and other static assets should be organized in the `static/` directory:
 - `static/posts/[post-slug]/` - Images for specific blog posts (organized by post filename)
