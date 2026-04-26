@@ -9,7 +9,7 @@ tags: ["AI", "software engineering", "vibe coding", "developer productivity", "s
 
 *1,658 words · 8 min read*
 
-*Disclaimer: This post reflects my personal views and does not represent the views of my employer.*
+*Disclaimer: This post reflects my personal views and does not represent the views of my employer or my community.*
 
 *Caveat: This was written with research assistance from AI tools, but I curated the content, edited the draft, and cross-checked the references.*
 

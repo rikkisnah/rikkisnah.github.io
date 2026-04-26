@@ -7,7 +7,7 @@ tags: ["layoffs", "career", "AI", "workplace", "kindness"]
 
 ![The Hand Reaching Back: Kindness After Layoffs](/posts/the-hand-reaching-back-kindness-after-layoffs/lead.png)
 
-*Disclaimer: This post reflects my personal views and does not represent the views of my employer.*
+*Disclaimer: This post reflects my personal views and does not represent the views of my employer or my community.*
 
 *Caveat: This was written with research assistance from AI tools, but I curated the content, edited the draft, and cross-checked the references.*
 

@@ -7,7 +7,7 @@ tags: ["AI", "agents", "content-engineering", "documentation", "developer-experi
 draft: false
 ---
 
-*Disclaimer: This post reflects my personal views and does not represent the views of my employer.*
+*Disclaimer: This post reflects my personal views and does not represent the views of my employer or my community.*
 
 *Caveat: This was written with research assistance from Claude (Sonnet) and Perplexity, but I curated the content and cross-checked the references.*
 

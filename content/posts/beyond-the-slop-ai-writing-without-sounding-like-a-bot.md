@@ -7,7 +7,7 @@ tags: ["AI", "writing", "LinkedIn", "prompt engineering", "content"]
 
 ![Beyond the Slop: Write With AI Without Sounding Like a Bot](/posts/beyond-the-slop-ai-writing-without-sounding-like-a-bot/lead.png)
 
-*Disclaimer: This post reflects my personal views and does not represent the views of my employer.*
+*Disclaimer: This post reflects my personal views and does not represent the views of my employer or my community.*
 
 *Caveat: This was written with research assistance from AI tools, but I curated the content, edited the draft, and cross-checked the references. I also used several models and Grammarly in a multi-pass workflow; the prompt pack is linked just below, with more context in the section titled "Prompt pack and tooling for this post."*
 

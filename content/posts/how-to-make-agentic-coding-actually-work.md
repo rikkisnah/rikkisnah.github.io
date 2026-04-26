@@ -6,7 +6,7 @@ draft: false
 
 ![How to Make Agentic Coding Actually Work](/posts/how-to-make-agentic-coding-actually-work/agentic-coding.png)
 
-*Disclaimer: This post reflects my personal views and does not represent the views of my employer.*
+*Disclaimer: This post reflects my personal views and does not represent the views of my employer or my community.*
 
 *Caveat: This was written with research assistance from AI tools, but I curated the content, edited the draft, and cross-checked the references.*
 

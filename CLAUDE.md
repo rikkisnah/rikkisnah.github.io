@@ -117,7 +117,7 @@ Every blog post in `content/posts/` must include a disclaimer and caveat immedia
 Use this default pattern unless the user explicitly requests different wording:
 
 ```md
-*Disclaimer: This post reflects my personal views and does not represent the views of my employer.*
+*Disclaimer: This post reflects my personal views and does not represent the views of my employer or my community.*
 
 *Caveat: This was written with research assistance from AI tools, but I curated the content, edited the draft, and cross-checked the references.*
 ```

@@ -7,7 +7,7 @@ tags: ["AI", "history", "machine learning", "LLM"]
 
 ![A Short History of AI: From Greek Myths to Large Language Models](/posts/a-short-history-of-ai-from-greek-myths-to-large-language-models/history-of-ai.png)
 
-*Disclaimer: This post reflects my personal views and does not represent the views of my employer.*
+*Disclaimer: This post reflects my personal views and does not represent the views of my employer or my community.*
 
 *Caveat: This was written with research assistance from AI tools, but I curated the content, edited the draft, and cross-checked the references.*
 
