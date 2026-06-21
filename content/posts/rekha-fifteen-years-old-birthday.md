@@ -36,4 +36,3 @@ draft: false
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZPcvZEvJeYQ" title="Happy 15th Birthday, Rekha" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - [Watch on YouTube](https://www.youtube.com/watch?v=ZPcvZEvJeYQ)
-- [Listen to Podcast Episode](/podcast/rekha-15th-birthday/)

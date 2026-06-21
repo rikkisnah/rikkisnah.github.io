@@ -12,6 +12,9 @@ resources/
 # Local runtime artifacts
 tmp/
 *.log
+.config/cloudflare/*.env
+.config/cloudflare/*.local
+.config/cloudflare/wrangler-state/
 
 # Repo tooling scratch files
 instructions.md

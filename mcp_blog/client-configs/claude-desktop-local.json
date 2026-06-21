@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "rik_blog": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/mnt/data/src/rikkisnah/rikkisnah.github.io/mcp_blog",
+        "run",
+        "rik-blog-mcp",
+        "--repo-root",
+        "/mnt/data/src/rikkisnah/rikkisnah.github.io",
+        "--transport",
+        "stdio"
+      ]
+    }
+  }
+}

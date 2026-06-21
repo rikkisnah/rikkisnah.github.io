@@ -1,4 +1,4 @@
-baseURL = 'https://rikkisnah.github.io/'
+baseURL = 'https://www.rik-kisnah.ai/'
 title = 'Rik Kisnah - Blog'
 author = 'Rik Kisnah'
 languageCode = 'en'
@@ -48,26 +48,14 @@ theme = 'hugo-paper'
     url = "/resume/"
     weight = 30
   [[menu.main]]
-    identifier = "podcast"
-    name = "Podcast"
-    url = "/podcast/"
+    identifier = "mcp"
+    name = "MCP"
+    url = "/mcp/"
     weight = 35
 
 [taxonomies]
 category = "categories"
 tag = "tags"
-
-# Podcast Configuration
-[params.podcast]
-  title = "Kisnah Family Podcast"
-  author = "Rik Kisnah"
-  email = "rik.kisnah@gmail.com"
-  description = "Stories, celebrations, and reflections from the Kisnah family"
-  language = "en-us"
-  category = "Family"
-  subcategory = "Personal Journals"
-  explicit = "no"
-  cover = "/images/podcast/cover.png"
 
 # Output formats for RSS
 [outputs]

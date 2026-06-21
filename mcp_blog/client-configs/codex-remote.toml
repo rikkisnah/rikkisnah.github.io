@@ -1,0 +1,4 @@
+[mcp_servers.rik_blog]
+url = "https://mcp.rik-kisnah.ai/mcp"
+enabled_tools = ["list_posts", "latest_posts", "search_posts", "get_post"]
+default_tools_approval_mode = "auto"

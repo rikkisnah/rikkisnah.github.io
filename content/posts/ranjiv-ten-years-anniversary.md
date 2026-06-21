@@ -3,7 +3,7 @@ title: "A Decade of Ranjiv: Poems, Memory, and Love"
 date: 2026-01-17T00:00:00-07:00
 slug: "ranjiv-ten-years-anniversary"
 tags: ["family", "remembrance", "poems", "anniversary"]
-summary: "Marking ten years since Ranjiv’s passing with poems from Rik and Dad, reflections, and audio."
+summary: "Marking ten years since Ranjiv’s passing with poems from Rik and Dad, reflections, and memory."
 draft: false
 ---
 
@@ -15,27 +15,11 @@ draft: false
 
 It’s the ten-year anniversary of Ranjiv’s passing. Time has moved forward, but grief doesn’t follow a straight line, and love doesn’t fade on a schedule.
 
-Today, I’m sharing two poems—one from me, and one from Dad—along with audio recordings. If you’re reading this as family or a friend, thank you for keeping him close with us.
+Today, I’m sharing two poems—one from me, and one from Dad. If you’re reading this as family or a friend, thank you for keeping him close with us.
 
 ## Music Video
 
 [Music video celebrating Ranjiv’s ten-year anniversary](https://youtu.be/kx_jlWayf5c)
-
-## Listen
-
-### Rik (Audio)
-
-<audio controls preload="none" aria-label="Audio: Rik’s poem for Ranjiv’s ten-year anniversary.">
-  <source src="https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-podcast-media/o/rik_poem_for_ran_10_years_anniversary.mp3" type="audio/mpeg" />
-  <p>Your browser does not support HTML5 audio. <a href="https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-podcast-media/o/rik_poem_for_ran_10_years_anniversary.mp3">Listen to Rik’s poem for Ranjiv’s ten-year anniversary</a>.</p>
-</audio>
-
-### Dad (Audio)
-
-<audio controls preload="none" aria-label="Audio: Dad’s poem for Ranjiv’s ten-year anniversary.">
-  <source src="https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-podcast-media/o/dad-poem-for-ran-10years-anniversary.mp3" type="audio/mpeg" />
-  <p>Your browser does not support HTML5 audio. <a href="https://objectstorage.us-phoenix-1.oraclecloud.com/n/axbtr6skl2h2/b/rikkisnah-github-podcast-media/o/dad-poem-for-ran-10years-anniversary.mp3">Listen to Dad’s poem for Ranjiv’s ten-year anniversary</a>.</p>
-</audio>
 
 ## Poems
 

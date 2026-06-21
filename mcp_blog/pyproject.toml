@@ -1,0 +1,27 @@
+[project]
+name = "rik-blog-mcp"
+version = "0.1.0"
+description = "Read-only public MCP server for Rik Kisnah's Hugo blog."
+requires-python = ">=3.11"
+dependencies = [
+  "mcp>=1.10.0",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8.0.0",
+]
+
+[project.scripts]
+rik-blog-mcp = "rik_blog_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

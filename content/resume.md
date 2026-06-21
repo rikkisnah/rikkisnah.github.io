@@ -5,7 +5,7 @@ draft: false
 
 ## Rik Kisnah
 
-**Senior Principal Engineer (HPC/GPU) at Oracle Cloud Infrastructure (OCI) for AI/ML Infrastructure**
+**Lead Principal Systems Software Engineer at Oracle Cloud Infrastructure (OCI) for AI/ML Infrastructure**  
 Seattle, Washington, United States
 
 > In God we Trust, all others bring data
@@ -65,35 +65,51 @@ Experienced Engineer with domain expertise in DevOps/CICD/Testing/Automation/HPC
 
 ### Oracle
 
-**6 years 10 months**
+**Full-time · 7 years 6 months**  
+Seattle, Washington, United States
+
+#### Lead Principal Systems Software Engineer
+**June 2026 - Present (1 month)**  
+On-site
+
+- Leads the OCI GPU Infrastructure team, delivering AI infrastructure solutions for AMD and NVIDIA platforms at scale.
+- Drives data plane and performance initiatives that improved system efficiency, reliability, and operational readiness.
+- Delivers brown bag sessions and public presentations to share technical knowledge and strengthen engineering alignment.
+- Serves as a technical advisor to senior executives, helping shape strategic architecture and engineering decisions.
+- Contributes to patents and invention disclosures in GPU infrastructure, AI systems, and high-performance cloud computing.
+
+**Skills:** Artificial Intelligence (AI), Software Infrastructure, GPU Infrastructure
 
 #### Consulting Member of Technical Staff
-**August 2024 - Present (1 year 3 months)**
-Seattle, Washington, United States
+**August 2024 - Present (1 year 11 months)**  
+On-site
 
-Tech lead for AI/ML Infrastructure for HPC/GPU Product offerings
+Tech lead for AI/ML Infrastructure for HPC/GPU Product offerings.
+
+**Skills:** Go, Technical Consultation, HPC/GPU Infrastructure, Cloud Architecture, Automation, Systems Management, Integrated Systems
 
 #### Principal Engineer
-**January 2021 - August 2024 (3 years 8 months)**
-Seattle, Washington, United States
+**January 2021 - August 2024 (3 years 8 months)**  
+On-site
 
 Tech lead for OCI - Compute - HPC/GPU organization.
+
+**Skills:** Go, Python, HPC/GPU Infrastructure, Cloud Architecture, Software Infrastructure
+
+#### Principal Engineer (DevOps/SRE)
+**January 2019 - December 2020 (2 years)**
 
 - **Team:** [https://www.oracle.com/cloud/compute/](https://www.oracle.com/cloud/compute/)
 - **Products:**
   - [https://www.oracle.com/cloud/hpc/](https://www.oracle.com/cloud/hpc/)
   - [https://www.oracle.com/cloud/compute/bare-metal.html](https://www.oracle.com/cloud/compute/bare-metal.html)
 
-#### Principal Engineer (DevOps/SRE)
-**January 2019 - December 2020 (2 years)**
-Seattle, Washington, United States
-
 ---
 
 ### Amazon Web Services
 
-**Senior System Development Engineer**
-**December 2012 - December 2018 (6 years 1 month)**
+**Senior System Development Engineer**  
+**December 2012 - December 2018 (6 years 1 month)**  
 Seattle
 
 **Team:** [https://aws.amazon.com/elasticloadbalancing/](https://aws.amazon.com/elasticloadbalancing/)
@@ -107,7 +123,7 @@ Seattle
 
 ### Aeroflex
 
-**Principal Staff Development Engineer**
+**Principal Staff Development Engineer**  
 **June 2010 - December 2012 (2 years 7 months)**
 
 - Develop PXI Applications solutions for RF tests for Qualcomm chipsets
@@ -118,7 +134,7 @@ Seattle
 
 ### Motorola
 
-**Senior Staff Software Engineer**
+**Senior Staff Software Engineer**  
 **January 2002 - June 2009 (7 years 6 months)**
 
 Mobile device development and innovation
@@ -128,19 +144,19 @@ Mobile device development and innovation
 ## Education
 
 ### Massachusetts Institute of Technology
-**Postgraduate Degree, Advanced AI/LLMs**
-2024 - 2026 (In Progress)
+**Postgraduate Degree, Advanced AI/LLMs**  
+2024 - 2026
 
 ### The University of Texas at Austin
-**Postgraduate Degree, Artificial Intelligence**
+**Postgraduate Degree, Artificial Intelligence**  
 2019
 
 ### University of Wales, Aberystwyth
-**MSc, Computer Science - Neural Networks**
+**MSc, Computer Science - Neural Networks**  
 2007
 
 ### Nanyang Technological University, Singapore
-**BASc, Computer Engineering - Machine Learning**
+**BASc, Computer Engineering - Machine Learning**  
 2001
 
 ---
