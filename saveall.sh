@@ -8,15 +8,18 @@ GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
+# GitHub SSH: port 443 + dedicated key (port 22 blocked on some networks)
+export GIT_SSH_COMMAND='ssh -i ~/.ssh/id_github_rsa -o IdentitiesOnly=yes -o ConnectTimeout=30 -p 443 -o Hostname=ssh.github.com'
+
 echo -e "${BLUE}=== Hugo Blog Sync ===${NC}"
 echo "Repository: rikkisnah.github.io"
 echo "Host: $(hostname)"
 echo "Time: $(date '+%Y-%m-%d %H:%M:%S')"
 echo ""
 
-# Check for uncommitted changes
+# Check for uncommitted or untracked changes
 echo -e "${BLUE}Checking for changes...${NC}"
-if git diff --quiet && git diff --cached --quiet; then
+if git diff --quiet && git diff --cached --quiet && [ -z "$(git ls-files --others --exclude-standard)" ]; then
     echo "No changes to commit"
 else
     echo "Changes detected"
