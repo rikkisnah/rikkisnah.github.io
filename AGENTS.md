@@ -383,3 +383,14 @@ If build succeeds locally but fails on GitHub:
    git commit -m "Restore critical GitHub Pages configuration"
    git push
    ```
+
+### Definition of Done: Publishing a Blog Post
+
+Do not tell the user a post is published, ready, or ready to check merely because a commit was pushed. A publish is complete only when all of the following are true:
+
+1. The post has `draft: false`, its referenced assets exist under `static/posts/<slug>/`, and a production local build (`hugo --gc --minify --buildFuture`) includes the post.
+2. Only the intended post and asset files have been committed and pushed; preserve unrelated working-tree changes.
+3. The GitHub Actions Pages workflow for the pushed commit SHA has completed successfully.
+4. The public canonical URL returns HTTP 200 and contains the new post title. Confirm the lead image URL is also reachable when an image was added.
+
+Until step 4 succeeds, report the exact pending state and keep checking. Once all checks succeed, tell the user explicitly: **"Ready to check now:"** followed by the canonical public URL. Include the commit SHA and state that the live-page check passed.

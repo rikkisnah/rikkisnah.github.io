@@ -21,3 +21,10 @@ Persistent notes for human and AI-assisted work in this repository.
 - Keep `.nojekyll`, `_config.yml`, and `.github/workflows/hugo.yaml` intact for GitHub Pages.
 - Use Pacific time offsets in content front matter.
 - For blog posts, preserve the required top-of-post stack: lead image, reading metadata, disclaimer, caveat, optional image credit, then body heading.
+
+## Publishing Definition of Done
+
+- A Git push is not a completed publication.
+- Before saying a post is ready, verify that the post is not a draft, the production Hugo build includes it, the GitHub Pages workflow for the exact pushed SHA succeeded, and the public canonical URL returns HTTP 200 with the new title.
+- When the post has a lead image, verify its public URL too.
+- Until the public page is verified, state what is pending. When it is verified, say: `Ready to check now:` and give the canonical public URL.
