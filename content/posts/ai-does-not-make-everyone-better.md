@@ -1,7 +1,7 @@
 ---
 title: "AI Makes Zeroes Feel Like Heroes and Heroes Become Superheroes"
 date: 2026-08-29T10:00:00-07:00
-draft: true
+draft: false
 tags: ["AI", "software engineering", "technical leadership", "developer productivity"]
 summary: "AI can make weak work look convincing. Used with judgment, it gives strong engineers and leaders more room to make the hard calls."
 images:
