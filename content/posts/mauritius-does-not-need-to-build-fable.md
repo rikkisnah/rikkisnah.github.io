@@ -1,7 +1,7 @@
 ---
 title: "Mauritius Doesn't Need to Build Fable. It Needs an AI Pass."
 date: 2026-09-07T09:00:00-07:00
-draft: true
+draft: false
 tags: ["mauritius", "singapore", "ai", "education", "developing-countries", "anthropic"]
 summary: "The newest AI models are powerful, expensive, and far away. Small and developing countries can still use them well. Singapore shows how to rent well. Anthropic shows how a lab can do its part."
 images:
