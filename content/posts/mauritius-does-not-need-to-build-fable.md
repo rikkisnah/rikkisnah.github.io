@@ -12,6 +12,8 @@ images:
 
 *Image generated with Grok.*
 
+*Published in [Le Mauricien](https://www.lemauricien.com/opinions/mauritius-doesnt-need-to-build-fable-it-needs-an-ai-pass/) (Opinions / Forum), September 10, 2026.*
+
 *1,817 words · 10 min read*
 
 *Disclaimer: These are my personal views, not those of my employer or community. I wrote and edited this article with assistance from Claude, ChatGPT, and Perplexity for research and fact-checking. Originality.ai scored the final text at less than 15% AI.*
