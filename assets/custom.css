@@ -207,3 +207,33 @@ article .highlight pre code span,
   opacity: 1 !important;
   background: transparent !important;
 }
+
+/* ---- Teach section ---- */
+.teach-hero { margin: 0 0 2rem; }
+.teach-tagline { font-size: 1.15rem; opacity: 0.75; margin: 0.4rem 0 0; }
+.teach-crumb { font-size: 0.8rem; opacity: 0.6; margin: 0 0 0.5rem; }
+.teach-crumb a { text-decoration: none; }
+.teach-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1rem; margin: 1rem 0 2.5rem; }
+.teach-card { display: flex; flex-direction: column; gap: 0.3rem; padding: 1.1rem 1.2rem; border-radius: 0.9rem;
+  background: rgba(0,0,0,0.035); text-decoration: none !important; color: inherit; transition: background 0.15s; }
+.teach-card:hover { background: rgba(0,0,0,0.07); }
+.dark .teach-card { background: rgba(255,255,255,0.07); }
+.dark .teach-card:hover { background: rgba(255,255,255,0.12); }
+.teach-card-icon { font-size: 1.7rem; line-height: 1; }
+.teach-card-title { font-weight: 600; font-size: 1.1rem; }
+.teach-card-desc { font-size: 0.9rem; opacity: 0.75; }
+.teach-card-count { font-size: 0.75rem; opacity: 0.55; margin-top: 0.3rem; }
+.teach-list { list-style: none; padding: 0; margin: 0 0 2rem; }
+.teach-list li { display: grid; grid-template-columns: 6.5rem 1fr; gap: 0.6rem; padding: 0.55rem 0; border-bottom: 1px solid rgba(0,0,0,0.07); align-items: baseline; }
+.dark .teach-list li { border-color: rgba(255,255,255,0.1); }
+.teach-list time { font-size: 0.75rem; opacity: 0.6; }
+.teach-list a { font-weight: 500; }
+.teach-track { font-size: 0.7rem; opacity: 0.55; margin-left: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.teach-list-wide li { grid-template-columns: 6.5rem 1fr; }
+.teach-summary { display: block; grid-column: 2; font-size: 0.85rem; opacity: 0.7; margin-top: -0.2rem; }
+.remember { margin: 2rem 0; padding: 1rem 1.3rem; border-left: 4px solid #f97316; border-radius: 0.5rem; background: rgba(249,115,22,0.07); }
+.remember-title { font-weight: 700; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: #ea580c; margin-bottom: 0.3rem; }
+.remember p { margin: 0.3rem 0; }
+.remember ul { margin: 0.3rem 0 0 1.1rem; }
+.mermaid { margin: 1.5rem 0; overflow-x: auto; text-align: center; }
+.mermaid svg { display: inline-block; max-width: 100% !important; height: auto !important; }

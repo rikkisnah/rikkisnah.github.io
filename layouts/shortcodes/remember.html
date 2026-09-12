@@ -1,0 +1,4 @@
+<div class="remember">
+  <div class="remember-title">{{ .Get "title" | default "Remember this" }}</div>
+  {{ .Inner | markdownify }}
+</div>

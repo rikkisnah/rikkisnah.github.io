@@ -20,6 +20,7 @@ theme = 'hugo-paper'
   bio = 'Engineer, husband, father. Building AI/GPU cloud infrastructure by day, sharing lessons learned by night. Faith and family first.'
   linkedin = 'rikkisnah'
   github = 'rikkisnah'
+  mainSections = ['posts']
 
 [markup]
   [markup.goldmark]
@@ -32,6 +33,11 @@ theme = 'hugo-paper'
     name = "Posts"
     url = "/posts/"
     weight = 10
+  [[menu.main]]
+    identifier = "teach"
+    name = "Teach"
+    url = "/teach/"
+    weight = 33
   [[menu.main]]
     identifier = "about"
     name = "About"

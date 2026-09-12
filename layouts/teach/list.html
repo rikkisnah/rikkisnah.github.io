@@ -1,0 +1,57 @@
+{{- define "main" -}}
+{{- $isTop := .Parent.IsHome -}}
+
+<div class="teach-hero">
+  {{- if not $isTop -}}
+  <p class="teach-crumb"><a href="/teach/">Teach</a> / {{ .Title }}</p>
+  {{- end -}}
+  <h1 class="my-0!">{{ .Title }}</h1>
+  {{- with .Params.tagline -}}<p class="teach-tagline">{{ . }}</p>{{- end -}}
+</div>
+
+<div class="prose dark:prose-invert max-w-none">
+  {{- .Content -}}
+</div>
+
+{{- if $isTop -}}
+<h2 id="tracks">Three tracks, two references</h2>
+<div class="teach-grid">
+  {{- range .Sections.ByWeight -}}
+  <a class="teach-card" href="{{ .Permalink }}">
+    <span class="teach-card-icon">{{ .Params.icon }}</span>
+    <span class="teach-card-title">{{ .Title }}</span>
+    <span class="teach-card-desc">{{ .Params.tagline }}</span>
+    <span class="teach-card-count">{{ len .RegularPages }} lessons</span>
+  </a>
+  {{- end -}}
+  {{- range .RegularPages -}}
+  <a class="teach-card" href="{{ .Permalink }}">
+    <span class="teach-card-icon">{{ .Params.icon }}</span>
+    <span class="teach-card-title">{{ .Title }}</span>
+    <span class="teach-card-desc">{{ .Params.tagline }}</span>
+  </a>
+  {{- end -}}
+</div>
+
+<h2 id="latest">Latest lessons</h2>
+{{- $all := slice -}}
+{{- range .Sections -}}{{- $all = $all | append .RegularPages -}}{{- end -}}
+<ul class="teach-list">
+  {{- range first 6 ($all.ByDate.Reverse) -}}
+  <li><time>{{ .Date | time.Format ":date_medium" }}</time> <span><a href="{{ .Permalink }}">{{ .Title }}</a> <span class="teach-track">{{ .Parent.Title }}</span></span></li>
+  {{- end -}}
+</ul>
+
+{{- else -}}
+<ul class="teach-list teach-list-wide">
+  {{- range .RegularPages.ByDate.Reverse -}}
+  <li>
+    <time>{{ .Date | time.Format ":date_medium" }}</time>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    {{- with .Params.summary -}}<span class="teach-summary">{{ . }}</span>{{- end -}}
+  </li>
+  {{- end -}}
+</ul>
+{{- end -}}
+
+{{- end -}}
