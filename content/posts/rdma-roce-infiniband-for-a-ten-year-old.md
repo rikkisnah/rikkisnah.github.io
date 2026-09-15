@@ -11,11 +11,11 @@ images:
 
 ![A robot arm passing packages between two glass-walled offices, a private train on its own track, and a network card sending four glowing lanes of traffic to a row of switches](/posts/rdma-roce-infiniband-for-a-ten-year-old/lead.png)
 
-*2,174 words · 11 min read*
+*2,609 words · 14 min read*
 
 *Disclaimer: This post reflects my personal views and does not represent the views of my employer or my community.*
 
-*Lead image generated with Grok. Figures 1 to 4 are my own drawings from public NVIDIA, InfiniBand Trade Association and Oracle documents. References at the bottom.*
+*Lead image generated with Grok. Figures 1 to 5 are my own drawings from public NVIDIA, InfiniBand Trade Association and Oracle documents. References at the bottom.*
 
 **Related readings from this blog:**
 
@@ -63,7 +63,23 @@ Because dedicated networks such as InfiniBand are costly and most data centers a
 
 There is one catch: RDMA assumes packets never get dropped because the card writes straight into memory and cannot afford to stop and ask. InfiniBand guarantees that by design. Ethernet does not. So a RoCEv2 network must be made lossless on purpose: a priority queue that pauses the sender rather than dropping (Priority Flow Control), and switches that mark packets when they start to queue up (Explicit Congestion Notification). The card slows down before anything is lost [5]. Get those knobs wrong, and the fabric is fine at 10 percent load and falls apart at 90.
 
-**Explain it to a ten-year-old.** RoCEv2 runs the same Lego trains on the normal roads. To make it work, you paint a bus lane nobody else may use, and you put up traffic lights that turn amber early so the trains never have to crash.
+**So how does InfiniBand actually guarantee no drops?** InfiniBand works on permission. Ethernet works on hope. On Ethernet, the sender just transmits. If the switch on the other end has no room, it drops the packet. PFC is a late fix: a pause message sent once the buffer is already almost full. On InfiniBand, the receiver tells the sender up front how much room it has, in units called **credits**, tracked separately per virtual lane so one slow traffic class can't starve the others. Each port advertises credits in 64-byte units; the sender counts them down as it sends and stops dead at zero, and as the receiver drains its buffer it hands more credits back [2]. A packet is only ever sent into space that is guaranteed to exist, so a buffer can never overflow, and no switch ever has a reason to drop it for congestion. This happens hop by hop across the whole fabric, so congestion turns into back-pressure that ripples toward the source instead of into dropped packets. Figure 5 puts the two side by side.
+
+![Figure 5: InfiniBand credit-based flow control versus Ethernet send-and-drop](/posts/rdma-roce-infiniband-for-a-ten-year-old/fig-05-credit-based-flow-control.png)
+
+| | InfiniBand | RoCEv2 (Ethernet) |
+|---|---|---|
+| Default behavior | Lossless | Lossy |
+| How a sender knows it can transmit | Receiver hands out credits for free buffer space first | It doesn't; it just sends |
+| What happens when a buffer fills | Can't happen; sender ran out of credits and stopped | Switch drops packets |
+| Congestion signal | Built in: sender sees credits stop arriving | Bolt-on: PFC pause frames, ECN marks |
+| Timing | Before the buffer is full, proactive | When the buffer is nearly full, reactive |
+| Who configures it | Nobody, it's how the link works | You do, on every switch and NIC |
+| Failure mode | Congestion spreads as back-pressure | Packets dropped, RDMA stalls or retransmits |
+
+Two footnotes worth knowing. Bit errors can still corrupt a packet on the wire; InfiniBand's reliable transport (RC queue pairs) catches that with sequence numbers and retransmits, rare enough that the application never sees it. And lossless is not the same as congestion-free: back-pressure can still spread across the fabric, a pattern called tree saturation, which is why InfiniBand also carries its own congestion control, FECN and BECN marking, on top [2]. That is a performance mechanism, not a loss-prevention one.
+
+**Explain it to a ten-year-old.** A credit is a receiver's promise of free space, handed out before anything moves, the way a restaurant only seats you when a table is free instead of letting everyone in and turning people away at the door. RoCEv2 runs the same Lego trains on the normal roads. To make it work, you paint a bus lane nobody else may use, and you put up traffic lights that turn amber early so the trains never have to crash.
 
 ## Which One, and Which One OCI Picked
 
