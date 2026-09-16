@@ -47,7 +47,7 @@ As in all my documents, I finish each section as I would explain it to a ten-yea
 8. [Which SKU for Which Job](#which-sku-for-which-job)
 9. [What Breaks, With Numbers](#what-breaks-with-numbers)
 10. [Five Minutes of Commands: Prove What the Truck Delivered](#five-minutes-of-commands-prove-what-the-truck-delivered)
-11. [The Ten Things to Remember](#the-ten-things-to-remember)
+11. [The Ten Commandments](#the-ten-commandments)
 12. [References](#references)
 
 ## How to Read a SKU Name
@@ -326,7 +326,7 @@ mlxlink -d /dev/mst/mt4129_pciconf0 -c -e # NIC port BER and eye
 | Power cap | 700 W | 1,000 W | vendor | vendor | 750 W | 1,400 W |
 
 
-## The Ten Things to Remember
+## The Ten Commandments
 
 1. The name is a code: family letter, generation number, 300 means more HBM, NVL or Helios means the rack is the computer.
 2. Buy memory first. HBM capacity decides how many GPUs a job needs; compute headlines decide how fast it finishes.
