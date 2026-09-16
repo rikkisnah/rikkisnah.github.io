@@ -11,11 +11,11 @@ images:
 
 ![A robot arm passing packages between two glass-walled offices, a private train on its own track, and a network card sending four glowing lanes of traffic to a row of switches](/posts/rdma-roce-infiniband-for-a-ten-year-old/lead.png)
 
-*2,609 words · 14 min read*
+*2,715 words · 14 min read*
 
 *Disclaimer: This post reflects my personal views and does not represent the views of my employer or my community.*
 
-*Lead image generated with Grok. Figures 1 to 5 are my own drawings from public NVIDIA, InfiniBand Trade Association and Oracle documents. References at the bottom.*
+*Lead image generated with Grok. Figures 1 to 7 are my own drawings from public NVIDIA, InfiniBand Trade Association and Oracle documents. References at the bottom.*
 
 **Related readings from this blog:**
 
@@ -63,9 +63,9 @@ Because dedicated networks such as InfiniBand are costly and most data centers a
 
 There is one catch: RDMA assumes packets never get dropped because the card writes straight into memory and cannot afford to stop and ask. InfiniBand guarantees that by design. Ethernet does not. So a RoCEv2 network must be made lossless on purpose: a priority queue that pauses the sender rather than dropping (Priority Flow Control), and switches that mark packets when they start to queue up (Explicit Congestion Notification). The card slows down before anything is lost [5]. Get those knobs wrong, and the fabric is fine at 10 percent load and falls apart at 90.
 
-**So how does InfiniBand actually guarantee no drops?** InfiniBand works on permission. Ethernet works on hope. On Ethernet, the sender just transmits. If the switch on the other end has no room, it drops the packet. PFC is a late fix: a pause message sent once the buffer is already almost full. On InfiniBand, the receiver tells the sender up front how much room it has, in units called **credits**, tracked separately per virtual lane so one slow traffic class can't starve the others. Each port advertises credits in 64-byte units; the sender counts them down as it sends and stops dead at zero, and as the receiver drains its buffer it hands more credits back [2]. A packet is only ever sent into space that is guaranteed to exist, so a buffer can never overflow, and no switch ever has a reason to drop it for congestion. This happens hop by hop across the whole fabric, so congestion turns into back-pressure that ripples toward the source instead of into dropped packets. Figure 5 puts the two side by side.
+**So how does InfiniBand actually guarantee no drops?** InfiniBand works on permission. Ethernet works on hope. On Ethernet, the sender just transmits. If the switch on the other end has no room, it drops the packet. PFC is a late fix: a pause message sent once the buffer is already almost full. On InfiniBand, the receiver tells the sender up front how much room it has, in units called **credits**, tracked separately per virtual lane so one slow traffic class can't starve the others. Each port advertises credits in 64-byte units; the sender counts them down as it sends and stops dead at zero, and as the receiver drains its buffer it hands more credits back [2]. A packet is only ever sent into space that is guaranteed to exist, so a buffer can never overflow, and no switch ever has a reason to drop it for congestion. This happens hop by hop across the whole fabric, so congestion turns into back-pressure that ripples toward the source instead of into dropped packets. Figure 3 puts the two side by side.
 
-![Figure 5: InfiniBand credit-based flow control versus Ethernet send-and-drop](/posts/rdma-roce-infiniband-for-a-ten-year-old/fig-05-credit-based-flow-control.png)
+![Figure 3: InfiniBand credit-based flow control versus Ethernet send-and-drop](/posts/rdma-roce-infiniband-for-a-ten-year-old/fig-03-credit-based-flow-control.png)
 
 | | InfiniBand | RoCEv2 (Ethernet) |
 |---|---|---|
@@ -99,20 +99,28 @@ Why choose Ethernet when InfiniBand offers lower latency? At the scale of 100,00
 
 This section is especially significant because it introduces the first network design I have encountered that treats intermittent optical link failures as routine variability rather than critical outages.
 
-In traditional network fabrics, each GPU's network card connects via a single high-bandwidth link to a leaf switch in a large three-tier Clos topology comprising thousands of switches operating under a unified routing protocol. This monolithic structure means that a single faulty switch, cable, congestion event, or software issue can impact all GPUs. Meta's research clusters demonstrated the cost of this approach: jobs running on 1,000 GPUs experienced interruptions approximately every eight hours [13].
+In traditional network fabrics, each GPU's network card connects via a single high-bandwidth link to a leaf switch in a large three-tier Clos topology comprising thousands of switches operating under a unified routing protocol. This monolithic structure means that a single faulty switch, cable, congestion event, or software issue can impact all GPUs. Meta's research clusters demonstrated the cost of this approach: jobs running on 1,000 GPUs experienced interruptions approximately every eight hours [13]. Figure 4 shows what that classic three-tier Clos, or fat-tree, looks like: every node's NICs hang off a leaf, every leaf hangs off a spine, every spine hangs off a core, and one fabric ties the whole thing together.
 
-OCI's Acceleron multiplanar design, presented by Pradeep Vincent, Jag Brar and David Becker in October 2025 and written up in March 2026, cuts the fabric into planes. In their words: "Each plane is an independent Clos fabric. Each fabric plane has independent data and control planes; there is no physical or logical 'fate sharing' between them" [9]. The GPU's 800G card does not send one 800G link to one switch. It sends four 200G links to four different switches, each on its own plane [9]. Figure 3 is the picture.
+![Figure 4: a classic three-tier Clos fat-tree, core, spine and leaf, all feeding one shared fabric](/posts/rdma-roce-infiniband-for-a-ten-year-old/fig-04-three-tier-clos-fat-tree.png)
 
-![Figure 3: a single-plane three-tier fabric versus four two-tier planes](/posts/rdma-roce-infiniband-for-a-ten-year-old/fig-03-one-plane-vs-four.png)
+OCI's Acceleron multiplanar design, presented by Pradeep Vincent, Jag Brar and David Becker in October 2025 and written up in March 2026, cuts the fabric into planes. In their words: "Each plane is an independent Clos fabric. Each fabric plane has independent data and control planes; there is no physical or logical 'fate sharing' between them" [9]. The GPU's 800G card does not send one 800G link to one switch. It sends four 200G links to four different switches, each on its own plane [9].
+
+The simplest way to see the change: instead of every NIC on every node plugging into that one shared fabric, each NIC gets its own fabric. Figure 5 is the before and after at the node level.
+
+![Figure 5: before, every NIC on every node shares one fabric; after, each NIC gets its own independent plane](/posts/rdma-roce-infiniband-for-a-ten-year-old/fig-05-single-fabric-vs-multiplane.png)
+
+Zoom into what one plane looks like next to the old single fabric and you get Figure 6: two tiers instead of three, because each plane only has to carry a quarter of the endpoints.
+
+![Figure 6: a single-plane three-tier fabric versus four two-tier planes](/posts/rdma-roce-infiniband-for-a-ten-year-old/fig-06-one-plane-vs-four.png)
 
 The gains of this approach are straightforward:
 
-- **A fault stays in its plane.** If a plane "suffers a hardware fault, software issue, or congestion event, none of these issues impact the other planes" [9]. The card stops using the sick plane, and the job continues at three-quarters bandwidth instead of stopping. Figure 4 shows the same broken switch in both designs.
+- **A fault stays in its plane.** If a plane "suffers a hardware fault, software issue, or congestion event, none of these issues impact the other planes" [9]. The card stops using the sick plane, and the job continues at three-quarters bandwidth instead of stopping. Figure 7 shows the same broken switch in both designs.
 - **Fewer tiers.** Each plane carries only a quarter of the endpoints, so it fits in two tiers instead of three. Fewer hops mean lower, steadier latency. OCI's arithmetic: a 64-port 800G switch broken out four ways serves 256 endpoints at 200G each [9].
 - **Maintenance without a window.** You can upgrade the switch software on plane 1 while planes 2, 3, and 4 carry the job, and even run different software versions on different planes [9].
 - **The NIC drives.** Switches in one plane cannot see the other planes, so the routing brain moves to the edge. The card, with the host software, probes the paths and picks the plane for each packet [9].
 
-![Figure 4: one switch fails in a single-plane fabric and in a multiplanar fabric](/posts/rdma-roce-infiniband-for-a-ten-year-old/fig-04-when-a-switch-dies.png)
+![Figure 7: one switch fails in a single-plane fabric and in a multiplanar fabric](/posts/rdma-roce-infiniband-for-a-ten-year-old/fig-07-when-a-switch-dies.png)
 
 The May 2026 follow-up explains how the NIC drives. OCI uses source routing over IPv6 segment routing: a central controller calculates many paths between every pair of cards and hands the lists to the hosts, and the card fails over to another list on its own, with no switch reconvergence [10]. On top of that sits Multipath Reliable Connection, MRC, which "extends the RDMA Reliable Connection model with multipath behavior" by spraying the packets of a single queue pair across all the paths and letting the card place them in memory out of order [10]. MRC itself was developed by OpenAI together with AMD, Broadcom, Intel, Microsoft, and NVIDIA; OCI is one of the places running it in production, under Stargate in Abilene [10].
 
