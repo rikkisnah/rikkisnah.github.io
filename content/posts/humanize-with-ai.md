@@ -11,7 +11,7 @@ images:
 
 ![A desk with a laptop showing a markdown draft in VS Code, a red pen, and a small robot handing over a page](/posts/humanize-with-ai/lead.png)
 
-*1,560 words · 8 min read*
+*1,575 words · 8 min read*
 
 *Disclaimer: This post reflects my personal views and does not represent the views of my employer or my community.*
 
@@ -69,7 +69,7 @@ Paul Graham's worry is the one I take most seriously: writing is how thinking ha
 
 ## Try the Prompt Yourself
 
-The humanize prompt from step 5 is public. Three tools (Claude Code, Codex, and Grok) each hunted for humanize prompts, tested at least six on the same sample, and fixed the best one. I merged the three winners into one prompt with a voice slot at the top. The pack, with my voice prompt and four example voices, will be on my GitHub. [RIK: add the link]
+The humanize prompt from step 5 is public. Three tools (Claude Code, Codex, and Grok) each hunted for humanize prompts, tested at least six on the same sample, and fixed the best one. I merged the three winners into one prompt with a voice slot at the top. The pack, with my voice prompt and four example voices, is in the [prompt-pack folder](/posts/humanize-with-ai/prompt-pack/README.md) next to this post, and in the [same folder on GitHub](https://github.com/rikkisnah/rikkisnah.github.io/tree/main/static/posts/humanize-with-ai/prompt-pack). Start with [the ready-to-paste version in my voice](/posts/humanize-with-ai/prompt-pack/prompts/humanize-prompt-rik-kisnah.md).
 
 To show what the voice slot does, I ran one short machine-sounding paragraph through the same prompt five times, changing only the voice: mine, then Barack Obama, Ernest Hemingway, William Faulkner, and Dario Amodei.
 
@@ -118,5 +118,5 @@ Five rhythms from one prompt, and all five dropped the same tells: the opener, t
 7. Medium, Artificial Intelligence (AI) content policy: https://help.medium.com/hc/en-us/articles/22576852947223-Artificial-Intelligence-AI-content-policy
 8. Paul Graham, Writes and Write-Nots, October 2024, quoted by Medium: https://medium.com/blog/a-world-divided-into-writes-and-write-nots-is-more-dangerous-than-it-sounds-218cbb18ed89
 
-<!-- draft-claude.md: after one pass of task-2-humanize-prompt/best-prompt-claude.md over draft-raw-claude.md. Body word count (references excluded): 1,560 after Rik asked for the "Try the Prompt Yourself" demo section on 2026-09-19; it was 989 when judged -->
+<!-- draft-claude.md: after one pass of task-2-humanize-prompt/best-prompt-claude.md over draft-raw-claude.md. Body word count (references excluded): 1,575 after Rik asked for the "Try the Prompt Yourself" demo section on 2026-09-19; it was 989 when judged -->
 <!-- Humanize pass changes: removed "not X, it is Y" contrasts in the opening paragraph, the smoke-alarm line, the "surface is not" line, and "I do not write for the score"; turned the "is this cheating?" question into a statement; broke the "one person, one keyboard, one week" triad and the "Every fact. Every paragraph. My name." anaphora; simplified "Nobody serious ... nobody serious" to "None of them ... none of them". No facts added or removed. -->
