@@ -69,7 +69,7 @@ Paul Graham's worry is the one I take most seriously: writing is how thinking ha
 
 ## Try the Prompt Yourself
 
-The humanize prompt from step 5 is public. Three tools (Claude Code, Codex, and Grok) each hunted for humanize prompts, tested at least six on the same sample, and fixed the best one. I merged the three winners into one prompt with a voice slot at the top. The pack, with my voice prompt and four example voices, is in the [prompt-pack folder](/posts/humanize-with-ai/prompt-pack/README.md) next to this post, and in the [same folder on GitHub](https://github.com/rikkisnah/rikkisnah.github.io/tree/main/static/posts/humanize-with-ai/prompt-pack). Start with [the ready-to-paste version in my voice](/posts/humanize-with-ai/prompt-pack/prompts/humanize-prompt-rik-kisnah.md).
+The humanize prompt from step 5 is public. Three tools (Claude Code, Codex, and Grok) each hunted for humanize prompts, tested at least six on the same sample, and fixed the best one. I merged the three winners into one prompt with a voice slot at the top. The pack, with my voice prompt and four example voices, is in the [prompt-pack folder](/posts/humanize-with-ai/prompt-pack/README.md) next to this post, and in the [same folder on GitHub](https://github.com/rikkisnah/rikkisnah.github.io/tree/humanize-with-ai-article/static/posts/humanize-with-ai/prompt-pack). Start with [the ready-to-paste version in my voice](/posts/humanize-with-ai/prompt-pack/prompts/humanize-prompt-rik-kisnah.md).
 
 To show what the voice slot does, I ran one short machine-sounding paragraph through the same prompt five times, changing only the voice: mine, then Barack Obama, Ernest Hemingway, William Faulkner, and Dario Amodei.
 
