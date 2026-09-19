@@ -11,7 +11,7 @@ images:
 
 ![A desk with a laptop showing a markdown draft in VS Code, a red pen, and a small robot handing over a page](/posts/humanize-with-ai/lead.png)
 
-*989 words · 5 min read*
+*1,560 words · 8 min read*
 
 *Disclaimer: This post reflects my personal views and does not represent the views of my employer or my community.*
 
@@ -67,6 +67,38 @@ The published policies land in the same place. ACM lets authors use generative A
 
 Paul Graham's worry is the one I take most seriously: writing is how thinking happens, so people who stop writing stop thinking [8]. My answer is step 1. The days of thinking and the 30 minutes of drafting are still mine, and no tool touches them.
 
+## Try the Prompt Yourself
+
+The humanize prompt from step 5 is public. Three tools (Claude Code, Codex, and Grok) each hunted for humanize prompts, tested at least six on the same sample, and fixed the best one. I merged the three winners into one prompt with a voice slot at the top. The pack, with my voice prompt and four example voices, will be on my GitHub. [RIK: add the link]
+
+To show what the voice slot does, I ran one short machine-sounding paragraph through the same prompt five times, changing only the voice: mine, then Barack Obama, Ernest Hemingway, William Faulkner, and Dario Amodei.
+
+The input:
+
+> In today's fast-paced world, documentation is not just a nice-to-have, it's the cornerstone of engineering excellence. It is important to note that clear, concise, and comprehensive docs foster collaboration, drive innovation, and ensure long-term success. Isn't it time we asked why writing things down matters? In conclusion, great documentation is a testament to a team's commitment.
+
+In my voice:
+
+> Every team I have joined had the same gap: the code was there and the doc was not. Documentation is part of the engineering, and the cheap part. A clear doc lets two engineers work on one system without a meeting, and it lets the next hire start without someone standing behind them. Write it down while you still remember why.
+
+As Obama:
+
+> Let me be clear. Documentation matters. It matters to the engineer who joins next month, and it matters to the one who leaves next year. When we write down what we know, we hand our work to the people who come after us, and that is how a team outlasts any one of us. So write it down. We owe each other that much.
+
+As Hemingway:
+
+> Write the docs. Write them clear and write them short and write them before you forget. The team reads them and the team works and no one asks twice. The engineer who comes after you reads them too. He does not know you. He knows the docs. That is enough.
+
+As Faulkner (his voice asks for long sentences, so the prompt lets it run):
+
+> Because the code was there, had always been there, the way the house had been there before any of them were born and would be there after, but the reason for it was gone, gone with the man who wrote it and never wrote it down, so that the ones who came after (the new ones, the ones who had not watched it built) stood before it as before a locked door, and the doc, the plain small doc that would have been the key, had never been made, and would not be
+
+As Amodei:
+
+> I think the case for documentation is simpler than people make it. To be clear, writing things down is not free, and I could be wrong about how much it pays back on a small team. My guess is that the return comes from a mechanism: a written doc lets a second engineer act without asking the first, which removes the bottleneck of one person's memory.
+
+Five rhythms from one prompt, and all five dropped the same tells: the opener, the "not just" flip, the question, and the closing summary. None of them added a fact. That is the whole trick. The rules take the machine out, and the voice puts a person back in.
+
 ## The Whole Post in Five Lines
 
 1. Think for days, then draft by hand in under 30 minutes.
@@ -86,5 +118,5 @@ Paul Graham's worry is the one I take most seriously: writing is how thinking ha
 7. Medium, Artificial Intelligence (AI) content policy: https://help.medium.com/hc/en-us/articles/22576852947223-Artificial-Intelligence-AI-content-policy
 8. Paul Graham, Writes and Write-Nots, October 2024, quoted by Medium: https://medium.com/blog/a-world-divided-into-writes-and-write-nots-is-more-dangerous-than-it-sounds-218cbb18ed89
 
-<!-- draft-claude.md: after one pass of task-2-humanize-prompt/best-prompt-claude.md over draft-raw-claude.md. Body word count (references excluded): 989 -->
+<!-- draft-claude.md: after one pass of task-2-humanize-prompt/best-prompt-claude.md over draft-raw-claude.md. Body word count (references excluded): 1,560 after Rik asked for the "Try the Prompt Yourself" demo section on 2026-09-19; it was 989 when judged -->
 <!-- Humanize pass changes: removed "not X, it is Y" contrasts in the opening paragraph, the smoke-alarm line, the "surface is not" line, and "I do not write for the score"; turned the "is this cheating?" question into a statement; broke the "one person, one keyboard, one week" triad and the "Every fact. Every paragraph. My name." anaphora; simplified "Nobody serious ... nobody serious" to "None of them ... none of them". No facts added or removed. -->
