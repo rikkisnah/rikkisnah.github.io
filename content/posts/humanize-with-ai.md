@@ -11,7 +11,7 @@ images:
 
 ![A desk with a laptop showing a markdown draft in VS Code, a red pen, and a small robot handing over a page](/posts/humanize-with-ai/lead.png)
 
-*1,934 words · 10 min read*
+*1,929 words · 10 min read*
 
 *Disclaimer: This post reflects my personal views and does not represent the views of my employer or my community.*
 
@@ -41,13 +41,13 @@ As back in the golden writing days - when a typewriter was the tool that enabled
 6. Score the draft with an AI moderator paragraph by paragraph. I use [Originality.ai](https://originality.ai) as it is the best I have seen on the market. It has amazing features to highlight AI slop and plagiarism visually (and more importantly, it doesn't promise you options to fix the AI writing - because you can't really ask AI not to write AI; similarly, you can't ask a human being not to be a human).
 7. Edit the paragraphs in your editor (Word or Grammarly) till you get a personal and unique doc translating your creative idea into a unique document.
 
-Steps 1 to 5 take under an hour, while Steps 6 and 7 are the time sink and can easily take 2-3 hours. But the process is essential to make it a human-written article, instead of the dryness and verbosity that comes from blind AI write-ups.
+Steps 2 to 5 take under an hour, while Steps 6 and 7 are the time sink and can easily take 2-3 hours. But the process is essential to make it a human-written article, instead of the dryness and verbosity that comes from blind AI write-ups.
 
 **Explain it to a ten-year-old.** The robot can build the Lego set fast. I still take every brick off the table and put it back by hand. That is the slow part, and it is the part that makes it my house.
 
 ## Removing the AI Grammar From the Draft
 
-The AI detector is just a detector - it shows you where to look. Tools like Originality.ai use a custom language model [1] (funny, isn't it, an AI auditing another AI language - a swarm of agents: one is writing, the other is checking for errors), which measures the "perplexity" (how predictable words are - because AI uses token predictability based on a huge corpus of data) and "burstiness" (the variance of sentence length - because human writing is not consistent) [2]. If the text is predictable and structurally similar, the system flags it as machine-generated.
+The AI detector is just a detector - it shows you where to look. Tools like Originality.ai use a custom language model trained to tell the two apart [1] (funny, isn't it, an AI auditing another AI language - a swarm of agents: one is writing, the other is checking for errors). Detectors like GPTZero measure the "perplexity" (how predictable words are - because AI uses token predictability based on a huge corpus of data) and "burstiness" (the variance of sentence length - because human writing is not consistent) [2]. If the text is predictable and structurally similar, the system flags it as machine-generated.
 
 The human prompt I use (I wrote it for my writings, but there are better ones, I am sure - do use it, and if you like it, buy me a coffee when you are in Seattle) removes most of the easy patterns and the usual AI patterns - like dashes, usual AI patterns / Claudish / ChatGPTism - such as not X but Y [3]. It tells the model to keep everything concise.
 
@@ -63,11 +63,11 @@ Also, be careful about overreliance on AI detectors. I have seen many cases wher
 
 My answer is an emphatic No. A purist - I know many of them - would say the old way is better to write an article: one person and one keyboard being clacked continuously, like with an old typewriter. I understand that viewpoint (I love literature and am a voracious reader), but using AI writing will be the de facto writing tech and will, in fact, augment human creativity. The process of getting an idea down on paper (or the web) still needs you to audit, edit, and polish it. You will be surprised how well the process works.
 
-Major publishing institutions in our country have embraced Gen AI. [ACM](https://www.acm.org/publications/policies/new-acm-policy-on-authorship) - after some blocklisting of AI - now allows Gen AI to be used as long as it is disclosed, is respectful of the quality of the text, and there is no plagiarism [6]. [Nature Portfolio](https://www.nature.com/articles/d41586-023-00191-1) and [Medium](https://help.medium.com/hc/en-us/articles/22576852947223-Artificial-Intelligence-AI-content-policy) have adopted similar policies to a certain degree [7][8]. The line in the sand is that you are upfront about the disclosure of using AI and don't take credit for work that is not yours - aka plagiarism. I started that practice in all my articles, where I openly disclose the AI tools and reference where I am getting my materials. [Paul Graham](https://paulgraham.com/writes.html) said, "writing is thinking," and "there's a kind of thinking that can only be done by writing" [9]. I am 100% on board with this (and I love the writing culture Amazon - my previous employer - and OCI - my current employer - have: no projects are approved till it is written down and explained to a senior exec [10]).
+Major publishing institutions have embraced Gen AI. [ACM](https://www.acm.org/publications/policies/new-acm-policy-on-authorship) allows Gen AI to be used as long as it is disclosed, is respectful of the quality of the text, and there is no plagiarism [6]. [Nature Portfolio](https://www.nature.com/articles/d41586-023-00191-1) and [Medium](https://help.medium.com/hc/en-us/articles/22576852947223-Artificial-Intelligence-AI-content-policy) have adopted similar policies to a certain degree [7][8]. The line in the sand is that you are upfront about the disclosure of using AI and don't take credit for work that is not yours - aka plagiarism. I started that practice in all my articles, where I openly disclose the AI tools and reference where I am getting my materials. [Paul Graham](https://paulgraham.com/writes.html) said, "writing is thinking," and "there's a kind of thinking that can only be done by writing" [9]. I am 100% on board with this (and I love the writing culture Amazon - my previous employer - and OCI - my current employer - have: no projects are approved till it is written down and explained to a senior exec [10]).
 
 ## Use My Humanizer Prompt to Write Like the Great Thought Leaders of Our Decade
 
-My humanizer prompt from Step 5 is public. I have used it across all of the frontier models for my writings - Claude Code, Codex, and Grok Bot (Grok Bot is still new and still not there yet compared to Claude and Codex). The pack, with my voice prompt and four example voices, is in the [prompt-pack folder](/posts/humanize-with-ai/prompt-pack/README.md) next to this post, and in the [same folder on GitHub](https://github.com/rikkisnah/rikkisnah.github.io/tree/humanize-with-ai-article/static/posts/humanize-with-ai/prompt-pack). Start with [the ready-to-paste version in my voice](/posts/humanize-with-ai/prompt-pack/prompts/humanize-prompt-rik-kisnah.md).
+My humanizer prompt from Step 5 is public. I have used it across all of the frontier models for my writings - Claude Code, Codex, and Grok (Grok is still new and still not there yet compared to Claude and Codex). The pack, with my voice prompt and four example voices, is in the [prompt-pack folder](/posts/humanize-with-ai/prompt-pack/README.md) next to this post, and in the [same folder on GitHub](https://github.com/rikkisnah/rikkisnah.github.io/tree/humanize-with-ai-article/static/posts/humanize-with-ai/prompt-pack). Start with [the ready-to-paste version in my voice](/posts/humanize-with-ai/prompt-pack/prompts/humanize-prompt-rik-kisnah.md).
 
 Below, I will show its use with 4 great thought leaders and amazing writers by running one short, machine-sounding paragraph using the prompt and watching the responses in their voices. The leaders (I'm a big fan of them for their writing and thinking process): [Barack Obama](https://en.wikipedia.org/wiki/Barack_Obama), [Ernest Hemingway](https://en.wikipedia.org/wiki/Ernest_Hemingway), [William Faulkner](https://en.wikipedia.org/wiki/William_Faulkner), and [Dario Amodei](https://en.wikipedia.org/wiki/Dario_Amodei).
 
@@ -118,4 +118,4 @@ TL;DR: one prompt on a text; the prompt removes the AI-ism and adds the voice of
 9. Paul Graham, Writes and Write-Nots, October 2024: https://paulgraham.com/writes.html
 10. Jeff Bezos, 2017 Letter to Shareholders (six-page narrative memos instead of PowerPoint): https://www.aboutamazon.com/news/company-news/2017-letter-to-shareholders
 
-<!-- draft-claude.md: Rik's own edit of 2026-09-19 replaced the judged text. Claude only fixed typos, added references and links. Body word count (references excluded): 1,934 -->
+<!-- draft-claude.md: Rik's own edit of 2026-09-19 replaced the judged text. Claude only fixed typos, added references and links. Body word count (references excluded): 1,929 -->
