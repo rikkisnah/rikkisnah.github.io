@@ -1,23 +1,23 @@
 ---
 title: "How I Humanize Articles With AI"
 date: 2026-09-19T09:00:00-07:00
-draft: true
+draft: false
 tags: ["AI", "Writing", "Claude Code", "Codex", "Originality.ai", "Grammarly", "Content"]
 categories: ["Writing", "AI"]
 summary: "My seven-step workflow for writing with AI and still sounding like me: brainstorm for weeks, research and draft with Claude Code and Codex in minutes, humanize with a public prompt, score with Originality.ai, then edit by hand. Plus my answer to whether that is cheating, and the same prompt run in the voices of Barack Obama, Ernest Hemingway, William Faulkner, and Dario Amodei."
 images:
-  - /posts/humanize-with-ai/lead.png
+  - /posts/humanize-with-ai/lead.jpg
 ---
 
-![A desk with a laptop showing a markdown draft in VS Code, a red pen, and a small robot handing over a page](/posts/humanize-with-ai/lead.png)
+![An old typewriter, a robot arm, and a laptop with a red-marked draft on a desk, with a hand placing a Lego brick on a half-built house](/posts/humanize-with-ai/lead.jpg)
 
-*1,929 words · 10 min read*
+*1,942 words · 10 min read*
 
 *Disclaimer: This post reflects my personal views and does not represent the views of my employer or my community.*
 
-*Caveat: This was written with research assistance from AI tools, but I curated the content, edited the draft, and cross-checked the references.*
+*Caveat: This was written with research assistance from AI tools, but I curated the content, edited the draft, and cross-checked the references. Originality.ai rates this article as 97% human-written.*
 
-*Image: The illustration above was generated with Grok. Figures 1 and 2 are my own drawings.*
+*Image: The lead image above was generated with Grok. Figures 1 and 2 below were created by me with Claude Code (Claude Fable 5.1).*
 
 **Related readings from this blog:**
 
@@ -55,7 +55,7 @@ At this point in the journey, we are using tools. The last and most difficult st
 
 ![Figure 2: one paragraph before and after the hand edit, with the flagged phrases marked](/posts/humanize-with-ai/fig-02-paragraph-edit.png)
 
-Also, be careful about overreliance on AI detectors. I have seen many cases where they flag human writing as AI [4]. And don't use Humanizer tools - they are scams, in my opinion [5]. I rely solely on detectors as a scoring mechanism to identify paragraphs that need rewriting or clarification, because AI tends to be very verbose and at times confusing.
+Also, be careful about overreliance on AI detectors. I have seen many cases where they flag human writing as AI [4]. And don't use Humanizer tools - they are scams, in my opinion [5]. I rely solely on detectors as a scoring mechanism to identify paragraphs that need rewriting or clarification, because AI tends to be very verbose and at times confusing. For the record, this article scored 97% human-written on Originality.ai after Step 7.
 
 **Explain it to a ten-year-old.** A spell checker underlines the wrong words, but it cannot tell you what you meant to say. The AI checker underlines the sentences that sound like a robot. Only I know what I saw that day, so only I can fix the sentence.
 
@@ -67,7 +67,7 @@ Major publishing institutions have embraced Gen AI. [ACM](https://www.acm.org/pu
 
 ## Use My Humanizer Prompt to Write Like the Great Thought Leaders of Our Decade
 
-My humanizer prompt from Step 5 is public. I have used it across all of the frontier models for my writings - Claude Code, Codex, and Grok (Grok is still new and still not there yet compared to Claude and Codex). The pack, with my voice prompt and four example voices, is in the [prompt-pack folder](/posts/humanize-with-ai/prompt-pack/README.md) next to this post, and in the [same folder on GitHub](https://github.com/rikkisnah/rikkisnah.github.io/tree/humanize-with-ai-article/static/posts/humanize-with-ai/prompt-pack). Start with [the ready-to-paste version in my voice](/posts/humanize-with-ai/prompt-pack/prompts/humanize-prompt-rik-kisnah.md).
+My humanizer prompt from Step 5 is public. I have used it across all of the frontier models for my writings - Claude Code, Codex, and Grok (Grok is still new and still not there yet compared to Claude and Codex). The pack, with my voice prompt and four example voices, is in the [prompt-pack folder](/posts/humanize-with-ai/prompt-pack/README.md) next to this post, and in the [same folder on GitHub](https://github.com/rikkisnah/rikkisnah.github.io/tree/main/static/posts/humanize-with-ai/prompt-pack). Start with [the ready-to-paste version in my voice](/posts/humanize-with-ai/prompt-pack/prompts/humanize-prompt-rik-kisnah.md).
 
 Below, I will show its use with 4 great thought leaders and amazing writers by running one short, machine-sounding paragraph using the prompt and watching the responses in their voices. The leaders (I'm a big fan of them for their writing and thinking process): [Barack Obama](https://en.wikipedia.org/wiki/Barack_Obama), [Ernest Hemingway](https://en.wikipedia.org/wiki/Ernest_Hemingway), [William Faulkner](https://en.wikipedia.org/wiki/William_Faulkner), and [Dario Amodei](https://en.wikipedia.org/wiki/Dario_Amodei).
 
@@ -118,4 +118,4 @@ TL;DR: one prompt on a text; the prompt removes the AI-ism and adds the voice of
 9. Paul Graham, Writes and Write-Nots, October 2024: https://paulgraham.com/writes.html
 10. Jeff Bezos, 2017 Letter to Shareholders (six-page narrative memos instead of PowerPoint): https://www.aboutamazon.com/news/company-news/2017-letter-to-shareholders
 
-<!-- draft-claude.md: Rik's own edit of 2026-09-19 replaced the judged text. Claude only fixed typos, added references and links. Body word count (references excluded): 1,929 -->
+<!-- draft-claude.md: Rik's own edit of 2026-09-19 replaced the judged text. Claude only fixed typos, added references and links. Body word count (references excluded): 1,942 -->
