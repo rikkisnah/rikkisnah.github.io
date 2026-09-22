@@ -33,6 +33,10 @@ The bar on fundamentals went up, not down. A tool amplifies what you already kno
 3. Read the "remember this" box out loud. Yes, out loud. It works.
 4. Come back in a week and do it again without the page.
 
+## The plan for the design round
+
+Before the systems or GPU lessons, read [how to approach a system design question](/teach/system-design-in-a-hurry/). It is the plan every design lesson here follows.
+
 ## Books
 
 I keep a short list of the books I actually recommend to senior and staff candidates, with links to buy them. It is on the [book list](/teach/books/) page.

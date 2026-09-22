@@ -7,3 +7,5 @@ draft: false
 ---
 
 Every system design question is the same question in a costume. Where does the data live, who is allowed to change it, what happens when one box dies, and what happens when ten times more people show up than you planned for. Get those four right and the costume does not matter.
+
+New to the round? Start with [how to approach a system design question](/teach/system-design-in-a-hurry/), the 45-minute plan every lesson below follows.
