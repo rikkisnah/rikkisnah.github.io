@@ -69,6 +69,7 @@ Time O(n). Space O(k).
 ## Go deeper
 
 - The problem statement: [Sliding Window Maximum on LeetCode](https://leetcode.com/problems/sliding-window-maximum/)
+- The easy version first: [Sliding Window, Fixed Length](/teach/coding/sliding-window-fixed-length/)
 - The pattern and its cousins: [Monotonic queue explained at cp-algorithms](https://cp-algorithms.com/data_structures/stack_queue_modification.html)
 
 **With AI on the table.** The tool writes the deque correctly. I ask for the minimum instead of the maximum and watch whether you change one comparison or rewrite everything. One comparison. If you understood the invariant, that is obvious.
