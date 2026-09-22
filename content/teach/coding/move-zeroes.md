@@ -62,5 +62,6 @@ Time O(n). Space O(1). One pass.
 
 - The problem statement: [Move Zeroes on LeetCode](https://leetcode.com/problems/move-zeroes/)
 - Two-pointer patterns walked through on video: [NeetCode on YouTube](https://www.youtube.com/@NeetCode)
+- The problem this one grows out of: [Two Sum](/teach/coding/two-sum/)
 
 **With AI on the table.** The assistant will write this in two seconds. So I ask for a version that counts how many swaps it made and whether the swap of an element with itself should count. Small question, but it tells me whether you read the code the tool gave you.
