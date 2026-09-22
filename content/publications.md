@@ -14,7 +14,7 @@ A collection of my written work and articles on technology, society, and civil d
 1. **[Mauritius Doesn't Need to Build Fable. It Needs an AI Pass.](https://www.lemauricien.com/opinions/mauritius-doesnt-need-to-build-fable-it-needs-an-ai-pass/)**
    - Le Mauricien (Opinions / Forum Section)
    - September 10, 2026
-   - [Read Blog Post](/posts/mauritius-does-not-need-to-build-fable/)
+   - [Read Blog Post](/posts/mauritius-does-not-need-to-build-fable/) | [Download Original Article (PDF)](/posts/mauritius-does-not-need-to-build-fable/rik-page-20-le-mauricien-sep-10-2026.pdf)
    - Argues that small and developing countries should rent frontier AI well rather than build it: monthly AI credits for every student and teacher, sovereign open-source models for routine work, and human safeguards in law
    - Uses Singapore as the model and Anthropic's access programs as the example of a lab doing its part
 

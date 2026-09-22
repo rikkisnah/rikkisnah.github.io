@@ -12,7 +12,7 @@ images:
 
 *Image generated with Grok.*
 
-*Published in [Le Mauricien](https://www.lemauricien.com/opinions/mauritius-doesnt-need-to-build-fable-it-needs-an-ai-pass/) (Opinions / Forum), September 10, 2026.*
+*Published in [Le Mauricien](https://www.lemauricien.com/opinions/mauritius-doesnt-need-to-build-fable-it-needs-an-ai-pass/) (Opinions / Forum), September 10, 2026. [Download the print edition (PDF)](/posts/mauritius-does-not-need-to-build-fable/rik-page-20-le-mauricien-sep-10-2026.pdf).*
 
 *1,817 words · 10 min read*
 
