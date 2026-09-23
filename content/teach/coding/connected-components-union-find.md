@@ -54,6 +54,10 @@ def count_components(n, edges):
 
 Time close to O(n + e) with compression. Space O(n).
 
+## In GPU infrastructure
+
+Every RDMA link record I have ever pulled from a switch is an edge. Feed those edges into union-find and the leaders you are left with are the fabric islands, the sets of nodes that can actually reach each other at line rate. When a job asks for 512 GPUs, the scheduler needs to know those 512 sit in one island, not spread across two that share nothing but a management network. Link records keep arriving as cables get reseated and switches reboot, so the structure that merges on the fly beats the one that reruns a full search every time.
+
 ## What I am listening for
 
 - Whether you offer depth-first search first. That works too, and I want you to say which one you would pick and why. Union-find wins when edges arrive over time.

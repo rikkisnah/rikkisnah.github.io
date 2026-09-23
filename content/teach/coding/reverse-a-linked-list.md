@@ -62,6 +62,10 @@ def reverse(head):
 
 Time O(n). Space O(1). One pass.
 
+## In GPU infrastructure
+
+A firmware rollout is a linked list of steps: drain the rack, flash the NICs, flash the GPUs, reboot, run burn-in, undrain. When the burn-in fails on step five, the rollback is that list walked in reverse, and every rollback tool I have written keeps exactly the same three pointers. The step already undone, the step being undone now, and the step still to come, saved before anything is touched. Lose the third one and you have reverted half a rack with no record of what remains.
+
 ## What I am listening for
 
 - Do you say "save next first" before you write it? If you do, you have done this before and you understand why.

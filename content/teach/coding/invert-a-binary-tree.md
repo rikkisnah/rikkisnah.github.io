@@ -51,6 +51,10 @@ def invert(node):
 
 Time O(n), every node visited once. Space O(h) for the call stack, where h is the height. A very deep tree can blow the stack, and I will ask you to do it with a queue.
 
+## In GPU infrastructure
+
+A GB200 rack is wired as two mirror-image halves, and the NVLink and PCIe topology tree for the right half is the left half inverted. When I generate the expected topology for a new rack I build one half and invert it rather than typing both, which is this recursion on a tree eight levels deep. Then the health check compares what `nvidia-smi` reports against the mirrored tree and flags any GPU or NIC that ended up on the wrong side. It is a modest use, but it removes a whole class of hand-typed cabling mistakes.
+
 ## What I am listening for
 
 - Do you try to be clever and swap grandchildren by hand. That is the sign you do not trust recursion.

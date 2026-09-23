@@ -46,6 +46,10 @@ def unique_paths(m, n):
 
 Time O(m × n). Space O(n) with one row.
 
+## In GPU infrastructure
+
+A maintenance rollout across a grid of racks moves in one direction, row by row and column by column, and the number of distinct orders in which the racks can be drained is this table. I use the count to size the test plan: with a four by six block there are too many orders to try, so I pick a handful and know how many I skipped. The same recurrence, above plus left, also counts placements when a job needs a contiguous run of GPUs along a row of hosts and the scheduler wants to know how many valid placements remain before it declares the fragment unusable. Keep one row of the table and it runs inside the scheduler tick without anyone noticing.
+
 ## What I am listening for
 
 - Can you say what the cell means before writing the loop. "Number of ways to reach this cell."

@@ -47,6 +47,10 @@ Split the problem in three: how to pick a server, how to know a server is alive,
 4. **The balancer's own availability.** Several balancer nodes behind one DNS name, or one floating IP that moves on failure. No shared state between nodes, so any of them can die.
 5. **Scale.** Balancer nodes are stateless, so add more. The state that matters, which servers are healthy, is cheap to recompute on every node.
 
+## In GPU infrastructure
+
+Inference serving is this drawing with GPUs behind the host. A request is spread across GPU replicas, and the health check is not a TCP ping but a tiny forward pass, because a GPU with an XID error will happily accept a connection and then return garbage. Slow beats dead here too: a node with one degraded NVLink still answers, at three times the latency, and least connections is what quietly pulls traffic off it. The same shape sits in front of the bastions that run health checks across the fleet, so that one bastion dying does not stop the checks.
+
 ## What I am listening for
 
 - Do you ask what "traffic" means: connections per second, bytes per second, or requests per second. They need different designs.

@@ -10,7 +10,13 @@ I have run close to a thousand technical interviews over the last ten years, fir
 
 This section is for the people on the other side of that table. It is separate from the blog on purpose. The blog is where I write about GPUs, data centres, and whatever else is on my mind. This is a workbook.
 
-It also keeps my own mind fresh. Writing a thing down is the only way I have ever remembered it. If I cannot explain merge intervals to my kids in two minutes with a drawing, I do not really know merge intervals. So every page here is built the same way: the question, a picture, one trick, the steps, and a small box of what to remember. Short enough to read at a bus stop.
+It also keeps my own mind fresh. Writing a thing down is the only way I have ever remembered it. If I cannot explain merge intervals to my kids in two minutes with a drawing, I do not really know merge intervals. So every page here is built the same way: the question, a picture that moves, one trick, the steps, a template you can memorise, and a small box of what to remember. Short enough to read at a bus stop.
+
+## A note on the dates
+
+I started these notes in 2016, on paper, as a way to remember what I kept asking and what kept tripping people up. The oldest pages here are those notes typed up, and the dates on them are honest. The GPU and AI track, and the short "In GPU infrastructure" paragraph you will now find in every coding and systems lesson, came much later, once my day job became a fleet of GPUs rather than a fleet of web servers.
+
+What surprised me when I went back through them is how little I had to change. Two Sum is still Two Sum when the things you are pairing are half-empty GPU hosts. A sliding window is still a sliding window when the stream is NCCL timings instead of stock prices. The hardware got a lot more expensive and the fundamentals did not move at all. That is the point of the GPU paragraphs: not to make the old problems sound modern, but to show you that the shape you learned for the interview is the shape you will use on the floor.
 
 ## What is here
 

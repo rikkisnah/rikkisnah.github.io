@@ -57,6 +57,10 @@ def clone_graph(node):
 
 Time O(V + E). Space O(V) for the map and the stack.
 
+## In GPU infrastructure
+
+An NVLink topology on one host is a graph with cycles in it, every GPU pointing at its neighbours and its neighbours pointing back. When a health check wants to simulate removing one GPU and see what the rest of the mesh looks like, it must not scribble on the live topology map, so it clones it first. Same for a fabric graph that a rollout planner mutates while it works out drain order across racks. The map from original to copy is what stops the clone from chasing a switch loop forever, and I have seen a planner hang on exactly that missing check.
+
 ## What I am listening for
 
 - Whether you put the copy in the map before recursing on neighbours. After is too late for a cycle.

@@ -44,6 +44,10 @@ Separate the three jobs. Accept the event and give it an id. Fan it out into one
 6. **Dedupe.** Store the event id plus user plus channel that was sent. Check before sending. Retries and replayed queues will hand you the same row twice, and this is the only thing that stops the double text.
 7. **Feedback.** Delivered, opened, bounced, unsubscribed. Write it back so the next fan-out is smarter.
 
+## In GPU infrastructure
+
+An XID storm is the snow day. One faulty GPU throws the same XID 79 every few seconds, and a hundred nodes in a rack can start throwing it at once when a power feed drops. If every event became a message, the on-call would get a thousand texts in a minute and switch the phone off. So the event id is node plus XID code plus a five-minute window, dedupe is checked before the fan-out and not after, and the preference table says which team wants a push and which team wants a ticket at 9am. Every alert pipeline I have built has needed the frequency cap more than it needed the third channel.
+
 ## What I am listening for
 
 - Whether the API returns before the send. Synchronous notification APIs are how one carrier outage takes down your checkout.

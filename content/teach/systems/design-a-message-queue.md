@@ -40,6 +40,10 @@ A queue is just a file you only append to. Consumers remember how far they have 
 5. **Back pressure.** Consumers that fall behind do not slow producers. The log just gets longer. Set a retention window and alert when a consumer's lag approaches it.
 6. **Dead letters.** A message that fails processing ten times goes to a separate queue a human looks at. Otherwise one poison message stops the line forever.
 
+## In GPU infrastructure
+
+The burn-in queue is this log. Every node that comes off the truck becomes a message: hostname, rack, firmware level. Burn-in workers pull from it, run the checks, and commit the offset only after the result is written, so a worker that dies mid-run hands the node to the next worker rather than losing it. A node that fails burn-in ten times goes to a dead-letter queue that a human reads every morning, because a bad NIC will happily poison the line forever. Partition by rack and you also get the order you actually want, which is one rack finishing before the next one starts.
+
 ## What I am listening for
 
 - Whether the queue deletes on read. If it does, I ask how two teams both consume the same events.

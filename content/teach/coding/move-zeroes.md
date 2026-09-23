@@ -46,6 +46,10 @@ def move_zeroes(a):
 
 Time O(n). Space O(1). One pass.
 
+## In GPU infrastructure
+
+A drain list is an array of node names, and the ones that have already finished draining are the zeroes. The rollout tool walks the list with a write pointer, keeping every node that still needs work packed at the front in its original order so the maintenance window proceeds in the same sequence the operator planned. The same finger compacts a list of GPUs by dropping the ones an XID error has already taken out, in place, without allocating a second list on a host that is already struggling. The invariant is the thing I check in a code review: everything before `write` is still pending work.
+
 ## What I am listening for
 
 - Do you reach for a new array first. That is fine to say, then I ask you to do it in place.

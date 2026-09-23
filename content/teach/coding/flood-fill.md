@@ -53,6 +53,10 @@ def flood_fill(grid, r, c, new):
 
 Time O(rows × cols). Space O(rows × cols) in the worst case for the to-do list.
 
+## In GPU infrastructure
+
+A leaf switch fails and I want the blast radius. Start at the switch in the topology graph and spread to every neighbour that is still connected only through it, and the painted set is the list of nodes to drain before the jobs on them notice. The same search on a rack diagram finds which nodes a single cooling loop touches. The old-equals-new bug has a cousin here, spreading into nodes that are already marked down, and the fix is the same one-place check before you paint.
+
 ## What I am listening for
 
 - The infinite loop when old equals new. Say it before I show it.

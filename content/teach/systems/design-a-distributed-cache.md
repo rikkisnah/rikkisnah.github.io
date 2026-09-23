@@ -42,6 +42,10 @@ Every cache is two decisions. What to throw out when full: least recently used i
 6. **Hot keys.** One celebrity's profile is read a million times a second. One shard cannot take it. Replicate that key to several nodes or keep a tiny in-process cache on every app server for the very hottest keys.
 7. **Failure.** A cache node dies and its share of traffic lands on the database. Can the database take it? If not, the cache is not a cache, it is a dependency. Say that.
 
+## In GPU infrastructure
+
+The scheduler asks the same questions on every tick: which nodes are in this rack, which NVLink domain is this GPU in, which NICs share a spine. Those answers change only when a node is racked, drained, or recabled, so they live in a cache in front of the inventory store with a TTL of minutes and an explicit delete on every inventory write. The hot key is real here as well: a single popular cluster's topology gets read by every placement decision, so it is replicated to every node and kept in process. A cache miss on every tick would turn the inventory database into the thing that decides scheduler latency, which is the dependency trap in step seven.
+
 ## What I am listening for
 
 - Delete or update on write. Delete. If you say update, I ask you to draw the race.

@@ -48,6 +48,10 @@ def max_profit(prices):
 
 Time O(n). Space O(1). The nested-loop version is O(n²) and I will ask you to do better.
 
+## In GPU infrastructure
+
+A training job logs its all-reduce throughput every few seconds. Walk that stream carrying the lowest throughput seen so far and the biggest rise above it, and you have the largest recovery the job made, which is usually the moment a straggler got drained. I use the same two numbers on GPU temperature and on free memory across a maintenance window. Cheapest so far and best gain so far are all you need, and they cost nothing to carry on a host that is already busy.
+
 ## What I am listening for
 
 - The order of the two updates. Update `best` before `lowest`, or you may buy and sell on the same day.

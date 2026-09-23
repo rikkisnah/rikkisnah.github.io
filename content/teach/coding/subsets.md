@@ -55,6 +55,10 @@ def subsets(a):
 
 Time O(n × 2ⁿ), there are 2ⁿ subsets and copying each costs up to n. You cannot beat the output size.
 
+## In GPU infrastructure
+
+Choosing which GPUs to include in a burn-in test set is subsets over eight GPUs on a host, and all 256 combinations is exactly what I want when hunting an intermittent XID error that only appears with certain pairs. The same backtracking builds the list of NIC subsets for a partial RDMA test when one link is suspect and I want every combination that includes it. I never enumerate subsets of the whole fleet, and I expect you to say why: two to the thousand does not fit anywhere. The pop after the recursive call is the line people forget, and a test plan without it lists the same eight GPUs over and over.
+
 ## What I am listening for
 
 - The `path[:]` copy. Without it every entry in `out` is the same list.

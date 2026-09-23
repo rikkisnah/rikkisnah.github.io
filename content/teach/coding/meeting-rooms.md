@@ -50,6 +50,10 @@ def min_rooms(meetings):
 
 Time O(n log n). Space O(n).
 
+## In GPU infrastructure
+
+Every job on the fleet has a start and an end. Sort them by start, keep a heap of end times, and the largest the heap gets is the most nodes busy at once, which is the number I size bastion hosts and log collectors against. Run it over the planned maintenance windows instead and it tells you the peak number of racks out of service on any day. I have watched a fleet get a bastion tier sized on the average and fall over at the peak, and this walk is the fifteen lines that would have caught it.
+
 ## What I am listening for
 
 - Do you sort by start. Sorting by end is the wrong instinct here.

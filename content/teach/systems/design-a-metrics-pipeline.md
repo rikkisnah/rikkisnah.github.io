@@ -41,6 +41,10 @@ Separate the write path from the read path and make the write path as stupid as 
 6. **Downsample.** Per-minute data for two weeks, per-hour for a year. Nobody needs a minute of resolution from last March.
 7. **Alerts.** A separate evaluator that runs each rule on a schedule against the store. Never in the ingest path.
 
+## In GPU infrastructure
+
+Per-GPU telemetry is this pipeline with the cardinality knob turned to eleven. Eight GPUs per node, a hundred metrics each, plus per-NIC counters, plus NVLink counters per link, and a hundred thousand nodes is a million time series before anyone adds a label. Someone will add the job id as a label and multiply that by every job ever run, so the collector rejects it. The agent on the node reads clocks, temperatures and XID counts once every few seconds during burn-in and once a minute in steady state, and the alert evaluator that spots a straggler compares a GPU's step time with its seven neighbours, never inside the ingest path.
+
 ## What I am listening for
 
 - Whether you say the throughput number before you draw a box.

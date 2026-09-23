@@ -55,6 +55,10 @@ def search(a, target):
 
 Time O(log n). Space O(1). Twenty elements takes five looks. A billion takes thirty.
 
+## In GPU infrastructure
+
+A regression turns up in NCCL all-reduce time and there are forty firmware builds between the last good run and the first bad one. Do not test them in order. Bisect, and six burn-in runs tell you the build that did it. The same walls find the largest batch size that fits in HBM: too big and the job dies with an out-of-memory error, too small and you are wasting the GPU, and the boundary between the two is one binary search over a sorted line of candidate sizes.
+
 ## What I am listening for
 
 - `<=` or `<` in the loop, and can you explain why. There is a right answer for each style, and a wrong mix.

@@ -49,6 +49,10 @@ def is_bst(root):
 
 Time O(n). Space O(h) for the stack.
 
+## In GPU infrastructure
+
+The fleet inventory keeps a sorted index of nodes by rack position, and the NVLink topology table is meant to be ordered by GPU index and switch port. When either gets rebuilt after a maintenance window I run a consistency check that is this exact walk: pass the bounds down and reject any entry that sits outside the range its parent promised. Comparing only neighbours misses the grandchild case, which in practice is a GPU that landed in the right slot on the wrong switch. An in-order walk that comes out sorted is the cheap version and I run it every tick.
+
 ## What I am listening for
 
 - The child-only check. If you write it, I draw the counterexample and wait.

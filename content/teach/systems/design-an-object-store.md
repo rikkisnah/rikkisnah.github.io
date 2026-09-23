@@ -42,6 +42,10 @@ Separate the name from the bytes. The metadata store knows where every object's 
 6. **Consistency.** Read-after-write for new keys. Say what happens on overwrite: last write wins, and versioning if the customer wants history.
 7. **Deletes.** Mark in metadata, reclaim pieces later in bulk. A synchronous delete across ten nodes is slow and fails half way.
 
+## In GPU infrastructure
+
+Checkpoints and datasets are the objects. A checkpoint from a large training run is a few terabytes and gets written every twenty minutes by thousands of GPUs at once, so multipart upload is not a nice-to-have, it is the only way the write finishes before the next one starts. The parts come in over the same NICs the all-reduce uses, so I put a bandwidth cap on the checkpoint path or the training step time doubles while the upload runs. Erasure coding across racks is the right shape, since the failure I have actually watched is a rack losing power and not a single disk. And the scrubber matters more here than anywhere, because a corrupt checkpoint is only discovered when a job tries to resume from it.
+
 ## What I am listening for
 
 - Whether you split metadata from data. If they are one system, every listing call competes with every download.

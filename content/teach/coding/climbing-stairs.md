@@ -53,6 +53,10 @@ def climb(n):
 
 Time O(n). Space O(1). The naive recursive version without a cache is O(2^n) and falls over around `n = 40`. Say that before I ask.
 
+## In GPU infrastructure
+
+The fit here is looser than most, and I will say so. Where I have used it is counting rack layouts when a rack mixes one-unit and two-unit gear and I want to know how many arrangements fill the remaining slots. The answer is the same recurrence, one small unit or one big unit at each step, and the count goes past what anyone will enumerate by hand after a dozen slots. The real lesson I carry into fleet work is the habit of asking how the last step was reached, because that question is how every capacity table I have built gets its recurrence.
+
 ## What I am listening for
 
 - Do you start with the recursion and then notice the repeated work, or do you jump straight to "it's Fibonacci" without being able to say why. I want the why.

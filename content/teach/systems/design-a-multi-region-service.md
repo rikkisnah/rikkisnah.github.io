@@ -44,6 +44,10 @@ Sort your data into three bins before you draw anything. Data that can be writte
 6. **Failback.** The region returns with stale data. It must catch up before it takes writes, or it will overwrite fresh rows with old ones. This is where real outages happen.
 7. **Test it.** Turn a region off on purpose, monthly. If you have never done it, you do not have multi-region, you have three regions and a hope.
 
+## In GPU infrastructure
+
+Training capacity lives in several regions and the three bins are the same. Job metadata and telemetry are mergeable and replicate freely. A node record has one owner, the region the node is racked in, and nothing else may write it. The checkpoint store is the hard one: a terabyte checkpoint written every twenty minutes cannot be replicated synchronously across an ocean, so it is single-owner in the region where the job runs, and a region failover means restarting from the last checkpoint that finished copying. Say how much training time that loses, because that is the number the customer asks.
+
 ## What I am listening for
 
 - Whether you sort the data before you draw. Treating every table the same is the mark of a design that has not met production.

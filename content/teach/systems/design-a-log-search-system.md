@@ -42,6 +42,10 @@ Logs are written a million times more than they are read. So the write path must
 6. **Query.** Time range first, always. It prunes shards before anything else runs. Then fields, then text. Fan the query to the matching shards, merge, return the top N, stream the rest.
 7. **Sampling.** Debug logs at ten percent, errors at a hundred. You will not miss the ninety percent and you will save most of the bill.
 
+## In GPU infrastructure
+
+When a training job slows down across two thousand hosts, the first question is which host logged an NCCL timeout or an XID error in the last ten minutes, and that is this system. An agent on every host tails dmesg, the NCCL debug output and the health-check logs and ships them through a queue to time-sharded indexers. Host, job ID, GPU index and XID code are the indexed fields; everything else is full text on the hot tier for a day. The query is always time range first, then job ID, then the text, because the same fault often appears on twenty hosts within a second and I want all twenty in one screen. Anything older than a month goes to object storage and is scanned only when a vendor asks.
+
 ## What I am listening for
 
 - Whether you say the daily volume. If you did not, your design is for a small company.

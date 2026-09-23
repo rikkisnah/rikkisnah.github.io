@@ -46,6 +46,10 @@ Nobody "assigns" work. Workers pull. A pulled job carries a lease with an expiry
 5. **Idempotency.** Every run carries a key (job id plus scheduled time). Side effects check the key first. This is what makes at-least-once delivery safe.
 6. **Scale.** Shard the job table by job id. Workers pull from their shard. The leader is tiny and never on the hot path.
 
+## In GPU infrastructure
+
+The GPU job scheduler is this design with one extra column: topology. A job asks for sixty-four GPUs and the claim has to land on hosts that share a leaf switch, or the all-reduce spends its time crossing spines. Workers pull, the lease covers a running job, and a host that stops heartbeating has its job re-queued and its GPUs marked suspect until a health check clears them. Idempotency is the checkpoint: a re-run resumes from the last saved step rather than epoch zero. The leader is small, elected through the store, and stays off the hot path so a scheduler failover never stalls a thousand hosts.
+
 ## What I am listening for
 
 - Whether you pull or push. Push means the scheduler tracks worker health, which is a second system.

@@ -39,6 +39,10 @@ Hash the servers onto the same ring as the keys. A key belongs to the first serv
 5. **Membership.** Every client needs the same picture of the ring. Either a small coordination service publishes it, or the servers gossip it. A client with a stale ring sends keys to the wrong place, which is a miss, not a disaster.
 6. **Where it is used.** Cache clusters, key-value stores, the load balancer lesson's sticky sessions, sharding a message queue. Learn it once, use it everywhere.
 
+## In GPU infrastructure
+
+Health-check collectors are assigned to hosts this way. Hash every hostname onto the ring, hash each collector onto it a hundred times, and a host reports to the first collector clockwise. When a collector dies or I add one to take load, only the hosts between it and its neighbour move, so the fleet does not stampede a fresh collector with a full history upload. Modulo by collector count was the first version and every restart reshuffled all ten thousand hosts, which showed up as a gap in every dashboard. Virtual nodes are what stop one collector owning half a region by accident.
+
 ## What I am listening for
 
 - Whether you can say why modulo is bad in one sentence.

@@ -45,6 +45,10 @@ The pipeline is a series of gates, and each gate is a measurable health rule wit
 6. **Config and data.** A schema change or a config flag is a deployment too. Ship them through the same waves, and ship them separately from code, so you can roll one back without the other.
 7. **Say the number.** Ten thousand boxes, ten percent per wave, an hour of bake, is a full day to reach everywhere. That is fine. Fast global deploys are how you get fast global outages.
 
+## In GPU infrastructure
+
+Firmware for GPUs, NICs and BMCs goes out across the fleet in exactly these rings: one host, one rack, one block, one region, then the rest one region at a time. The health gate at each ring is the burn-in and the health checks, comparing XID counts, NVLink errors and all-reduce bandwidth on the new ring against the untouched fleet. A bake of thirty minutes is not enough for firmware; some faults only show after the first long training job, so the ring holds for a day. Rollback keeps the previous firmware image on the host and reflashes on failure, and I test the reflash as often as the flash. A bad NIC firmware reaching every region at once is the outage nobody recovers from quickly.
+
 ## What I am listening for
 
 - Whether rollback is automatic. If a human is in the loop I ask what happens when they are asleep.

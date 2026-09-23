@@ -51,6 +51,10 @@ def has_cycle(head):
 
 Time O(n). Space O(1).
 
+## In GPU infrastructure
+
+Job stages on a GPU cluster form a chain: fetch the checkpoint, run burn-in, publish the result, trigger the next stage. When a retry handler sends a failed stage back to an earlier one, that chain becomes a loop and a node can sit in drain, reboot, health check, drain for days without anyone noticing. Floyd's walk over the stage graph finds the loop before the job is submitted, and the same two pointers find a dependency cycle in a rollout plan where rack A waits on rack B and rack B waits on rack A. I have seen the visited set version too, and it works until the cycle sits inside a workflow with a million steps.
+
 ## What I am listening for
 
 - Do you say "visited set" first. Good. Then do you know the better answer.

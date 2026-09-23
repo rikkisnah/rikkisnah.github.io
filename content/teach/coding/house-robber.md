@@ -45,6 +45,10 @@ def rob(houses):
 
 Time O(n). Space O(1).
 
+## In GPU infrastructure
+
+The place this shape shows up for me is scheduling rack power work. Each rack has some benefit to touching it this window, but pulling two neighbouring racks at once trips the row's power budget, so you may not take adjacent ones. Walk the row with the two numbers and you get the best set of racks to service without a breaker trip. The fit is neat but modest, and the honest version of it is that the constraint is rarely exactly adjacency, so I use it as the first model and then ask what the real rule is.
+
 ## What I am listening for
 
 - Do you start greedy, "take the biggest houses", and then find the counterexample yourself. Greedy fails on `[2, 7, 9, 3, 1]`.

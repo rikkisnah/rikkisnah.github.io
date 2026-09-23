@@ -52,6 +52,10 @@ def merge(a, b):
 
 Time O(n + m). Space O(1), we re-link, we do not copy.
 
+## In GPU infrastructure
+
+Two hosts in the same all-reduce ring each keep their own time-ordered log, and to see what happened around an XID error I need the two streams interleaved by timestamp. Each stream is already sorted, so this is merge with a dummy head and a comparison on the timestamp. Scale it up to a rack and it becomes a k-way merge with a heap of front entries, which is how the fleet log tool stitches hundreds of node logs into one timeline. Stability matters here too, so `<=` keeps the earlier host's line first when two stamps match.
+
 ## What I am listening for
 
 - Whether the dummy head appears. It is the tell that you have written this before.

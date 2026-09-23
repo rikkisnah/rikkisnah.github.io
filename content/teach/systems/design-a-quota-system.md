@@ -43,6 +43,10 @@ Three counters, not one. Limit, what the customer is allowed. Used, what they ha
 6. **Hardware is not fungible.** Sixty-four GPUs must be in one cluster on one network for the customer to want them. Capacity is counted per placement domain, not per region, or you will promise capacity that exists but is useless.
 7. **Reconcile.** A background job compares used against what is actually running. Drift happens. Fix the counters, alert on the size of the drift.
 
+## In GPU infrastructure
+
+GPU-hours per team is this design and the hardware-not-fungible step is the whole problem. A team's limit is in GPU-hours a month, used is what its jobs have burned, reserved is what queued jobs will burn, and the capacity store counts free GPUs per placement domain, not per region, because sixty-four GPUs spread over four spines are useless for an all-reduce. The reservation TTL saves you when a job dies in burn-in or a node fails its health check between placement and start. Reconcile nightly against what is actually running, since drained nodes and stuck jobs make the counters drift by a few percent a week.
+
 ## What I am listening for
 
 - Whether the reservation step exists. Without it, check then act is a race, and you will sell the same GPU twice.

@@ -54,6 +54,10 @@ def max_window(a, k):
 
 Time O(n). Space O(k).
 
+## In GPU infrastructure
+
+Every GPU health dashboard I have built shows peak temperature and peak power over the last five minutes, per GPU, across the whole fleet. That is sliding window maximum with a monotonic deque per sensor, one push and at most one pop per sample, so a collector on a host with eight GPUs and a dozen sensors each never falls behind. The same deque gives me the worst all-reduce latency over the last k iterations, which is how straggler detection notices one slow node before the job does. Recompute the maximum from scratch each tick and the collector eats the CPU the job wanted.
+
 ## What I am listening for
 
 - Do you know the O(n × k) version and why it is not enough. Say it, then improve.

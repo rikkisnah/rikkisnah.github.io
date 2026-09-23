@@ -40,6 +40,10 @@ Pack three things into one number: when, where, and a counter. Time in the high 
 5. **Clock goes backwards.** NTP adjusts the clock and time steps back by 50 milliseconds. The generator would now reuse timestamps. Refuse to issue ids until the clock catches up, and alert. Never issue a smaller timestamp than the last one you issued.
 6. **Sequence overflow.** More than 4,096 ids in a millisecond on one machine. Spin until the next millisecond. It costs a microsecond and it is rare.
 
+## In GPU infrastructure
+
+Job ids and node ids in the fleet are Snowflakes. The machine id is the scheduler's slot in its region, so two regions never need to talk to hand out ids, and a job id sorts by submit time, which is what every dashboard and every log search actually wants. The clock step in step five is not theoretical: NTP on a bastion once jumped backwards after a firmware update, and the generator refusing to issue ids for a second was the right outcome. The block-of-ids trick from the URL shortener lesson is the alternative when the id has to be short enough for a human to type on a rack label.
+
 ## What I am listening for
 
 - Whether you say "clock" before I do. Time is the only shared thing in the design and it is the only thing that lies.

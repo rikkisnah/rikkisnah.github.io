@@ -60,6 +60,10 @@ def merge(intervals):
 
 Time O(n log n) for the sort, the walk is O(n). Space O(n) for the output.
 
+## In GPU infrastructure
+
+Maintenance windows come in from several teams as start and end times, one for firmware, one for a switch swap, one for a cooling fix on the same row of racks. Sort them by start and walk them once and you get the true blocks of time those racks are unavailable, which is what the capacity forecast needs. The same walk merges the outage intervals of a single node across a month so the burn-in report says it was down three times, not eleven. I organise almost every timeline question in fleet work this way before I do anything cleverer.
+
 ## What I am listening for
 
 - Do you sort first, or do you try nested loops. Nested loops is the tell that you have not seen the shape.

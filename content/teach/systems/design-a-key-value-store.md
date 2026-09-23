@@ -43,6 +43,10 @@ Three knobs: N copies of each key, W of them must confirm a write, R of them mus
 6. **Failure.** A replica is down during a write. Hand its copy to the next machine on the ring with a note to pass it on when the owner returns. Hinted handoff. Run a background job that compares copies and repairs the differences.
 7. **On disk.** Append writes to a log, keep a sorted memory table, flush it to sorted files, and merge them in the background. That is an LSM tree and it is why writes are fast.
 
+## In GPU infrastructure
+
+The node state store is this design at a smaller scale. Key is the hostname, value is the node record: rack, firmware, last health-check result, drain state, current job. Every scheduler tick reads it and every health check writes it, so N equals 3, W equals 2 and R equals 2, because a stale read here means placing a job on a node that was drained a minute ago. The three copies sit on three racks, or a rack power event takes all three together. Last-writer-wins is fine for health results and wrong for drain state, which is exactly the conflict question in step five.
+
 ## What I am listening for
 
 - Whether N, W, R come out. It is the vocabulary of the whole subject.

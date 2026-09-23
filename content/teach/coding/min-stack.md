@@ -54,6 +54,10 @@ class MinStack:
 
 Every operation O(1). Space O(n) extra.
 
+## In GPU infrastructure
+
+A thermal watchdog keeps the last few minutes of GPU temperature samples in a stack and needs the hottest reading in that window on every tick, without a scan. That is min stack with the sign flipped, a second stack carrying the worst value so far at every level. The same idea gives me the lowest free HBM seen during a burn-in run in constant time while the samples keep coming. Memory for time is a trade I make happily on a host where the sampling loop must never fall behind.
+
 ## What I am listening for
 
 - Do you propose scanning on every `get_min`. Fine as a first answer. Then I say "constant time" and wait.

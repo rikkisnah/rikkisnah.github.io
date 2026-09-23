@@ -42,6 +42,10 @@ Three things matter more than the rest. Dedupe, so one broken disk does not send
 6. **Independence.** Separate cloud account, separate region, separate DNS, separate credentials. The paging system's own monitoring pages a different paging system, or a phone tree on paper.
 7. **Say the number.** Alerts per day at a large fleet are tens of thousands. Pages should be tens. If the ratio is worse than a thousand to one, fix the alerts before the pager.
 
+## In GPU infrastructure
+
+The GPU fleet rota is this drawing and the ingest step is where it lives or dies. A rack losing a power feed produces one alert per node, one per NIC, and one per GPU, so the key is service plus check plus target and the grouping rule turns eight hundred alerts into one page that says a rack number. XID errors page only for the codes that mean a dead GPU; the rest become a ticket for the morning. And the pager runs on a different region and a different set of credentials from the fleet it watches, because the outage you most need to hear about is the one that took the management plane with it.
+
 ## What I am listening for
 
 - Whether dedupe and grouping come first. A pager without them is a denial-of-service on the on-call engineer.

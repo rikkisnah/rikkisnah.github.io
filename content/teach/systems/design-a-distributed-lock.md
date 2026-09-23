@@ -45,6 +45,10 @@ A lock in a distributed system is a lease: it has an expiry. That handles the ho
 5. **Say the number.** Lock acquisitions per second are low, hundreds not millions. Consensus is slow and that is fine. If you need a million locks a second, you need a different design, probably partitioning the work instead of locking it.
 6. **The honest part.** If the resource cannot check a token, say a third-party API, then the lock reduces the chance of overlap but cannot make it zero. Make the operation idempotent and stop pretending.
 
+## In GPU infrastructure
+
+Draining a rack for maintenance is the job only one bastion may run at a time. Two operators on two bastions both start a drain, the first pauses on a slow SSH session, and the second finishes before the first wakes up and begins evicting jobs from a rack that is already back in service. So the drain tool takes a lease from the lock service with the rack ID as the key, and every state change to the inventory carries the fencing token. The inventory rejects a stale token, and that is the line that has saved us more than the lease ever has. When the resource is a firmware flash that cannot check a token, the flash script is made idempotent and we accept the small window.
+
 ## What I am listening for
 
 - Whether "lease" and "expiry" arrive before I mention a crashed holder.

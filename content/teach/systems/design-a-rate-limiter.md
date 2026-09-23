@@ -36,6 +36,10 @@ You do not need a timer that ticks every second. Store two numbers per client: h
 4. **Where in the path.** At the edge, before the request touches anything expensive. Keyed by API key, user, or IP, in that order of preference.
 5. **When the store dies.** Fail open (let everyone through, protect the user experience) or fail closed (block everyone, protect the backend). There is no right answer. There is a wrong answer, which is not having decided.
 
+## In GPU infrastructure
+
+The fleet API has this jar in front of it because a health-check loop once went wrong and hammered it with a thousand node lookups a second from every bastion at once. The bucket is keyed by caller, one for each bastion and each scheduler, with a small burst so a full-rack drain still goes through in one go. The counter lives in one shared store, since a per-server jar would let a runaway loop take the limit times the number of API servers. And I decided fail open, because a blocked drain during an incident costs more than a busy API.
+
 ## What I am listening for
 
 - Whether you name the two numbers, burst and rate, and what each protects against.

@@ -42,6 +42,10 @@ It is breadth-first search where the queue is too big for memory and the graph i
 6. **Traps.** Calendars that link to next month forever. Session ids in URLs. Cap depth per host and cap URL length, or one site eats your whole crawler.
 7. **Revisit.** Pages change. Track when each one last changed and revisit at a rate that matches. News every hour, a company's about page every month.
 
+## In GPU infrastructure
+
+The topology inventory is a crawl. Start from the switch list, ask each switch for its neighbours over LLDP, ask each node for its NICs and its NVLink layout, and follow every link until nothing new appears. The seen-set is what keeps you from walking the same spine switch a hundred times, and politeness is per rack, one query per switch at a time, because a management plane that gets forty thousand SNMP calls in a minute falls over and takes the dashboards with it. The traps are real too: a mis-cabled loop or a NIC that reports a different MAC each poll will grow the frontier forever unless you cap it. Revisit rate matters, since a rack changes after every maintenance window and almost never in between.
+
 ## What I am listening for
 
 - Whether politeness appears before I ask. A crawler that does not mention robots.txt is a liability.
