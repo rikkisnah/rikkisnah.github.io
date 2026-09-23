@@ -126,6 +126,10 @@ The capitals are the parts that change. For the max sum above, state is a number
 
 The snippet in the steps above is the same template with `start` folded away as `i - k`. Use whichever you can write without thinking. The reason to understand the shape rather than just memorise it is the moment the interviewer says "longest" instead of "exactly k". The loop is the same, but the `if` becomes a `while` and the left edge moves only when the window breaks a rule. If you know why the fixed version works, that change is obvious. If you memorised it, it is a new problem.
 
+## In GPU infrastructure
+
+Every health dashboard I have built is a fixed window. Average NCCL all-reduce time over the last sixty samples per node, and the node whose window sits above the fleet's is your straggler. Count of XID errors in the last fifteen minutes, and the node that crosses a threshold gets drained. Both are one in, one out, with a sum or a count as the state. The moment someone asks for "the longest stretch with no errors", the window is no longer fixed and you are on the next rung.
+
 ## What I am listening for
 
 - Whether you say "n times k" for the brute force and then see that the window overlaps. The overlap is the whole insight.

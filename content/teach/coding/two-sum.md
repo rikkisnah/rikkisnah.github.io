@@ -161,6 +161,10 @@ What changes from problem to problem is written in capitals: the state you keep,
 
 The part you must understand, not memorise, is why the pointer shape is safe. It works only because the list is sorted, so moving `lo` cannot make the sum smaller and moving `hi` cannot make it bigger. If an interviewer changes the problem so that promise is gone, the template is gone with it, and you need to notice.
 
+## In GPU infrastructure
+
+Placing a job that needs exactly sixteen GPUs across two partly used hosts is Two Sum over free-GPU counts. Walk the hosts once with a map from free count to hostname and you find the pair in one pass. Sort the hosts by free GPUs and walk from both ends and you have the pointer version, which is how a simple bin packer pairs a big fragment with a small one so the rack does not end up with unusable slivers.
+
 ## What I am listening for
 
 - Whether you say the brute force first, two loops and n squared, and then improve it. Skipping straight to the map is fine. Not being able to explain what it beats is not.

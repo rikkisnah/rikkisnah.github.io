@@ -65,6 +65,10 @@ Know one tool per box, well. Nobody is impressed by a list of six databases.
 | Distributed lock | Hold a seat for ten minutes. Always with an expiry. | Redis |
 | CDN | Static and slow-changing content, close to the user. | Cloudflare or CloudFront |
 
+## In GPU infrastructure
+
+The plan does not change when the boxes are GPUs. "Design a burn-in pipeline for two thousand nodes a week" is requirements, entities, API, boxes, deep dive, and the deep dive is what breaks first: the node that hangs mid-test, the result store that falls over on a busy night, the bastion that becomes the single point of failure. The [GPU track](/teach/gpu-ai/) lessons are this plan applied to that hardware, so when you read them, notice the order.
+
 ## What I am listening for
 
 - Whether you ask before you draw. The first two minutes tell me most of what I need.

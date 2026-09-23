@@ -124,6 +124,10 @@ When the question is "how many at once", the shape changes: split every interval
 
 The part to understand rather than memorise is why sorting by end is safe for choosing. Among all the intervals that could be first, the one that ends earliest can never block more of the rest than any other choice would. Say that sentence to yourself until it is obvious. Then you can defend the greedy answer instead of just producing it.
 
+## In GPU infrastructure
+
+Maintenance windows, burn-in reservations and job leases are all intervals on a rack. Merge them to see when a rack is actually free. Sort by end to schedule the most burn-in runs into a night. Turn them into start and end events and count up and down to know the most nodes ever busy at once, which is how you size the bastions. Employee Free Time is literally "when is every node in this pod idle so I can update the firmware".
+
 ## What I am listening for
 
 - Whether you sort before you do anything else. If you start comparing every pair, I wait a minute and then ask what sorting would buy you.

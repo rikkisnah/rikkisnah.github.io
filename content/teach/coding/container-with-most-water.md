@@ -107,6 +107,10 @@ What changes is written in capitals. MEASURE is what you compute at the two ends
 
 The part to understand is what makes a move rule legal. The shape only works when the pointer you move can never have been part of a better answer with anything still inside. Sorted order gives you that in Two Sum. The "shorter wall caps the area" argument gives you it here. When a new problem hands you two pointers from the ends, your job is to find that sentence. If you cannot find it, the pattern does not apply and you should say so.
 
+## In GPU infrastructure
+
+The move rule is the lesson. When a measure is the minimum of two sides, only the smaller side is worth touching. A ring all-reduce runs at the speed of its slowest link, so upgrading the fast NIC changes nothing. A pair of GPUs negotiate NVLink at the lower of their two link widths. A rack's usable power is the smaller of the feed and the cooling. Every time you see min of two things, ask which side is the short wall before you spend money on the tall one.
+
 ## What I am listening for
 
 - Whether you say n squared first and then look for a way to throw pairs away without checking them. That is the whole idea of two pointers.

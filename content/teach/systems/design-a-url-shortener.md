@@ -89,6 +89,10 @@ The parts that change from problem to problem:
 
 Pastebin, a profile service, a feature-flag service and a DNS resolver are this same drawing with different words in the boxes. When you recognise the shape, you get the first fifteen minutes for free and can spend the round on the box that is actually hard.
 
+## In GPU infrastructure
+
+The fleet inventory service is this drawing with the words changed. Hostname to node record, read by every health check and scheduler tick, written when a node is racked or drained, a thousand reads per write. One table, a cache in front, and a unique ID for every node and job. The counter-batching trick is exactly how you hand out unique job IDs across regions without the regions talking: each takes a block, and a lost block costs nothing.
+
 ## What I am listening for
 
 - Whether you say "read heavy" in the first five minutes without being asked. Mid-level candidates get there when I nudge. Senior candidates open with it.

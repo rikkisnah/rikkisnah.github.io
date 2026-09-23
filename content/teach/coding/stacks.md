@@ -126,6 +126,10 @@ FINISH(stack)                                   # match: must be empty. monotoni
 
 The question to ask before writing any of it is **what does each item on the stack mean**. In matching, an opener waiting for its closer. In unwinding, work paused while you go one level deeper. In a monotonic stack, an item still waiting for its answer, and the stack stays sorted because anything that would have broken the order has already been answered and removed. If you can say what a stack item means, the pops write themselves. If you cannot, you are guessing.
 
+## In GPU infrastructure
+
+A safe rollout is a stack. Each step pushes its undo, and a failure pops until the node is clean again. Parsing the nested output of a topology dump or an nvidia-smi query is the unwind shape, and the bracket check is how you know a config template is well formed before it reaches a thousand hosts. The monotonic stack answers "for each minute, how long until throughput was next higher", which is the shape of a straggler report over time.
+
 ## What I am listening for
 
 - Whether you check the stack is non-empty before you look at the top. Every stack bug I have ever seen in an interview is this one.
