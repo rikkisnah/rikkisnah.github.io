@@ -64,6 +64,7 @@ Time O(n log n). Space O(n).
 
 ## Go deeper
 
+- The family this belongs to: [Intervals](/teach/coding/intervals/), the pattern page with the template.
 - The data structure: [Binary heap on Wikipedia](https://en.wikipedia.org/wiki/Binary_heap)
 - See a heap change shape: [VisuAlgo heap visualiser](https://visualgo.net/en/heap)
 

@@ -72,4 +72,8 @@ Time O(n log n) for the sort, the walk is O(n). Space O(n) for the output.
 - **Touching counts as overlap** unless the question says otherwise. Ask.
 {{< /remember >}}
 
+## Go deeper
+
+- The family this belongs to: [Intervals](/teach/coding/intervals/), the pattern page with the template and the sort-by-end cousin.
+
 **With AI on the table.** Generated code gets this right. So I change the input: intervals arrive one at a time over the network and never stop. Now there is no list to sort. What do you keep in memory? That question has no template answer, and that is the point.
