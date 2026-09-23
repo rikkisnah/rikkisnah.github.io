@@ -174,7 +174,7 @@ Two Sum is the first rung on a ladder. Once the two ideas are in your head, thes
 
 - [Two Sum II, sorted input](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/). The two-pointer version, on its own.
 - [3Sum](https://leetcode.com/problems/3sum/). Sort, fix one number, run Two Sum II on the rest. The hard part is skipping duplicates.
-- [Container With Most Water](https://leetcode.com/problems/container-with-most-water/). Two pointers from the ends, always move the shorter wall.
+- [Container With Most Water](/teach/coding/container-with-most-water/). Two pointers from the ends, always move the shorter wall. Its own lesson, because the reason to move is the whole point.
 - [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/). Two pointers from the ends, compare and walk in.
 - [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) and [Move Zeroes](/teach/coding/move-zeroes/). Two pointers moving the same direction at different speeds.
 - [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/). Two pointers from the ends, hard. Do it last.
