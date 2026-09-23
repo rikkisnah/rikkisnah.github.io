@@ -34,6 +34,8 @@ The split matters. Under-invest in the first three and the deep dive has nothing
 5. **High level design, ten to fifteen minutes.** Boxes and arrows, one endpoint at a time. Walk each request through the picture out loud: it arrives here, it reads that, it writes there. Note the fields you need beside each database. When you spot a hard spot, say "this will need a cache, I will come back to it" and keep moving. A finished simple design beats a half-finished clever one.
 6. **Deep dives, ten minutes.** Now go back to the hard spots and to the qualities from step one. The hot key. The slow write. The single box whose death takes the site down. Lead, but leave room. If the interviewer asks a question, that is the question they care about. Follow it.
 
+Practise the plan on the [URL shortener](/teach/systems/design-a-url-shortener/) first. Every step is short there, and the deep dive is one decision.
+
 ## The concepts that keep coming up
 
 Every deep dive lands on one of these. Know each well enough to say it in two sentences.
