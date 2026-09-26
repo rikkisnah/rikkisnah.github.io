@@ -115,12 +115,13 @@ One thing about this round cuts against my own [45-minute plan](/teach/system-de
 6. **Tier the traffic.** Two priority queues, paid and free, feeding the same batcher. Fill from paid first, top up from free. Under overload the free queue is the shock absorber: it is shed first, its rate limit tightens first, and its timeout is longer.
 7. **Survive a GPU dying mid-batch.** The mapping table tells you which requests were in the lost batch. Re-enqueue them at the head of the queue on another GPU. The client's idempotency key, on the user-facing request ID, means a retry from their side does not double-charge or double-generate. Partial batches on flush are fine. A partial batch on failure is the case to walk through.
 8. **Handle overload honestly.** GPUs take minutes to start, so autoscaling does not save you in the next thirty seconds. What does is backpressure at the front door: watch queue depth, and when it crosses a line tighten rate limits dynamically, shed free tier, return 429 with a retry-after. The answer I want is throttling tied to observed queue depth, not a static token bucket. A token bucket is a policy. Queue depth is the truth.
-9. **Bring GPUs up faster anyway.** Bake the weights into the image or keep them on local NVMe, pull from a regional mirror rather than across the country, keep a warm pool of a few idle nodes paid for as insurance, and pre-load the model before the node joins the pool so the first request does not eat the cold start.
+9. **Cold start, and bring GPUs up faster anyway.** A request arrives for a model version with no live replica. The scheduler takes hardware from a warm pool (GPUs up, memory empty), streams that version's weights from a fast weights store on NVMe or object storage, marks the replica ready, and only then does the router send traffic. That is minutes, so say so, and say what you do meanwhile: queue with a longer timeout, or answer with a retry-after. Never pre-load the weights of inactive models as insurance; the warm pool is hardware, not weights. To make the load itself faster: local NVMe, a regional mirror rather than a cross-country pull, and peer-to-peer distribution when many replicas need the same version.
 10. **Decide about a cache.** A response cache sounds free and usually is not. Estimate the hit rate: identical prompts are rare in chat and common in classification. If it is under a few percent, say so and leave it out. A defended omission beats a reflex inclusion. A prefix cache of computed KV blocks is a different thing and usually worth it for shared system prompts.
-11. **Place the guardrails.** Safety classifiers pre-model on the prompt, post-model on the output, or both. Both costs latency twice. Say where in the budget it lives and whether it runs on the GPU pool or on cheaper hardware beside it.
-12. **The eight-GPU follow-up.** Small batches reserve one GPU each. A large batch reserves all eight atomically or not at all. When a large batch is waiting, stop admitting small ones and let the running ones drain, then launch. Bound the wait with aging or fixed turns so neither queue starves. Then say the cost out loud: during the drain, GPUs sit idle, so this policy trades utilisation for fairness and is not throughput-optimal.
+11. **Isolate tenants.** One customer sending a 10,000-document job must not stall everyone else's chat. Per-tenant queues with quotas, a cap on tokens per request, and fair fill into the batch (paid first, then round-robin across tenants) are the answer; say "noisy neighbour" and the interviewer knows you have run a multi-tenant system.
+12. **Place the guardrails.** Safety classifiers pre-model on the prompt, post-model on the output, or both. Both costs latency twice. Say where in the budget it lives and whether it runs on the GPU pool or on cheaper hardware beside it.
+13. **The eight-GPU follow-up.** Small batches reserve one GPU each. A large batch reserves all eight atomically or not at all. When a large batch is waiting, stop admitting small ones and let the running ones drain, then launch. Bound the wait with aging or fixed turns so neither queue starves. Then say the cost out loud: during the drain, GPUs sit idle, so this policy trades utilisation for fairness and is not throughput-optimal.
 
-Here is step twelve running. Teal is the one-GPU model, purple is the eight-GPU model, dashed is idle:
+Here is step thirteen running. Teal is the one-GPU model, purple is the eight-GPU model, dashed is idle:
 
 <div class="eg" aria-label="Animation: eight GPUs run small one-GPU batches, a large eight-GPU batch arrives, admissions stop, the GPUs drain, the large batch runs on all eight, then small batches resume">
   <div class="eg-row"><span class="eg-g0" data-g="GPU 0"></span><span class="eg-g1" data-g="GPU 1"></span><span class="eg-g2" data-g="GPU 2"></span><span class="eg-g3" data-g="GPU 3"></span><span class="eg-g4" data-g="GPU 4"></span><span class="eg-g5" data-g="GPU 5"></span><span class="eg-g6" data-g="GPU 6"></span><span class="eg-g7" data-g="GPU 7"></span></div>
@@ -174,9 +175,17 @@ Here is step twelve running. Teal is the one-GPU model, purple is the eight-GPU 
 
 ## The board
 
-This is the picture I want on the screen by minute forty. Front door on the left, the batcher and dispatcher in the middle, GPU replicas along the bottom, and the two things candidates forget on the right: the KV cache pool the dispatcher reads before routing, and the warm pool that replaces a dead GPU. Solid arrows are the request, dashed ones are control and failure.
+This is the picture I want on the screen by minute forty. Front door on the left, the router that turns model and version into a replica pool, per-tenant queues feeding a per-replica batcher, the replicas along the third row, and the two things candidates forget on the bottom row: a warm pool of hardware with no weights loaded, and the weights store the scheduler streams from on a cold start. Solid arrows are the request, dashed ones are control, cold start and failure.
 
-{{< excalidraw id="hp16sDkDMtn37eFHmvue" png="/teach/systems/inference-api-board.png" title="Inference API with batched GPU serving" src="/teach/systems/inference-api-board.excalidraw" >}}
+{{< excalidraw id="ZFowRfbEdBwmqn3Nhpa6" png="/teach/systems/inference-api-answer-board.png" title="Inference API with batched GPU serving, the answer" src="/teach/systems/inference-api-answer-board.excalidraw" >}}
+
+Three words on that board trip people up, so define them out loud in the first ten minutes:
+
+- **Model** is a blueprint: a name, a version, and a set of weights sitting on storage. Weights for a frontier model are on the order of a terabyte of numbers.
+- **Replica** is hardware: a fixed group of GPUs with one model version's weights loaded into their memory, a queue in front of it, and a state (warming, ready, draining). A replica does not care which model it runs until weights are loaded. Every model version has a minimum GPU count, the way software has minimum requirements on the box.
+- **Batch** is not an entity. It is what the replica's queue does: a group of requests processed together so the GPUs stay busy. Say it as a property of the replica and the interviewer relaxes.
+
+Because weights live in GPU memory, serving is memory-bound, and that decides the cold-start design: keep hardware warm, never the weights of a model nobody is using. A GPU pinned with idle weights cannot serve anyone else.
 
 ## The template
 
@@ -235,6 +244,7 @@ This question turns up in a few formats, and knowing which one you are in saves 
 - **A design-doc review.** You are given an existing inference-server design with planted weaknesses and asked to critique it. Do not annotate every box. Go straight to the batching strategy and the KV cache trade-offs, because that is what the interviewer is grading, and leave time for the follow-ups.
 - **A Google Doc, not a whiteboard.** Often a three-box diagram, client to API to GPU pool, and you type your reasoning rather than draw. Practise writing the capacity sum in plain text.
 - **A phone screen.** A few minutes to read the doc, then entirely verbal. Load balancing and batching first, then the eight-GPU follow-up.
+- **Say "technical challenges", not "non-functional requirements".** Full GPU utilisation, bounded tail latency, cold start, isolation, availability over consistency, and metrics are challenges the design must solve; listing them by that name keeps the interviewer and you on the same page, and four or five of them is the right number.
 - **A pressure round.** Some interviewers give few hints and only open the next follow-up once you have landed the expected answer. Keep proposing concrete mechanisms. Silence is not a hint.
 
 {{< remember >}}
