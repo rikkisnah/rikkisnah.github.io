@@ -198,6 +198,27 @@ The hugo-paper theme is managed as a Git submodule. To customize:
 - Create custom CSS in `static/custom.css` for styling overrides
 - Never modify files directly in `themes/hugo-paper/`
 
+## Teach design lessons: boards and cheat sheets
+
+Every system-design lesson under `content/teach/systems/` and `content/teach/gpu-ai/` follows one format. Keep it when adding or editing a lesson.
+
+### Lesson shape
+Front matter: `title`, `date` (a plausible past date, not the day it was written), `difficulty`, `tags`, `summary`, `mermaid: true`. Sections in this order: The question · Explain it to a ten-year-old (with one Mermaid diagram) · The trick · The steps (numbered, with the numbers to say out loud) · The board · The template (optional pseudocode loop) · In GPU infrastructure · What I am listening for · optional "What I got wrong in the mock" · `{{< remember >}}` box · Go deeper · a closing **With AI on the table** paragraph. Plain language, short sentences, no em-dashes.
+
+### The board (Excalidraw)
+- Boards are built in Rik's Excalidraw+ workspace and rendered to PNG. Source `.excalidraw` files live in `static/teach/systems/`, PNGs in `assets/teach/systems/` (Hugo needs them as resources for width/height).
+- Embed with the shortcode, PNG first, links after:
+  `{{< excalidraw id="<read-only link id>" png="/teach/systems/<name>.png" src="/teach/systems/<name>.excalidraw" title="..." >}}`
+  It renders a full-width eager-loaded image linking to `https://link.excalidraw.com/readonly/<id>`, an "Edit your own copy" link (`https://excalidraw.com/#url=<site url of the .excalidraw>`) and a source download. Never use an iframe: the read-only viewer opens on a corner at 100% zoom.
+- Board layout: doc column on the left (requirements, technical challenges, entities, API, what breaks first), system diagram on the right on a grid (one layer per row, boxes 240×84, axis-aligned arrows, no crossings), solid numbered arrows for the request path, dashed for control and failure, a colour legend, a red failure note, a "numbers to say out loud" block. The diagram sits inside a frame named "System diagram" so it can be rendered on its own.
+- Generator and upload/render workflow: `scripts/exboard.py` in the `rik-interviews-prep` repo (Board class), Excalidraw+ REST API for scenes, MCP `take_screenshot` with the frame id for the PNG. Read-only links can only be created in the Excalidraw+ app (Share → Embed link → Create new link).
+
+### Cheat sheets
+One-page, two-sided A4 landscape sheet per design lesson, PDF in `static/teach/systems/<name>-cheat-sheet.pdf`, linked under "The board" as "Download the one-page cheat sheet". Front: six boxes with minute budgets (Requirements with "Ask" lines · Core entities · API · Data flow · High-level design · Deep dives). Back: the board PNG. Template and generator live in `rik-interviews-prep/anthropic/prep/2026-09-26-inference-api-cheat-sheet.html`.
+
+### Diagrams must be readable
+`assets/custom.css` makes `.mermaid` and `.excalidraw-embed` break out of the prose column to about 1180 px. The stylesheet is fingerprinted in `layouts/partials/head.html` so CSS changes reach readers; keep it that way.
+
 ## Deployment & Workflow
 
 This site is deployed to GitHub Pages using GitHub Actions (`.github/workflows/hugo.yaml`).

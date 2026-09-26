@@ -179,6 +179,8 @@ This is the picture I want on the screen by minute forty. Front door on the left
 
 {{< excalidraw id="ZFowRfbEdBwmqn3Nhpa6" png="/teach/systems/inference-api-answer-board.png" title="Inference API with batched GPU serving, the answer" src="/teach/systems/inference-api-answer-board.excalidraw" >}}
 
+[Download the one-page cheat sheet](/teach/systems/inference-api-cheat-sheet.pdf) (A4, two sides: front is what to ask and what to design in the 55-minute order, back is this board).
+
 Three words on that board trip people up, so define them out loud in the first ten minutes:
 
 - **Model** is a blueprint: a name, a version, and a set of weights sitting on storage. Weights for a frontier model are on the order of a terabyte of numbers.
