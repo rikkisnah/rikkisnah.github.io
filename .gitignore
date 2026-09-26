@@ -18,3 +18,7 @@ tmp/
 
 # Repo tooling scratch files
 instructions.md
+
+# stray apt files, not site content
+signal-desktop-keyring.gpg
+signal-desktop.sources

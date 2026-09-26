@@ -172,6 +172,12 @@ Here is step twelve running. Teal is the one-GPU model, purple is the eight-GPU 
 @media (prefers-reduced-motion: reduce) { .eg-row > span, .eg-steps > span { animation: none; } .eg-row > span { border-style: solid; border-color: #7c3aed; background: rgba(221, 214, 254, 0.7); color: inherit; } .eg-steps .eg-l3 { opacity: 1; font-weight: 700; color: #ea580c; } }
 </style>
 
+## The board
+
+This is the picture I want on the screen by minute forty. Front door on the left, the batcher and dispatcher in the middle, GPU replicas along the bottom, and the two things candidates forget on the right: the KV cache pool the dispatcher reads before routing, and the warm pool that replaces a dead GPU. Solid arrows are the request, dashed ones are control and failure.
+
+{{< excalidraw id="hp16sDkDMtn37eFHmvue" title="Inference API with batched GPU serving" src="/teach/systems/inference-api-board.excalidraw" >}}
+
 ## The template
 
 The narrow costume is a shape you will meet again: **a dispatch layer in front of a fixed-cost batch backend**. Database bulk writers, log shippers, and payment settlement files all have the same loop.

@@ -1,0 +1,6 @@
+{{- /* Embed a read-only Excalidraw+ board, full width. Usage: {{< excalidraw id="LINKID" title="..." height="640" >}} */ -}}
+{{- $id := .Get "id" -}}{{- $h := .Get "height" | default "640" -}}{{- $t := .Get "title" | default "System diagram" -}}
+<figure class="excalidraw-embed">
+  <iframe src="https://link.excalidraw.com/readonly/{{ $id }}" title="{{ $t }}" loading="lazy" allowfullscreen style="height:{{ $h }}px"></iframe>
+  <figcaption>{{ $t }} · <a href="https://link.excalidraw.com/readonly/{{ $id }}" target="_blank" rel="noopener">open full screen</a>{{ with .Get "src" }} · <a href="{{ . }}">download the .excalidraw file</a>{{ end }}</figcaption>
+</figure>
