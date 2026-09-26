@@ -244,3 +244,4 @@ article .highlight pre code span,
 .excalidraw-embed { margin: 1.5rem 0 2rem; }
 .excalidraw-embed iframe { width: 100%; border: 1px solid #d4d4d8; border-radius: 10px; background: #fff; }
 .excalidraw-embed figcaption { font-size: 0.85rem; opacity: 0.7; text-align: center; margin-top: 0.4rem; }
+.excalidraw-embed img { display: block; width: 100%; height: auto; border: 1px solid #d4d4d8; border-radius: 10px; background: #fff; }
