@@ -54,7 +54,7 @@ Two ideas carry the design. First, a **consistent hash from user id to gateway**
 
 ## The board
 
-{{< excalidraw id="IUUDFoX6KzAS1HryeN3n" title="One-to-one chat" src="/teach/systems/one-to-one-chat-board.excalidraw" >}}
+{{< excalidraw id="IUUDFoX6KzAS1HryeN3n" png="/teach/systems/one-to-one-chat-board.png" title="One-to-one chat" src="/teach/systems/one-to-one-chat-board.excalidraw" >}}
 
 ## In GPU infrastructure
 

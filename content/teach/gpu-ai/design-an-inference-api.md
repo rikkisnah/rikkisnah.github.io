@@ -176,7 +176,7 @@ Here is step twelve running. Teal is the one-GPU model, purple is the eight-GPU 
 
 This is the picture I want on the screen by minute forty. Front door on the left, the batcher and dispatcher in the middle, GPU replicas along the bottom, and the two things candidates forget on the right: the KV cache pool the dispatcher reads before routing, and the warm pool that replaces a dead GPU. Solid arrows are the request, dashed ones are control and failure.
 
-{{< excalidraw id="hp16sDkDMtn37eFHmvue" title="Inference API with batched GPU serving" src="/teach/systems/inference-api-board.excalidraw" >}}
+{{< excalidraw id="hp16sDkDMtn37eFHmvue" png="/teach/systems/inference-api-board.png" title="Inference API with batched GPU serving" src="/teach/systems/inference-api-board.excalidraw" >}}
 
 ## The template
 

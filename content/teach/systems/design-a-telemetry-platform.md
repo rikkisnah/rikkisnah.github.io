@@ -48,7 +48,7 @@ Two rules. First, **canonicalise at ingest, keep the raw**: every event gets a c
 
 ## The board
 
-{{< excalidraw id="dzCLKgkB80OAaKuCfnoQ" title="Telemetry platform with metric-name reconciliation" src="/teach/systems/telemetry-platform-board.excalidraw" >}}
+{{< excalidraw id="dzCLKgkB80OAaKuCfnoQ" png="/teach/systems/telemetry-platform-board.png" title="Telemetry platform with metric-name reconciliation" src="/teach/systems/telemetry-platform-board.excalidraw" >}}
 
 ## In GPU infrastructure
 

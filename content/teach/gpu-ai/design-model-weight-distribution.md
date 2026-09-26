@@ -47,7 +47,7 @@ Say the bound before you draw anything. Every host must receive 500 GB through a
 
 ## The board
 
-{{< excalidraw id="1qubBAGsc5W9LzAR7uE1" title="Model weight distribution to 1,000 hosts" src="/teach/systems/model-weight-distribution-board.excalidraw" >}}
+{{< excalidraw id="1qubBAGsc5W9LzAR7uE1" png="/teach/systems/model-weight-distribution-board.png" title="Model weight distribution to 1,000 hosts" src="/teach/systems/model-weight-distribution-board.excalidraw" >}}
 
 ## In GPU infrastructure
 

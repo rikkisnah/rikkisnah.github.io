@@ -1,6 +1,12 @@
-{{- /* Embed a read-only Excalidraw+ board, full width. Usage: {{< excalidraw id="LINKID" title="..." height="640" >}} */ -}}
-{{- $id := .Get "id" -}}{{- $h := .Get "height" | default "640" -}}{{- $t := .Get "title" | default "System diagram" -}}
+{{- /* Board: big PNG first, links to the interactive read-only board, an editable copy, and the source file.
+       Usage: {{< excalidraw id="LINKID" png="/teach/systems/x.png" src="/teach/systems/x.excalidraw" title="..." >}} */ -}}
+{{- $id := .Get "id" -}}{{- $t := .Get "title" | default "System diagram" -}}{{- $png := .Get "png" -}}{{- $src := .Get "src" -}}
+{{- $ro := printf "https://link.excalidraw.com/readonly/%s" $id -}}
 <figure class="excalidraw-embed">
-  <iframe src="https://link.excalidraw.com/readonly/{{ $id }}" title="{{ $t }}" loading="lazy" allowfullscreen style="height:{{ $h }}px"></iframe>
-  <figcaption>{{ $t }} · <a href="https://link.excalidraw.com/readonly/{{ $id }}" target="_blank" rel="noopener">open full screen</a>{{ with .Get "src" }} · <a href="{{ . }}">download the .excalidraw file</a>{{ end }}</figcaption>
+  {{- if $png -}}
+  <a href="{{ $ro }}" target="_blank" rel="noopener" title="Open the interactive board"><img src="{{ $png }}" alt="{{ $t }}" loading="lazy"></a>
+  {{- else -}}
+  <iframe src="{{ $ro }}" title="{{ $t }}" loading="lazy" allowfullscreen style="height:640px"></iframe>
+  {{- end -}}
+  <figcaption>{{ $t }}. <a href="{{ $ro }}" target="_blank" rel="noopener">Open interactive board</a>{{ with $src }} · <a href="https://excalidraw.com/#url={{ site.BaseURL | strings.TrimSuffix "/" }}{{ . }}" target="_blank" rel="noopener">Edit your own copy in Excalidraw</a> · <a href="{{ . }}">download .excalidraw</a>{{ end }}</figcaption>
 </figure>
