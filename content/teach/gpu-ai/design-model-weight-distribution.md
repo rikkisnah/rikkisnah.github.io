@@ -47,7 +47,18 @@ Say the bound before you draw anything. Every host must receive 500 GB through a
 
 ## The board
 
-{{< excalidraw id="1qubBAGsc5W9LzAR7uE1" png="/teach/systems/model-weight-distribution-board.png" title="Model weight distribution to 1,000 hosts" src="/teach/systems/model-weight-distribution-board.excalidraw" >}}
+The question is usually asked in a semi-guided way: one worker end to end, then the records, then a failure, then the regional twist, then rollback. The board below is what should be on the screen once the twist has landed: publish once, one copy per region, fan out inside each region on links the origin does not share, verify every byte, drain in cohorts, load and warm, and route only to workers that report the exact version under the current generation.
+
+{{< excalidraw id="3aIVH2GfBp7znDAs6Sya" png="/teach/systems/model-rollout-answer-board.png" title="Model rollout to a serving fleet, the answer" src="/teach/systems/model-rollout-answer-board.excalidraw" >}}
+
+[Download the one-page cheat sheet](/teach/systems/model-rollout-cheat-sheet.pdf) (A4, two sides: front is what to ask and what to design in order, back is this board).
+
+The four follow-ups that turn this from a bandwidth puzzle into a systems question:
+
+1. **Records.** Artifact (version, size, chunk hashes, checksum), rollout (desired version, generation, status, cohort size), worker (attempt or generation, actual version, state, heartbeat, bytes done, error). Readiness names the exact version, never just a healthy machine.
+2. **A worker restarts halfway, then an old success message arrives.** Resume by verified chunk; incomplete bytes can never become ready; a report whose generation is older than the worker's current assignment is discarded, and duplicates change nothing. After a controller restart, reconcile from what workers report, not from stored readiness.
+3. **1,000 workers, three regions, 95 percent of capacity in 15 minutes.** Do the sum before touching the design: 100 GB is 800 Gbit, 80 seconds per copy at 10 Gbit/s, so 1,000 copies through the origin is about 22 hours. Stage three copies (240 seconds), fan out regionally, add loading and warm-up, and say the target is feasible only if regional egress and load time meet numbers you have not been given.
+4. **Some workers fail to load, others report ready then crash.** Pull them from routing, decide isolated versus systematic, pause on canary stop signals. Rollback routes to healthy V1 capacity first, then reloads V1 in cohorts; V1 on disk still needs loading and warm-up, so it is not instant. Record the rollback generation so a late V2 "ready" cannot reverse it. The dashboard must separate downloaded, ready, healthy and serving.
 
 ## In GPU infrastructure
 
