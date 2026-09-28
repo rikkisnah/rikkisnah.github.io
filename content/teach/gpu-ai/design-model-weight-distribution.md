@@ -47,6 +47,14 @@ Say the bound before you draw anything. Every host must receive 500 GB through a
 
 ## The board
 
+Two shapes of the same question. The classic one is the card as written: state the bound, then naive, tree, swarm, with a tracker beside the data path, verification, a readiness gate and observability.
+
+{{< excalidraw id="1qubBAGsc5W9LzAR7uE1" png="/teach/systems/model-weight-distribution-board.png" title="Model weight distribution to 1,000 hosts, the swarm" src="/teach/systems/model-weight-distribution-board.excalidraw" >}}
+
+[Download the one-page cheat sheet for this shape](/teach/systems/model-distribution-cheat-sheet.pdf) (A4, two sides: front is the bound, the three designs and the completion-time sum; back is this board).
+
+The second shape is the rollout variant, which adds records, generations, an interrupted download, a regional twist and rollback.
+
 The question is usually asked in a semi-guided way: one worker end to end, then the records, then a failure, then the regional twist, then rollback. The board below is what should be on the screen once the twist has landed: publish once, one copy per region, fan out inside each region on links the origin does not share, verify every byte, drain in cohorts, load and warm, and route only to workers that report the exact version under the current generation.
 
 {{< excalidraw id="3aIVH2GfBp7znDAs6Sya" png="/teach/systems/model-rollout-answer-board.png" title="Model rollout to a serving fleet, the answer" src="/teach/systems/model-rollout-answer-board.excalidraw" >}}
