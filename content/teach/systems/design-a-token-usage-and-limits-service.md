@@ -79,6 +79,8 @@ This is what the board should look like at minute forty, and it is the single mo
 
 {{< excalidraw id="QbajEzNXfQO72ST5g3Jq" png="/teach/systems/token-usage-corrected-design.png" title="Token usage and limits service, the corrected board" src="/teach/systems/token-usage-corrected-design.excalidraw" >}}
 
+[Download the one-page cheat sheet](/teach/systems/token-usage-cheat-sheet.pdf) (A4, two sides: front is what to ask and what to design in order, back is this board).
+
 Scroll and zoom inside the frame, or open it full screen. The right half is the system diagram: clients at the top, the gateway, the usage service with its counters and the source-of-truth database beside it, the GPU pool below, then the asynchronous meter path along the bottom (reporter, topic, consumer, ledger, reconcile). Solid arrows are the synchronous request, numbered one to five; dashed arrows are the asynchronous record, six to ten. Colour marks the layer. The left half is the doc: requirements, entities, API, and "what breaks first", each short enough to type in the first fifteen minutes. Put it next to the first draft linked further down and the difference is the lesson.
 
 Here is the check running against both levels for an employee, then the record arriving late:
