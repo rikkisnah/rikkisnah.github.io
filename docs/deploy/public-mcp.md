@@ -148,10 +148,16 @@ Cloudflare proxies the hostname, so the origin must serve TLS on 443 or Cloudfla
 
 ## Content refresh
 
-The VM serves whatever is checked out under `/opt/rikkisnah.github.io`. After publishing a post, pull on the VM and restart the service:
+The VM serves whatever is checked out under `/opt/rikkisnah.github.io`. A cron job in the `ubuntu` crontab fetches `origin/main` every 15 minutes and, when it changed, resets the checkout and restarts the service. It relies on `/etc/sudoers.d/rik-blog-mcp` allowing a passwordless `systemctl restart rik-blog-mcp`:
+
+```cron
+*/15 * * * * cd /opt/rikkisnah.github.io && git fetch -q origin main && [ $(git rev-parse HEAD) != $(git rev-parse FETCH_HEAD) ] && git reset -q --hard FETCH_HEAD && sudo -n systemctl restart rik-blog-mcp # rik-blog-refresh
+```
+
+To refresh immediately after publishing a post:
 
 ```bash
-ssh ubuntu@129.146.101.64 'cd /opt/rikkisnah.github.io && git pull -q --ff-only && sudo systemctl restart rik-blog-mcp'
+ssh ubuntu@129.146.101.64 'cd /opt/rikkisnah.github.io && git fetch -q origin main && git reset -q --hard FETCH_HEAD && sudo -n systemctl restart rik-blog-mcp'
 ```
 
 ## Verification
