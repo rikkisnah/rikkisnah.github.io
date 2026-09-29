@@ -25,11 +25,25 @@ sudo apt-get install -y nginx certbot python3-certbot-nginx
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-Clone or update the repo under `/opt/rikkisnah.github.io`, then install the service:
+Clone or update the repo under `/opt/rikkisnah.github.io` (owned by `ubuntu`), then install the service:
 
 ```bash
+sudo git clone https://github.com/rikkisnah/rikkisnah.github.io.git /opt/rikkisnah.github.io
+sudo chown -R ubuntu:ubuntu /opt/rikkisnah.github.io
 cd /opt/rikkisnah.github.io/mcp_blog
 uv sync
+```
+
+## Host firewall
+
+The Ubuntu image ships an iptables INPUT chain that only allows port 22. Open 80 and 443 above the final REJECT rule and persist it (the OCI security list already allows both):
+
+```bash
+for p in 80 443; do
+  sudo iptables -I INPUT 5 -p tcp -m state --state NEW -m tcp --dport $p -j ACCEPT
+done
+sudo apt-get install -y iptables-persistent
+sudo netfilter-persistent save
 ```
 
 ## systemd
@@ -44,15 +58,18 @@ Wants=network-online.target
 
 [Service]
 Type=simple
+User=ubuntu
 WorkingDirectory=/opt/rikkisnah.github.io/mcp_blog
-ExecStart=/usr/local/bin/uv run rik-blog-mcp --repo-root /opt/rikkisnah.github.io --transport streamable-http --host 127.0.0.1 --port 8765
+# Run the venv entry point directly. `uv run` needs a writable ~/.cache/uv,
+# which ProtectHome=true blocks.
+ExecStart=/opt/rikkisnah.github.io/mcp_blog/.venv/bin/rik-blog-mcp --repo-root /opt/rikkisnah.github.io --transport streamable-http --host 127.0.0.1 --port 8765
 Restart=always
 RestartSec=5
 NoNewPrivileges=true
 PrivateTmp=true
 ProtectSystem=strict
 ProtectHome=true
-ReadWritePaths=/opt/rikkisnah.github.io/mcp_blog/.venv /opt/rikkisnah.github.io/mcp_blog/uv.lock
+ReadWritePaths=/opt/rikkisnah.github.io/mcp_blog/.venv
 
 [Install]
 WantedBy=multi-user.target
@@ -102,7 +119,11 @@ server {
         limit_req zone=mcp_public burst=20 nodelay;
         proxy_pass http://127.0.0.1:8765/mcp;
         proxy_http_version 1.1;
-        proxy_set_header Host $host;
+        proxy_buffering off;
+        proxy_read_timeout 300s;
+        # The MCP SDK's DNS-rebinding guard only accepts localhost Host values.
+        # Passing the public hostname returns "421 Invalid Host header".
+        proxy_set_header Host 127.0.0.1:8765;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
@@ -119,8 +140,18 @@ Enable TLS and nginx:
 ```bash
 sudo ln -s /etc/nginx/sites-available/mcp.rik-kisnah.ai /etc/nginx/sites-enabled/mcp.rik-kisnah.ai
 sudo nginx -t
-sudo certbot --nginx -d mcp.rik-kisnah.ai
+sudo certbot --nginx -d mcp.rik-kisnah.ai --redirect
 sudo systemctl reload nginx
+```
+
+Cloudflare proxies the hostname, so the origin must serve TLS on 443 or Cloudflare returns 521. Certbot's HTTP-01 challenge works through the proxy. Renewal runs from `certbot.timer`.
+
+## Content refresh
+
+The VM serves whatever is checked out under `/opt/rikkisnah.github.io`. After publishing a post, pull on the VM and restart the service:
+
+```bash
+ssh ubuntu@129.146.101.64 'cd /opt/rikkisnah.github.io && git pull -q --ff-only && sudo systemctl restart rik-blog-mcp'
 ```
 
 ## Verification
