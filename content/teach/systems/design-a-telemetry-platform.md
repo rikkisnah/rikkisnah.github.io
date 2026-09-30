@@ -50,6 +50,18 @@ Two rules. First, **canonicalise at ingest, keep the raw**: every event gets a c
 
 {{< excalidraw id="dzCLKgkB80OAaKuCfnoQ" png="/teach/systems/telemetry-platform-board.png" title="Telemetry platform with metric-name reconciliation" src="/teach/systems/telemetry-platform-board.excalidraw" >}}
 
+### The mock version: 100k clients, a million events a second, and the names follow-up
+
+Run as a timed mock, the question arrives smaller than the platform blurb above and the follow-up arrives sooner. A hundred thousand clients, a million events a second, engineers querying and alerting, ingestion that never blocks, queryable within a minute, raw kept. Three things decide the round.
+
+1. **The CAP sentence, in one breath.** Recording an event is a deposit, not a withdrawal: nothing waits on a previous write, so a queue sits in front of the store and every event is accepted now. If you need a queue, you are choosing availability. Explaining availability as "the client retries" reads as consistency and costs ten minutes.
+2. **Three consumers on one log.** The ingestion service is the batching; it appends to Kafka and acknowledges only after the append, because a crash between receive and append is the batching window. Behind Kafka the raw writer, the rollup and the alert evaluator each read the same log at their own pace. Rollups are per series, not per event: a hundred thousand clients times a hundred metrics is ten million series, and that number, not the million events a second, is what the rollup holds in memory.
+3. **Do not erase the normaliser.** When the interviewer asks what a box means, explain it; it is the answer to the follow-up. Old clients send `send`, new ones `send_content`. Part one: resolve the name at ingest through the versioned alias registry, keep the raw name on the record, quarantine unknowns. Part two: replay raw from the lake through the mapping into canonical partitions, rewrite the rollups, and expand the alias at query time until the backfill is done so the user sees one series and no gap.
+
+{{< excalidraw id="jDPEMB8bSBW7BqxcyXLO" png="/teach/systems/telemetry-names-answer-board.png" title="Telemetry system with inconsistent metric names, the mock answer" src="/teach/systems/telemetry-names-answer-board.excalidraw" >}}
+
+[Download the two-sided cheat sheet](/teach/systems/telemetry-names-cheat-sheet.pdf) (A4: front is the five-sentence opener, the numbers, the entities, the two endpoints and the two-part follow-up; back is the board above).
+
 ## In GPU infrastructure
 
 Fleet telemetry is exactly this. Tens of thousands of GPUs each emit hundreds of metrics a minute (temperature, power, XID errors, NVLink counters, RDMA retransmits) through agents that are upgraded a rack at a time, so three agent versions are always live and the metric names drift between them. A contract with one customer for streaming every GPU metric with under two minutes of delay is the latency requirement made concrete, and 1.2 billion metric streams a minute is the number that makes cardinality a design constraint rather than a footnote. The alias registry is also how you keep NVIDIA and AMD fleets in one dashboard: two vendors, one canonical id per physical quantity, raw names kept for the vendor's own tooling.
