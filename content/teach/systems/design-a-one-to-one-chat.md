@@ -56,6 +56,14 @@ Two ideas carry the design. First, a **consistent hash from user id to gateway**
 
 {{< excalidraw id="IUUDFoX6KzAS1HryeN3n" png="/teach/systems/one-to-one-chat-board.png" title="One-to-one chat" src="/teach/systems/one-to-one-chat-board.excalidraw" >}}
 
+[Download the one-page cheat sheet](/teach/systems/messaging-cheat-sheet.pdf) (A4, two sides: front is the five-question pack, the entities, the endpoints and the ordering policy; back is the full WhatsApp-shape board below).
+
+### The same design with groups and several devices
+
+The follow-ups the card leads to: group conversations, a phone and a tablet at once, and delivery status per message. Two rules survive the growth. Write the endpoints before the boxes, because the list of endpoints is what shows the hot paths (send, read, receipt, heartbeat) and the cold paths (create, rename, add, leave), and which services each flow must touch (leaving a group must detach that member's push targets). And treat ordering as a product policy, not a guarantee: the server issues a monotonic id per conversation for storage, the client renders by the sender's timestamp and marks a late arrival, retransmits are deduplicated on the client's message id, and nobody promises a global order. Multi-device means the inbox and the receipts are keyed by device, so each device catches up since its own last id. Groups run the same path N times, and above about a hundred members a worker pool does the N off the send path.
+
+{{< excalidraw id="qBmnNjFYeH5VaJy0kyQ5" png="/teach/systems/messaging-answer-board.png" title="Real-time messaging with groups and multi-device, the answer" src="/teach/systems/messaging-answer-board.excalidraw" >}}
+
 ## In GPU infrastructure
 
 The same shape runs the control plane of a GPU fleet. Agents on ten thousand hosts hold long-lived connections to a handful of gateways; a command for one host has to find the gateway that owns it (consistent hash on host id); a host that is rebooting must not lose the command (an inbox row with a TTL); and "is the host alive" is a heartbeat key that expires on its own, never a table you write on every ping. Presence for chat and liveness for a fleet are the same Redis key.
