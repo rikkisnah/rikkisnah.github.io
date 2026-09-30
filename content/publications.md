@@ -93,6 +93,7 @@ A collection of my written work and articles on technology, society, and civil d
 13. **[Race Counts Against New Citizen When Renting House](https://www.thinkcentre.org/article.php?id=2788)**
    - Straits Times Forum & Think Centre Singapore
    - August 23, 2006
+   - [Download Original Article (PDF)](/pdfs/straits-times-race-counts-against-new-citizen-2006-08-23.pdf)
    - Personal account of racial discrimination in Singapore's housing market
 
 ---
