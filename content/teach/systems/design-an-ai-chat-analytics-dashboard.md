@@ -42,7 +42,7 @@ The API is one endpoint per need. Events in, as a batch, always accepted, idempo
 
 ## The answer
 
-1. **One event, end to end.** A service emits an event carrying the user's token. The collector buffers five to ten milliseconds, batches, validates lightly and writes to Kafka, partitioned by session, with a single acknowledgement. A stream processor checks the schema, dedupes on event id, computes one-second and one-minute rollups with percentile sketches, and handles late events with watermarks. Rollups land in a hot OLAP store for the last few weeks; raw events land in the lake, warm for a year and cold beyond, loaded on demand for year-over-year questions. The dashboard API serves cached rollups and pushes updates over a socket. One alert evaluator per tier reads the rollups and routes notifications.
+1. **One event, end to end.** A service emits an event carrying the user's token. The collector buffers five to ten milliseconds, batches, validates lightly and writes to an ingest topic, partitioned by session, with a single acknowledgement. A stream processor checks the schema, dedupes on event id, computes one-second and one-minute rollups with percentile sketches, handles late events with watermarks, and publishes rollups and enriched events to one output topic. Three consumers read that topic independently: a real-time consumer holds the latest values in memory and feeds the dashboard API, which pushes over a socket; a database writer lands rollups in a hot store that serves filter, sort and history; a cold writer lands raw events (from the ingest topic) and rollups in the lake, warm for a year and cold beyond. One alert evaluator per tier reads the real-time consumer, the hot store or the lake. The point of the topic between processor and sinks: one seam, each sink at its own pace and replayable, and a slow lake write can never back up the processor.
 2. **Isolation.** The emit is asynchronous with a local buffer. Under pressure the collector drops analytics, never a chat request. The dashboard's availability is its own: if the OLAP store is down, chat does not notice.
 3. **Real time, honestly.** Ingest: client batching with a short flush, gRPC to a collector in the same region, an in-memory ring buffer, Kafka with one acknowledgement, no synchronous validation on the hot path. Serve: rollups held in memory, incremental streaming windows, materialised views, push instead of polling. End-to-end freshness is one to five seconds. Under 50 ms is the serving query.
 4. **Privacy that survives erasure.** The options and why they lose: scrubbing personal data with patterns at write time is brittle; hashing the user id with one global salt is reversible and cannot be erased; deleting rows on request destroys the aggregates. The answer is a per-user token derived from a per-user key. Analytics stores only the token. To erase a person, delete the key: every row becomes unattributable within the deadline, and the counts and trends stay. The goal is non-attributability, not protection from an insider who holds the vault. Chat content is never emitted, fields carry sensitivity tags, retention is tiered, and a compliance job scans the lake for anything that slipped through, raises tickets and drives deletions.
@@ -52,7 +52,7 @@ The API is one endpoint per need. Events in, as a batch, always accepted, idempo
 
 ## The board
 
-The pipeline runs across the top, the stores sit in the middle, the dashboards on the left, and the evaluators and the compliance module below. Solid arrows are the event and query path; dashed are control, schemas and history.
+The pipeline runs across the top; the output topic and its three consumers sit in the middle, with the dashboards on the left; the hot store, the lake, the evaluators and the compliance module sit below. Solid arrows are the event and query path; dashed are control, schemas, history and the raw feed into the lake.
 
 {{< excalidraw id="NwUIiRIJH89tGbNIXzte" png="/teach/systems/chat-analytics-answer-board.png" title="Analytics dashboard for an AI chat app, the answer" src="/teach/systems/chat-analytics-answer-board.excalidraw" >}}
 
@@ -70,7 +70,7 @@ The pipeline runs across the top, the stores sit in the middle, the dashboards o
 - **Three personas, three freshness targets**: seconds, minutes, daily.
 - **Fire-and-forget emit; shed analytics before chat.** Isolation is a requirement, not a nicety.
 - **The event envelope**: ids, both timestamps, source, schema version, correlation ids, then dims, measures, attributes, sensitivity tags.
-- **Roll up early**: one-second and one-minute rollups feed the dashboards and the pager tier.
+- **Roll up early, then one output topic and three consumers**: real-time push, the queryable store, the lake.
 - **Per-user token, crypto-shredding.** Erasure deletes the key; aggregates survive.
 - **One evaluator per alert tier**: under 10 s from the stream, under 60 s from the hot store, under a day from the lake.
 - **3B events a day is 35k a second, 150k at peak, a terabyte a day raw.**
