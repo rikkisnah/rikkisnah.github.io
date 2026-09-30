@@ -189,6 +189,14 @@ Three words on that board trip people up, so define them out loud in the first t
 
 Because weights live in GPU memory, serving is memory-bound, and that decides the cold-start design: keep hardware warm, never the weights of a model nobody is using. A GPU pinned with idle weights cannot serve anyone else.
 
+### The narrow costume, drawn on its own
+
+When the prompt is the fixed contract, the board is smaller and the grading is sharper. An interviewer who runs this version described it as "the batching algorithm plus scale and capacity; people overthink it". With 20,000 strings a second and servers that take up to a hundred in a flat hundred milliseconds, the sum is a thousand a second per server and twenty servers as the floor. The design is the size-or-time batcher, tier queues that are shed free-first under overload, a deadline sweeper that never sends a request that will miss its budget, a dispatcher that treats a busy server's error as "no free slot", and the map from request to batch position that turns a synchronous call into an asynchronous batch and back. Two things it is not: nothing is sharded, because a string is one request and a long prompt is one entry in a batch; and nothing is bin-packed by memory, because each server runs one batch at a time. Bin packing shows up only in the follow-up that interviewer asks: requests lasting from one second to one hour, a batch's time set by its longest member, fifteen percent overhead allowed, which is bin packing by duration bucket.
+
+{{< excalidraw id="UMpWyIEUHFfEMkPphB8o" png="/teach/systems/llm-api-dispatcher-board.png" title="The fixed-batch dispatcher, the answer" src="/teach/systems/llm-api-dispatcher-board.excalidraw" >}}
+
+[Download the dispatcher cheat sheet](/teach/systems/llm-api-cheat-sheet.pdf) (A4, two sides: front is what to ask and the validated answer in order, back is this board).
+
 ## The template
 
 The narrow costume is a shape you will meet again: **a dispatch layer in front of a fixed-cost batch backend**. Database bulk writers, log shippers, and payment settlement files all have the same loop.
