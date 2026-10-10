@@ -50,6 +50,8 @@ Job ids and node ids in the fleet are Snowflakes. The machine id is the schedule
 - Whether you know why random ids hurt a database index.
 - What happens when two machines get the same machine id. The answer is duplicates, and the fix is the registry.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1BVoQxnTGYa-06wZ0IJakZcMtEi0GFpnNELv8HydFIDM/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Timestamp, machine id, sequence. 41, 10, 12 bits.**
 - **Sorts by time, unique without talking.**

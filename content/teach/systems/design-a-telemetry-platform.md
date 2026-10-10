@@ -155,6 +155,8 @@ Fleet telemetry is exactly this. Tens of thousands of GPUs each emit hundreds of
 - How history gets fixed, and how the candidate would know the mapping is right.
 - Sensitivity tags carried from ingest, not bolted on at the dashboard.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1kA-gSCHj3qBUVcouexPwYbFii6lRqQikboOMU7wMIIc/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Ingest → log → stream and batch → tiered storage → serve by role.**
 - **Canonical id at ingest, raw name kept, mapping versioned.**

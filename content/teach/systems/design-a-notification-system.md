@@ -54,6 +54,8 @@ An XID storm is the snow day. One faulty GPU throws the same XID 79 every few se
 - Where preferences get checked. At send time is too late and too expensive.
 - Whether the words "idempotency key" show up without a prompt.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1jCJB9ejUPzZWcsFeBfe-8YfC4XVaQRomjDU5TzpJPfc/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Accept, fan out, send. A queue between each.**
 - **Preferences are checked at fan-out**, and cached.

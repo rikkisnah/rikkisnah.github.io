@@ -66,6 +66,8 @@ The interviewer may not want a diagram. If they do, this is the one page: the re
 - **Ten minutes on sharding.** Under one request a second. Say it in minute one and move on to the blob path.
 - **Diffs without checkpoints.** A chain of a thousand diffs is a slow read. Snapshot every so often.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1aDwqeG9L0z164khrnoPNCjTkyqZ3jVV5i34AFhrKnq0/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Six user needs, and "run and see the output" is one of them.** Defer the rest in one sentence.
 - **Three entities with fields**: Prompt, PromptVersion (immutable), Output. Sharing adds ShareLink and, for teams, AclEntry.

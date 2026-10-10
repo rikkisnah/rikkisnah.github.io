@@ -57,6 +57,8 @@ Inference serving is this drawing with GPUs behind the host. A request is spread
 - Do you draw the health checker as its own thing. It is the part that actually decides your availability.
 - The follow-up: a server is slow but not dead. Half its requests time out. What does your design do? Slow is harder than dead.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1vOvPB4_21ddW7Ut7Dtk7842HmFnpdh_mrhC5Li0ML2M/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Three questions: pick, detect, survive.**
 - **L4 is fast and blind, L7 is smart and expensive.**

@@ -46,6 +46,8 @@ The fleet API has this jar in front of it because a health-check loop once went 
 - Whether the words "atomic" or "race" come out of your mouth without a prompt.
 - The failure question. Everyone designs the happy path. The interview is the sad path.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1OnaVRGdrLldMgFmkFsHNr6aYZlBSUe5Ghk4RWXF9t_k/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Token bucket: two numbers, burst size and refill rate.**
 - **Lazy refill.** Store tokens and last-seen time, compute on read.

@@ -46,6 +46,8 @@ Levels with gates. Each level tests one thing that the level below could not: a 
 - Do you name the gate as a written threshold, and do you know what a healthy number looks like.
 - Do you separate the repair loop from the test loop. A failed part must not block the rest of the cluster from moving on.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1lTpujxZCX1DOtjlGrpJEuXLFYmPx-C3Jaw5687jZTdg/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Levels: server, rack, cluster.** Each finds what the last could not.
 - **Gates are written thresholds**, decided before the run.

@@ -52,6 +52,8 @@ When a training job slows down across two thousand hosts, the first question is 
 - Whether time is the first filter. Text-first search over petabytes is a demo, not a system.
 - Whether retention and tiers appear. Keeping everything forever is a design that ends in a budget meeting.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/132ezpRPwF-__jDB4nyAP7mQqaiDVwfkp1kGuPbUjbxU/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Say the number: hosts × lines × bytes. It is petabytes a day.**
 - **Dumb write path, queue, indexers, tiers by age.**

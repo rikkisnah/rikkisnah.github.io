@@ -50,6 +50,8 @@ The burn-in queue is this log. Every node that comes off the truck becomes a mes
 - Whether you commit the offset before or after the work. This is the whole difference between losing and duplicating.
 - Whether you say "ordered" without saying "per partition". Global order is a trap.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1XO7BY0J5xsB1uYr-23QG9L7bLQsvsAHIVgYKXp1UpUQ/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Append-only log plus a consumer offset.** That is the whole design.
 - **Order inside a partition only.**

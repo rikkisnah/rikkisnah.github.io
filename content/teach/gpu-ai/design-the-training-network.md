@@ -53,6 +53,8 @@ One NIC per GPU, and GPU number k on every server plugs into the same "rail" of 
 - Whether "lossless" comes up and whether you know what makes it lossless.
 - The failure question: one leaf switch reboots for firmware. What happens to a job spanning that rail, and how would a good design keep it running?
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/10nQ-oWzaovN6bxl6hjokrVM2jR43_iqicpQiciNDhG4/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Two networks.** East-west for GPUs, north-south for everything else.
 - **One NIC per GPU, rail-aligned.** GPU k talks to GPU k without crossing a spine.

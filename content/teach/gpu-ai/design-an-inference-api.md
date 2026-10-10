@@ -257,6 +257,8 @@ This question turns up in a few formats, and knowing which one you are in saves 
 - **Say "technical challenges", not "non-functional requirements".** Full GPU utilisation, bounded tail latency, cold start, isolation, availability over consistency, and metrics are challenges the design must solve; listing them by that name keeps the interviewer and you on the same page, and four or five of them is the right number.
 - **A pressure round.** Some interviewers give few hints and only open the next follow-up once you have landed the expected answer. Keep proposing concrete mechanisms. Silence is not a hint.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1tmLUaaB3pfcN4ner5ihO0rShhwgLr3FcCCwaj8nGnf0/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Size or time, whichever first.** Timer sets latency at low load, batch size sets throughput at high load.
 - **Requests per second ÷ (batch ÷ batch latency) = GPU floor.** Then run at 65 percent, add spares.

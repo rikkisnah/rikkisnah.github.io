@@ -49,6 +49,8 @@ Give the scheduler the network's shape as data: which nodes share a leaf, which 
 - Whether the topology map is data the scheduler reads, or knowledge in an engineer's head.
 - The fragmentation question. Most first designs spread jobs evenly, which is exactly wrong.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1h7GTmioWSSF-Rfni0Nh8wv7oChgYtAWTq0AmdPk7foY/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Give the scheduler the map.** Node, rack, leaf, spine, NVLink domain.
 - **Gang: all or none.** 63 of 64 ranks is a hang.

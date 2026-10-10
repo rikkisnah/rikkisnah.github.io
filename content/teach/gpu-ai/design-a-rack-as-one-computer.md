@@ -51,6 +51,8 @@ Change the unit. Every other layer of the system, the inventory, the scheduler, 
 - Whether the degrade-or-drain choice comes up before I prompt it. It is the whole design decision.
 - Whether firmware appears anywhere in your design. It should be near the top.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1oAmmhnTUO8AZc879oOEj2KezQywjLBrPHWkDrdk9gHo/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **The unit is the rack.** Launch it, monitor it, repair it as one.
 - **Failure domain is the NVLink domain.** One tray breaks 72.

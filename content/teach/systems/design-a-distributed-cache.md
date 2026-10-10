@@ -52,6 +52,8 @@ The scheduler asks the same questions on every tick: which nodes are in this rac
 - Whether "stampede" or "thundering herd" comes up before I ask what happens when a hot key expires.
 - Whether you know if the database can survive the cache dying. Most cannot, and most designs pretend otherwise.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/18CQrmHUewhen1MzGgaTCEadqGWUflANf4TvSZMz6DFw/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Two decisions: evict (LRU) and invalidate (TTL plus delete on write).**
 - **Write the database, delete the key.** Never update the cache from the write path.

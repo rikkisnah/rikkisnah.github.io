@@ -156,6 +156,8 @@ You will rarely be asked it by name. You will be asked one of its costumes:
 - **"Your app just went viral, what do you do this weekend?"** The same question, with the added constraint that you cannot rewrite anything. Cache, CDN and read replicas, in that order, because they need no code changes.
 - **The scaling follow-up inside any other design.** "Now make it ten times bigger." [Design Gurus' piece on follow-ups](https://designgurus.substack.com/p/system-design-interview-survival-220) and a [DEV Community post on pre-empting them](https://dev.to/numb_code_07/the-follow-up-questions-that-decide-system-design-interviews-and-how-to-pre-empt-them-32n3) are both honest about this being where the grade is set.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1HyPplsZJJ4I_TEJf8-oM67TQQjU8XU9rGjTN1hCtrgU/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Name the bottleneck, then the box.** Every rung has a "because".
 - **Stateless web tier first.** It unlocks autoscaling and failover.

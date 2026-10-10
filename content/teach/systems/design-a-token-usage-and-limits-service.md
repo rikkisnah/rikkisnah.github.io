@@ -160,6 +160,8 @@ I keep this section because the mistakes are the lesson.
 
 The coach's summary of what the real round looks like: functional requirements, non-functional requirements, data model, API, in whichever order is clearest to you, then the diagram, then the technical challenges. "This is not nearly enough diagram" was the verdict on mine. The challenges are where the time should go.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1zdbKrrbkGb6Eq4s9EBfbiYHOPW2fqmmEjrw1qPScFHs/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Two counters per scope: limit and used.** Check reads, record increments, ledger remembers.
 - **Employee = two checks**, member and organisation, and members are over-allocated on purpose.

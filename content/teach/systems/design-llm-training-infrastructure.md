@@ -105,6 +105,8 @@ I did not know the word *epoch*. The design worked anyway, because a checkpoint 
 
 And I started the high-level design at minute twenty-two. The real lesson is arithmetic again: an hour-long interview is not an hour of design. Five minutes of introductions and five minutes of your own questions come out of it, so you have forty-five to fifty. Budget ten minutes a phase and finish the diagram by minute thirty-two.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1XDDeN1VU-lBwEkX1RzJWxvIpAbLNd7B7cswXXDF3Cfg/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 Compute the failure rate first: 500 nodes at a six-month MTBF fail every nine hours, so a long run is interrupted fifty times and restart cost drives everything. A job is a gang, all N GPUs or none. Checkpoint at a barrier, write per-rank shards to local NVMe in under a second, release the barrier, upload asynchronously, commit the manifest last. Align to epochs, because that is where quality is measured. Measure goodput, not utilisation.
 {{< /remember >}}

@@ -50,6 +50,8 @@ Separate the signal from the decision. Signals are many, noisy, and per componen
 - Whether repaired nodes are re-tested before return. Trusting a repair is how the same node comes back three times.
 - Whether "usable compute" or its equivalent is the headline. Ticket counts are not a health metric.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1NTJvLhijLVdmIeWQqwexLrCVq3iW_ewH53elvzXmh0Q/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Many signals, one decision.** Hard fails plus a weighted score.
 - **Drain, diagnose, repair, prove, return.** Nothing returns untested.

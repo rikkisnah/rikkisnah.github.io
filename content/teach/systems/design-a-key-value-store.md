@@ -53,6 +53,8 @@ The node state store is this design at a smaller scale. Key is the hostname, val
 - Whether you know where your copies are physically. Three replicas in one rack is one replica.
 - What happens to a write when the network splits. If you say "it cannot happen", we spend the rest of the hour on why it can.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1pMewFTgorNX5OgFIwE7iRwEpYwVlMHV_IFnkbxG6fa4/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Hash keys onto a ring. Replicate to the next N machines.**
 - **W + R > N** and you always read something fresh.

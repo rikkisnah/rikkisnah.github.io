@@ -53,6 +53,8 @@ GPU-hours per team is this design and the hardware-not-fungible step is the whol
 - Whether capacity is counted at the level the customer cares about. A region-wide count of free GPUs is a lie for cluster workloads.
 - Whether a reconciliation loop appears. Counters drift, always.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1XvWYjJ6t5KMsdegU04h53avFVqamt0b1jeyhfnoJNoM/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Three counters: limit, used, reserved.**
 - **Reserve atomically with a TTL, then place, then commit.**

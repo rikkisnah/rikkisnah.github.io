@@ -51,6 +51,8 @@ Per-GPU telemetry is this pipeline with the cardinality knob turned to eleven. E
 - Whether the word "cardinality" appears. It is what actually kills metrics systems in production.
 - What happens when the store is down for ten minutes. Do you lose the data, or replay it?
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1Auj8wRbRvpYZqvTZ5gYJA2xdrAcqGgqzHwjDepoUfvs/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Dumb write path, clever read path.**
 - **Say the number:** hosts × metrics ÷ interval.

@@ -55,6 +55,8 @@ Firmware for GPUs, NICs and BMCs goes out across the fleet in exactly these ring
 - Whether you compare against the old fleet or a fixed threshold. Fixed thresholds fire at the wrong moments.
 - Whether config changes go through the same pipeline. They cause more outages than code.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/10OpGJTPAN_UsTulAU9SqPE7TjjUmfSGfBNyIvKCz0-M/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Waves with gates and bake time.** One box, one percent, one zone, one region.
 - **Gates compare new to old**, and roll back on their own.

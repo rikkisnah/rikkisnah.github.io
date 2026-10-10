@@ -54,6 +54,8 @@ Training capacity lives in several regions and the three bins are the same. Job 
 - Whether you say replication lag out loud and what it means for a failover.
 - Whether failback appears. Everyone plans the failover. The failback is where you lose data.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/17TLmofPAym6Dif3IWTVT_fRsCSVI7bBexJerSo131Vw/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Three bins: mergeable, single-owner, read-only.**
 - **Async replication. Lag is the conflict window.**

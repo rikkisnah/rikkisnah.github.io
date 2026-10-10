@@ -52,6 +52,8 @@ The GPU fleet rota is this drawing and the ingest step is where it lives or dies
 - Whether the pager depends on the thing it pages about. Draw the dependency arrows and look for a loop.
 - Whether you have an opinion on what deserves a page. Most candidates have never been woken up by a bad one. It shows.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1Ezm0mRj3UxbhcYkW6q_9sblInlYcHxMDIUp5HLInscE/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Dedupe by key, group by cause. One page per problem.**
 - **Page only what needs a human now.**

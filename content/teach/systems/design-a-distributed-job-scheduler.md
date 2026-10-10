@@ -56,6 +56,8 @@ The GPU job scheduler is this design with one extra column: topology. A job asks
 - Whether "lease" or "lock with a timeout" appears. Without it, a dead worker holds a job forever.
 - The double-run question. If you say "exactly once" I ask how, and you should say "at least once plus idempotent".
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1SgSsD4yaHYIEZpE834jzZJBj1hTI_O4YVpYBr4OJAtI/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Workers pull. Jobs carry a lease.**
 - **Lease lapses → job is free again.** That is your crash recovery.

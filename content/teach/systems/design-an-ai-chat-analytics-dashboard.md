@@ -66,6 +66,8 @@ The pipeline runs across the top; the output topic and its three consumers sit i
 - **Promising 50 ms end to end.** Scope it to the serving query and say the pipeline is seconds.
 - **Erasure by deleting rows.** It answers the regulator and destroys the trends. Shred the key.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1Z0NV1zVhNGuChcJyDdYIbhxpcPzY2bGD-Fi3XxtIFo4/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Three personas, three freshness targets**: seconds, minutes, daily.
 - **Fire-and-forget emit; shed analytics before chat.** Isolation is a requirement, not a nicety.

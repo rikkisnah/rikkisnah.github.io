@@ -64,6 +64,10 @@ Follow the [45-minute plan](/teach/system-design-in-a-hurry/). This problem is t
 7. **Deep dive, the redirect code.** 301 is permanent and browsers cache it, so you never see the second click. 302 sends every visit through you, so you can count, expire and change links. Say 302 and say why.
 8. **Deep dive, the writes and the counter.** Writes are about one a second. A single Postgres with a replica is plenty. Storage is 500 bytes times a billion, half a terabyte. For the counter, each write server takes a block of a thousand from Redis and burns through it locally. If Redis dies and loses a few values, nothing breaks, you only needed uniqueness, not continuity, and the unique constraint on the table is the safety net. Multi-region: give each region its own disjoint range.
 
+## The board
+
+{{< excalidraw id="CoJyw8cxu5qNFUtP7kZQ" png="/teach/systems/url-shortener-answer-board.png" src="/teach/systems/url-shortener-answer-board.excalidraw" title="URL shortener answer board" >}}
+
 ## The template
 
 This problem is the simplest example of a shape you will use for half the design round: **a read-heavy key-value service**. Memorise the shape, then understand each box well enough to remove it when the problem does not need it.
@@ -100,6 +104,8 @@ The fleet inventory service is this drawing with the words changed. Hostname to 
 - Whether you say 302 and know why. It is a small thing that tells me you have shipped a web service.
 - Whether you ask if links expire. It changes the cache story and the storage story.
 - Whether, unprompted, you can say what happens when Redis holding the counter dies. The best answer is "we lose a few numbers and nobody notices".
+
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1sIDlSUov5mcPGZVkB3IcAe8lMLt3k7lO0DWzMuj_i50/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
 
 {{< remember >}}
 - **Counter plus base 62.** No collisions, six or seven characters, billions of codes.

@@ -68,6 +68,8 @@ The request path is numbered and comes back to the client. The deployment plane 
 - **Answering a follow-up before stating its goal.** Condense "how would you optimise GPU resources" into "latency against utilisation, and I will use the queue to trade one for the other" before touching the board.
 - **Life of a request that stops at the router.** Draw the way back. The result has to reach the client, and the served version has to reach the experiment log.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1jyvQhTW_qL6ANICxxp4PgGD_euw6JZOofRL0hkzRxJw/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Three planes, one page.** Control plane decides, deployment plane makes replicas ready, data plane routes and batches. They meet at the router.
 - **Never load on the request path.** Warm pool, NVMe pre-placement, fail over to another region instead of cold-starting.

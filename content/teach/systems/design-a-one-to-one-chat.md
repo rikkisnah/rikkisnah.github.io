@@ -91,6 +91,8 @@ The same shape runs the control plane of a GPU fleet. Agents on ten thousand hos
 - Whether "last seen" is written per heartbeat.
 - Whether ordering is promised per conversation or, fatally, globally.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1_7rzPEEu3xY28Xdj8-WF24mH6ypRjuwy8X_R9J8kbsQ/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Ask first.** The opener is deliberately thin.
 - **Consistent hash user → gateway**, ring in etcd.

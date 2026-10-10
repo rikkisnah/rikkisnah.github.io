@@ -80,6 +80,8 @@ This is the image-distribution problem for a new GPU cluster wearing a checkpoin
 - A readiness gate between "downloaded" and "serving".
 - Whether the candidate drifts into consistent hashing or sharding. This is broadcast, not partition.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1rzyfx1dKo1raull8s917doiW_fmFO3OdJbjgt9x3Noc/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 - **Bound first: size × 8 ÷ link Gbps.** 500 GB over 10 Gbps is 400 s. Say it in minute three.
 - **Chunk, seed, swarm.** Every host uploads while it downloads; rarest-first.

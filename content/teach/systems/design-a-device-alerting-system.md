@@ -115,6 +115,8 @@ I drew a box called "normalizer" and gave it five jobs: cleaning, bucketing by t
 
 I also spent thirty-two minutes on requirements, including the protocol: WebSockets, then a half-remembered "RTC", then a claim to be an expert in TCP that the next sentence did not support. The plain answer is: TCP, because samples must not be lost, and short batches that can each be resent safely, because a long-lived connection on a bad link spends its life reconnecting.
 
+**Read-only Google Doc:** [the six-box cheat sheet with the board as a Google Drawing](https://docs.google.com/document/d/1TBO-AzrN_FUXbN8AU39xcW2Y1txAOhvXcJqa_TLt23A/edit). Every design lesson has one, in [this shared folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl). How to draw your own: [Drawing the Board](/teach/systems/drawing-the-board/).
+
 {{< remember >}}
 Put a sequence number and an event time on every sample. The gateway dedupes on device and sequence and acks after the append, so a resend is free. Kafka for fan-in, keyed by device. Evaluate rules on event time, and mark alerts from old data as late. One queue and one sender per channel. UTC everywhere. For every box, know its job, what it reads and what it writes.
 {{< /remember >}}
