@@ -65,7 +65,7 @@ Many companies send a Google Doc link and ask you to work in it. That is fine. T
 
 Here is the [URL shortener as a Google Doc with a Drawing](https://docs.google.com/document/d/1sIDlSUov5mcPGZVkB3IcAe8lMLt3k7lO0DWzMuj_i50/view) (read-only).
 
-![The URL shortener cheat sheet as a read-only Google Doc](/posts/system-design-diagrams-for-interviews/gdoc.png)
+![The URL shortener board in the read-only Google Doc, with the link to the editable slide underneath](/posts/system-design-diagrams-for-interviews/gdoc.png)
 
 I have also backfilled a Doc for every design lesson on the [Teach page](/teach/). They are all in [this Drive folder](https://drive.google.com/drive/folders/1120IT19jQRnKvGB3VlXTGUqGecRy1Tpl).
 
