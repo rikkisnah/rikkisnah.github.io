@@ -73,5 +73,6 @@ A thermal watchdog keeps the last few minutes of GPU temperature samples in a st
 ## Go deeper
 
 - The family this belongs to: [Stacks](/teach/coding/stacks/), the pattern page with the three shapes and the template.
+- The other coding question that is really a design question: [Read N Characters Given read4](/teach/coding/read-n-characters-given-read4/), where the state between calls is the whole problem.
 
 **With AI on the table.** The tool writes the lockstep version. I ask what happens to memory if a million pushes all have the same value and whether the "only push on new minimum" version fixes it. Then I ask what breaks on pop. The follow-up is where you show me you read the code.
