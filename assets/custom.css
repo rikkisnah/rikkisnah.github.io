@@ -241,6 +241,10 @@ article .highlight pre code span,
 /* Diagrams break out of the prose column so they are readable */
 .diagram-wide, .mermaid, .excalidraw-embed { width: min(96vw, 1180px); position: relative; left: 50%; transform: translateX(-50%); }
 .mermaid svg { width: 100% !important; max-width: none !important; height: auto !important; }
+/* Dense reference figures: use nearly the full window, and open full size on click */
+.diagram-xwide { width: min(98vw, 1800px); position: relative; left: 50%; transform: translateX(-50%); margin: 1.5rem 0; }
+.diagram-xwide img { display: block; width: 100%; height: auto; margin: 0; cursor: zoom-in; border: 1px solid #d4d4d8; border-radius: 8px; }
+.diagram-xwide p { margin: 0; }
 .excalidraw-embed { margin: 1.5rem 0 2rem; }
 .excalidraw-embed iframe { width: 100%; border: 1px solid #d4d4d8; border-radius: 10px; background: #fff; }
 .excalidraw-embed figcaption { font-size: 0.85rem; opacity: 0.7; text-align: center; margin-top: 0.4rem; }
