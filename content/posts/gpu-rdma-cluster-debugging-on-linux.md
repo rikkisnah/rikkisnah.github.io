@@ -15,7 +15,7 @@ images:
 
 </div>
 
-*12,245 words · 62 min read*
+*12,290 words · 62 min read*
 
 *Disclaimer: This post reflects my personal views and does not represent the views of my employer or my community.*
 
@@ -167,14 +167,14 @@ You cannot call a number low until you know the ceiling. These are the vendors' 
 | GPUs in one scale-up domain | 8 in a server | 72 in a rack: 18 compute trays, 9 switch trays | 8 in a server |
 | Scale-up link | NVLink 4, 900 GB/s per GPU | NVLink 5, 1.8 TB/s per GPU | Infinity Fabric, seven links per GPU, 128 GB/s per link |
 | Host bus | PCIe Gen5, 128 GB/s | PCIe to the NIC | PCIe 5.0 x16, 128 GB/s |
-| Usual RDMA NIC | ConnectX-7, 400 Gb/s, PCIe Gen5 x16 | ConnectX-8, 800 Gb/s, PCIe Gen6 x16 | ConnectX-7 or Pollara 400 |
+| Usual RDMA NIC | ConnectX-7, 400 Gb/s, PCIe Gen5 x16 | ConnectX-7, 400 Gb/s, four per compute tray | ConnectX-7 or Pollara 400 |
 
-[[55]](https://www.nvidia.com/en-us/data-center/h100/)[[56]](https://www.nvidia.com/en-us/data-center/h200/)[[57]](https://www.nvidia.com/en-us/data-center/gb200-nvl72/)[[58]](https://www.amd.com/en/products/accelerators/instinct/mi300/mi300x.html)[[59]](https://www.amd.com/en/products/accelerators/instinct/mi300/mi325x.html)[[60]](https://docs.nvidia.com/networking/display/connectx7vpi/Introduction)[[61]](https://docs.nvidia.com/networking/display/connectx8supernic/specifications)[[62]](https://rocm.blogs.amd.com/software-tools-optimization/mi300x-rccl-xgmi/README.html). Four cautions:
+[[55]](https://www.nvidia.com/en-us/data-center/h100/)[[56]](https://www.nvidia.com/en-us/data-center/h200/)[[57]](https://www.nvidia.com/en-us/data-center/gb200-nvl72/)[[58]](https://www.amd.com/en/products/accelerators/instinct/mi300/mi300x.html)[[59]](https://www.amd.com/en/products/accelerators/instinct/mi300/mi325x.html)[[60]](https://docs.nvidia.com/networking/display/connectx7vpi/Introduction)[[61]](https://docs.nvidia.com/networking/display/connectx8supernic/specifications)[[62]](https://rocm.blogs.amd.com/software-tools-optimization/mi300x-rccl-xgmi/README.html)[[68]](https://docs.nvidia.com/multi-node-nvlink-systems/multi-node-tuning-guide/system.html)[[69]](https://www.nvidia.com/en-gb/data-center/dgx-gb200). Four cautions:
 
 - **Vendor link figures count both directions.** NVIDIA calls the 1.8 TB/s "bidirectional throughput per GPU". AMD's 128 GB/s per link is also both directions, 64 GB/s each way. The 128 GB/s for PCIe Gen5 x16 is the same kind of sum. Halve them before comparing with a one-way benchmark.
 - **A benchmark never reaches the datasheet.** AMD's own measurement on MI300X shows about 48 GB/s usable on a link rated 64 GB/s one way [[62]](https://rocm.blogs.amd.com/software-tools-optimization/mi300x-rccl-xgmi/README.html). Your baseline is a healthy twin, not the brochure.
 - **NVIDIA publishes no per-GPU memory figure for GB200.** The 372 GB is per superchip. Dividing by two gives about 186 GB.
-- **Newer parts differ.** MI350X and MI355X carry 288 GB. Blackwell Ultra in GB300 carries up to 288 GB.
+- **Newer parts differ.** MI350X and MI355X carry 288 GB. Blackwell Ultra in GB300 carries up to 288 GB. The NIC changes too: GB200 NVL72 has four ConnectX-7 in each compute tray, and GB300 NVL72 moves to ConnectX-8 at 800 Gb/s per GPU on PCIe Gen6 [[61]](https://docs.nvidia.com/networking/display/connectx8supernic/specifications)[[70]](https://docs.nvidia.com/enterprise-reference-architectures/nvl72-ai-factory/latest/components.html). Some GB200 builds do carry ConnectX-8, so check with `lspci` and `ethtool -i` before you assume.
 
 **Explain it to a ten-year-old.** Before you say the car is slow, you look at the speed limit sign. And you remember the sign is the limit, not the speed everyone drives.
 
@@ -1145,3 +1145,6 @@ Every command in this post, with the public document that defines it.
 65. [Brendan Gregg, Linux Performance (the observability tool maps)](https://www.brendangregg.com/linuxperf.html)
 66. [numastat(8), Linux man pages](https://man7.org/linux/man-pages/man8/numastat.8.html)
 67. [taskset(1), Linux man pages](https://man7.org/linux/man-pages/man1/taskset.1.html)
+68. [Understanding Your Grace-Blackwell Systems, NVIDIA Multi-Node NVLink Tuning Guide](https://docs.nvidia.com/multi-node-nvlink-systems/multi-node-tuning-guide/system.html)
+69. [NVIDIA DGX GB200, specifications](https://www.nvidia.com/en-gb/data-center/dgx-gb200)
+70. [Components, NVIDIA Enterprise Reference Architecture for NVL72](https://docs.nvidia.com/enterprise-reference-architectures/nvl72-ai-factory/latest/components.html)
